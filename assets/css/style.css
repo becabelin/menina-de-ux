@@ -1058,7 +1058,6 @@ section {
 
 .contato .info {
     width: 100%;
-    background: #fff;
 }
 
 .contato .info i {
@@ -1392,20 +1391,20 @@ section {
 }
 
 .services .service-box.green {
-    border-bottom: 3px solid #08da4e;
+    border-bottom: 3px solid #36A95C;
 }
 
 .services .service-box.green .icon {
-    color: #08da4e;
+    color: #36A95C;
     background: #cffddf;
 }
 
 .services .service-box.green .read-more {
-    color: #08da4e;
+    color: #36A95C;
 }
 
 .services .service-box.green:hover {
-    background: #08da4e;
+    background: #36A95C;
 }
 
 .services .service-box:hover h3,
@@ -1416,6 +1415,13 @@ section {
 
 .services .service-box:hover .icon {
     background: #fff;
+}
+
+@media (max-width: 768px) {
+    .services .service-box {
+        padding: 40px 20px;
+        margin-bottom: auto;
+    }
 }
 
 
@@ -1480,4 +1486,11 @@ section {
 
 .destaques .col-4 {
     margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    #destaques .col-4 {
+        width: max-content;
+        padding: 10px;
+    }
 }
