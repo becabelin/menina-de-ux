@@ -476,7 +476,8 @@ h6 {
 }
 
 #hero .btn-get-started:hover {
-    background: #1596DE;
+    background: #fff;
+    color: #F0773D;
 }
 
 #hero .animated {
@@ -1439,6 +1440,7 @@ section {
     overflow: hidden;
     margin: auto;
     position: relative;
+    border-radius: 5px;
 }
 
 .destaques .post-box .post-img img {
