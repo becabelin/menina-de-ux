@@ -1177,7 +1177,9 @@ section {
 }
 
 .contato .php-email-form button[type=submit]:hover {
-    background: #F0773D;
+    background: #ffffff;
+    color: #F0773D;
+    border: #F0773D 0.5px solid;
 }
 
 @-webkit-keyframes animate-loading {
@@ -1372,20 +1374,20 @@ section {
 }
 
 .services .service-box.orange {
-    border-bottom: 3px solid #f68c09;
+    border-bottom: 3px solid #F0773D;
 }
 
 .services .service-box.orange .icon {
-    color: #f68c09;
+    color: #F0773D;
     background: #fde3c4;
 }
 
 .services .service-box.orange .read-more {
-    color: #f68c09;
+    color: #F0773D;
 }
 
 .services .service-box.orange:hover {
-    background: #f68c09;
+    background: #F0773D;
 }
 
 .services .service-box.green {
@@ -1420,47 +1422,39 @@ section {
 # Recent Blog Posts
 --------------------------------------------------------------*/
 
-.recent-blog-posts .post-box {
+.destaques .post-box {
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
     height: 100%;
     overflow: hidden;
-    padding: 30px;
-    margin: 30px;
-    border-radius: 8px;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 
-.recent-blog-posts .post-box .post-img {
+.destaques .post-box .post-img {
     overflow: hidden;
-    margin: 30px 30px 15px 30px;
+    margin: auto;
     position: relative;
 }
 
-.recent-blog-posts .post-box .post-img img {
+.destaques .post-box .post-img img {
     transition: 0.5s;
 }
 
-.recent-blog-posts .post-box .post-date {
-    font-size: 16px;
-    font-weight: 400;
-    color: rgba(1, 41, 112, 0.6);
-    display: block;
-    margin-bottom: 30px;
-}
-
-.recent-blog-posts .post-box .post-title {
-    font-size: 24px;
-    color: #012970;
+.destaques .post-box .post-title {
+    font-size: 20px;
+    color: #004C76;
     font-weight: 700;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     position: relative;
     transition: 0.3s;
 }
 
-.recent-blog-posts .post-box .readmore {
+.destaques .post-box .readmore {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -1468,16 +1462,20 @@ section {
     transition: 0.3s;
 }
 
-.recent-blog-posts .post-box .readmore i {
+.destaques .post-box .readmore i {
     line-height: 0;
     margin-left: 4px;
     font-size: 16px;
 }
 
-.recent-blog-posts .post-box:hover .post-title {
-    color: #4154f1;
+.destaques .post-box:hover .post-title {
+    color: #F0773D;
 }
 
-.recent-blog-posts .post-box:hover .post-img img {
+.destaques .post-box:hover .post-img img {
     transform: rotate(6deg) scale(1.2);
+}
+
+.destaques .col-4 {
+    margin-bottom: 30px;
 }
