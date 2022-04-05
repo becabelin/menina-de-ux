@@ -1816,6 +1816,7 @@ section {
     height: 100%;
     overflow: hidden;
     padding: 30px;
+    margin: 30px;
     border-radius: 8px;
     position: relative;
     display: flex;
@@ -1824,7 +1825,7 @@ section {
 
 .recent-blog-posts .post-box .post-img {
     overflow: hidden;
-    margin: -30px -30px 15px -30px;
+    margin: 30px 30px 15px 30px;
     position: relative;
 }
 
@@ -1834,17 +1835,17 @@ section {
 
 .recent-blog-posts .post-box .post-date {
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
     color: rgba(1, 41, 112, 0.6);
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 }
 
 .recent-blog-posts .post-box .post-title {
     font-size: 24px;
     color: #012970;
     font-weight: 700;
-    margin-bottom: 18px;
+    margin-bottom: 20px;
     position: relative;
     transition: 0.3s;
 }
@@ -1860,7 +1861,7 @@ section {
 .recent-blog-posts .post-box .readmore i {
     line-height: 0;
     margin-left: 4px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .recent-blog-posts .post-box:hover .post-title {
