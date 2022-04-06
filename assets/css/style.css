@@ -881,14 +881,6 @@ section {
     border-radius: 0;
 }
 
-.sobre img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
-    margin-top: 50px;
-}
-
 @-webkit-keyframes pulsate-btn {
     0% {
         transform: scale(0.6, 0.6);
