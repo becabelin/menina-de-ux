@@ -936,11 +936,7 @@ section {
 }
 
 .features .icon-box h3 a:hover {
-    color: #1596DE;
-}
-
-.features .icon-box:hover {
-    background: #ebebff;
+    color: #464646;
 }
 
 
