@@ -325,7 +325,7 @@ h6 {
     font-weight: 700;
     width: 475px;
     color: #f7f7f7;
-    font-family: 'Goldplay';
+    font-family: "Goldplay", "Nunito", sans-serif;
     font-style: normal;
     line-height: 125%;
     text-shadow: 0px 7px 0px #111111;
@@ -408,7 +408,7 @@ section {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #494949;
-    font-family: "Goldplay", sans-serif;
+    font-family: "Goldplay", "Nunito", sans-serif;
 }
 
 .section-title h2::after {
@@ -426,7 +426,7 @@ section {
     font-size: 36px;
     font-weight: 650;
     text-transform: uppercase;
-    font-family: "Goldplay", sans-serif;
+    font-family: "Goldplay", "Nunito", sans-serif;
     color: #FF5858;
 }
 
