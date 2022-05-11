@@ -331,6 +331,16 @@ h6 {
     text-shadow: 0px 7px 0px #111111;
 }
 
+#hero p {
+    padding-top: 20px;
+    font-size: 26px;
+    font-weight: 400;
+    width: 475px;
+    color: #f7f7f7;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+
 @media (min-width: 1024px) {
     #hero {
         background-attachment: fixed;
@@ -636,9 +646,14 @@ section {
     margin-top: -40px;
 }
 
-.contato .img-fluid {
+.contato .img {
     width: 100px;
     margin-left: 40px
+}
+
+.contato .img-fluid {
+    width: 100px;
+    margin-left: 15px
 }
 
 
