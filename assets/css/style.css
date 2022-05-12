@@ -471,7 +471,7 @@ section {
 
 .cursos .post-box {
     transition: 0.3s;
-    height: 480px;
+    height: 460px;
     overflow: hidden;
     padding: 20px;
     margin: 20px;
@@ -572,7 +572,6 @@ section {
     }
     .cursos .post-box {
         width: 70%;
-        height: auto;
     }
 }
 
