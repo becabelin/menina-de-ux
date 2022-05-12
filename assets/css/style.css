@@ -358,6 +358,7 @@ section {
 }
 
 .section-title {
+    padding-top: 30px;
     padding-bottom: 40px;
 }
 
@@ -470,7 +471,7 @@ section {
 
 .cursos .post-box {
     transition: 0.3s;
-    height: 100%;
+    height: 480px;
     overflow: hidden;
     padding: 20px;
     margin: 20px;
@@ -484,7 +485,6 @@ section {
 
 .cursos .post-box .post-img {
     overflow: hidden;
-    margin: auto;
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -541,6 +541,7 @@ section {
 
 .cursos .btn-ver-todos {
     margin-top: 50px;
+    margin-bottom: 40px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -571,6 +572,7 @@ section {
     }
     .cursos .post-box {
         width: 70%;
+        height: auto;
     }
 }
 

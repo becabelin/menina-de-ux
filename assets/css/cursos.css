@@ -360,7 +360,7 @@ h6 {
 
 .cursos .post-box {
     transition: 0.3s;
-    height: 100%;
+    height: 480px;
     overflow: hidden;
     padding: 20px;
     margin: 20px;
@@ -374,7 +374,6 @@ h6 {
 
 .cursos .post-box .post-img {
     overflow: hidden;
-    margin: auto;
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
@@ -461,6 +460,7 @@ h6 {
     }
     .cursos .post-box {
         width: 70%;
+        height: auto;
     }
 }
 
