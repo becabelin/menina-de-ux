@@ -427,7 +427,7 @@ section {
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 100px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
@@ -592,7 +592,7 @@ section {
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 30px;
+    padding: 10px 100px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
