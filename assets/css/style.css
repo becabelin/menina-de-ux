@@ -427,7 +427,7 @@ section {
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 100px;
+    padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
@@ -448,6 +448,9 @@ section {
     }
     .sobre img {
         margin-bottom: -60px;
+    }
+    .sobre .btn-quero-apoiar {
+        padding: 10px 140px;
     }
 }
 
@@ -592,7 +595,7 @@ section {
     font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 100px;
+    padding: 10px 140px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
@@ -613,6 +616,9 @@ section {
     }
     .criando-seu-case img {
         margin-bottom: -60px;
+    }
+    .criando seu case .btn-ver-template {
+        padding: 10px 140px;
     }
 }
 
