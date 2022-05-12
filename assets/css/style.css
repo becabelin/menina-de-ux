@@ -265,13 +265,13 @@ h6 {
 # Hero Section
 --------------------------------------------------------------*/
 
-#hero {
+.hero {
     width: 100%;
     background: url("../img/hero-bg.png");
     height: auto;
 }
 
-#hero h1 {
+.hero h1 {
     padding-top: 50px;
     font-size: 48px;
     font-weight: 700;
@@ -283,7 +283,7 @@ h6 {
     text-shadow: 0px 7px 0px #111111;
 }
 
-#hero p {
+.hero p {
     padding-top: 20px;
     font-size: 26px;
     font-weight: 400;
@@ -294,24 +294,24 @@ h6 {
 }
 
 @media (min-width: 1024px) {
-    #hero {
+    .hero {
         background-attachment: fixed;
     }
 }
 
 @media (max-width: 991px) {
-    #hero {
+    .hero {
         padding-top: 60px;
         height: auto;
     }
-    #hero .hero-img {
+    .hero .hero-img {
         text-align: center;
     }
-    #hero .hero-img img {
+    .hero .hero-img img {
         max-width: 300px;
         margin-bottom: -90px;
     }
-    #hero h1 {
+    .hero h1 {
         text-align: center;
         font-size: 30px;
         line-height: 32px;
@@ -320,7 +320,7 @@ h6 {
 }
 
 @media (max-width: 575px) {
-    #hero .hero-img img {
+    .hero .hero-img img {
         max-width: 300px;
     }
 }
@@ -466,7 +466,6 @@ section {
 }
 
 .cursos .post-box {
-    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
     height: 100%;
     overflow: hidden;
@@ -477,6 +476,7 @@ section {
     display: flex;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.5);
+    width: 20%;
 }
 
 .cursos .post-box .post-img {
@@ -484,6 +484,7 @@ section {
     margin: auto;
     position: relative;
     border-radius: 5px;
+    margin-bottom: 20px;
 }
 
 .cursos .post-box .post-img img {
@@ -566,14 +567,7 @@ section {
         padding-top: 80px;
     }
     .cursos .post-box {
-        width: auto;
-    }
-}
-
-@media (max-width: 768px) {
-    #cursos .col-4 {
-        width: max-content;
-        padding: 10px;
+        width: 70%;
     }
 }
 
@@ -588,6 +582,10 @@ section {
     color: #1B1B1B;
     padding-top: 30px;
     padding-bottom: 15px;
+}
+
+.criando-seu-case img {
+    padding-bottom: 40px;
 }
 
 .criando-seu-case .btn-ver-template {
@@ -616,6 +614,15 @@ section {
     .criando-seu-case img {
         margin-bottom: -60px;
     }
+}
+
+
+/*--------------------------------------------------------------
+# Contato
+--------------------------------------------------------------*/
+
+.contato .texto {
+    margin-top: -30px;
 }
 
 
