@@ -316,7 +316,7 @@ h6 {
 #hero {
     width: 100%;
     background: url("../img/hero-bg.png");
-    height: 80vh;
+    height: auto;
 }
 
 #hero h1 {
@@ -456,13 +456,7 @@ section {
 # Sobre
 --------------------------------------------------------------*/
 
-.sobre {
-    padding: 40px 0 0 0;
-}
-
 .sobre h3 {
-    margin-left: 40px;
-    width: 80%;
     font-size: 28px;
     font-weight: 700;
     color: #1B1B1B;
@@ -471,15 +465,12 @@ section {
 }
 
 .sobre p {
-    margin-left: 40px;
-    width: 80%;
     font-size: 16px;
     font-weight: 400;
     color: #1B1B1B;
 }
 
 .sobre .btn-quero-apoiar {
-    margin-left: 40px;
     margin-top: 20px;
     font-size: 16px;
     letter-spacing: 1px;
@@ -515,6 +506,7 @@ section {
 
 .cursos {
     background: url("../img/cursos-bg.png");
+    height: auto;
 }
 
 .cursos h2 {
@@ -592,13 +584,13 @@ section {
 }
 
 .cursos .btn-ver-todos {
-    margin-top: 30px;
+    margin-top: 50px;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 1px;
     padding: 10px 140px;
     border-radius: 50px;
-    transition: 0.5s;
+    transition: 0.3s;
     color: #0F0F26;
     background: #F7F7F7;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
@@ -626,10 +618,6 @@ section {
     }
 }
 
-.cursos .col-4 {
-    margin-bottom: 30px;
-}
-
 @media (max-width: 768px) {
     #cursos .col-4 {
         width: max-content;
@@ -639,21 +627,43 @@ section {
 
 
 /*--------------------------------------------------------------
-# Contato
+# Criando Seu Case
 --------------------------------------------------------------*/
 
-.contato .texto {
-    margin-top: -40px;
+.criando-seu-case h3 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1B1B1B;
+    padding-top: 30px;
+    padding-bottom: 15px;
 }
 
-.contato .img {
-    width: 100px;
-    margin-left: 40px
+.criando-seu-case .btn-ver-template {
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #F7F7F7;
+    background: #FF5858;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
 }
 
-.contato .img-fluid {
-    width: 100px;
-    margin-left: 15px
+.criando-seu-case .btn-ver-template:hover {
+    background: #F7F7F7;
+    color: #FF5858;
+}
+
+@media (max-width: 991px) {
+    .criando-seu-case {
+        padding-top: 20px;
+        padding-bottom: 50px;
+    }
+    .criando-seu-case img {
+        margin-bottom: -60px;
+    }
 }
 
 
