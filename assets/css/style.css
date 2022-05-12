@@ -349,7 +349,7 @@ h6 {
 --------------------------------------------------------------*/
 
 section {
-    padding: 60px 0;
+    padding: 20px 0;
     overflow: hidden;
 }
 
@@ -359,7 +359,7 @@ section {
 
 .section-title {
     padding-top: 30px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
 }
 
 .section-title h2 {
