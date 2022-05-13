@@ -426,6 +426,7 @@ section {
 .sobre .btn-quero-apoiar {
     margin-top: 20px;
     font-size: 16px;
+    font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 30px;
@@ -594,6 +595,7 @@ section {
 
 .criando-seu-case .btn-ver-template {
     font-size: 16px;
+    font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 30px;
