@@ -346,13 +346,16 @@ section {
     font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
     background: #FF5858;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
+    text-align: center;
 }
 
 .sobre .btn-quero-apoiar:hover {
@@ -369,7 +372,9 @@ section {
         margin-bottom: -60px;
     }
     .sobre .btn-quero-apoiar {
-        padding: 10px 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 400px;
     }
 }
 
@@ -395,13 +400,16 @@ section {
     font-weight: 600;
     letter-spacing: 1px;
     display: inline-block;
-    padding: 10px 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 300px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
     background: #FF5858;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
+    text-align: center;
 }
 
 .criando-seu-case .btn-ver-template:hover {
@@ -418,7 +426,9 @@ section {
         margin-bottom: -60px;
     }
     .criando-seu-case .btn-ver-template {
-        padding: 10px 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        width: 400px;
     }
 }
 
