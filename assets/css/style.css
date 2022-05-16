@@ -20,7 +20,7 @@ a:hover {
 
 h1,
 h2,
-h3,
+h1,
 h4,
 h5,
 h6 {
@@ -320,7 +320,7 @@ section {
 # Sobre
 --------------------------------------------------------------*/
 
-.sobre h3 {
+.sobre h1 {
     font-size: 28px;
     font-weight: 700;
     color: #1B1B1B;
@@ -332,6 +332,12 @@ section {
     font-size: 16px;
     font-weight: 400;
     color: #1B1B1B;
+}
+
+.sobre .img-fluid {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
 }
 
 .sobre a {
@@ -382,7 +388,7 @@ section {
 # Criando Seu Case
 --------------------------------------------------------------*/
 
-.criando-seu-case h3 {
+.criando-seu-case h1 {
     font-size: 28px;
     font-weight: 700;
     color: #1B1B1B;
@@ -391,6 +397,7 @@ section {
 }
 
 .criando-seu-case img {
+    width: 100%;
     padding-bottom: 40px;
 }
 

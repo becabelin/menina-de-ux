@@ -5086,7 +5086,7 @@
     content: "\f5f2";
 }
 
-.bi-type-h3::before {
+.bi-type-h1::before {
     content: "\f5f3";
 }
 
@@ -6710,11 +6710,11 @@
     content: "\f789";
 }
 
-.bi-trash3-fill::before {
+.bi-trash1-fill::before {
     content: "\f78a";
 }
 
-.bi-trash3::before {
+.bi-trash1::before {
     content: "\f78b";
 }
 

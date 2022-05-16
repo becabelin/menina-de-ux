@@ -29,6 +29,12 @@
     font-style: normal;
 }
 
+.hero .img-fluid {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+}
+
 @media (min-width: 1024px) {
     .hero {
         background-attachment: fixed;
@@ -112,6 +118,7 @@
 
 .cursos .post-box {
     transition: 0.3s;
+    width: 20%;
     height: 460px;
     overflow: hidden;
     padding: 20px;
@@ -123,7 +130,6 @@
     background: #5096D7;
     border: 0.3px solid #DFDFDF;
     backdrop-filter: blur(5px);
-    width: 20%;
 }
 
 .cursos .post-box .post-img {
@@ -131,6 +137,8 @@
     position: relative;
     border-radius: 5px;
     margin-bottom: 20px;
+    width: auto;
+    height: auto;
 }
 
 .cursos .post-box .post-img img {

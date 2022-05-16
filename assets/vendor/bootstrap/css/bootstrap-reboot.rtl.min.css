@@ -99,7 +99,7 @@ hr:not([size]) {
 
 h1,
 h2,
-h3,
+h1,
 h4,
 h5,
 h6 {
@@ -129,12 +129,12 @@ h2 {
     }
 }
 
-h3 {
+h1 {
     font-size: calc(1.3rem + .6vw)
 }
 
 @media (min-width:1200px) {
-    h3 {
+    h1 {
         font-size: 1.75rem
     }
 }
