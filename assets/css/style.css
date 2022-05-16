@@ -9,12 +9,12 @@ body {
 }
 
 a {
-    color: #DC828C;
+    color: #E16978;
     text-decoration: none;
 }
 
 a:hover {
-    color: #DC828C;
+    color: #E16978;
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #DC828C;
+    background: #E16978;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -53,7 +53,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #DC828C;
+    background: #E16978;
     color: #f7f7f7;
 }
 
@@ -162,7 +162,7 @@ h6 {
     height: 2px;
     bottom: 3px;
     left: 30px;
-    background-color: #DC828C;
+    background-color: #E16978;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -251,7 +251,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #DC828C;
+    color: #E16978;
 }
 
 
@@ -301,7 +301,7 @@ section {
     font-weight: 650;
     text-transform: uppercase;
     font-family: "Goldplay", "Nunito", sans-serif;
-    color: #DC828C;
+    color: #E16978;
 }
 
 @media (max-width: 991px) {
@@ -351,7 +351,7 @@ section {
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
-    background: #DC828C;
+    background: #E16978;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     text-align: center;
@@ -359,7 +359,7 @@ section {
 
 .sobre .btn-quero-apoiar:hover {
     background: #F7F7F7;
-    color: #DC828C;
+    color: #E16978;
 }
 
 @media (max-width: 991px) {
@@ -405,7 +405,7 @@ section {
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
-    background: #DC828C;
+    background: #E16978;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     text-align: center;
@@ -413,7 +413,7 @@ section {
 
 .criando-seu-case .btn-ver-template:hover {
     background: #F7F7F7;
-    color: #DC828C;
+    color: #E16978;
 }
 
 @media (max-width: 991px) {
@@ -446,7 +446,7 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #265d90;
+    background: #225e97;
     padding: 0 0 30px 0;
     color: #f7f7f7;
     font-size: 16px;
