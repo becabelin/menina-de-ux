@@ -215,5 +215,6 @@
     }
     .cursos .post-box {
         width: 70%;
+        backdrop-filter: blur(10px);
     }
 }
