@@ -4,7 +4,7 @@
 
 .hero {
     width: 100%;
-    background: url("../img/hero-bg.png");
+    background: url("../img/hero-bg.webp");
     height: auto;
 }
 
@@ -85,7 +85,7 @@
 --------------------------------------------------------------*/
 
 .cursos {
-    background: url("../img/cursos-bg.png");
+    background: url("../img/cursos-bg.webp");
     height: auto;
 }
 
