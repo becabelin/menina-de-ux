@@ -9,12 +9,12 @@ body {
 }
 
 a {
-    color: #FF5858;
+    color: #F5A0AA;
     text-decoration: none;
 }
 
 a:hover {
-    color: #FF5858;
+    color: #F5A0AA;
     text-decoration: none;
 }
 
@@ -39,7 +39,7 @@ h6 {
     right: 15px;
     bottom: 15px;
     z-index: 996;
-    background: #FF5858;
+    background: #F5A0AA;
     width: 40px;
     height: 40px;
     border-radius: 50px;
@@ -53,7 +53,7 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #FF5858;
+    background: #F5A0AA;
     color: #f7f7f7;
 }
 
@@ -90,7 +90,7 @@ h6 {
 }
 
 #header.header-scrolled {
-    background: #0F0F26;
+    background: #82B4F0;
     height: 60px;
 }
 
@@ -106,12 +106,6 @@ h6 {
 #header .logo h1 a:hover {
     color: #f7f7f7;
     text-decoration: none;
-}
-
-#header .logo img {
-    padding: 0;
-    margin: 0;
-    max-height: 40px;
 }
 
 
@@ -147,7 +141,7 @@ h6 {
     justify-content: space-between;
     padding: 10px 0 10px 30px;
     font-size: 18px;
-    font-weight: 500;
+    font-weight: 700;
     font-family: "Nunito", sans-serif;
     color: rgba(255, 255, 255, 0.7);
     white-space: nowrap;
@@ -168,7 +162,7 @@ h6 {
     height: 2px;
     bottom: 3px;
     left: 30px;
-    background-color: #FF5858;
+    background-color: #F5A0AA;
     visibility: hidden;
     width: 0px;
     transition: all 0.3s ease-in-out 0s;
@@ -218,7 +212,7 @@ h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: #0F0F26;
+    background: #82B4F0;
     transition: 0.3s;
     z-index: 999;
 }
@@ -251,13 +245,13 @@ h6 {
 .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #0F0F26;
+    color: #82B4F0;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #FF5858;
+    color: #F5A0AA;
 }
 
 
@@ -287,7 +281,7 @@ section {
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #494949;
+    color: #1B1B1B;
     font-family: "Goldplay", "Nunito", sans-serif;
 }
 
@@ -296,7 +290,7 @@ section {
     width: 120px;
     height: 1px;
     display: inline-block;
-    background: #FF5858;
+    background: #1B1B1B;
     margin: 4px 10px;
 }
 
@@ -307,7 +301,7 @@ section {
     font-weight: 650;
     text-transform: uppercase;
     font-family: "Goldplay", "Nunito", sans-serif;
-    color: #FF5858;
+    color: #F5A0AA;
 }
 
 @media (max-width: 991px) {
@@ -340,6 +334,11 @@ section {
     color: #1B1B1B;
 }
 
+.sobre a {
+    color: #1B1B1B;
+    font-weight: 700;
+}
+
 .sobre .btn-quero-apoiar {
     margin-top: 20px;
     font-size: 16px;
@@ -352,7 +351,7 @@ section {
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
-    background: #FF5858;
+    background: #F5A0AA;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     text-align: center;
@@ -360,7 +359,7 @@ section {
 
 .sobre .btn-quero-apoiar:hover {
     background: #F7F7F7;
-    color: #FF5858;
+    color: #F5A0AA;
 }
 
 @media (max-width: 991px) {
@@ -406,7 +405,7 @@ section {
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
-    background: #FF5858;
+    background: #F5A0AA;
     box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
     border-radius: 50px;
     text-align: center;
@@ -414,7 +413,7 @@ section {
 
 .criando-seu-case .btn-ver-template:hover {
     background: #F7F7F7;
-    color: #FF5858;
+    color: #F5A0AA;
 }
 
 @media (max-width: 991px) {
@@ -447,10 +446,10 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #0F0F26;
+    background: #82B4F0;
     padding: 0 0 30px 0;
     color: #f7f7f7;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 #footer .copyright {
@@ -461,6 +460,10 @@ section {
 #footer .credits {
     padding-top: 10px;
     text-align: center;
-    font-size: 13px;
     color: #f7f7f7;
+}
+
+#footer .credits a {
+    color: #f7f7f7;
+    font-weight: 700;
 }
