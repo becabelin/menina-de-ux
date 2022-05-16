@@ -1,8 +1,3 @@
-body {
-    background: url("../img/cursos-bg.png");
-}
-
-
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -92,7 +87,6 @@ body {
 
 .cursos {
     height: auto;
-    margin-top: -70px;
 }
 
 .cursos .section-title h2 {
@@ -126,7 +120,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    background: rgba(60, 100, 140, 0.05);
+    background: #82B4F0;
     border: 0.3px solid #DFDFDF;
     backdrop-filter: blur(5px);
     width: 20%;

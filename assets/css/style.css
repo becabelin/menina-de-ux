@@ -453,6 +453,7 @@ section {
 }
 
 #footer .copyright {
+    color: #111;
     text-align: center;
     padding-top: 30px;
 }
@@ -460,10 +461,10 @@ section {
 #footer .credits {
     padding-top: 10px;
     text-align: center;
-    color: #f7f7f7;
+    color: #111;
 }
 
 #footer .credits a {
-    color: #f7f7f7;
+    color: #111;
     font-weight: 700;
 }
