@@ -1919,7 +1919,7 @@ progress {
 }
 
 .table-warning {
-    --bs-table-bg: #F7F7F73cd;
+    --bs-table-bg: #F7F7F7;
     --bs-table-striped-bg: #f2e7c3;
     --bs-table-striped-color: #000;
     --bs-table-active-bg: #e6dbb9;

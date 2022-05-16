@@ -1930,7 +1930,7 @@ progress {
 }
 
 .table-warning {
-    --bs-table-bg: #F7F7F73cd;
+    --bs-table-bg: #F7F7F7;
     --bs-table-striped-bg: #f2e7c3;
     --bs-table-striped-color: #000;
     --bs-table-active-bg: #e6dbb9;
@@ -2382,8 +2382,6 @@ textarea.form-control-lg {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
 }
 
 .form-check-input[type=checkbox] {
@@ -5350,7 +5348,7 @@ fieldset:disabled .btn {
 
 .alert-warning {
     color: #664d03;
-    background-color: #F7F7F73cd;
+    background-color: #F7F7F7;
     border-color: #ffecb5;
 }
 
@@ -5759,7 +5757,7 @@ fieldset:disabled .btn {
 
 .list-group-item-warning {
     color: #664d03;
-    background-color: #F7F7F73cd;
+    background-color: #F7F7F7;
 }
 
 .list-group-item-warning.list-group-item-action:hover,
