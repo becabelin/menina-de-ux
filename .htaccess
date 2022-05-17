@@ -5,6 +5,10 @@
     # Redirecionar https://meninadeux.com para https://www.meninadeux.com
     RewriteCond %{HTTPs_HOST} !^www\. [NC]
     RewriteRule ^(.*)$ https://www.%{HTTPS_HOST}/$1 [R=301,NE,L]
+
+    # Redirecionar https://meninadeux.com/index.html para https://www.meninadeux.com
+    RewriteCond %{REQUEST_URI} !^/index.html [NC]
+    RewriteRule ^(.*)$ https://www.%{HTTPS_HOST}/$1 [R=301,NE,L]
  
     # Retirar / no final do link
     RewriteCond %{HTTPs_HOST} !^\. [NC]
@@ -16,6 +20,18 @@
 
     # Remover a hashtag do final do link
     RewriteCond %{THE_REQUEST} ^.*#
+    RewriteRule ^(.*)$ / [R=301,L]
+
+    # Remover o ? do final do link
+    RewriteCond %{THE_REQUEST} ^.*\?
+    RewriteRule ^(.*)$ / [R=301,L]
+
+    # Remover #hero do final do link
+    RewriteCond %{THE_REQUEST} ^.*#hero
+    RewriteRule ^(.*)$ / [R=301,L]
+
+    # Remover .html do final do link
+    RewriteCond %{THE_REQUEST} ^.*\.html
     RewriteRule ^(.*)$ / [R=301,L]
     
 </IfModule>
