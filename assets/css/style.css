@@ -90,7 +90,7 @@ h6 {
 }
 
 #header.header-scrolled {
-    background: #5096D7;
+    background: #1a61a2;
     height: 60px;
 }
 
@@ -135,7 +135,7 @@ h6 {
 }
 
 .navbar a,
-.navbar a:focus {
+.navbar a:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -212,7 +212,7 @@ h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: #5096D7;
+    background: #1a61a2;
     transition: 0.3s;
     z-index: 999;
 }
@@ -245,7 +245,7 @@ h6 {
 .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #5096D7;
+    color: #1a61a2;
 }
 
 .navbar-mobile a:hover,
@@ -453,7 +453,7 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #225e97;
+    background: #1a61a2;
     padding: 0 0 30px 0;
     color: #f7f7f7;
     font-size: 14px;

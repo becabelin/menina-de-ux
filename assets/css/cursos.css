@@ -127,7 +127,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #5096D7;
+    background: #1a61a2;
     border: 0.3px solid #DFDFDF;
     backdrop-filter: blur(5px);
 }
