@@ -18,5 +18,9 @@ RewriteRule ^(([^/]+/)*)index\.html$ https://www.seusite.com.br/$1 [R=301,L]
     # Remover o index.html do final do link
     RewriteCond %{THE_REQUEST} ^.*/index.html
     RewriteRule ^(.*)$ / [R=301,L]
+
+    # Remover a hashtag do final do link
+    RewriteCond %{THE_REQUEST} ^.*#
+    RewriteRule ^(.*)$ / [R=301,L]
     
 </IfModule>
