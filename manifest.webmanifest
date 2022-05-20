@@ -1,0 +1,18 @@
+{
+    "name": "menina de ux - ajudando meninas (e meninos) como eu",
+    "short_name": "menina de ux",
+    "theme_color": "#0F5F8C",
+    "background_color": "#0F5F8C",
+    "display": "display",
+    "orientation": "portrait",
+    "start_url": "/index.html",
+    "icons": [{
+        "src": "/assets/img/mobile.webp",
+        "sizes": "72x72",
+        "type": "image.webp"
+    }, {
+        "src": "/assets/img/mobile.webp",
+        "sizes": "96x96",
+        "type": "image.webp"
+    }]
+}
