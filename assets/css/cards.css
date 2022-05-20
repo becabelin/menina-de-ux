@@ -138,6 +138,7 @@
     margin-bottom: 20px;
     width: auto;
     height: auto;
+    max-width: 100%;
 }
 
 .cursos .post-box .post-img img {
@@ -221,7 +222,7 @@
         padding-top: 80px;
     }
     .cursos .post-box {
-        width: 70%;
-        backdrop-filter: blur(10px);
+        width: 60%;
+        backdrop-filter: blur(20px);
     }
 }
