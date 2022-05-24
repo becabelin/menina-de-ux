@@ -19,11 +19,21 @@
     line-height: 125%;
 }
 
-.hero p {
+.hero h2 {
     padding-top: 20px;
     font-size: 26px;
     font-weight: 400;
     width: 475px;
+    color: #f7f7f7;
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+}
+
+.hero p {
+    padding-top: 20px;
+    font-size: 18px;
+    font-weight: 400;
+    width: 380px;
     color: #f7f7f7;
     font-family: "Nunito", sans-serif;
     font-style: normal;
@@ -60,9 +70,14 @@
         width: auto;
         margin-left: 30px;
     }
-    .hero p {
+    .hero h2 {
         margin-left: 30px;
         font-size: 24px;
+        width: auto;
+    }
+    .hero p {
+        margin-left: 30px;
+        font-size: 18px;
         width: auto;
     }
 }
