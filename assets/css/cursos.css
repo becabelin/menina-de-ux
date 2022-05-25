@@ -68,15 +68,15 @@
         font-size: 30px;
         line-height: 28px;
         width: auto;
-        margin-left: 30px;
+        margin: 0px 30px;
     }
     .hero h2 {
-        margin-left: 30px;
+        margin: 0px 30px;
         font-size: 24px;
         width: auto;
     }
     .hero p {
-        margin-left: 30px;
+        margin: 0px 30px;
         font-size: 18px;
         width: auto;
     }
@@ -163,14 +163,14 @@
     font-size: 24px;
     color: #f7f7f7;
     font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-top: 10px;
     position: relative;
     transition: 0.3s;
 }
 
 .cursos .data {
-    margin-top: 10px;
+    margin-top: 15px;
     color: #f7f7f7;
 }
 
@@ -210,6 +210,7 @@
         padding-top: 80px;
     }
     .cursos .post-box {
-        width: 70%;
+        width: 60%;
+        height: auto;
     }
 }
