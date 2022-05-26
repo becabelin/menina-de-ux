@@ -107,7 +107,7 @@
 
 .cursos .section-title h2::after {
     content: "";
-    width: 120px;
+    width: 90px;
     height: 1px;
     display: inline-block;
     background: #f7f7f7;
@@ -121,7 +121,7 @@
 .cursos .post-box {
     transition: 0.3s;
     width: 20%;
-    height: 500px;
+    height: auto;
     overflow: hidden;
     padding: 20px;
     margin: 20px;
