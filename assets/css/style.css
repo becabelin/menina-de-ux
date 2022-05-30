@@ -304,19 +304,14 @@ section {
 }
 
 @media (max-width: 991px) {
-    .section-title {
-        margin: 0px -40px;
-    }
     .section-title p {
         font-size: 30px;
         padding-top: 10px;
         padding-bottom: 20px;
         width: 360px;
-        margin: 0px 30px;
     }
     .section-title h2 {
         font-size: 15px;
-        margin: 0px 30px;
     }
 }
 
@@ -374,18 +369,15 @@ section {
 
 @media (max-width: 991px) {
     .sobre {
-        margin: 0px -50px;
-    }
-    .sobre .col {
-        margin: 0px 10px;
+        margin: 0px 30px;
     }
     .sobre .btn-quero-apoiar {
         width: 300px;
     }
     .sobre .img-fluid {
         margin: -30px -30px;
-        width: 400px;
-        max-width: 400px;
+        width: 380px;
+        max-width: 380px;
     }
     .sobre h1 {
         padding-top: 10px;
