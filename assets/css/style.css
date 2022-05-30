@@ -308,10 +308,11 @@ section {
         font-size: 30px;
         padding-top: 10px;
         padding-bottom: 20px;
-        width: 360px;
+        width: 320px;
     }
     .section-title h2 {
         font-size: 15px;
+        width: 320px;
     }
 }
 
@@ -381,6 +382,7 @@ section {
     }
     .sobre h1 {
         padding-top: 10px;
+        width: auto;
     }
     .sobre p {
         font-size: 18px;
@@ -520,21 +522,25 @@ section {
     .criando-seu-case {
         padding-top: 20px;
         padding-bottom: 10px;
-        margin: 0px -60px;
+        margin: 0px 30px;
+    }
+    .criando-seu-case .container {
+        margin: 0px;
+        margin-bottom: 20px;
     }
     .criando-seu-case .col {
         margin: 0px 10px;
     }
     .criando-seu-case .img-fluid {
         margin: -30px -20px;
-        width: 400px;
-        max-width: 400px;
+        width: 360px;
+        max-width: 360px;
     }
     .criando-seu-case h1 {
         width: 340px;
     }
     .criando-seu-case .text {
-        font-size: 18px;
+        font-size: 16px;
         width: 340px;
         padding-bottom: 10px;
     }
@@ -569,13 +575,12 @@ section {
 }
 
 @media (max-width: 991px) {
-    .contato {
+    .contato .container {
         padding-top: 20px;
         padding-bottom: 10px;
-        margin: 0px -60px;
+        margin: 0px 30px;
     }
     .contato .texto {
-        margin-left: -10px;
         margin-top: -40px;
         font-size: 18px;
         width: 320px;

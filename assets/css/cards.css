@@ -97,15 +97,16 @@
         width: auto;
         padding: 10px 40px;
     }
-    .hero .btn-descobrir-processos {
-        padding: 10px 90px;
-        margin-top: 20px;
+    .hero .text-center {
+        margin-top: 30px;
     }
     .hero .btn-descobrir-cursos {
         width: 300px;
         padding: 10px 100px;
-        margin-top: 30px;
-        width: 300px;
+    }
+    .hero .btn-descobrir-processos {
+        padding: 10px 90px;
+        margin-top: 20px;
     }
 }
 
