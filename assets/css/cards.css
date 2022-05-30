@@ -282,9 +282,11 @@
     }
     .cursos .text-center {
         margin-top: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
+        width: auto;
     }
     .cursos .btn-ver-todos {
-        padding: 10px 70px;
+        padding: 10px 60px;
+        width: 300px;
     }
 }
