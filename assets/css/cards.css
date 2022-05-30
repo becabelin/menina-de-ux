@@ -4,7 +4,7 @@
 
 .hero {
     background: linear-gradient(180deg, #1A61A2 0%, #095397 100%);
-    height: 80vh;
+    padding-bottom: 60px;
 }
 
 .hero .container {
@@ -259,19 +259,32 @@
 
 @media (max-width: 991px) {
     .cursos {
-        padding-top: 60px;
+        padding-top: 40px;
     }
     .cursos .section-title h2 {
         margin: -10px 30px;
+        width: auto;
     }
     .cursos .section-title p {
         margin: 10px 30px;
+        width: auto;
+        margin-bottom: -30px;
     }
     .cursos .post-box {
-        width: 80%;
+        width: auto;
         height: auto;
+    }
+    .cursos .row {
+        margin: 0px 60px;
     }
     .cursos .post-box .img-fluid {
         width: 100%;
+    }
+    .cursos .text-center {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .cursos .btn-ver-todos {
+        padding: 10px 70px;
     }
 }
