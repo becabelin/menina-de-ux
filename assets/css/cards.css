@@ -65,6 +65,7 @@
     border-radius: 50px;
     text-align: center;
     border: #F7F7F7 solid 1px;
+    margin-right: 10px;
 }
 
 .hero .btn-descobrir-cursos:hover {
@@ -160,7 +161,7 @@
 
 .cursos .post-box {
     transition: 0.3s;
-    width: 28%;
+    width: 23%;
     height: auto;
     overflow: hidden;
     padding: 20px;
@@ -178,13 +179,14 @@
     overflow: hidden;
     position: relative;
     border-radius: 10px;
-    width: 100vw;
+    width: 100%;
     max-width: 100%;
     background-size: cover;
 }
 
 .cursos .post-box .post-img img {
     transition: 0.5s;
+    width: 100%;
 }
 
 .cursos .post-box .post-title {
@@ -262,10 +264,13 @@
 
 @media (max-width: 991px) {
     .cursos {
-        padding-top: 80px;
+        padding-top: 60px;
     }
     .cursos .post-box {
-        width: 60%;
+        width: 80%;
         height: auto;
+    }
+    .cursos .post-box .img-fluid {
+        width: 100%;
     }
 }

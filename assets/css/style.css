@@ -296,7 +296,6 @@ section {
 
 .section-title p {
     margin: 0;
-    margin: 0;
     font-size: 36px;
     font-weight: 650;
     text-transform: uppercase;
@@ -305,9 +304,13 @@ section {
 }
 
 @media (max-width: 991px) {
+    .section-title {
+        margin: 0px -40px;
+    }
     .section-title p {
         font-size: 30px;
         padding-top: 10px;
+        padding-bottom: 20px;
         width: 360px;
         margin: 0px 30px;
     }
@@ -321,10 +324,6 @@ section {
 /*--------------------------------------------------------------
 # Sobre
 --------------------------------------------------------------*/
-
-.sobre .container {
-    margin: 10px 100px;
-}
 
 .sobre .row {
     margin-bottom: -80px;
@@ -375,22 +374,33 @@ section {
 
 @media (max-width: 991px) {
     .sobre {
-        padding-top: 20px;
-        padding-bottom: 40px;
+        margin: 0px -50px;
+    }
+    .sobre .col {
+        margin: 0px 10px;
     }
     .sobre .btn-quero-apoiar {
-        padding-top: 10px;
-        width: 400px;
+        width: 300px;
     }
     .sobre .img-fluid {
-        margin-bottom: -70px;
+        margin: -30px -30px;
+        width: 400px;
+        max-width: 400px;
     }
     .sobre h1 {
-        margin: 0px 30px;
+        padding-top: 10px;
     }
     .sobre p {
-        margin: 0px 30px;
+        font-size: 18px;
+        width: 320px;
         padding-bottom: 10px;
+    }
+    .sobre .row {
+        padding-bottom: 100px;
+    }
+    .sobre .text-center {
+        text-align: left!important;
+        padding-bottom: 40px;
     }
 }
 
@@ -517,24 +527,31 @@ section {
 @media (max-width: 991px) {
     .criando-seu-case {
         padding-top: 20px;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
+        margin: 0px -60px;
     }
-    .criando-seu-case img {
-        margin-bottom: -60px;
-        margin: 0px 30px;
+    .criando-seu-case .col {
+        margin: 0px 10px;
+    }
+    .criando-seu-case .img-fluid {
+        margin: -30px -20px;
+        width: 400px;
+        max-width: 400px;
     }
     .criando-seu-case h1 {
-        margin: 0px 30px;
-        margin-top: -60px;
+        width: 340px;
     }
-    .criando-seu-case p {
-        margin: 10px 30px;
-    }
-    .criando-seu-case .btn-ver-template {
-        margin-top: 20px;
-        padding-top: 10px;
+    .criando-seu-case .text {
+        font-size: 18px;
+        width: 340px;
         padding-bottom: 10px;
-        width: 400px;
+    }
+    .criando-seu-case .row {
+        padding-bottom: 20px;
+    }
+    .criando-seu-case .text-center {
+        text-align: left!important;
+        padding-bottom: 40px;
     }
 }
 
@@ -560,12 +577,23 @@ section {
 }
 
 @media (max-width: 991px) {
+    .contato {
+        padding-top: 20px;
+        padding-bottom: 10px;
+        margin: 0px -60px;
+    }
     .contato .texto {
-        margin: 10px 30px;
-        margin-top: -20px;
+        margin-left: -10px;
+        margin-top: -40px;
+        font-size: 18px;
+        width: 320px;
+        padding-bottom: 10px;
     }
     .contato .col {
-        margin: 20px;
+        width: 300px;
+    }
+    .contato img {
+        width: 120px;
     }
 }
 
