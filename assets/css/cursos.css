@@ -4,7 +4,7 @@
 
 .hero {
     width: 100%;
-    background: url("../img/cursos-bg.webp");
+    background: #1a61a2;
     height: auto;
 }
 
@@ -134,23 +134,24 @@
 
 .cursos .post-box {
     transition: 0.3s;
-    width: 20%;
-    height: 500px;
+    width: 28%;
+    height: auto;
     overflow: hidden;
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
     border-radius: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #1a61a2;
+    background: #1A61A2;
     border: 0.3px solid #DFDFDF;
 }
 
 .cursos .post-box .post-img {
+    margin-bottom: 10px;
     overflow: hidden;
     position: relative;
-    border-radius: 5px;
+    border-radius: 10px;
     width: 100vw;
     max-width: 100%;
     background-size: cover;
@@ -168,14 +169,13 @@
     margin-top: 10px;
     position: relative;
     transition: 0.3s;
-}
-
-.cursos .data {
-    margin-top: 15px;
-    color: #f7f7f7;
+    font-family: "Goldplay", "Nunito", sans-serif;
 }
 
 .cursos .description {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 30px;
     color: #f7f7f7;
 }
 

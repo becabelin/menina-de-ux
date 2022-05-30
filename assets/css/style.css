@@ -322,33 +322,36 @@ section {
 # Sobre
 --------------------------------------------------------------*/
 
+.sobre .container {
+    margin: 10px 100px;
+}
+
+.sobre .row {
+    margin-bottom: -80px;
+}
+
 .sobre h1 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: 700;
     color: #1B1B1B;
-    padding-top: 50px;
-    padding-bottom: 15px;
+    padding-bottom: 10px;
+    width: 500px;
 }
 
 .sobre p {
-    font-size: 16px;
+    font-size: 26px;
     font-weight: 400;
     color: #1B1B1B;
+    width: 400px;
 }
 
 .sobre .img-fluid {
-    width: 100%;
-    height: auto;
+    width: 80%;
     margin-bottom: 30px;
 }
 
-.sobre a {
-    color: #1B1B1B;
-    font-weight: 700;
-}
-
 .sobre .btn-quero-apoiar {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -458,12 +461,29 @@ section {
 # Criando Seu Case
 --------------------------------------------------------------*/
 
+.criando-seu-case {
+    height: auto;
+}
+
+.criando-seu-case .container {
+    margin: 10px 100px;
+    margin-bottom: 80px;
+}
+
 .criando-seu-case h1 {
     font-size: 28px;
     font-weight: 700;
     color: #1B1B1B;
-    padding-top: 30px;
     padding-bottom: 15px;
+    width: 500px;
+}
+
+.criando-seu-case .text {
+    font-size: 16px;
+    color: #1B1B1B;
+    margin-bottom: 10px;
+    margin-right: 60px;
+    font-family: "Nunito", sans-serif;
 }
 
 .criando-seu-case img {
@@ -472,6 +492,7 @@ section {
 }
 
 .criando-seu-case .btn-ver-template {
+    margin-top: 10px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -521,6 +542,14 @@ section {
 /*--------------------------------------------------------------
 # Contato
 --------------------------------------------------------------*/
+
+.contato .container {
+    margin: 10px 100px;
+}
+
+.criando-seu-case .row {
+    margin-bottom: -80px;
+}
 
 .contato .texto {
     margin-top: -20px;
