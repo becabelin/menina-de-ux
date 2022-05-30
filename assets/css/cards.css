@@ -34,8 +34,6 @@
 }
 
 .hero .btn-descobrir-processos {
-    margin: 10px;
-    margin-left: -5px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -56,7 +54,6 @@
 }
 
 .hero .btn-descobrir-cursos {
-    margin: 10px;
     font-size: 16px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -104,8 +101,10 @@
         margin-top: 20px;
     }
     .hero .btn-descobrir-cursos {
+        width: 300px;
         padding: 10px 100px;
-        margin-top: 20px;
+        margin-top: 30px;
+        width: 300px;
     }
 }
 
