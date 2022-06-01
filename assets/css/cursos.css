@@ -58,19 +58,19 @@
         font-size: 36px;
         line-height: 32px;
         width: auto;
-        margin: 0px 30px;
+        margin: 10px 30px;
     }
     .hero h2 {
         padding: 30px 0px;
         text-align: center;
         font-size: 26px;
-        line-height: 28px;
+        line-height: 32px;
         width: auto;
         margin: 0px 30px;
     }
     .hero p {
         text-align: center;
-        margin: 10px 30px;
+        margin: 0px 30px;
         font-size: 18px;
         width: auto;
     }
