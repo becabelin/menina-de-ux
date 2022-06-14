@@ -38,7 +38,7 @@ h6 {
     opacity: 0;
     right: 15px;
     bottom: 15px;
-    z-index: 996;
+    z-index: 990;
     background: #E16978;
     width: 40px;
     height: 40px;
@@ -53,8 +53,8 @@ h6 {
 }
 
 .back-to-top:hover {
-    background: #E16978;
-    color: #f7f7f7;
+    background: #1a61a2;
+    box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
 .back-to-top.active {
