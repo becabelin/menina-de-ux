@@ -6,7 +6,7 @@
     background: #ebf1fb;
     padding-bottom: 60px;
     width: 100%;
-    height: 70vh;
+    height: 60%;
 }
 
 .hero .container {
@@ -235,7 +235,7 @@
 
 .cursos .post-box {
     transition: 0.3s;
-    width: 20%;
+    width: 25%;
     height: auto;
     overflow: hidden;
     margin: 10px;
