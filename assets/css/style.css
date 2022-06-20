@@ -4,7 +4,7 @@
 
 body {
     font-family: "Nunito", sans-serif;
-    color: #1B1B1B;
+    color: #272727;
     background-color: #f7f7f7;
 }
 
@@ -90,21 +90,22 @@ h6 {
 }
 
 #header.header-scrolled {
-    background: #1a61a2;
+    background: #F7F7F7;
     height: 60px;
 }
 
 #header .logo h1 {
+    font-family: 'Goldplay', sans-serif;
     font-size: 28px;
     margin: 0;
     padding: 0;
     line-height: 1;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #f7f7f7;
+    color: #272727;
     text-decoration: none;
 }
 
@@ -140,10 +141,10 @@ h6 {
     align-items: center;
     justify-content: space-between;
     padding: 10px 0 10px 30px;
-    font-size: 18px;
-    font-weight: 700;
-    font-family: "Nunito", sans-serif;
-    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "Goldplay", "Nunito", sans-serif;
+    color: rgba(39, 39, 39, 0.7);
     white-space: nowrap;
     transition: 0.3s;
 }
@@ -179,7 +180,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #f7f7f7;
+    color: #272727;
 }
 
 
@@ -188,7 +189,7 @@ h6 {
 */
 
 .mobile-nav-toggle {
-    color: #f7f7f7;
+    color: #272727;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -200,6 +201,7 @@ h6 {
     .mobile-nav-toggle {
         display: block;
     }
+
     .navbar ul {
         display: none;
     }
@@ -281,7 +283,7 @@ section {
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #1B1B1B;
+    color: #272727;
     font-family: "Goldplay", "Nunito", sans-serif;
 }
 
@@ -290,7 +292,7 @@ section {
     width: 90px;
     height: 1px;
     display: inline-block;
-    background: #1B1B1B;
+    background: #272727;
     margin: 4px 10px;
 }
 
@@ -310,6 +312,7 @@ section {
         padding-bottom: 20px;
         width: 320px;
     }
+
     .section-title h2 {
         font-size: 15px;
         width: 320px;
@@ -321,79 +324,81 @@ section {
 # Sobre
 --------------------------------------------------------------*/
 
-.sobre .row {
-    margin-bottom: -80px;
-}
-
 .sobre h1 {
-    font-size: 32px;
+    font-family: 'Goldplay', 'Avenir LT Std',  sans-serif;
+    font-size: 36px;
     font-weight: 700;
-    color: #1B1B1B;
+    color: #272727;
     padding-bottom: 10px;
-    width: 500px;
 }
 
 .sobre p {
-    font-size: 26px;
-    font-weight: 400;
-    color: #1B1B1B;
-    width: 400px;
+    font-family: 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    color: #272727;
+    font-style: normal;
+    text-align: left;
 }
 
 .sobre .img-fluid {
-    width: 80%;
+    width: 50%;
     margin-bottom: 30px;
 }
 
 .sobre .btn-quero-apoiar {
-    margin-top: 10px;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
     display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 300px;
+    padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
-    background: #E16978;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    background: #145C9E;
     border-radius: 50px;
     text-align: center;
+    margin-top: 10px;
 }
 
 .sobre .btn-quero-apoiar:hover {
     background: #F7F7F7;
-    color: #E16978;
+    color: #145C9E;
 }
 
 @media (max-width: 991px) {
     .sobre {
         margin: 0px 30px;
     }
+
     .sobre .btn-quero-apoiar {
         width: 300px;
     }
+
     .sobre .img-fluid {
         margin: -30px -30px;
         width: 380px;
         max-width: 380px;
     }
+
     .sobre h1 {
         padding-top: 10px;
         width: auto;
     }
+
     .sobre p {
         font-size: 18px;
         width: 320px;
         padding-bottom: 10px;
     }
+
     .sobre .row {
         padding-bottom: 100px;
     }
+
     .sobre .text-center {
-        text-align: left!important;
+        text-align: left !important;
         padding-bottom: 40px;
     }
 }
@@ -411,7 +416,7 @@ section {
     text-align: left;
     font-size: 28px;
     font-weight: 700;
-    color: #1B1B1B;
+    color: #272727;
     padding-top: 20px;
     padding-bottom: 15px;
     width: 400px;
@@ -421,7 +426,7 @@ section {
     text-align: left;
     font-size: 16px;
     font-weight: 400;
-    color: #1B1B1B;
+    color: #272727;
     width: 400px;
 }
 
@@ -434,10 +439,12 @@ section {
     .voluntariado h1 {
         margin: 0px 30px;
     }
+
     .voluntariado p {
         margin: 0px 30px;
         padding-bottom: 10px;
     }
+
     .voluntariado iframe {
         margin: 0px 30px;
         width: 400px;
@@ -449,10 +456,12 @@ section {
     .voluntariado h1 {
         margin: 0px 30px;
     }
+
     .voluntariado p {
         margin: 0px 30px;
         padding-bottom: 10px;
     }
+
     .voluntariado iframe {
         margin: 0px 30px;
         width: 400px;
@@ -476,14 +485,14 @@ section {
 .criando-seu-case h1 {
     font-size: 28px;
     font-weight: 700;
-    color: #1B1B1B;
+    color: #272727;
     padding-bottom: 15px;
     width: 500px;
 }
 
 .criando-seu-case .text {
     font-size: 16px;
-    color: #1B1B1B;
+    color: #272727;
     margin-bottom: 10px;
     margin-right: 60px;
     font-family: "Nunito", sans-serif;
@@ -523,31 +532,38 @@ section {
         padding-bottom: 10px;
         margin: 0px 30px;
     }
+
     .criando-seu-case .container {
         margin: 0px;
         margin-bottom: 20px;
     }
+
     .criando-seu-case .col {
         margin: 0px 0px;
     }
+
     .criando-seu-case .img-fluid {
         width: 360px;
         max-width: 360px;
     }
+
     .criando-seu-case h1 {
         padding-top: 40px;
         width: 340px;
     }
+
     .criando-seu-case .text {
         font-size: 16px;
         width: 340px;
         padding-bottom: 10px;
     }
+
     .criando-seu-case .row {
         padding-bottom: 20px;
     }
+
     .criando-seu-case .text-center {
-        text-align: left!important;
+        text-align: left !important;
         padding-bottom: 40px;
     }
 }
@@ -575,15 +591,18 @@ section {
         padding-bottom: 10px;
         margin: 0px 30px;
     }
+
     .contato .texto {
         margin-top: -40px;
         font-size: 18px;
         width: 320px;
         padding-bottom: 10px;
     }
+
     .contato .col {
         width: 300px;
     }
+
     .contato img {
         width: 120px;
     }
