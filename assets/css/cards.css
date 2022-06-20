@@ -91,6 +91,14 @@
 }
 
 @media (max-width: 991px) {
+    .hero {
+        padding-bottom: 0px;
+        height: 60vh;
+    }
+
+    .hero .container {
+        padding: 2% 0% 0% 0%;
+    }
 
     .hero h1 {
         text-align: left;
@@ -112,6 +120,24 @@
 
     .hero .text-left {
         margin-top: 30px;
+    }
+
+    .hero .hero-img {
+        margin: 10% 10% -10% 10% !important;
+        margin-left: 15%;
+        text-align: right;
+        width: 70%;
+    }
+
+    .hero .btn-descobrir-cursos {
+        padding: 10px 20px;
+        margin-top: 0px;
+        margin-bottom: -30px;
+    }
+
+    .hero .btn-descobrir-processos {
+        padding: 10px 20px;
+        margin-left: 10px;
     }
 }
 
