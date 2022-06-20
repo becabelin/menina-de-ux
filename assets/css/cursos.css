@@ -3,18 +3,21 @@
 --------------------------------------------------------------*/
 
 .hero {
-    background: linear-gradient(180deg, #1A61A2 0%, #095397 100%);
-    height: 70vh;
+    background: #ebf1fb;
+    padding-bottom: 60px;
+    width: 100%;
+    height: 50vh;
 }
 
 .hero .container {
-    padding-top: 10%;
+    padding: 8% 0% 0% 0%;
 }
 
 .hero h1 {
+    margin: 0;
     font-size: 48px;
     font-weight: 700;
-    color: #f7f7f7;
+    color: #272727;
     font-family: "Goldplay", "Nunito", sans-serif;
     font-style: normal;
     line-height: 125%;
@@ -26,7 +29,7 @@
     font-size: 26px;
     font-weight: 400;
     width: 600px;
-    color: #f7f7f7;
+    color: #272727;
     font-family: "Nunito", sans-serif;
     font-style: normal;
     text-align: center;
@@ -36,7 +39,7 @@
     padding-top: 10px;
     font-size: 16px;
     font-weight: 400;
-    color: #f7f7f7;
+    color: #272727;
     font-family: "Nunito", sans-serif;
     font-style: normal;
     text-align: center;
@@ -53,6 +56,7 @@
         padding: 90px 0px;
         height: 70%;
     }
+
     .hero h1 {
         text-align: center;
         font-size: 36px;
@@ -60,6 +64,7 @@
         width: auto;
         margin: 10px 30px;
     }
+
     .hero h2 {
         padding: 30px 0px;
         text-align: center;
@@ -68,6 +73,7 @@
         width: auto;
         margin: 0px 30px;
     }
+
     .hero p {
         text-align: center;
         margin: 0px 30px;
@@ -86,6 +92,7 @@
     0% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -95,6 +102,7 @@
     0% {
         transform: translateY(10px);
     }
+
     100% {
         transform: translateY(-10px);
     }
@@ -102,57 +110,57 @@
 
 
 /*--------------------------------------------------------------
-# Cursos Section
+# Cursos
 --------------------------------------------------------------*/
 
 .cursos {
-    height: auto;
+    background: #F7F7F7;
+    padding-bottom: 10%;
+}
+
+.cursos .section-title h2 {
+    color: #272727;
+}
+
+.cursos .section-title p {
+    color: #272727;
 }
 
 .cursos .section-title h2::after {
     content: "";
-    width: 120px;
+    width: 90px;
     height: 1px;
     display: inline-block;
-    background: #f7f7f7;
+    background: #272727;
     margin: 4px 10px;
 }
 
 .cursos h2 {
-    color: #E0E0E0;
+    color: #272727;
 }
 
 .cursos .post-box {
     transition: 0.3s;
-    width: 24%;
+    width: 20%;
     height: auto;
     overflow: hidden;
-    padding: 20px;
     margin: 10px;
     border-radius: 10px;
     position: relative;
     display: flex;
     flex-direction: column;
     background: #1A61A2;
-    border: 0.3px solid #DFDFDF;
+    border: 0.3px solid #cbcbcb;
+    padding: 0%;
+    background-color: rgba(247, 247, 247, 0.2);
 }
 
 .cursos .post-box .post-img {
     margin-bottom: 10px;
     overflow: hidden;
     position: relative;
-    border-radius: 10px;
-    width: 100vw;
-    max-width: 100%;
-    background-size: cover;
-}
-
-.cursos .post-box .post-img-none {
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 10px;
-    width: 100vw;
+    border-radius: 8px 0px 0px 0px;
+    width: 100%;
     max-width: 100%;
     background-size: cover;
 }
@@ -164,36 +172,37 @@
 
 .cursos .post-box .post-title {
     font-size: 24px;
-    color: #f7f7f7;
+    color: #272727;
     font-weight: 600;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin: 10px 20px 0px 20px;
     position: relative;
     transition: 0.3s;
     font-family: "Goldplay", "Nunito", sans-serif;
 }
 
 .cursos .description {
-    font-size: 16px;
-    font-weight: 400;
-    margin-bottom: 30px;
-    color: #f7f7f7;
+    font-family: "Montserrat", "Nunito", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0px 20px 20px 20px;
+    color: #272727;
 }
 
 .cursos .post-box .readmore {
     display: flex;
+    margin: 20px 20px;
     align-items: center;
     font-weight: 500;
     line-height: 1;
     transition: 0.3s;
-    color: #f7f7f7
+    color: #272727;
 }
 
 .cursos .post-box .readmore i {
     line-height: 0;
     margin-left: 8px;
     font-size: 16px;
-    color: #f7f7f7
+    color: #272727;
 }
 
 .cursos .post-box:hover .post-img img {
@@ -207,12 +216,66 @@
     flex-direction: column;
 }
 
+.cursos .btn-ver-todos {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0px;
+    padding: 10px 80px;
+    border-radius: 50px;
+    transition: 0.3s;
+    color: #272727;
+    border-radius: 50px;
+    border: #cbcbcb solid 1px;
+    background-color: #ebf1fb;
+    font-family: "Goldplay", "Nunito", sans-serif;
+}
+
+.cursos .btn-ver-todos:hover {
+    color: #272727;
+    background: #F7F7F7;
+    border: #F7F7F7 solid 1px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+}
+
 @media (max-width: 991px) {
     .cursos {
-        padding-top: 80px;
+        padding-top: 40px;
     }
+
+    .cursos .section-title h2 {
+        margin: -10px 30px;
+        width: auto;
+    }
+
+    .cursos .section-title p {
+        margin: 10px 30px;
+        width: auto;
+        margin-bottom: -30px;
+    }
+
     .cursos .post-box {
-        width: 60%;
+        width: auto;
         height: auto;
+    }
+
+    .cursos .row {
+        margin: 0px 60px;
+    }
+
+    .cursos .post-box .img-fluid {
+        width: 100%;
+    }
+
+    .cursos .text-center {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        width: auto;
+    }
+
+    .cursos .btn-ver-todos {
+        padding: 10px 60px;
+        width: 300px;
     }
 }

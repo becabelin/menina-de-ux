@@ -253,7 +253,7 @@ h6 {
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #E16978;
+    color: #1a61a2;
 }
 
 
@@ -279,7 +279,6 @@ section {
     font-size: 14px;
     font-weight: 500;
     padding: 0;
-    line-height: 1px;
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -302,7 +301,7 @@ section {
     font-weight: 650;
     text-transform: uppercase;
     font-family: "Goldplay", "Nunito", sans-serif;
-    color: #E16978;
+    color: #1a61a2;
 }
 
 @media (max-width: 991px) {
@@ -324,8 +323,16 @@ section {
 # Sobre
 --------------------------------------------------------------*/
 
+.sobre .container {
+    margin-bottom: 30px;
+}
+
+.sobre .align-end {
+    margin-left: 30%;
+}
+
 .sobre h1 {
-    font-family: 'Goldplay', 'Avenir LT Std',  sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #272727;
@@ -334,12 +341,13 @@ section {
 
 .sobre p {
     font-family: 'Avenir LT Std', 'Nunito', sans-serif;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 500;
     width: 80%;
     color: #272727;
     font-style: normal;
     text-align: left;
+    margin-bottom: 20px;
 }
 
 .sobre .img-fluid {
@@ -348,8 +356,9 @@ section {
 }
 
 .sobre .btn-quero-apoiar {
+    font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 500;
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 30px;
@@ -360,11 +369,36 @@ section {
     border-radius: 50px;
     text-align: center;
     margin-top: 10px;
+    border: #F7F7F7 solid 1px;
 }
 
 .sobre .btn-quero-apoiar:hover {
     background: #F7F7F7;
     color: #145C9E;
+    border: #145C9E solid 1px;
+}
+
+.sobre .btn-quero-apoiar-2 {
+    font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #145C9E;
+    background: #F7F7F7;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: #145C9E solid 1px;
+}
+
+.sobre .btn-quero-apoiar-2:hover {
+    background: #145C9E;
+    color: #F7F7F7;
 }
 
 @media (max-width: 991px) {
@@ -403,186 +437,55 @@ section {
     }
 }
 
-
-/*--------------------------------------------------------------
-# Voluntariado
---------------------------------------------------------------*/
-
-.voluntariado {
-    margin-top: -30px;
-}
-
-.voluntariado h1 {
-    text-align: left;
-    font-size: 28px;
-    font-weight: 700;
-    color: #272727;
-    padding-top: 20px;
-    padding-bottom: 15px;
-    width: 400px;
-}
-
-.voluntariado p {
-    text-align: left;
-    font-size: 16px;
-    font-weight: 400;
-    color: #272727;
-    width: 400px;
-}
-
-.voluntariado iframe {
-    width: 800px;
-    height: 400px;
-}
-
-@media (max-width: 1084px) {
-    .voluntariado h1 {
-        margin: 0px 30px;
-    }
-
-    .voluntariado p {
-        margin: 0px 30px;
-        padding-bottom: 10px;
-    }
-
-    .voluntariado iframe {
-        margin: 0px 30px;
-        width: 400px;
-        height: 500px;
-    }
-}
-
-@media (max-width: 991px) {
-    .voluntariado h1 {
-        margin: 0px 30px;
-    }
-
-    .voluntariado p {
-        margin: 0px 30px;
-        padding-bottom: 10px;
-    }
-
-    .voluntariado iframe {
-        margin: 0px 30px;
-        width: 400px;
-        height: 500px;
-    }
-}
-
-
-/*--------------------------------------------------------------
-# Criando Seu Case
---------------------------------------------------------------*/
-
-.criando-seu-case {
-    height: auto;
-}
-
-.criando-seu-case .container {
-    margin-bottom: 80px;
-}
-
-.criando-seu-case h1 {
-    font-size: 28px;
-    font-weight: 700;
-    color: #272727;
-    padding-bottom: 15px;
-    width: 500px;
-}
-
-.criando-seu-case .text {
-    font-size: 16px;
-    color: #272727;
-    margin-bottom: 10px;
-    margin-right: 60px;
-    font-family: "Nunito", sans-serif;
-}
-
-.criando-seu-case img {
-    width: 90%;
-    padding-bottom: 20px;
-}
-
-.criando-seu-case .btn-ver-template {
-    margin-top: 10px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    width: 300px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #F7F7F7;
-    background: #E16978;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 50px;
-    text-align: center;
-}
-
-.criando-seu-case .btn-ver-template:hover {
-    background: #F7F7F7;
-    color: #E16978;
-}
-
-@media (max-width: 991px) {
-    .criando-seu-case {
-        padding-top: 20px;
-        padding-bottom: 10px;
-        margin: 0px 30px;
-    }
-
-    .criando-seu-case .container {
-        margin: 0px;
-        margin-bottom: 20px;
-    }
-
-    .criando-seu-case .col {
-        margin: 0px 0px;
-    }
-
-    .criando-seu-case .img-fluid {
-        width: 360px;
-        max-width: 360px;
-    }
-
-    .criando-seu-case h1 {
-        padding-top: 40px;
-        width: 340px;
-    }
-
-    .criando-seu-case .text {
-        font-size: 16px;
-        width: 340px;
-        padding-bottom: 10px;
-    }
-
-    .criando-seu-case .row {
-        padding-bottom: 20px;
-    }
-
-    .criando-seu-case .text-center {
-        text-align: left !important;
-        padding-bottom: 40px;
-    }
-}
-
-
 /*--------------------------------------------------------------
 # Contato
 --------------------------------------------------------------*/
 
-.criando-seu-case .row {
-    margin-bottom: -80px;
+.contato .texto {
+    font-family: 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80%;
+    color: #272727;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: -20px;
 }
 
-.contato .texto {
-    margin-top: -20px;
+.contato .img-fluid {
+    width: 50%;
+    margin-bottom: 30px;
+    margin-left: 30%;
 }
 
 .contato .col {
     margin-left: -12px;
+}
+
+.contato .btn-primary {
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    background-color: #145C9E;
+    width: auto;
+    padding: 10px 20px;
+    border: #F7F7F7 solid 1px;
+    transition: 0.5s;
+    margin: 10px 0px 30px 0px;
+    border-radius: 50px;
+}
+
+.contato .btn-primary:hover {
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    background-color: #F7F7F7;
+    color: #145C9E;
+    width: auto;
+    padding: 10px 20px;
+    border: #145C9E solid 1px;
+    transition: 0.5s;
 }
 
 @media (max-width: 991px) {
@@ -614,13 +517,13 @@ section {
 --------------------------------------------------------------*/
 
 #footer {
-    background: #1a61a2;
+    background: #ebf1fb;
     padding: 0 0 30px 0;
-    color: #f7f7f7;
+    color: #272727;
 }
 
 #footer .copyright {
-    color: #F7F7F7;
+    color: #272727;
     text-align: center;
     padding-top: 30px;
 }
@@ -628,10 +531,10 @@ section {
 #footer .credits {
     padding-top: 10px;
     text-align: center;
-    color: #F7F7F7;
+    color: #272727;
 }
 
 #footer .credits a {
-    color: #F7F7F7;
+    color: #272727;
     font-weight: 700;
 }
