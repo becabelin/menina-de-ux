@@ -323,15 +323,15 @@ section {
 # Sobre
 --------------------------------------------------------------*/
 
-.sobre .container {
+.sobre .container, .telegram .container {
     margin-bottom: 30px;
 }
 
-.sobre .align-end {
+.sobre .align-end, .telegram .align-end {
     margin-left: 30%;
 }
 
-.sobre h1 {
+.sobre h1, .telegram h1 {
     font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -339,7 +339,7 @@ section {
     padding-bottom: 10px;
 }
 
-.sobre p {
+.sobre p, .telegram p {
     font-family: 'Avenir LT Std', 'Nunito', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -350,12 +350,12 @@ section {
     margin-bottom: 20px;
 }
 
-.sobre .img-fluid {
+.sobre .img-fluid, .telegram .img-fluid {
     width: 50%;
     margin-bottom: 30px;
 }
 
-.sobre .btn-quero-apoiar {
+.sobre .btn-quero-apoiar, .telegram .btn-quero-apoiar {
     font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -372,13 +372,13 @@ section {
     border: #F7F7F7 solid 1px;
 }
 
-.sobre .btn-quero-apoiar:hover {
+.sobre .btn-quero-apoiar:hover, .telegram .btn-quero-apoiar:hover {
     background: #F7F7F7;
     color: #145C9E;
     border: #145C9E solid 1px;
 }
 
-.sobre .btn-quero-apoiar-2 {
+.sobre .btn-quero-apoiar-2, .telegram .btn-quero-apoiar-2 {
     font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
     margin-left: 10px;
     font-size: 16px;
@@ -396,42 +396,42 @@ section {
     border: #145C9E solid 1px;
 }
 
-.sobre .btn-quero-apoiar-2:hover {
+.sobre .btn-quero-apoiar-2:hover, .telegram .btn-quero-apoiar-2:hover {
     background: #145C9E;
     color: #F7F7F7;
 }
 
 @media (max-width: 991px) {
-    .sobre {
+    .sobre, .telegram {
         margin: 0px 30px;
     }
 
-    .sobre .btn-quero-apoiar {
+    .sobre .btn-quero-apoiar, .telegram .btn-quero-apoiar {
         width: 300px;
     }
 
-    .sobre .img-fluid {
+    .sobre .img-fluid, .telegram .img-fluid {
         margin: -30px -30px;
         width: 380px;
         max-width: 380px;
     }
 
-    .sobre h1 {
+    .sobre h1, .telegram h1 {
         padding-top: 10px;
         width: auto;
     }
 
-    .sobre p {
+    .sobre p, .telegram p {
         font-size: 18px;
         width: 320px;
         padding-bottom: 10px;
     }
 
-    .sobre .row {
+    .sobre .row, .telegram .row {
         padding-bottom: 100px;
     }
 
-    .sobre .text-center {
+    .sobre .text-center, .telegram .text-center {
         text-align: left !important;
         padding-bottom: 40px;
     }
