@@ -95,7 +95,7 @@ h6 {
 }
 
 #header .logo h1 {
-    font-family: 'Goldplay', sans-serif;
+    font-family: 'Goldplay', 'Nunito', sans-serif;
     font-size: 28px;
     margin: 0;
     padding: 0;
@@ -335,7 +335,7 @@ section {
 
 .sobre h1,
 .telegram h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #272727;
@@ -362,7 +362,7 @@ section {
 
 .sobre .btn-quero-apoiar,
 .telegram .btn-quero-apoiar {
-    font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -387,7 +387,7 @@ section {
 
 .sobre .btn-quero-apoiar-2,
 .telegram .btn-quero-apoiar-2 {
-    font-family: 'Goldplay', 'Avenir LT Std', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
     margin-left: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -514,8 +514,9 @@ section {
     .contato .container {
         padding-top: 20px;
         padding-bottom: 10px;
-        margin: 0px 30px;margin-bottom: -10% !important;
-    }        
+        margin: 0px 30px;
+        margin-bottom: -10% !important;
+    }
 
     .contato {
         margin: -30px 30px;
