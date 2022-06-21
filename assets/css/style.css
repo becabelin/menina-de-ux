@@ -873,3 +873,13 @@ section {
     font-size: 0px;
     margin-bottom: 10px;
 }
+
+@media (max-width: 991px) {
+
+    .posts a{
+        width: 80%;
+        font-size: 0px;
+        margin-bottom: 10px;
+    }
+
+}
