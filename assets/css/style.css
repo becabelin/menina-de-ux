@@ -654,8 +654,13 @@ section {
         margin-bottom: 5px;
     }
 
+    .aulas .btn-primary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
     .aulas .btn-primary:hover {
-        width: 90%;
+        width: 100%;
         margin-bottom: 10px;
     }
 
