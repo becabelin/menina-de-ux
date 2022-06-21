@@ -575,3 +575,57 @@ section {
     color: #272727;
     font-weight: 700;
 }
+
+/*--------------------------------------------------------------
+# Aulas
+--------------------------------------------------------------*/
+.aulas {
+    background-color: #ebf1fb;
+}
+
+.aulas .card {
+    width: 20%;
+    border-radius: 10px;
+}
+
+.aulas .card-body {
+    padding: 0px;
+   padding-bottom: 10px;
+}
+
+.aulas .card-img-top {
+    margin: 10px 0px;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.aulas .card-title {
+    margin-top: 5px;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.aulas .btn-primary {
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    background-color: #145C9E;
+    width: auto;
+    padding: 5px 20px;
+    border: #F7F7F7 solid 1px;
+    transition: 0.5s;
+    margin: 5px 0px 5px 0px;
+    border-radius: 50px;
+}
+
+.aulas .btn-primary:hover {
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    background-color: #F7F7F7;
+    color: #145C9E;
+    width: auto;
+    padding: 5px 20px;
+    border: #145C9E solid 1px;
+    transition: 0.5s;
+}
