@@ -583,14 +583,22 @@ section {
     background-color: #ebf1fb;
 }
 
+.aulas .title {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
 .aulas .card {
     width: 20%;
     border-radius: 10px;
+    margin: 10px;
 }
 
 .aulas .card-body {
     padding: 0px;
-   padding-bottom: 10px;
+    padding-bottom: 10px;
 }
 
 .aulas .card-img-top {
@@ -605,12 +613,17 @@ section {
     font-weight: 600;
 }
 
+.aulas .card-text {
+    font-size: 15px;
+    width: 100%;
+}
+
 .aulas .btn-primary {
     align-items: center;
     text-align: center;
     font-size: 16px;
     background-color: #145C9E;
-    width: auto;
+    width: 100%;
     padding: 5px 20px;
     border: #F7F7F7 solid 1px;
     transition: 0.5s;
@@ -619,13 +632,8 @@ section {
 }
 
 .aulas .btn-primary:hover {
-    align-items: center;
-    text-align: center;
-    font-size: 16px;
     background-color: #F7F7F7;
     color: #145C9E;
-    width: auto;
-    padding: 5px 20px;
     border: #145C9E solid 1px;
     transition: 0.5s;
 }
