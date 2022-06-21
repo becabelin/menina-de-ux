@@ -756,7 +756,8 @@ section {
     background-color: #ebf1fb;
 }
 
-.aulas .title {
+.aulas .title,
+.posts .title {
     font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
     text-align: center;
     font-weight: 700;
@@ -851,4 +852,24 @@ section {
         text-align: left !important;
         padding-bottom: 40px;
     }
+}
+
+/*--------------------------------------------------------------
+# Posts
+--------------------------------------------------------------*/
+.posts {
+    background-color: #F7F7F7;
+    border-bottom: #d9d9d9 solid 1px;
+}
+
+.posts .img-fluid {
+    border-radius: 10px;
+    margin: 20px 0px 5px 5px;
+    padding: 0px;
+}
+
+.posts a{
+    width: 25%;
+    font-size: 0px;
+    margin-bottom: 10px;
 }
