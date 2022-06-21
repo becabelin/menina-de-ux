@@ -663,27 +663,90 @@ section {
 # Footer
 --------------------------------------------------------------*/
 
-#footer {
+.footer {
     background: #ebf1fb;
-    padding: 0 0 30px 0;
-    color: #272727;
+    padding: 10px 0px 0px 10px;
+    font-family: 'Nunito', sans-serif;
 }
 
-#footer .copyright {
-    color: #272727;
+.footer .ods {
+    margin: 40px 0px;
+    border-top: #626262 solid 1px;
+}
+
+.footer .text {
+    font-family: 'Goldplay', 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    color: #111
+}
+
+.footer .text-p {
+    font-family: 'Nunito', sans-serif;
+    margin-top: -5px;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.footer p {
+    font-family: 'Goldplay', 'Nunito', sans-serif;
+    font-weight: 600;
+}
+
+.footer h6 {
+    margin-top: 20px;
+}
+
+.footer .links {
+    font-size: 18px;
+    color: #145C9E;
+    transition: 0.2s;
+}
+
+.footer .links:hover {
+    color: #E16978;
+    transition: 0.2s;
+}
+
+.footer .copyright {
+    color: #111;
     text-align: center;
     padding-top: 30px;
 }
 
-#footer .credits {
+.footer .credits {
     padding-top: 10px;
     text-align: center;
-    color: #272727;
+    color: #111;
 }
 
-#footer .credits a {
-    color: #272727;
+.footer .credits a {
+    color: #111;
     font-weight: 700;
+}
+
+.footer .copyright {
+    background-color: #f2f7ff;
+    color: #111;
+}
+
+.footer .img-fluid {
+    width: 45%;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.footer .text-ods {
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+@media (max-width: 991px) {
+
+    .footer .img-fluid {
+        width: 40%;
+    }
 }
 
 /*--------------------------------------------------------------
