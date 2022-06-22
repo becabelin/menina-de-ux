@@ -216,29 +216,6 @@
     flex-direction: column;
 }
 
-.cursos .btn-ver-todos {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    padding: 10px 80px;
-    border-radius: 50px;
-    transition: 0.3s;
-    color: #272727;
-    border-radius: 50px;
-    border: #cbcbcb solid 1px;
-    background-color: #ebf1fb;
-    font-family: "Goldplay", "Nunito", sans-serif;
-}
-
-.cursos .btn-ver-todos:hover {
-    color: #272727;
-    background: #F7F7F7;
-    border: #F7F7F7 solid 1px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
-}
-
 @media (max-width: 991px) {
     .cursos {
         padding-top: 40px;
@@ -274,8 +251,4 @@
         width: auto;
     }
 
-    .cursos .btn-ver-todos {
-        padding: 10px 60px;
-        width: 300px;
-    }
 }

@@ -53,7 +53,7 @@
     border-radius: 50px;
     transition: 0.5s;
     color: #F7F7F7;
-    background: #145C9E;
+    background: #5096D7;
     border-radius: 50px;
     text-align: center;
     margin-top: 20px;
@@ -61,7 +61,7 @@
 
 .hero .btn-descobrir-cursos:hover {
     background: #F7F7F7;
-    color: #145C9E;
+    color: #5096D7;
 }
 
 .hero .btn-descobrir-processos {
@@ -71,17 +71,17 @@
     padding: 10px 30px;
     border-radius: 50px;
     transition: 0.5s;
-    color: #145C9E;
+    color: #E086B7;
     border-radius: 50px;
     text-align: center;
-    border: #145C9E solid 1px;
+    border: #E086B7 solid 1px;
     margin-left: 10px;
 }
 
 .hero .btn-descobrir-processos:hover {
-    background: #145C9E;
+    background: #E086B7;
     color: #F7F7F7;
-    border: #145C9E solid 1px;
+    border: #E086B7 solid 1px;
 }
 
 @media (min-width: 1024px) {
