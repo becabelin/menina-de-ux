@@ -883,3 +883,102 @@ section {
     }
 
 }
+
+/*--------------------------------------------------------------
+# Em construção
+--------------------------------------------------------------*/
+
+.em-construcao {
+    padding: 120px;
+}
+
+.em-construcao .col-8{
+    padding-left: 60px;
+}
+
+.em-construcao h1 {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 46px;
+    color: #272727;
+    width: 70%;
+}
+
+.em-construcao p {
+    font-size: 20px;
+    padding: 10px 0px;
+    width: 70%;
+}
+
+.em-construcao img {
+    width: 100%;
+}
+
+.em-construcao .btn-voltar-inicio {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #F7F7F7;
+    background: #5096D7;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: #F7F7F7 solid 1px;
+}
+
+.em-construcao .btn-voltar-inicio:hover {
+    background: #F7F7F7;
+    color: #5096D7;
+    border: #F7F7F7 solid 1px;
+}
+
+@media (max-width: 1350px) {
+    .em-construcao {
+        padding: 140px 0px;
+    }
+}
+
+@media (max-width: 980px) {
+    .em-construcao {
+        padding: 60px 20px;
+    }
+
+    .em-construcao h1 {
+        font-family: 'Nunito', sans-serif;
+        font-weight: 700;
+        font-size: 28px;
+        line-height: 40px;
+        width: 100%;
+        color: #111111;
+        padding-top: 60px;
+    }
+
+    .em-construcao img {
+        width: 100%;
+    }
+
+    .em-construcao .col{
+        width: 0px;
+        position: absolute;
+    }
+
+    .em-construcao .col-8{
+        padding-left: 0px;
+        padding: 0px;
+    }
+
+    .em-construcao p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .em-construcao .btn-voltar-inicio{
+        margin-left: -50px;
+    }
+}
