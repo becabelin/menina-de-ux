@@ -1087,7 +1087,7 @@ section {
     }
 
     .conteudos .img-fluid {
-        margin: -10px -20px;
+        margin: -20px 0px -60px 0px;
         width: 100%;
         max-width: 100%;
     }
