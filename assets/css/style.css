@@ -1068,7 +1068,7 @@ section {
     margin-bottom: 30px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1084px) {
 
     .conteudos .container {
         margin-bottom: -10% !important;
