@@ -29,12 +29,16 @@
     text-align: right;
 }
 
+.hero .hero-img img {
+    border-radius: 20px;
+}
+
 .hero p {
     font-family: 'Avenir LT Std', 'Nunito', sans-serif;
     padding: 30px 0px 0px 0px;
     font-size: 20px;
     font-weight: 500;
-    width: 100%;
+    width: 90%;
     color: #272727;
     font-style: normal;
     text-align: left;

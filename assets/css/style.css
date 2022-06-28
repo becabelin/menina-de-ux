@@ -757,11 +757,13 @@ section {
 }
 
 .aulas .title,
-.posts .title {
+.posts .title,
+.conteudos .title {
     font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
     text-align: center;
     font-weight: 700;
     margin: 20px 0px;
+    width: 100%;
 }
 
 .aulas .card {
@@ -868,7 +870,7 @@ section {
     padding: 0px;
 }
 
-.posts a{
+.posts a {
     width: 25%;
     font-size: 0px;
     margin-bottom: 10px;
@@ -876,7 +878,7 @@ section {
 
 @media (max-width: 991px) {
 
-    .posts a{
+    .posts a {
         width: 80%;
         font-size: 0px;
         margin-bottom: 10px;
@@ -892,7 +894,7 @@ section {
     padding: 120px;
 }
 
-.em-construcao .col-8{
+.em-construcao .col-8 {
     padding-left: 60px;
 }
 
@@ -963,12 +965,12 @@ section {
         width: 100%;
     }
 
-    .em-construcao .col{
+    .em-construcao .col {
         width: 0px;
         position: absolute;
     }
 
-    .em-construcao .col-8{
+    .em-construcao .col-8 {
         padding-left: 0px;
         padding: 0px;
     }
@@ -978,7 +980,135 @@ section {
         width: 100%;
     }
 
-    .em-construcao .btn-voltar-inicio{
+    .em-construcao .btn-voltar-inicio {
         margin-left: -50px;
     }
 }
+
+/*--------------------------------------------------------------
+# Conteúdos
+--------------------------------------------------------------*/
+
+.conteudos .conteudo {
+    border: #d9d9d9 solid 1px;
+    padding: 20px 20px 0px 20px;
+    border-radius: 20px;
+    background-color: #F7F7F7;
+    margin: 10px 0px 30px 0px;
+    height: auto;
+    box-shadow: #dfdfdf 0px 0px 10px;
+}
+
+.conteudos h1 {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    color: #272727;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.conteudos p {
+    font-family: 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    width: 80%;
+    color: #272727;
+    font-style: normal;
+    text-align: left;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.conteudos .img-fluid {
+    width: 60%;
+    margin-left: 30%;
+    margin-bottom: 10px;
+}
+
+.conteudos .btn-quero-apoiar {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #F7F7F7;
+    background: #5096D7;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: #F7F7F7 solid 1px;
+    margin-bottom: 30px;
+}
+
+.conteudos .btn-quero-apoiar:hover {
+    background: #F7F7F7;
+    color: #5096D7;
+    border: #5096D7 solid 1px;
+}
+
+.conteudos .btn-em-breve {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 10px 60px;
+    border-radius: 50px;
+    transition: 0.5s;
+    color: #4f4f4f;
+    background: #d5d5d5;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    border: #F7F7F7 solid 1px;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 991px) {
+
+    .conteudos .container {
+        margin-bottom: -10% !important;
+    }
+
+    .conteudos {
+        margin: 0px 30px;
+    }
+
+    .conteudos .btn-quero-apoiar {
+        width: 300px;
+    }
+
+    .conteudos .img-fluid {
+        margin: -10px -20px;
+        width: 360px;
+        max-width: 360px;
+    }
+
+    .conteudos h1 {
+        padding-top: 10px;
+        width: auto;
+    }
+
+    .conteudos p {
+        font-size: 18px;
+        width: 320px;
+        padding-bottom: 10px;
+    }
+
+    .conteudos .row {
+        padding-bottom: 100px;
+    }
+
+    .conteudos .text-center {
+        text-align: left !important;
+        padding-bottom: 40px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Apoie
+--------------------------------------------------------------*/
