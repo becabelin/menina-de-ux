@@ -27,7 +27,6 @@ h6 {
     font-family: 'Poppins', sans-serif;
 }
 
-
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -419,12 +418,12 @@ section {
         font-size: 30px;
         padding-top: 10px;
         padding-bottom: 20px;
-        width: 320px;
+        width: 100vw;
     }
 
     .section-title h2 {
         font-size: 15px;
-        width: 320px;
+        width: 100vw;
     }
 }
 
@@ -434,7 +433,6 @@ section {
 --------------------------------------------------------------*/
 
 .sobre .container,
-.telegram .container,
 .apoie .container {
     margin-bottom: 30px;
 }
@@ -529,7 +527,7 @@ section {
     color: #F7F7F7;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1084px) {
 
     .sobre .container,
     .telegram .container,
@@ -540,35 +538,43 @@ section {
     .sobre,
     .telegram,
     .apoie {
-        margin: 0px 30px;
+        margin: 0px 20px !important;
     }
 
     .sobre .btn-quero-apoiar,
     .telegram .btn-quero-apoiar,
     .apoie .btn-quero-apoiar {
-        width: 300px;
+        width: 80vw;
+        font-size: 14px;
+    }
+
+    .sobre .btn-quero-apoiar-2,
+    .telegram .btn-quero-apoiar-2,
+    .apoie .btn-quero-apoiar-2 {
+        width: 70vw;
+        font-size: 14px;
     }
 
     .sobre .img-fluid,
     .telegram .img-fluid,
     .apoie .img-fluid {
-        margin: -10px -20px;
-        width: 360px;
-        max-width: 360px;
+        margin: -10px 0px;
+        width: 80vw;
+        max-width: 90vw;
     }
 
     .sobre h1,
     .telegram h1,
     .apoie h1 {
-        padding-top: 10px;
-        width: auto;
+        padding-top: 20px;
+        width: 80vw;
     }
 
     .sobre p,
     .telegram p,
     .apoie p {
         font-size: 18px;
-        width: 320px;
+        width: 80vw;
         padding-bottom: 10px;
     }
 
@@ -642,23 +648,18 @@ section {
     }
 
     .contato {
-        margin: -30px 30px;
+        margin: -40px 0px;
     }
 
     .contato .btn-primary {
-        width: 90%;
-        margin-bottom: 10px;
-    }
-
-    .contato .btn-primary:hover {
-        width: 90%;
+        width: 80%;
         margin-bottom: 10px;
     }
 
     .contato .img-fluid {
         margin: 10px -20px -20px -20px !important;
-        width: 360px;
-        max-width: 360px;
+        width: 90vw;
+        max-width: 90vw;
     }
 
     .contato .row {
@@ -839,24 +840,19 @@ section {
     }
 
     .aulas .card {
-        width: 80%;
+        width: 100vw;
         margin-bottom: 5px;
     }
 
     .aulas .btn-primary {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .aulas .btn-primary:hover {
-        width: 100%;
+        width: 100vw;
         margin-bottom: 10px;
     }
 
     .aulas .img-fluid {
         margin: 10px -20px -20px -20px !important;
-        width: 360px;
-        max-width: 360px;
+        width: 100vw;
+        max-width: 100vw;
     }
 
     .aulas .row {
@@ -891,7 +887,7 @@ section {
 @media (max-width: 991px) {
 
     .posts a {
-        width: 80%;
+        width: 100vw;
         font-size: 0px;
         margin-bottom: 10px;
     }
@@ -916,13 +912,13 @@ section {
     font-size: 36px;
     line-height: 46px;
     color: #272727;
-    width: 70%;
+    width: 100vw;
 }
 
 .em-construcao p {
     font-size: 20px;
     padding: 10px 0px;
-    width: 70%;
+    width: 100vw;
 }
 
 .em-construcao img {
@@ -960,7 +956,7 @@ section {
 
 @media (max-width: 980px) {
     .em-construcao {
-        padding: 60px 20px;
+        padding: 60px 0px;
     }
 
     .em-construcao h1 {
@@ -968,13 +964,13 @@ section {
         font-weight: 700;
         font-size: 28px;
         line-height: 40px;
-        width: 100%;
+        width: 100vw;
         color: #111111;
         padding-top: 60px;
     }
 
     .em-construcao img {
-        width: 100%;
+        width: 100vw;
     }
 
     .em-construcao .col {
@@ -989,11 +985,12 @@ section {
 
     .em-construcao p {
         font-size: 18px;
-        width: 100%;
+        width: 100vw;
     }
 
     .em-construcao .btn-voltar-inicio {
         margin-left: -50px;
+        font-size: 14px;
     }
 }
 
@@ -1003,7 +1000,7 @@ section {
 
 .conteudos .conteudo {
     border: #d9d9d9 solid 1px;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 0px 0px 0px;
     border-radius: 20px;
     background-color: #F7F7F7;
     margin: 10px 0px 30px 0px;
@@ -1095,13 +1092,18 @@ section {
     }
 
     .conteudos .btn-quero-apoiar {
-        width: 100%;
+        font-size: 14px;
+        width: 80vw;
+    }
+
+    .conteudos .btn-em-breve {
+        width: 80vw;
     }
 
     .conteudos .img-fluid {
         margin: -20px 0px -60px 0px;
-        width: 100%;
-        max-width: 100%;
+        width: 80vw;
+        max-width: 80vw;
     }
 
     .conteudos h1 {
@@ -1126,10 +1128,39 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Apoieg
+# Apoie
 --------------------------------------------------------------*/
 
 .apoie {
     border-bottom: #d9d9d9 solid 1px;
     border-top: #d9d9d9 solid 1px;
+    margin: 0px;
+    padding: 0px 0px;
+}
+
+@media (max-width: 1084px) {
+
+    .apoie .img-fluid {
+        margin-top: 20px;
+    }
+
+    .apoie {
+        margin-bottom: 0px !important;
+        margin: 0px !important;
+        padding: 0px 20px !important;
+    }
+
+    .apoie .text-center {
+        margin-bottom: -60px !important;
+    }
+}
+
+/*--------------------------------------------------------------
+# Telegram
+--------------------------------------------------------------*/
+@media (max-width: 1084px) {
+
+    .telegram .container {
+        margin-bottom: -70px !important;
+    }
 }
