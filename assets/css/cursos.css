@@ -18,7 +18,7 @@
     font-size: 48px;
     font-weight: 700;
     color: #272727;
-    font-family: "Goldplay", "Nunito", sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-style: normal;
     line-height: 125%;
     text-align: center;
@@ -30,7 +30,7 @@
     font-weight: 400;
     width: 600px;
     color: #272727;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: center;
 }
@@ -40,7 +40,7 @@
     font-size: 16px;
     font-weight: 400;
     color: #272727;
-    font-family: "Nunito", sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: center;
 }
@@ -177,11 +177,11 @@
     margin: 10px 20px 10px 20px;
     position: relative;
     transition: 0.3s;
-    font-family: "Goldplay", "Nunito", sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
 }
 
 .cursos .description {
-    font-family: "Montserrat", "Nunito", sans-serif;
+    font-family: "Montserrat", 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 500;
     margin: 0px 20px 20px 20px;

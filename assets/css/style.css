@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 body {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #272727;
     background-color: #f7f7f7;
 }
@@ -24,7 +24,7 @@ h1,
 h4,
 h5,
 h6 {
-    font-family: "Nunito", sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -95,7 +95,7 @@ h6 {
 }
 
 #header .logo h1 {
-    font-family: 'Goldplay', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 28px;
     margin: 0;
     padding: 0;
@@ -143,7 +143,7 @@ h6 {
     padding: 10px 0 10px 30px;
     font-size: 16px;
     font-weight: 600;
-    font-family: "Goldplay", "Nunito", sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     color: rgba(39, 39, 39, 0.7);
     white-space: nowrap;
     transition: 0.3s;
@@ -393,7 +393,7 @@ section {
     letter-spacing: 2px;
     text-transform: uppercase;
     color: #272727;
-    font-family: "Goldplay", "Nunito", sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
 }
 
 .section-title h2::after {
@@ -410,7 +410,7 @@ section {
     font-size: 36px;
     font-weight: 650;
     text-transform: uppercase;
-    font-family: "Goldplay", "Nunito", sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     color: #272727;
 }
 
@@ -434,18 +434,21 @@ section {
 --------------------------------------------------------------*/
 
 .sobre .container,
-.telegram .container {
+.telegram .container,
+.apoie .container {
     margin-bottom: 30px;
 }
 
 .sobre .align-end,
-.telegram .align-end {
+.telegram .align-end,
+.apoie .align-end {
     margin-left: 30%;
 }
 
 .sobre h1,
-.telegram h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+.telegram h1,
+.apoie h1 {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #272727;
@@ -453,8 +456,9 @@ section {
 }
 
 .sobre p,
-.telegram p {
-    font-family: 'Avenir LT Std', 'Nunito', sans-serif;
+.telegram p,
+.apoie p {
+    font-family: 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
     width: 80%;
@@ -465,14 +469,16 @@ section {
 }
 
 .sobre .img-fluid,
-.telegram .img-fluid {
+.telegram .img-fluid,
+.apoie .img-fluid {
     width: 50%;
     margin-bottom: 30px;
 }
 
 .sobre .btn-quero-apoiar,
-.telegram .btn-quero-apoiar {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+.telegram .btn-quero-apoiar,
+.apoie .btn-quero-apoiar {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -489,15 +495,17 @@ section {
 }
 
 .sobre .btn-quero-apoiar:hover,
-.telegram .btn-quero-apoiar:hover {
-    background: #F7F7F7;
+.telegram .btn-quero-apoiar:hover,
+.apoie .btn-quero-apoiar:hover {
+    background: none;
     color: #5096D7;
     border: #5096D7 solid 1px;
 }
 
 .sobre .btn-quero-apoiar-2,
-.telegram .btn-quero-apoiar-2 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+.telegram .btn-quero-apoiar-2,
+.apoie .btn-quero-apoiar-2 {
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     margin-left: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -507,7 +515,7 @@ section {
     border-radius: 50px;
     transition: 0.5s;
     color: #E086B7;
-    background: #F7F7F7;
+    background: none;
     border-radius: 50px;
     text-align: center;
     margin-top: 10px;
@@ -515,7 +523,8 @@ section {
 }
 
 .sobre .btn-quero-apoiar-2:hover,
-.telegram .btn-quero-apoiar-2:hover {
+.telegram .btn-quero-apoiar-2:hover,
+.apoie .btn-quero-apoiar-2:hover {
     background: #E086B7;
     color: #F7F7F7;
 }
@@ -523,47 +532,55 @@ section {
 @media (max-width: 991px) {
 
     .sobre .container,
-    .telegram .container {
+    .telegram .container,
+    .apoie .container {
         margin-bottom: -10% !important;
     }
 
     .sobre,
-    .telegram {
+    .telegram,
+    .apoie {
         margin: 0px 30px;
     }
 
     .sobre .btn-quero-apoiar,
-    .telegram .btn-quero-apoiar {
+    .telegram .btn-quero-apoiar,
+    .apoie .btn-quero-apoiar {
         width: 300px;
     }
 
     .sobre .img-fluid,
-    .telegram .img-fluid {
+    .telegram .img-fluid,
+    .apoie .img-fluid {
         margin: -10px -20px;
         width: 360px;
         max-width: 360px;
     }
 
     .sobre h1,
-    .telegram h1 {
+    .telegram h1,
+    .apoie h1 {
         padding-top: 10px;
         width: auto;
     }
 
     .sobre p,
-    .telegram p {
+    .telegram p,
+    .apoie p {
         font-size: 18px;
         width: 320px;
         padding-bottom: 10px;
     }
 
     .sobre .row,
-    .telegram .row {
+    .telegram .row,
+    .apoie .row {
         padding-bottom: 100px;
     }
 
     .sobre .text-center,
-    .telegram .text-center {
+    .telegram .text-center,
+    .apoie .text-center {
         text-align: left !important;
         padding-bottom: 40px;
     }
@@ -574,7 +591,7 @@ section {
 --------------------------------------------------------------*/
 
 .contato .texto {
-    font-family: 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
     width: 80%;
@@ -596,27 +613,23 @@ section {
 }
 
 .contato .btn-primary {
+    font-family: 'Poppins', sans-serif;
     align-items: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     background-color: #5096D7;
     width: auto;
     padding: 10px 20px;
-    border: #F7F7F7 solid 1px;
+    border: #5096D7 solid 1px;
     transition: 0.5s;
-    margin: 10px 0px 30px 0px;
+    margin: 10px 10px 30px 0px;
     border-radius: 50px;
 }
 
 .contato .btn-primary:hover {
-    align-items: center;
-    text-align: center;
-    font-size: 20px;
     background-color: #F7F7F7;
     color: #E086B7;
-    width: auto;
-    padding: 10px 20px;
-    border: #F7F7F7 solid 1px;
+    border: #E086B7 solid 1px;
     transition: 0.5s;
 }
 
@@ -666,7 +679,7 @@ section {
 .footer {
     background: #E7F0FF;
     padding: 10px 0px 0px 10px;
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .footer .ods {
@@ -675,21 +688,21 @@ section {
 }
 
 .footer .text {
-    font-family: 'Goldplay', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 40px;
     color: #111
 }
 
 .footer .text-p {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin-top: -5px;
     font-weight: 700;
     font-size: 20px;
 }
 
 .footer p {
-    font-family: 'Goldplay', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -759,7 +772,7 @@ section {
 .aulas .title,
 .posts .title,
 .conteudos .title {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     text-align: center;
     font-weight: 700;
     margin: 20px 0px;
@@ -787,7 +800,7 @@ section {
 
 .aulas .card-title {
     margin-top: 5px;
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -861,7 +874,6 @@ section {
 --------------------------------------------------------------*/
 .posts {
     background-color: #F7F7F7;
-    border-bottom: #d9d9d9 solid 1px;
 }
 
 .posts .img-fluid {
@@ -899,7 +911,7 @@ section {
 }
 
 .em-construcao h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 36px;
     line-height: 46px;
@@ -918,7 +930,7 @@ section {
 }
 
 .em-construcao .btn-voltar-inicio {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -952,7 +964,7 @@ section {
     }
 
     .em-construcao h1 {
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-weight: 700;
         font-size: 28px;
         line-height: 40px;
@@ -1000,7 +1012,7 @@ section {
 }
 
 .conteudos h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #272727;
@@ -1009,7 +1021,7 @@ section {
 }
 
 .conteudos p {
-    font-family: 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
     width: 80%;
@@ -1027,7 +1039,7 @@ section {
 }
 
 .conteudos .btn-quero-apoiar {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1051,7 +1063,7 @@ section {
 }
 
 .conteudos .btn-em-breve {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Nunito', sans-serif;
+    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1074,7 +1086,7 @@ section {
         margin-bottom: -10% !important;
     }
 
-    .conteudos .title{
+    .conteudos .title {
         margin-bottom: -70px;
     }
 
@@ -1114,5 +1126,10 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Apoie
+# Apoieg
 --------------------------------------------------------------*/
+
+.apoie {
+    border-bottom: #d9d9d9 solid 1px;
+    border-top: #d9d9d9 solid 1px;
+}
