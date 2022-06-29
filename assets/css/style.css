@@ -1147,6 +1147,7 @@ section {
     border-top: #d9d9d9 solid 1px;
     margin: 0px;
     padding: 0px 0px;
+    padding-top: 50px;
 }
 
 @media (max-width: 1084px) {
