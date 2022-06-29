@@ -551,8 +551,9 @@ section {
     .sobre .btn-quero-apoiar-2,
     .telegram .btn-quero-apoiar-2,
     .apoie .btn-quero-apoiar-2 {
-        width: 70vw;
+        width: 80vw;
         font-size: 14px;
+        margin-left: 0px;
     }
 
     .sobre .img-fluid,
@@ -1089,6 +1090,7 @@ section {
 
     .conteudos {
         margin: 0px 10px;
+        margin-bottom: 30px;
     }
 
     .conteudos .btn-quero-apoiar {

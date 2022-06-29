@@ -127,10 +127,10 @@
     }
 
     .hero .hero-img {
-        margin: 10% 10% -10% 10% !important;
-        margin-left: 15%;
+        margin-top: 50px !important;
+        margin-bottom: -20px;
         text-align: right;
-        width: 70%;
+        width: 100%;
     }
 
     .hero .btn-descobrir-cursos {
@@ -142,8 +142,8 @@
 
     .hero .btn-descobrir-processos {
         padding: 10px 40px;
-        margin-left: 10px;
-        width: 80vw;
+        margin-left: 0px;
+        width: 100vw;
     }
 }
 
@@ -185,7 +185,7 @@
     }
 
     .hero .hero-img img {
-        width: 80%;
+        width: 100%;
     }
 
     .hero .text-center {
@@ -382,6 +382,6 @@
 
     .cursos .btn-ver-todos {
         padding: 10px 60px;
-        width: 300px;
+        width: 90vw;
     }
 }
