@@ -10,7 +10,7 @@
 }
 
 .hero .container {
-    padding: 8% 0% 0% 0%;
+    padding: 7% 0% 0% 0%;
 }
 
 .hero h1 {
@@ -128,9 +128,10 @@
 
     .hero .hero-img {
         margin-top: 50px !important;
-        margin-bottom: -20px;
+        margin-bottom: -10px;
         text-align: right;
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
     }
 
     .hero .btn-descobrir-cursos {

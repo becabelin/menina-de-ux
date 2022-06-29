@@ -376,7 +376,7 @@ section {
 }
 
 .section-bg {
-    background-color: #f5f5ff;
+    background-color: #F7F7F7;
 }
 
 .section-title {
@@ -427,25 +427,50 @@ section {
     }
 }
 
+/*--------------------------------------------------------------
+# Breadcrumb
+--------------------------------------------------------------*/
+.breadcrumb {
+    margin: 20px 0px;
+}
+
+.breadcrumb .breadcrumb-item a {
+    color: #E086B7;
+    transition: 0.5s;
+}
+
+.breadcrumb .breadcrumb-item a:hover {
+    color: #145C9E;
+    transition: 0.5s;
+}
+
+@media (max-width: 991px) {
+    .breadcrumb {
+        margin: -40px 30px 20px 30px;
+    }
+}
 
 /*--------------------------------------------------------------
 # Sobre
 --------------------------------------------------------------*/
 
 .sobre .container,
-.apoie .container {
+.apoie .container,
+.em-construcao .container {
     margin-bottom: 30px;
 }
 
 .sobre .align-end,
 .telegram .align-end,
-.apoie .align-end {
+.apoie .align-end,
+.em-construcao .align-end {
     margin-left: 30%;
 }
 
 .sobre h1,
 .telegram h1,
-.apoie h1 {
+.apoie h1,
+.em-construcao h1 {
     font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
@@ -455,7 +480,8 @@ section {
 
 .sobre p,
 .telegram p,
-.apoie p {
+.apoie p,
+.em-construcao p {
     font-family: 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
@@ -468,7 +494,8 @@ section {
 
 .sobre .img-fluid,
 .telegram .img-fluid,
-.apoie .img-fluid {
+.apoie .img-fluid,
+.em-construcao .img-fluid {
     width: 50%;
     margin-bottom: 30px;
 }
@@ -531,14 +558,20 @@ section {
 
     .sobre .container,
     .telegram .container,
-    .apoie .container {
-        margin-bottom: -10% !important;
+    .apoie .container,
+    .em-construcao .container {
+        margin-bottom: -20% !important;
+    }
+
+    .sobre .col {
+        margin: 0px 20px;
     }
 
     .sobre,
     .telegram,
-    .apoie {
-        margin: 0px 20px !important;
+    .apoie,
+    .em-construcao {
+        margin: 0px !important;
     }
 
     .sobre .btn-quero-apoiar,
@@ -558,7 +591,8 @@ section {
 
     .sobre .img-fluid,
     .telegram .img-fluid,
-    .apoie .img-fluid {
+    .apoie .img-fluid,
+    .em-construcao .img-fluid {
         margin: -10px 0px;
         width: 80vw;
         max-width: 90vw;
@@ -566,14 +600,16 @@ section {
 
     .sobre h1,
     .telegram h1,
-    .apoie h1 {
+    .apoie h1,
+    .em-construcao h1 {
         padding-top: 20px;
-        width: 80vw;
+        width: 100%;
     }
 
     .sobre p,
     .telegram p,
-    .apoie p {
+    .apoie p,
+    .em-construcao p {
         font-size: 18px;
         width: 80vw;
         padding-bottom: 10px;
@@ -581,13 +617,15 @@ section {
 
     .sobre .row,
     .telegram .row,
-    .apoie .row {
+    .apoie .row,
+    .em-construcao .row {
         padding-bottom: 100px;
     }
 
     .sobre .text-center,
     .telegram .text-center,
-    .apoie .text-center {
+    .apoie .text-center,
+    .em-construcao .text-center {
         text-align: left !important;
         padding-bottom: 40px;
     }
@@ -798,6 +836,9 @@ section {
     margin: 10px 0px;
     border-radius: 10px;
     width: 100%;
+    height: 15vh;
+    background-size: cover;
+    object-fit: fill;
 }
 
 .aulas .card-title {
@@ -833,7 +874,7 @@ section {
 @media (max-width: 991px) {
 
     .aulas {
-        padding-bottom: -50px;
+        margin-bottom: -80px;
     }
 
     .aulas .title {
@@ -841,13 +882,17 @@ section {
     }
 
     .aulas .card {
-        width: 100vw;
+        width: 80vw;
         margin-bottom: 5px;
     }
 
     .aulas .btn-primary {
-        width: 100vw;
+        width: 100%;
         margin-bottom: 10px;
+    }
+
+    .aulas .card-img-top {
+        height: auto;
     }
 
     .aulas .img-fluid {
@@ -893,6 +938,13 @@ section {
         margin-bottom: 10px;
     }
 
+    .posts .img-fluid {
+        width: 100%;
+        border-radius: 30px;
+        margin: 10px 0px;
+        padding: 0px;
+    }
+
 }
 
 /*--------------------------------------------------------------
@@ -901,29 +953,6 @@ section {
 
 .em-construcao {
     padding: 120px;
-}
-
-.em-construcao .col-8 {
-    padding-left: 60px;
-}
-
-.em-construcao h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 46px;
-    color: #272727;
-    width: 100vw;
-}
-
-.em-construcao p {
-    font-size: 20px;
-    padding: 10px 0px;
-    width: 100vw;
-}
-
-.em-construcao img {
-    width: 100%;
 }
 
 .em-construcao .btn-voltar-inicio {
@@ -957,41 +986,13 @@ section {
 
 @media (max-width: 980px) {
     .em-construcao {
-        padding: 60px 0px;
-    }
-
-    .em-construcao h1 {
-        font-family: 'Poppins', sans-serif;
-        font-weight: 700;
-        font-size: 28px;
-        line-height: 40px;
-        width: 100vw;
-        color: #111111;
-        padding-top: 60px;
-    }
-
-    .em-construcao img {
-        width: 100vw;
-    }
-
-    .em-construcao .col {
-        width: 0px;
-        position: absolute;
-    }
-
-    .em-construcao .col-8 {
-        padding-left: 0px;
-        padding: 0px;
-    }
-
-    .em-construcao p {
-        font-size: 18px;
-        width: 100vw;
+        padding: 100px 20px 0px 0px;
     }
 
     .em-construcao .btn-voltar-inicio {
-        margin-left: -50px;
+        margin-left: 0px;
         font-size: 14px;
+        width: auto;
     }
 }
 
