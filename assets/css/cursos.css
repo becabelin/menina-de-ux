@@ -17,7 +17,7 @@
     margin: 0;
     font-size: 48px;
     font-weight: 700;
-    color: #272727;
+    color: #222A68;
     font-family: 'Goldplay', 'Poppins', sans-serif;
     font-style: normal;
     line-height: 125%;
@@ -29,7 +29,7 @@
     font-size: 26px;
     font-weight: 400;
     width: 600px;
-    color: #272727;
+    color: #222A68;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: center;
@@ -39,7 +39,7 @@
     padding-top: 10px;
     font-size: 16px;
     font-weight: 400;
-    color: #272727;
+    color: #222A68;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
     text-align: center;
@@ -119,11 +119,11 @@
 }
 
 .cursos .section-title h2 {
-    color: #272727;
+    color: #222A68;
 }
 
 .cursos .section-title p {
-    color: #272727;
+    color: #222A68;
 }
 
 .cursos .section-title h2::after {
@@ -131,12 +131,12 @@
     width: 90px;
     height: 1px;
     display: inline-block;
-    background: #272727;
+    background: #222A68;
     margin: 4px 10px;
 }
 
 .cursos h2 {
-    color: #272727;
+    color: #222A68;
 }
 
 .cursos .post-box {
@@ -149,7 +149,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #145C9E;
+    background: #222A68;
     border: 0.3px solid #cbcbcb;
     padding: 0%;
     background-color: rgba(247, 247, 247, 0.2);
@@ -172,7 +172,7 @@
 
 .cursos .post-box .post-title {
     font-size: 24px;
-    color: #272727;
+    color: #222A68;
     font-weight: 600;
     margin: 10px 20px 10px 20px;
     position: relative;
@@ -185,7 +185,7 @@
     font-size: 14px;
     font-weight: 500;
     margin: 0px 20px 20px 20px;
-    color: #272727;
+    color: #222A68;
 }
 
 .cursos .post-box .readmore {
@@ -195,14 +195,14 @@
     font-weight: 500;
     line-height: 1;
     transition: 0.3s;
-    color: #272727;
+    color: #222A68;
 }
 
 .cursos .post-box .readmore i {
     line-height: 0;
     margin-left: 8px;
     font-size: 16px;
-    color: #272727;
+    color: #222A68;
 }
 
 .cursos .post-box:hover .post-img img {

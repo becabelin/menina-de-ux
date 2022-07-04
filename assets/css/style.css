@@ -4,7 +4,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
-    color: #272727;
+    color: #222A68;
     background-color: #f7f7f7;
 }
 
@@ -104,7 +104,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #272727;
+    color: #222A68;
     text-decoration: none;
 }
 
@@ -179,7 +179,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-    color: #272727;
+    color: #222A68;
 }
 
 .navbar .dropdown ul {
@@ -208,7 +208,7 @@ h6 {
     font-size: 16px;
     font-weight: 600;
     text-transform: none;
-    color: #272727;
+    color: #222A68;
 }
 
 .navbar .dropdown ul a i {
@@ -218,7 +218,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>a {
-    color: #145C9E;
+    color: #222A68;
 }
 
 .navbar .dropdown:hover>ul {
@@ -256,7 +256,7 @@ h6 {
 */
 
 .mobile-nav-toggle {
-    color: #272727;
+    color: #222A68;
     font-size: 28px;
     cursor: pointer;
     display: none;
@@ -281,7 +281,7 @@ h6 {
     right: 0;
     left: 0;
     bottom: 0;
-    background: #145C9E;
+    background: #222A68;
     transition: 0.3s;
     z-index: 999;
 }
@@ -314,13 +314,13 @@ h6 {
 .navbar-mobile a:focus {
     padding: 10px 20px;
     font-size: 15px;
-    color: #145C9E;
+    color: #222A68;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-    color: #145C9E;
+    color: #222A68;
 }
 
 .navbar-mobile .dropdown ul,
@@ -357,7 +357,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>a {
-    color: #145C9E;
+    color: #222A68;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
@@ -391,7 +391,7 @@ section {
     margin: 0 0 5px 0;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #272727;
+    color: #222A68;
     font-family: 'Goldplay', 'Poppins', sans-serif;
 }
 
@@ -400,7 +400,7 @@ section {
     width: 90px;
     height: 1px;
     display: inline-block;
-    background: #272727;
+    background: #222A68;
     margin: 4px 10px;
 }
 
@@ -410,7 +410,7 @@ section {
     font-weight: 650;
     text-transform: uppercase;
     font-family: 'Goldplay', 'Poppins', sans-serif;
-    color: #272727;
+    color: #222A68;
 }
 
 @media (max-width: 991px) {
@@ -440,7 +440,7 @@ section {
 }
 
 .breadcrumb .breadcrumb-item a:hover {
-    color: #145C9E;
+    color: #222A68;
     transition: 0.5s;
 }
 
@@ -474,7 +474,7 @@ section {
     font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
-    color: #272727;
+    color: #222A68;
     padding-bottom: 10px;
 }
 
@@ -486,7 +486,7 @@ section {
     font-size: 18px;
     font-weight: 500;
     width: 80%;
-    color: #272727;
+    color: #222A68;
     font-style: normal;
     text-align: left;
     margin-bottom: 20px;
@@ -640,7 +640,7 @@ section {
     font-size: 18px;
     font-weight: 500;
     width: 80%;
-    color: #272727;
+    color: #222A68;
     font-style: normal;
     text-align: left;
     margin-bottom: 20px;
@@ -731,14 +731,14 @@ section {
     font-family: 'Goldplay', 'Poppins', sans-serif;
     font-weight: 700;
     font-size: 40px;
-    color: #111
+    color: #222A68
 }
 
 .footer .text-p {
     font-family: 'Poppins', sans-serif;
     margin-top: -5px;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 500;
+    font-size: 18px;
 }
 
 .footer p {
@@ -752,7 +752,7 @@ section {
 
 .footer .links {
     font-size: 18px;
-    color: #145C9E;
+    color: #222A68;
     transition: 0.2s;
 }
 
@@ -762,7 +762,7 @@ section {
 }
 
 .footer .copyright {
-    color: #111;
+    color: #222A68;
     text-align: center;
     padding-top: 30px;
 }
@@ -770,17 +770,17 @@ section {
 .footer .credits {
     padding-top: 10px;
     text-align: center;
-    color: #111;
+    color: #222A68;
 }
 
 .footer .credits a {
-    color: #111;
+    color: #222A68;
     font-weight: 700;
 }
 
 .footer .copyright {
     background-color: #f2f7ff;
-    color: #111;
+    color: #222A68;
 }
 
 .footer .img-fluid {
@@ -866,7 +866,7 @@ section {
 
 .aulas .btn-primary:hover {
     background-color: #F7F7F7 !important;
-    color: #272727;
+    color: #222A68;
     border: none;
     transition: 0.5s;
 }
@@ -1014,7 +1014,7 @@ section {
     font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
-    color: #272727;
+    color: #222A68;
     padding-bottom: 10px;
     width: 100%;
     margin-left: 20px;
@@ -1025,7 +1025,7 @@ section {
     font-size: 18px;
     font-weight: 500;
     width: 80%;
-    color: #272727;
+    color: #222A68;
     font-style: normal;
     text-align: left;
     margin-bottom: 20px;
