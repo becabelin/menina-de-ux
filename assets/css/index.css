@@ -290,6 +290,14 @@
     color: #222A68;
 }
 
+.cursos .post-date {
+    font-size: 16px;
+    color: #757575;
+    font-weight: 500;
+    margin: 5px 20px 20px 20px !important;
+    font-family: "Montserrat", 'Poppins', sans-serif;
+}
+
 .cursos .post-box .readmore {
     display: flex;
     margin: 20px 20px;
