@@ -852,6 +852,18 @@ section {
     width: 100%;
 }
 
+.sobre .link {
+    color: #222A68;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.sobre .link:hover {
+    color: #E086B7;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
 .aulas .btn-primary {
     align-items: center;
     text-align: center;
@@ -870,6 +882,22 @@ section {
     border: none;
     transition: 0.5s;
 }
+
+.aulas .btn-em-breve {
+    background-color: #bdbdbd;
+    color: #111;
+    align-items: center;
+    text-align: center;
+    font-size: 16px;
+    width: 100%;
+    padding: 5px 20px;
+    border: none;
+    transition: 0.5s;
+    margin: 5px 0px 15px 0px;
+    border-radius: 50px;
+    cursor: auto;
+}
+
 
 @media (max-width: 991px) {
 
