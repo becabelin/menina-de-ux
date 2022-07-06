@@ -243,7 +243,7 @@
 
 .cursos .post-box {
     transition: 0.3s;
-    width: 17%;
+    width: 21vw;
     height: auto;
     overflow: hidden;
     margin: 10px;
@@ -251,10 +251,9 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background: #222A68;
-    border: 0.3px solid #cbcbcb;
+    border: 0.3px solid #222a6841;
     padding: 0%;
-    background-color: rgba(247, 247, 247, 0.2);
+    background-color: none;
 }
 
 .cursos .post-box .post-img {
@@ -294,7 +293,7 @@
     font-size: 16px;
     color: #757575;
     font-weight: 500;
-    margin: 5px 20px 20px 20px !important;
+    margin: 5px 20px 0px 20px !important;
     font-family: "Montserrat", 'Poppins', sans-serif;
 }
 
@@ -337,7 +336,7 @@
     transition: 0.3s;
     color: #222A68;
     border-radius: 50px;
-    border: #cbcbcb solid 1px;
+    border: #222a6841 solid 1px;
     background-color: #E7F0FF;
     font-family: 'Goldplay', 'Poppins', sans-serif;
 }
