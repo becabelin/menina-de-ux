@@ -762,6 +762,7 @@ section {
 }
 
 .footer .copyright {
+    font-size: 14px;
     color: #222A68;
     text-align: center;
     padding-top: 30px;
