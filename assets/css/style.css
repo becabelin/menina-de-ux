@@ -777,6 +777,13 @@ section {
 .footer .credits a {
     color: #222A68;
     font-weight: 700;
+    transition: 0.3s;
+}
+
+.footer .credits a:hover {
+    color: #d33e90;
+    font-weight: 700;
+    transition: 0.3s;
 }
 
 .footer .copyright {
