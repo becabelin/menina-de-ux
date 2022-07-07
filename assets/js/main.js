@@ -164,4 +164,39 @@
         })
     });
 
+/**
+ * Porfolio isotope and filter
+ */
+ window.addEventListener("load", () => {
+    let cursosContainer = select(".cursos-container");
+    if (cursosContainer) {
+      let cursosIsotope = new Isotope(cursosContainer, {
+        itemSelector: ".cursos-item",
+        layoutMode: "fitRows",
+      });
+  
+      let cursosFilters = select("#cursos-flters li", true);
+  
+      on(
+        "click",
+        "#cursos-flters li",
+        function (e) {
+          e.preventDefault();
+          cursosFilters.forEach(function (el) {
+            el.classList.remove("filter-active");
+          });
+          this.classList.add("filter-active");
+  
+          cursosIsotope.arrange({
+            filter: this.getAttribute("data-filter"),
+          });
+          cursosIsotope.on("arrangeComplete", function () {
+            AOS.refresh();
+          });
+        },
+        true
+      );
+    }
+  });
+
 })()

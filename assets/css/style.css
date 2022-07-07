@@ -9,12 +9,12 @@ body {
 }
 
 a {
-    color: #E086B7;
+    color: #d33e90;
     text-decoration: none;
 }
 
 a:hover {
-    color: #E086B7;
+    color: #d33e90;
     text-decoration: none;
 }
 
@@ -470,9 +470,9 @@ section {
 .sobre h1,
 .telegram h1,
 .apoie h1,
-.em-construcao h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
-    font-size: 36px;
+.em-construcao h1, .contato h1 {
+    font-family: 'Goldplay', 'Poppins', sans-serif;
+    font-size: 32px;
     font-weight: 700;
     color: #222A68;
     padding-bottom: 10px;
@@ -481,9 +481,9 @@ section {
 .sobre p,
 .telegram p,
 .apoie p,
-.em-construcao p {
-    font-family: 'Avenir LT Std', 'Poppins', sans-serif;
-    font-size: 18px;
+.em-construcao p, .contato p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     font-weight: 500;
     width: 80%;
     color: #222A68;
@@ -503,7 +503,7 @@ section {
 .sobre .btn-quero-apoiar,
 .telegram .btn-quero-apoiar,
 .apoie .btn-quero-apoiar {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -530,7 +530,7 @@ section {
 .sobre .btn-quero-apoiar-2,
 .telegram .btn-quero-apoiar-2,
 .apoie .btn-quero-apoiar-2 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     margin-left: 10px;
     font-size: 16px;
     font-weight: 500;
@@ -559,7 +559,7 @@ section {
     .sobre .container,
     .telegram .container,
     .apoie .container,
-    .em-construcao .container {
+    .em-construcao .container, .cursos .cursos-container {
         margin-bottom: -20% !important;
     }
 
@@ -636,8 +636,8 @@ section {
 --------------------------------------------------------------*/
 
 .contato .texto {
-    font-family: 'Avenir LT Std', 'Poppins', sans-serif;
-    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
     font-weight: 500;
     width: 80%;
     color: #222A68;
@@ -757,7 +757,7 @@ section {
 }
 
 .footer .links:hover {
-    color: #E086B7;
+    color: #d33e90;
     transition: 0.2s;
 }
 
@@ -820,7 +820,7 @@ section {
 .aulas .title,
 .posts .title,
 .conteudos .title {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     text-align: center;
     font-weight: 700;
     margin: 20px 0px;
@@ -851,7 +851,7 @@ section {
 
 .aulas .card-title {
     margin-top: 5px;
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-weight: 600;
 }
 
@@ -992,7 +992,7 @@ section {
 }
 
 .em-construcao .btn-voltar-inicio {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1047,7 +1047,7 @@ section {
 }
 
 .conteudos h1 {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 36px;
     font-weight: 700;
     color: #222A68;
@@ -1057,7 +1057,7 @@ section {
 }
 
 .conteudos p {
-    font-family: 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     font-weight: 500;
     width: 80%;
@@ -1076,7 +1076,7 @@ section {
 }
 
 .conteudos .btn-quero-apoiar {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1101,7 +1101,7 @@ section {
 }
 
 .conteudos .btn-em-breve {
-    font-family: 'Goldplay', 'Avenir LT Std', 'Poppins', sans-serif;
+    font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -1210,5 +1210,172 @@ section {
 
     .telegram .container {
         margin-bottom: -70px !important;
+    }
+}
+
+/*--------------------------------------------------------------
+# Carrossel
+--------------------------------------------------------------*/
+.carousel-indicators li {
+    background-color: #222A68 !important;
+}
+
+#carousel .carousel-control-next i,
+#carousel .carousel-control-prev i {
+    color: #222A68 !important;
+    font-size: 2.8em !important;
+}
+
+.carousel-item {
+    height: 50%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.carousel .img-fluid {
+    width: 60%;
+    border-radius: 20px;
+    margin-left: 30%;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #222A68;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.15s ease;
+}
+
+.carousel .text-align-left {
+    margin-left: 20%;
+    width: 90%;
+}
+
+.carousel .h1 {
+    color: #222A68;
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.carousel .h2 {
+    color: #222A68;
+    font-size: 18px;
+    margin-bottom: 0;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+.carousel .p {
+    color: #272727;
+    font-size: 15px;
+    margin: 10px 0px;
+}
+
+.carousel a {
+    color: #222A68;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.carousel a:hover {
+    color: #d33e90;
+    font-weight: 700;
+    transition: 0.3s;
+}
+
+.carousel .row {
+    margin-bottom: 60px;
+}
+
+@media (max-width: 1040px) {
+    .carousel-item {
+        height: auto;
+    }
+
+    .carousel .img-fluid {
+        width: 500px;
+        height: 300px;
+        margin-bottom: 40px;
+    }
+
+    .carousel .h1 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel .h2 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel .p {
+        width: 100%;
+        text-align: center;
+    }
+
+    .carousel .btn-features {
+        align-self: center;
+        width: 300px;
+        text-align: center;
+        margin: 10px 140px 0px 140px;
+    }
+}
+
+@media (max-width: 980px) {
+    .carousel {
+        align-items: center !important;
+    }
+
+    .carousel-item {
+        margin: 0px 30px !important;
+    }
+
+    .carousel .h1 {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .carousel .h2 {
+        margin-bottom: 10px;
+        width: 80%;
+    }
+
+    .carousel .p {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+
+    .carousel .btn-features {
+        width: 80%;
+        text-align: center;
+        margin: auto;
+    }
+
+    .carousel .img-fluid {
+        width: 400px;
+        height: 280px;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 890px) {
+    .carousel-item {
+        margin: 0px 10px !important;
+    }
+
+    .carousel .img-fluid {
+        width: 320px;
+        height: 240px;
+        margin-bottom: 20px;
     }
 }

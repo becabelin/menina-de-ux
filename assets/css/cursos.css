@@ -141,8 +141,8 @@
 
 .cursos .post-box {
     transition: 0.3s;
-    width: 20%;
-    height: auto;
+    width: 16vw;
+    height: 50vh;
     overflow: hidden;
     margin: 10px;
     border-radius: 10px;
@@ -260,3 +260,38 @@
     }
 
 }
+
+.cursos #cursos-flters {
+    padding: 0;
+    margin: 0 auto 25px auto;
+    list-style: none;
+    text-align: center;
+    background: #f7f7f7;
+    border-radius: 50px;
+    padding: 2px 15px;
+}
+
+.cursos #cursos-flters li {
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 20px 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1;
+    color: #444444;
+    margin: 0 4px 8px 4px;
+    transition: 0.3s;
+    border-radius: 50px;
+    border: 1px solid #f7f7f7;
+}
+
+.cursos #cursos-flters li:hover,
+.cursos #cursos-flters li.filter-active {
+    color: #222A68;
+    border-color: #222A68;
+}
+
+.cursos #cursos-flters li:last-child {
+    margin-right: 0;
+}
+
