@@ -264,7 +264,7 @@
 
 }
 
-@media (min-width: 890px) {
+@media (max-width: 890px) {
     .cursos .post-box {
         width: 100vw;
         height: auto;
