@@ -2,18 +2,18 @@
 # Hero Section
 --------------------------------------------------------------*/
 
-.hero {
+.hero, .hero-carousel {
     background: #E7F0FF;
     padding-bottom: 60px;
     width: 100%;
     height: 60%;
 }
 
-.hero .container {
+.hero .container, .hero-carousel .container {
     padding: 7% 0% 0% 0%;
 }
 
-.hero h1 {
+.hero h1, .hero-carousel h1 {
     margin: 0;
     font-size: 48px;
     font-weight: 700;
@@ -25,15 +25,15 @@
     text-align: left;
 }
 
-.hero .hero-img {
+.hero .hero-img, .hero-carousel .hero-img {
     text-align: right;
 }
 
-.hero .hero-img img {
+.hero .hero-img img , .hero-carousel .hero-img img {
     border-radius: 20px;
 }
 
-.hero p {
+.hero p, .hero-carousel p {
     font-family: 'Poppins', sans-serif;
     padding: 30px 0px 0px 0px;
     font-size: 20px;
@@ -44,7 +44,7 @@
     text-align: left;
 }
 
-.hero .left {
+.hero .left, .hero-carousel .left {
     margin-top: 6%;
 }
 
@@ -96,15 +96,18 @@
 
 @media (max-width: 991px) {
     .hero {
-        padding-bottom: 0px;
-        height: 60vh;
+        padding: 15vh 0vh 5vh 0vh !important;
+    }
+
+    .hero-carousel {
+        padding: 5vh 0vh 0vh 0vh !important;
     }
 
     .hero .container {
         padding: 2% 0% 0% 0%;
     }
 
-    .hero h1 {
+    .hero h1, .hero-carousel h1 {
         text-align: left;
         font-size: 34px;
         padding: 10px 30px;

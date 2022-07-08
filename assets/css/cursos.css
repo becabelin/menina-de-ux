@@ -53,7 +53,7 @@
 
 @media (max-width: 991px) {
     .hero {
-        padding: 90px 0px;
+        padding: 90px 0px 40px 0px;
         height: 70%;
     }
 
@@ -243,6 +243,8 @@
     .cursos .post-box {
         width: 100vw;
         height: auto;
+        left: 0px !important;
+        margin: 0px;
     }
 
     .cursos .row {

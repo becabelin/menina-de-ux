@@ -470,7 +470,8 @@ section {
 .sobre h1,
 .telegram h1,
 .apoie h1,
-.em-construcao h1, .contato h1 {
+.em-construcao h1,
+.contato h1 {
     font-family: 'Goldplay', 'Poppins', sans-serif;
     font-size: 32px;
     font-weight: 700;
@@ -481,7 +482,8 @@ section {
 .sobre p,
 .telegram p,
 .apoie p,
-.em-construcao p, .contato p {
+.em-construcao p,
+.contato p {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     font-weight: 500;
@@ -559,7 +561,8 @@ section {
     .sobre .container,
     .telegram .container,
     .apoie .container,
-    .em-construcao .container, .cursos .cursos-container {
+    .em-construcao .container,
+    .cursos .cursos-container {
         margin-bottom: -20% !important;
     }
 
@@ -594,14 +597,17 @@ section {
     .apoie .img-fluid,
     .em-construcao .img-fluid {
         margin: -10px 0px;
+        margin-left: 20px;
         width: 80vw;
         max-width: 90vw;
+        margin-top: 10px;
     }
 
     .sobre h1,
     .telegram h1,
     .apoie h1,
     .em-construcao h1 {
+        padding: 0px 20px;
         padding-top: 20px;
         width: 100%;
     }
@@ -610,8 +616,9 @@ section {
     .telegram p,
     .apoie p,
     .em-construcao p {
+        padding: 0px 20px;
         font-size: 18px;
-        width: 80vw;
+        width: 90vw;
         padding-bottom: 10px;
     }
 
@@ -626,6 +633,12 @@ section {
     .telegram .text-center,
     .apoie .text-center,
     .em-construcao .text-center {
+        text-align: left !important;
+        padding-bottom: 40px;
+    }
+
+    .telegram .text-center-2 {
+        margin-left: 20px;
         text-align: left !important;
         padding-bottom: 40px;
     }
@@ -987,7 +1000,8 @@ section {
 # Em construção
 --------------------------------------------------------------*/
 
-.em-construcao {
+.em-construcao,
+#apoie-2 {
     padding: 120px;
 }
 
@@ -1015,20 +1029,35 @@ section {
 }
 
 @media (max-width: 1350px) {
-    .em-construcao {
-        padding: 140px 0px;
+
+    .em-construcao,
+    #apoie-2 {
+        padding: 140px 0px !important;
     }
 }
 
 @media (max-width: 980px) {
-    .em-construcao {
-        padding: 100px 20px 0px 0px;
+
+    .em-construcao,
+    #apoie-2 {
+        padding: 100px 20px 0px 0px !important;
     }
 
-    .em-construcao .btn-voltar-inicio {
+    .em-construcao .btn-voltar-inicio,
+    #apoie-2 .btn-quero-apoiar,
+    #apoie-2 .btn-quero-apoiar-2 {
         margin-left: 0px;
         font-size: 14px;
         width: auto;
+    }
+
+    #apoie-2 .btn-quero-apoiar,
+    #apoie-2 .btn-quero-apoiar-2 {
+        margin-left: 20px;
+    }
+
+    #apoie-2 .btn-quero-apoiar-2 {
+        margin-bottom: 20px;
     }
 }
 
@@ -1323,12 +1352,6 @@ section {
         text-align: center;
     }
 
-    .carousel .btn-features {
-        align-self: center;
-        width: 300px;
-        text-align: center;
-        margin: 10px 140px 0px 140px;
-    }
 }
 
 @media (max-width: 980px) {
@@ -1345,25 +1368,14 @@ section {
         width: 80%;
     }
 
-    .carousel .h2 {
-        margin-bottom: 10px;
-        width: 80%;
-    }
-
     .carousel .p {
         margin-bottom: 20px;
         width: 80%;
     }
 
-    .carousel .btn-features {
-        width: 80%;
-        text-align: center;
-        margin: auto;
-    }
-
     .carousel .img-fluid {
-        width: 400px;
-        height: 280px;
+        width: 70%;
+        height: auto;
         margin-bottom: 20px;
     }
 }
@@ -1374,8 +1386,29 @@ section {
     }
 
     .carousel .img-fluid {
-        width: 320px;
-        height: 240px;
+        width: 90%;
+        height: auto;
         margin-bottom: 20px;
+        margin: 0px 10px;
+    }
+
+    .carousel .h1 {
+        margin-bottom: 10px;
+        width: 100%;
+    }
+
+    .carousel .p {
+        margin-bottom: 20px;
+        width: 100%;
+    }
+
+    .carousel .text-align-left {
+        margin: 0px -10px 0px -10px !important;
+        width: 100%;
+    }
+
+    #carousel .carousel-control-prev i,
+    #carousel .carousel-control-next i {
+        font-size: 0em !important;
     }
 }
