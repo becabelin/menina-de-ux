@@ -24,17 +24,6 @@
   text-align: center;
 }
 
-.hero h2 {
-  padding-top: 20px;
-  font-size: 26px;
-  font-weight: 400;
-  width: 600px;
-  color: #222a68;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  text-align: center;
-}
-
 .hero p {
   font-size: 16px;
   font-weight: 400;
@@ -63,15 +52,6 @@
     line-height: 40px;
     width: auto;
     margin: 10px 30px;
-  }
-
-  .hero h2 {
-    padding: 30px 0px;
-    text-align: center;
-    font-size: 20px;
-    line-height: 32px;
-    width: auto;
-    margin: 0px 30px;
   }
 
   .hero p {
