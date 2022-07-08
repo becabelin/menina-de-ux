@@ -4,404 +4,397 @@
 
 .hero,
 .hero-carousel {
-    background: #E7F0FF;
-    padding-bottom: 60px;
-    width: 100%;
-    height: 60%;
+  background: #e7f0ff;
+  padding-bottom: 60px;
+  width: 100%;
+  height: 60%;
 }
 
 .hero .container,
 .hero-carousel .container {
-    padding: 7% 0% 0% 0%;
+  padding: 7% 0% 0% 0%;
 }
 
 .hero h1,
 .hero-carousel h1 {
-    margin: 0;
-    font-size: 48px;
-    font-weight: 700;
-    width: 100%;
-    color: #222A68;
-    font-family: 'Goldplay', 'Poppins', sans-serif;
-    font-style: normal;
-    line-height: 100%;
-    text-align: left;
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  width: 100%;
+  color: #222a68;
+  font-family: "Goldplay", 'Poppins', sans-serif;
+  font-style: normal;
+  line-height: 100%;
+  text-align: left;
 }
 
 .hero .hero-img,
 .hero-carousel .hero-img {
-    text-align: right;
+  text-align: right;
 }
 
 .hero .hero-img img,
 .hero-carousel .hero-img img {
-    border-radius: 20px;
+  border-radius: 20px;
 }
 
 .hero p,
 .hero-carousel p {
-    font-family: 'Poppins', sans-serif;
-    padding: 30px 0px 0px 0px;
-    font-size: 20px;
-    font-weight: 500;
-    width: 90%;
-    color: #222A68;
-    font-style: normal;
-    text-align: left;
+  font-family: 'Poppins', sans-serif;
+  padding: 30px 0px 0px 0px;
+  font-size: 20px;
+  font-weight: 500;
+  width: 90%;
+  color: #222a68;
+  font-style: normal;
+  text-align: left;
 }
 
 .hero .left,
 .hero-carousel .left {
-    margin-top: 6%;
+  margin-top: 6%;
 }
 
 .hero .btn-descobrir-cursos {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #F7F7F7;
-    background: #5096D7;
-    border-radius: 50px;
-    text-align: center;
-    margin-top: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #f7f7f7;
+  background: #5096d7;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .hero .btn-descobrir-cursos:hover {
-    background: #F7F7F7;
-    color: #5096D7;
+  background: #f7f7f7;
+  color: #5096d7;
 }
 
 .hero .btn-descobrir-processos {
-    font-size: 16px;
-    font-weight: 500;
-    letter-spacing: 1px;
-    padding: 10px 30px;
-    border-radius: 50px;
-    transition: 0.5s;
-    color: #E086B7;
-    border-radius: 50px;
-    text-align: center;
-    border: #E086B7 solid 1px;
-    margin-left: 10px;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #e086b7;
+  border-radius: 50px;
+  text-align: center;
+  border: #e086b7 solid 1px;
+  margin-left: 10px;
 }
 
 .hero .btn-descobrir-processos:hover {
-    background: #E086B7;
-    color: #F7F7F7;
-    border: #E086B7 solid 1px;
+  background: #e086b7;
+  color: #f7f7f7;
+  border: #e086b7 solid 1px;
 }
 
 @media (min-width: 1024px) {
-    .hero {
-        background-attachment: fixed;
-    }
+  .hero {
+    background-attachment: fixed;
+  }
 }
 
 @media (max-width: 991px) {
-    .hero {
-        padding: 15vh 0vh 5vh 0vh !important;
-    }
+  .hero {
+    padding: 15vh 0vh 5vh 0vh !important;
+  }
 
-    .hero-carousel {
-        padding: 5vh 0vh 0vh 0vh !important;
-    }
+  .hero-carousel {
+    padding: 5vh 0vh 0vh 0vh !important;
+  }
 
-    .hero .container {
-        padding: 2% 0% 0% 0%;
-    }
+  .hero .container {
+    padding: 2% 0% 0% 0%;
+  }
 
-    .hero h1,
-    .hero-carousel h1 {
-        text-align: left;
-        font-size: 34px;
-        padding: 10px 30px;
-        line-height: 36px;
-        width: 100%;
-    }
+  .hero h1,
+  .hero-carousel h1 {
+    text-align: left;
+    font-size: 34px;
+    padding: 10px 30px;
+    line-height: 36px;
+    width: 100%;
+  }
 
-    .hero .left {
-        width: 100%;
-    }
+  .hero .left {
+    width: 100%;
+  }
 
-    .hero p {
-        text-align: left;
-        font-size: 18px;
-        width: 100%;
-        padding: 10px 30px;
-    }
+  .hero p {
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+    padding: 10px 30px;
+  }
 
-    .hero .text-left {
-        margin-top: 30px;
-    }
+  .hero .text-left {
+    margin-top: 30px;
+  }
 
-    .hero .hero-img {
-        margin-top: 50px !important;
-        margin-bottom: -10px;
-        text-align: right;
-        width: 80%;
-        margin-left: 10%;
-    }
+  .hero .hero-img {
+    margin-top: 50px !important;
+    margin-bottom: -10px;
+    text-align: right;
+    width: 80%;
+    margin-left: 10%;
+  }
 
-    .hero .btn-descobrir-cursos {
-        padding: 10px 10px;
-        margin-top: 0px;
-        margin-bottom: 30px;
-        width: 80vw;
-    }
+  .hero .btn-descobrir-cursos {
+    padding: 10px 10px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    width: 80vw;
+  }
 
-    .hero .btn-descobrir-processos {
-        padding: 10px 50px;
-        margin-left: 0px;
-        width: 100vw;
-    }
+  .hero .btn-descobrir-processos {
+    padding: 10px 50px;
+    margin-left: 0px;
+    width: 100vw;
+  }
 }
 
-@-webkit-keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
+@media (max-width: 991px) {
+  .hero {
+    height: auto;
+    padding: 120px 0 60px 0;
+  }
 
-    100% {
-        transform: translateY(-10px);
-    }
-}
+  .hero .hero-img {
+    text-align: center;
+    margin-top: 80px;
+  }
 
-@keyframes up-down {
-    0% {
-        transform: translateY(10px);
-    }
+  .hero .hero-img img {
+    width: 100%;
+  }
 
-    100% {
-        transform: translateY(-10px);
-    }
+  .hero .text-center {
+    margin-left: 2%;
+  }
 }
 
 @media (min-width: 1024px) {
-    .hero {
-        background-attachment: fixed;
-    }
-}
-
-@media (max-width: 991px) {
-    .hero {
-        height: auto;
-        padding: 120px 0 60px 0;
-    }
-
-    .hero .hero-img {
-        text-align: center;
-        margin-top: 80px;
-    }
-
-    .hero .hero-img img {
-        width: 100%;
-    }
-
-    .hero .text-center {
-        margin-left: 2%;
-    }
+  .hero {
+    background-attachment: fixed;
+  }
 }
 
 @media (max-width: 768px) {
-    .hero {
-        text-align: center;
-    }
+  .hero {
+    text-align: center;
+  }
 
-    .hero h1 {
-        font-size: 32px;
-    }
+  .hero h1 {
+    font-size: 32px;
+  }
 
-    .hero .hero-img img {
-        width: 100%;
-    }
+  .hero .hero-img img {
+    width: 100%;
+  }
 }
 
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
 
 /*--------------------------------------------------------------
 # Cursos
 --------------------------------------------------------------*/
 
 .cursos {
-    background: #E7F0FF;
-    background-repeat: no-repeat;
-    height: auto;
+  background: #e7f0ff;
+  background-repeat: no-repeat;
+  height: auto;
 }
 
-.cursos .section-title h2 {
-    color: #222A68;
-}
-
-.cursos .section-title p {
-    color: #222A68;
+.cursos .section-title h2,
+.cursos .section-title p,
+.cursos h2 {
+  color: #222a68;
 }
 
 .cursos .section-title h2::after {
-    content: "";
-    width: 90px;
-    height: 1px;
-    display: inline-block;
-    background: #222A68;
-    margin: 4px 10px;
-}
-
-.cursos h2 {
-    color: #222A68;
+  content: "";
+  width: 90px;
+  height: 1px;
+  display: inline-block;
+  background: #222a68;
+  margin: 4px 10px;
 }
 
 .cursos .post-box {
-    transition: 0.3s;
-    width: 21vw;
-    height: auto;
-    overflow: hidden;
-    margin: 10px;
-    border-radius: 10px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    border: 0.3px solid #222a6841;
-    padding: 0%;
-    background-color: none;
+  transition: 0.3s;
+  width: 21vw;
+  height: auto;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: 0.3px solid #222a6841;
+  padding: 0%;
+  background-color: none;
 }
 
 .cursos .post-box .post-img {
-    margin-bottom: 10px;
-    overflow: hidden;
-    position: relative;
-    border-radius: 8px 0px 0px 0px;
-    width: 100%;
-    max-width: 100%;
-    background-size: cover;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px 0px 0px 0px;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
 }
 
 .cursos .post-box .post-img img {
-    transition: 0.5s;
-    width: 100%;
+  transition: 0.5s;
+  width: 100%;
 }
 
 .cursos .post-box .post-title {
-    font-size: 24px;
-    color: #222A68;
-    font-weight: 600;
-    margin: 10px 20px 0px 20px;
-    position: relative;
-    transition: 0.3s;
-    font-family: 'Goldplay', 'Poppins', sans-serif;
+  font-size: 24px;
+  color: #222a68;
+  font-weight: 600;
+  margin: 10px 20px 0px 20px;
+  position: relative;
+  transition: 0.3s;
+  font-family: "Goldplay", 'Poppins', sans-serif;
 }
 
 .cursos .description {
-    font-family: "Montserrat", 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 500;
-    margin: 0px 20px 20px 20px;
-    color: #222A68;
+  font-family: "Montserrat", 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 20px 20px 20px;
+  color: #222a68;
 }
 
 .cursos .post-date {
-    font-size: 16px;
-    color: #757575;
-    font-weight: 500;
-    margin: 5px 20px 0px 20px !important;
-    font-family: "Montserrat", 'Poppins', sans-serif;
+  font-size: 16px;
+  color: #757575;
+  font-weight: 500;
+  margin: 5px 20px 0px 20px !important;
+  font-family: "Montserrat", 'Poppins', sans-serif;
 }
 
 .cursos .post-box .readmore {
-    display: flex;
-    margin: 20px 20px;
-    align-items: center;
-    font-weight: 500;
-    line-height: 1;
-    transition: 0.3s;
-    color: #222A68;
+  display: flex;
+  margin: 20px 20px;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1;
+  transition: 0.3s;
+  color: #222a68;
 }
 
 .cursos .post-box .readmore i {
-    line-height: 0;
-    margin-left: 8px;
-    font-size: 16px;
-    color: #222A68;
+  line-height: 0;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #222a68;
 }
 
 .cursos .post-box:hover .post-img img {
-    transform: rotate(6deg) scale(1.2);
+  transform: rotate(6deg) scale(1.2);
 }
 
 .cursos .text-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .cursos .btn-ver-todos {
-    margin-top: 20px;
-    margin-bottom: 40px;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0px;
-    padding: 10px 80px;
-    border-radius: 50px;
-    transition: 0.3s;
-    color: #222A68;
-    border-radius: 50px;
-    border: #222a6841 solid 1px;
-    background-color: #E7F0FF;
-    font-family: 'Goldplay', 'Poppins', sans-serif;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  padding: 10px 80px;
+  border-radius: 50px;
+  transition: 0.3s;
+  color: #222a68;
+  border-radius: 50px;
+  border: #222a6841 solid 1px;
+  background-color: #e7f0ff;
+  font-family: "Goldplay", 'Poppins', sans-serif;
 }
 
 .cursos .btn-ver-todos:hover {
-    color: #222A68;
-    background: #F7F7F7;
-    border: #F7F7F7 solid 1px;
-    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  color: #222a68;
+  background: #f7f7f7;
+  border: #f7f7f7 solid 1px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
 }
 
 @media (max-width: 1084px) {
-    .cursos {
-        padding-top: 40px;
-    }
+  .cursos {
+    padding-top: 40px;
+  }
 
-    .cursos .section-title h2 {
-        margin: -10px 10px;
-        width: auto;
-        font-size: 14px;
-    }
+  .cursos .section-title h2 {
+    margin: -10px 10px;
+    width: auto;
+    font-size: 14px;
+  }
 
-    .cursos .section-title p {
-        margin: 10px 10px;
-        width: auto;
-        margin-bottom: -30px;
-        font-size: 26px;
-    }
+  .cursos .section-title p {
+    margin: 10px 10px;
+    width: auto;
+    margin-bottom: -30px;
+    font-size: 26px;
+  }
 
-    .cursos .section-title h2::after {
-        width: 50px;
-    }
+  .cursos .section-title h2::after {
+    width: 50px;
+  }
 
-    .cursos .post-box {
-        width: 100vw;
-        height: auto;
-    }
+  .cursos .post-box {
+    width: 100vw;
+    height: auto;
+  }
 
-    .cursos .row {
-        margin: 0px 30px;
-    }
+  .cursos .row {
+    margin: 0px 30px;
+  }
 
-    .cursos .post-box .img-fluid {
-        width: 100vw;
-    }
+  .cursos .post-box .img-fluid {
+    width: 100vw;
+  }
 
-    .cursos .text-center {
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: auto;
-    }
+  .cursos .text-center {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+  }
 
-    .cursos .btn-ver-todos {
-        padding: 10px 60px;
-        width: 90vw;
-    }
+  .cursos .btn-ver-todos {
+    padding: 10px 60px;
+    width: 90vw;
+  }
 }
