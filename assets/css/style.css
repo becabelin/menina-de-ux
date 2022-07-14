@@ -149,7 +149,7 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar > ul > li > a:before {
+.navbar>ul>li>a:before {
   content: "";
   position: absolute;
   width: 0;
@@ -163,7 +163,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover > a:before,
+.navbar li:hover>a:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -172,7 +172,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover > a {
+.navbar li:hover>a {
   color: #222a68;
 }
 
@@ -211,11 +211,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover > a {
+.navbar .dropdown ul li:hover>a {
   color: #222a68;
 }
 
-.navbar .dropdown:hover > ul {
+.navbar .dropdown:hover>ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -227,7 +227,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover > ul {
+.navbar .dropdown .dropdown:hover>ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -239,7 +239,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover > ul {
+  .navbar .dropdown .dropdown:hover>ul {
     left: -100%;
   }
 }
@@ -297,7 +297,7 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar-mobile > ul > li > a:before {
+.navbar-mobile>ul>li>a:before {
   left: 20px;
 }
 
@@ -310,7 +310,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover > a {
+.navbar-mobile li:hover>a {
   color: #222a68;
 }
 
@@ -344,15 +344,15 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover > a,
+.navbar-mobile .dropdown ul li:hover>a,
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
-.navbar-mobile .dropdown .dropdown ul li:hover > a {
+.navbar-mobile .dropdown .dropdown ul li:hover>a {
   color: #222a68;
 }
 
-.navbar-mobile .dropdown > .dropdown-active,
-.navbar-mobile .dropdown .dropdown > .dropdown-active {
+.navbar-mobile .dropdown>.dropdown-active,
+.navbar-mobile .dropdown .dropdown>.dropdown-active {
   display: block;
 }
 
@@ -548,6 +548,7 @@ section {
 }
 
 @media (max-width: 1084px) {
+
   .sobre .container,
   .telegram .container,
   .apoie .container,
@@ -731,7 +732,21 @@ section {
   cursor: auto;
 }
 
+ .items{
+  margin-bottom: 5px !important;
+}
+
+@media (max-width: 1350px) {
+
+  .aulas .card-img-top {
+    width: 100%;
+    height: auto;
+  }
+
+}
+
 @media (max-width: 991px) {
+  
   .aulas {
     margin-bottom: -50px;
   }
@@ -838,6 +853,7 @@ section {
 }
 
 @media (max-width: 1350px) {
+
   .em-construcao,
   #apoie-2 {
     padding: 140px 0px !important;
@@ -845,6 +861,7 @@ section {
 }
 
 @media (max-width: 980px) {
+
   .em-construcao,
   #apoie-2 {
     padding: 100px 20px 0px 0px !important;
