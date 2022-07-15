@@ -11,6 +11,17 @@ body {
     font-family: 'Poppins', sans-serif !important;
 }
 
+.title a {
+    font-family: 'Poppins', sans-serif !important;
+    color: #222a68;
+    transition: 0.5s;
+}
+
+.title a:hover {
+    color: #d33e90;
+    transition: 0.5s;
+}
+
 .title h4 {
     font-size: 14px !important;
     opacity: 0.8;
@@ -129,6 +140,7 @@ body {
     overflow: hidden;
     text-overflow: ellipsis;
     background: #F7F7F7;
+    border: #F7F7F7 1px solid;
     box-shadow: rgb(0 0 0 / 10%) 0px 2px 5px;
     border-radius: 8px;
     padding: 8px;
@@ -137,6 +149,26 @@ body {
     -webkit-box-align: center;
     align-items: center;
     color: #272727 !important;
+    transition: 0.5s;
+}
+
+.link:hover {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: manual;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    background: none;
+    border: #d0d0d0 1px solid;
+    box-shadow: rgb(0 0 0 / 10%) 0px 2px 5px;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    color: #272727 !important;
+    transition: 0.5s;
 }
 
 .card-items h6 {
