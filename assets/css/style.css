@@ -149,7 +149,7 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar>ul>li>a:before {
+.navbar>Ul>Li>A:before {
   content: "";
   position: absolute;
   width: 0;
@@ -163,7 +163,7 @@ h6 {
 }
 
 .navbar a:hover:before,
-.navbar li:hover>a:before,
+.navbar li:hover>A:before,
 .navbar .active:before {
   visibility: visible;
   width: 25px;
@@ -172,7 +172,7 @@ h6 {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
+.navbar li:hover>A {
   color: #222a68;
 }
 
@@ -211,11 +211,11 @@ h6 {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
+.navbar .dropdown ul li:hover>A {
   color: #222a68;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover>Ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -227,7 +227,7 @@ h6 {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover>Ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -239,7 +239,7 @@ h6 {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover>Ul {
     left: -100%;
   }
 }
@@ -297,7 +297,7 @@ h6 {
   transition: 0.3s;
 }
 
-.navbar-mobile>ul>li>a:before {
+.navbar-mobile>Ul>Li>A:before {
   left: 20px;
 }
 
@@ -310,7 +310,7 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
+.navbar-mobile li:hover>A {
   color: #222a68;
 }
 
@@ -344,10 +344,10 @@ h6 {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a,
+.navbar-mobile .dropdown ul li:hover>A,
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
-.navbar-mobile .dropdown .dropdown ul li:hover>a {
+.navbar-mobile .dropdown .dropdown ul li:hover>A {
   color: #222a68;
 }
 
@@ -732,7 +732,7 @@ section {
   cursor: auto;
 }
 
- .items{
+.items {
   margin-bottom: 5px !important;
 }
 
@@ -746,7 +746,7 @@ section {
 }
 
 @media (max-width: 991px) {
-  
+
   .aulas {
     margin-bottom: -50px;
   }
@@ -899,6 +899,10 @@ section {
   box-shadow: #dfdfdf 0px 0px 10px;
 }
 
+.conteudos-container{
+  margin-top: 0%;
+}
+
 .conteudos h1 {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-size: 36px;
@@ -953,7 +957,8 @@ section {
   border: #5096d7 solid 1px;
 }
 
-.conteudos .btn-em-breve {
+.conteudos .btn-em-breve,
+.conteudos .btn-em-breve-2 {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -970,6 +975,173 @@ section {
   border: #f7f7f7 solid 1px;
   margin-bottom: 30px;
   margin-left: 20px;
+}
+
+.conteudos .btn-em-breve-2 {
+  margin-left: 0px;
+}
+
+.conteudos .post-box {
+  transition: 0.3s;
+  width: 16vw;
+  height: auto;
+  overflow: hidden;
+  margin: 10px;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: #222a68;
+  border: 0.3px solid #cbcbcb;
+  padding: 0%;
+  background-color: rgba(247, 247, 247, 0.2);
+}
+
+.conteudos .post-box .post-img {
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 8px 0px 0px 0px;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+}
+
+.conteudos .post-box .post-img img {
+  transition: 0.5s;
+  width: 100%;
+}
+
+.conteudos .post-box .post-title {
+  font-size: 24px;
+  color: #222a68;
+  font-weight: 600;
+  margin: 10px 20px 10px 20px;
+  position: relative;
+  transition: 0.3s;
+  font-family: "Goldplay", 'Poppins', sans-serif;
+}
+
+.conteudos .description {
+  font-family: "Montserrat", 'Poppins', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  margin: 0px 20px 30px 20px;
+  color: #222a68;
+  width: 90%;
+}
+
+.conteudos .post-date {
+  font-size: 16px;
+  color: #757575;
+  font-weight: 500;
+  margin: 0px 20px 10px 20px !important;
+  font-family: "Montserrat", 'Poppins', sans-serif;
+}
+
+.conteudos .post-box .readmore {
+  display: flex;
+  margin: 20px 20px;
+  align-items: center;
+  font-weight: 500;
+  line-height: 1;
+  transition: 0.3s;
+  color: #222a68;
+}
+
+.conteudos .post-box .readmore i {
+  line-height: 0;
+  margin-left: 8px;
+  font-size: 16px;
+  color: #222a68;
+}
+
+.conteudos .post-box:hover .post-img img {
+  transform: rotate(6deg) scale(1.2);
+}
+
+.conteudos .text-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (max-width: 1350px) {
+  .conteudos .post-box {
+    width: 20vw;
+    height: 90vh;
+  }
+
+  .conteudos .post-box .post-title {
+    font-size: 20px;
+  }
+
+  .conteudos .post-date {
+    font-size: 14px;
+  }
+
+  .conteudos .description {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 991px) {
+  .conteudos {
+    padding-top: 40px;
+  }
+
+  .conteudos-container{
+    margin-top: 20%;
+  }  
+
+  .conteudos .conteudo{
+    width: 100%;
+    margin-left: 0px !important;
+  }
+
+  .conteudos .section-title h2 {
+    margin: -10px 30px;
+    width: auto;
+  }
+
+  .conteudos .section-title p {
+    margin: 10px 30px;
+    width: auto;
+    margin-bottom: -30px;
+  }
+
+  .conteudos .post-box {
+    width: 100vw;
+    height: auto;
+    left: 0px !important;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+
+  .conteudos .row {
+    margin: 0px 30px;
+  }
+
+  .conteudos .post-box .img-fluid {
+    width: 100%;
+  }
+
+  .conteudos .text-center {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: auto;
+  }
+}
+
+@media (max-width: 890px) {
+  .conteudos .post-box {
+    width: 100vw;
+    height: auto;
+    left: 0px !important;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
 }
 
 @media (max-width: 1084px) {
@@ -1010,8 +1182,8 @@ section {
   }
 
   .conteudos p {
-    font-size: 18px;
-    width: 70vw;
+    font-size: 16px;
+    width: 80vw;
     padding-bottom: 10px;
     margin-left: 10px;
   }
@@ -1034,8 +1206,7 @@ section {
   border-bottom: #d9d9d9 solid 1px;
   border-top: #d9d9d9 solid 1px;
   margin: 0px;
-  padding: 0px 0px;
-  padding-top: 50px;
+  padding: 50px 0px;
 }
 
 @media (max-width: 1084px) {
@@ -1046,7 +1217,7 @@ section {
   .apoie {
     margin-bottom: 0px !important;
     margin: 0px !important;
-    padding: 0px 20px !important;
+    padding: 20px !important;
   }
 
   .apoie .text-center {
@@ -1333,7 +1504,7 @@ section {
 .footer .text {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: 38px;
   color: #222a68;
 }
 

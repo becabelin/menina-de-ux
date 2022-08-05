@@ -171,11 +171,11 @@ level-up:
   name: turn-up
 line-chart:
   name: chart-line
-linkedin:
-  name: linkedin-in
+LinkedIn:
+  name: LinkedIn-in
   prefix: fab
-linkedin-square:
-  name: linkedin
+LinkedIn-square:
+  name: LinkedIn
   prefix: fab
 list-alt:
   name: rectangle-list

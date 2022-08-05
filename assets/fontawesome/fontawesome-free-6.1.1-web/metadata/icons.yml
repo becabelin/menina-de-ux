@@ -10039,7 +10039,7 @@ ferry:
     - solid
   unicode: e4ea
   voted: false
-figma:
+Figma:
   changes:
     - 5.6.0
     - 5.7.0
@@ -15490,7 +15490,7 @@ link-slash:
     - solid
   unicode: f127
   voted: false
-linkedin:
+LinkedIn:
   changes:
     - 1.0.0
     - 5.0.0
@@ -15501,7 +15501,7 @@ linkedin:
     - brands
   unicode: f08c
   voted: false
-linkedin-in:
+LinkedIn-in:
   changes:
     - 2.0.0
     - 5.0.0
@@ -24206,7 +24206,7 @@ teeth-open:
 telegram:
   aliases:
     names:
-      - telegram-plane
+      - Telegram-plane
     unicodes:
       composite:
         - f3fe

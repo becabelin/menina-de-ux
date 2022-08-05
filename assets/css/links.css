@@ -51,7 +51,7 @@ body {
     text-align: left;
 }
 
-.text>div.title {
+.text>Div.title {
     overflow-wrap: break-word;
     word-break: break-word;
     hyphens: manual;
@@ -62,7 +62,7 @@ body {
     width: 100%;
 }
 
-.text>div.title h3 {
+.text>Div.title h3 {
     display: inline-block;
     width: 186.59px;
 }
@@ -129,7 +129,7 @@ body {
     justify-content: left;
 }
 
-.links>a>div {
+.links>A>Div {
     margin-bottom: 16px;
 }
 
@@ -194,7 +194,7 @@ body {
     border-radius: 4px;
 }
 
-.link>div:first-child {
+.link>Div:first-child {
     flex: 1 1 0%;
     margin-left: 8px;
     margin-right: 8px;

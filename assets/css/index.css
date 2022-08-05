@@ -117,8 +117,8 @@
   .hero h1,
   .hero-carousel h1 {
     text-align: left;
-    font-size: 34px;
-    padding: 10px 30px;
+    font-size: 40px;
+    padding: 40px 0px 0px 30px;
     line-height: 36px;
     width: 100%;
   }
@@ -129,8 +129,8 @@
 
   .hero p {
     text-align: left;
-    font-size: 18px;
-    width: 100%;
+    font-size: 16px;
+    width: 80%;
     padding: 10px 30px;
   }
 
@@ -139,10 +139,10 @@
   }
 
   .hero .hero-img {
-    margin-top: 50px !important;
+    margin-top: 10px !important;
     margin-bottom: -10px;
     text-align: right;
-    width: 80%;
+    width: 70%;
     margin-left: 10%;
   }
 
