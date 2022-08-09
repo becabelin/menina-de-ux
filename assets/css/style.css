@@ -4,17 +4,17 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  color: #222a68;
+  color: #20376C;
   background-color: #f7f7f7;
 }
 
 a {
-  color: #d33e90;
+  color: #D5626D;
   text-decoration: none;
 }
 
 a:hover {
-  color: #d33e90;
+  color: #D5626D;
   text-decoration: none;
 }
 
@@ -52,7 +52,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #5096d7;
+  background: #4678BC;
   box-shadow: 0px 0 30px rgba(1, 41, 112, 0.1);
 }
 
@@ -102,7 +102,7 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #222a68;
+  color: #20376C;
   text-decoration: none;
 }
 
@@ -173,7 +173,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>A {
-  color: #222a68;
+  color: #20376C;
 }
 
 .navbar .dropdown ul {
@@ -202,7 +202,7 @@ h6 {
   font-size: 16px;
   font-weight: 600;
   text-transform: none;
-  color: #222a68;
+  color: #20376C;
 }
 
 .navbar .dropdown ul a i {
@@ -212,7 +212,7 @@ h6 {
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
 .navbar .dropdown ul li:hover>A {
-  color: #222a68;
+  color: #20376C;
 }
 
 .navbar .dropdown:hover>Ul {
@@ -247,7 +247,7 @@ h6 {
 /** Mobile Navigation */
 
 .mobile-nav-toggle {
-  color: #222a68;
+  color: #20376C;
   font-size: 28px;
   cursor: pointer;
   display: none;
@@ -272,7 +272,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: #222a68;
+  background: #20376C;
   transition: 0.3s;
   z-index: 999;
 }
@@ -305,13 +305,13 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #222a68;
+  color: #20376C;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>A {
-  color: #222a68;
+  color: #20376C;
 }
 
 .navbar-mobile .dropdown ul,
@@ -348,7 +348,7 @@ h6 {
 .navbar-mobile .dropdown .dropdown ul a:hover,
 .navbar-mobile .dropdown .dropdown ul .active:hover,
 .navbar-mobile .dropdown .dropdown ul li:hover>A {
-  color: #222a68;
+  color: #20376C;
 }
 
 .navbar-mobile .dropdown>.dropdown-active,
@@ -381,7 +381,7 @@ section {
   margin: 0 0 5px 0;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #222a68;
+  color: #20376C;
   font-family: "Goldplay", "Poppins", sans-serif;
 }
 
@@ -390,7 +390,7 @@ section {
   width: 90px;
   height: 1px;
   display: inline-block;
-  background: #222a68;
+  background: #20376C;
   margin: 4px 10px;
 }
 
@@ -400,7 +400,7 @@ section {
   font-weight: 650;
   text-transform: uppercase;
   font-family: "Goldplay", "Poppins", sans-serif;
-  color: #222a68;
+  color: #20376C;
 }
 
 @media (max-width: 991px) {
@@ -431,7 +431,7 @@ section {
 }
 
 .breadcrumb .breadcrumb-item a:hover {
-  color: #222a68;
+  color: #20376C;
   transition: 0.5s;
 }
 
@@ -466,7 +466,7 @@ section {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-size: 32px;
   font-weight: 700;
-  color: #222a68;
+  color: #20376C;
   padding-bottom: 10px;
 }
 
@@ -479,7 +479,7 @@ section {
   font-size: 16px;
   font-weight: 500;
   width: 80%;
-  color: #222a68;
+  color: #20376C;
   font-style: normal;
   text-align: left;
   margin-bottom: 20px;
@@ -505,7 +505,7 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #f7f7f7;
-  background: #5096d7;
+  background: #4678BC;
   border-radius: 50px;
   text-align: center;
   margin-top: 10px;
@@ -516,8 +516,8 @@ section {
 .telegram .btn-quero-apoiar:hover,
 .apoie .btn-quero-apoiar:hover {
   background: none;
-  color: #5096d7;
-  border: #5096d7 solid 1px;
+  color: #4678BC;
+  border: #4678BC solid 1px;
 }
 
 .sobre .btn-quero-apoiar-2,
@@ -641,7 +641,7 @@ section {
 
 .aulas,
 .aulas .card {
-  background-color: #e7f0ff;
+  background-color: rgba(245, 197, 210, 0.25);;
 }
 
 .aulas .title,
@@ -687,7 +687,7 @@ section {
 }
 
 .sobre .link {
-  color: #222a68;
+  color: #20376C;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -712,7 +712,7 @@ section {
 
 .aulas .btn-primary:hover {
   background-color: #f7f7f7 !important;
-  color: #222a68;
+  color: #20376C;
   border: none;
   transition: 0.5s;
 }
@@ -839,7 +839,7 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #f7f7f7;
-  background: #5096d7;
+  background: #4678BC;
   border-radius: 50px;
   text-align: center;
   margin-top: 10px;
@@ -848,7 +848,7 @@ section {
 
 .em-construcao .btn-voltar-inicio:hover {
   background: #f7f7f7;
-  color: #5096d7;
+  color: #4678BC;
   border: #f7f7f7 solid 1px;
 }
 
@@ -907,7 +907,7 @@ section {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-size: 36px;
   font-weight: 700;
-  color: #222a68;
+  color: #20376C;
   padding-bottom: 10px;
   width: 100%;
   margin-left: 20px;
@@ -918,7 +918,7 @@ section {
   font-size: 18px;
   font-weight: 500;
   width: 80%;
-  color: #222a68;
+  color: #20376C;
   font-style: normal;
   text-align: left;
   margin-bottom: 20px;
@@ -942,7 +942,7 @@ section {
   border-radius: 50px;
   transition: 0.5s;
   color: #f7f7f7;
-  background: #5096d7;
+  background: #4678BC;
   border-radius: 50px;
   text-align: center;
   margin-top: 10px;
@@ -953,8 +953,8 @@ section {
 
 .conteudos .btn-quero-apoiar:hover {
   background: #f7f7f7;
-  color: #5096d7;
-  border: #5096d7 solid 1px;
+  color: #4678BC;
+  border: #4678BC solid 1px;
 }
 
 .conteudos .btn-em-breve,
@@ -991,7 +991,7 @@ section {
   position: relative;
   display: flex;
   flex-direction: column;
-  background: #222a68;
+  background: #20376C;
   border: 0.3px solid #cbcbcb;
   padding: 0%;
   background-color: rgba(247, 247, 247, 0.2);
@@ -1014,7 +1014,7 @@ section {
 
 .conteudos .post-box .post-title {
   font-size: 24px;
-  color: #222a68;
+  color: #20376C;
   font-weight: 600;
   margin: 10px 20px 10px 20px;
   position: relative;
@@ -1027,7 +1027,7 @@ section {
   font-size: 14px;
   font-weight: 500;
   margin: 0px 20px 30px 20px;
-  color: #222a68;
+  color: #20376C;
   width: 90%;
 }
 
@@ -1046,14 +1046,14 @@ section {
   font-weight: 500;
   line-height: 1;
   transition: 0.3s;
-  color: #222a68;
+  color: #20376C;
 }
 
 .conteudos .post-box .readmore i {
   line-height: 0;
   margin-left: 8px;
   font-size: 16px;
-  color: #222a68;
+  color: #20376C;
 }
 
 .conteudos .post-box:hover .post-img img {
@@ -1240,12 +1240,12 @@ section {
 --------------------------------------------------------------*/
 
 .carousel-indicators li {
-  background-color: #222a68 !important;
+  background-color: #20376C !important;
 }
 
 #carousel .carousel-control-next i,
 #carousel .carousel-control-prev i {
-  color: #222a68 !important;
+  color: #20376C !important;
   font-size: 2.8em !important;
 }
 
@@ -1271,7 +1271,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #222a68;
+  color: #20376C;
   text-align: center;
   opacity: 0.5;
   transition: opacity 0.15s ease;
@@ -1283,7 +1283,7 @@ section {
 }
 
 .carousel .h1 {
-  color: #222a68;
+  color: #20376C;
   font-size: 24px;
   margin-bottom: 0;
   margin-top: 0;
@@ -1291,7 +1291,7 @@ section {
 }
 
 .carousel .h2 {
-  color: #222a68;
+  color: #20376C;
   font-size: 18px;
   margin-bottom: 0;
   margin-top: 0;
@@ -1305,13 +1305,13 @@ section {
 }
 
 .carousel a {
-  color: #222a68;
+  color: #20376C;
   font-weight: 700;
   transition: 0.3s;
 }
 
 .carousel a:hover {
-  color: #d33e90;
+  color: #D5626D;
   font-weight: 700;
   transition: 0.3s;
 }
@@ -1415,7 +1415,7 @@ section {
   font-size: 16px;
   font-weight: 500;
   width: 80%;
-  color: #222a68;
+  color: #20376C;
   font-style: normal;
   text-align: left;
   margin-bottom: 20px;
@@ -1437,10 +1437,10 @@ section {
   align-items: center;
   text-align: center;
   font-size: 18px;
-  background-color: #5096d7;
+  background-color: #4678BC;
   width: auto;
   padding: 10px 20px;
-  border: #5096d7 solid 1px;
+  border: #4678BC solid 1px;
   transition: 0.5s;
   margin: 10px 10px 30px 0px;
   border-radius: 50px;
@@ -1491,7 +1491,7 @@ section {
 --------------------------------------------------------------*/
 
 .footer {
-  background: #e7f0ff;
+  background: rgba(245, 197, 210, 0.25);;
   padding: 10px 0px 0px 10px;
   font-family: "Poppins", sans-serif;
 }
@@ -1505,7 +1505,7 @@ section {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-weight: 700;
   font-size: 38px;
-  color: #222a68;
+  color: #20376C;
 }
 
 .footer .text-p {
@@ -1526,18 +1526,18 @@ section {
 
 .footer .links {
   font-size: 18px;
-  color: #222a68;
+  color: #20376C;
   transition: 0.2s;
 }
 
 .footer .links:hover {
-  color: #d33e90;
+  color: #D5626D;
   transition: 0.2s;
 }
 
 .footer .copyright {
   font-size: 14px;
-  color: #222a68;
+  color: #20376C;
   text-align: center;
   padding-top: 30px;
 }
@@ -1545,24 +1545,24 @@ section {
 .footer .credits {
   padding-top: 10px;
   text-align: center;
-  color: #222a68;
+  color: #20376C;
 }
 
 .footer .credits a {
-  color: #222a68;
+  color: #20376C;
   font-weight: 700;
   transition: 0.3s;
 }
 
 .footer .credits a:hover {
-  color: #d33e90;
+  color: #D5626D;
   font-weight: 700;
   transition: 0.3s;
 }
 
 .footer .copyright {
   background-color: #f2f7ff;
-  color: #222a68;
+  color: #20376C;
 }
 
 .footer .img-fluid {

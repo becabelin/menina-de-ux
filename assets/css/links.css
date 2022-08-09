@@ -2,7 +2,7 @@ body {
     line-height: 1;
     font-style: normal;
     font-family: 'Poppins', sans-serif;
-    background-color: #E7F0FF;
+    background-color: rgba(245, 197, 210, 0.25);;
     color: #272727 !important;
     text-align: left;
 }
@@ -13,12 +13,12 @@ body {
 
 .title a {
     font-family: 'Poppins', sans-serif !important;
-    color: #222a68;
+    color: #20376C;
     transition: 0.5s;
 }
 
 .title a:hover {
-    color: #d33e90;
+    color: #D5626D;
     transition: 0.5s;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .presentation p.mt strong {
-    color: #222a68;
+    color: #20376C;
 }
 
 .card-items p {
