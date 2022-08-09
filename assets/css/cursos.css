@@ -147,7 +147,7 @@
   font-size: 24px;
   color: #222a68;
   font-weight: 600;
-  margin: 10px 20px 10px 20px;
+  margin: 10px 20px 0px 20px;
   position: relative;
   transition: 0.3s;
   font-family: "Goldplay", 'Poppins', sans-serif;
@@ -157,7 +157,7 @@
   font-family: "Montserrat", 'Poppins', sans-serif;
   font-size: 14px;
   font-weight: 500;
-  margin: 0px 20px 30px 20px;
+  margin: 0px 20px 20px 20px;
   color: #222a68;
 }
 
@@ -165,7 +165,7 @@
   font-size: 16px;
   color: #757575;
   font-weight: 500;
-  margin: 0px 20px 10px 20px !important;
+  margin: 0px 20px 5px 20px !important;
   font-family: "Montserrat", 'Poppins', sans-serif;
 }
 
