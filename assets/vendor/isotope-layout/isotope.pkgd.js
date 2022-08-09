@@ -48,7 +48,7 @@ var arraySlice = Array.prototype.slice;
 // helper function for logging errors
 // $.error breaks jQuery chaining
 var console = window.console;
-var logError = typeof console == 'undefined' ? function() {} :
+var logError = typeof console == 'undefined' ? Function() {} :
   function( message ) {
     console.error( message );
   };
@@ -109,10 +109,10 @@ function jQueryBridget( namespace, PluginClass, $ ) {
       // apply method, get return value
       var value = method.apply( instance, args );
       // set return value if value is returned, use only first value
-      returnValue = returnValue === undefined ? value : returnValue;
+      returnValue = returnValue === undefined ? Value : returnValue;
     });
 
-    return returnValue !== undefined ? returnValue : $elems;
+    return returnValue !== undefined ? ReturnValue : $elems;
   }
 
   function plainCall( $elems, options ) {
@@ -174,7 +174,7 @@ return jQueryBridget;
     global.EvEmitter = factory();
   }
 
-}( typeof window != 'undefined' ? window : this, function() {
+}( typeof window != 'undefined' ? Window : this, function() {
 
 
 
@@ -302,7 +302,7 @@ function getStyleSize( value ) {
 
 function noop() {}
 
-var logError = typeof console == 'undefined' ? noop :
+var logError = typeof console == 'undefined' ? Noop :
   function( message ) {
     console.error( message );
   };
@@ -433,7 +433,7 @@ function getSize( elem ) {
     var value = style[ measurement ];
     var num = parseFloat( value );
     // any 'auto', 'medium' value will be 0
-    size[ measurement ] = !isNaN( num ) ? num : 0;
+    size[ measurement ] = !isNaN( num ) ? Num : 0;
   }
 
   var paddingWidth = size.paddingLeft + size.paddingRight;
@@ -1073,7 +1073,7 @@ proto.transition = function( args ) {
   // set from styles
   if ( args.from ) {
     this.css( args.from );
-    // force redraw. http://blog.alexmaccaw.com/css-transitions
+    // force redraw. Http://blog.alexmaccaw.com/css-transitions
     var h = this.element.offsetHeight;
     // hack for JSHint to hush about unused var
     h = null;
@@ -1710,7 +1710,7 @@ proto._positionItem = function( item, x, y, isInstant, i ) {
 
 /**
  * Any logic you want to do after each layout,
- * i.e. size the container
+ * i.e. Size the container
  */
 proto._postLayout = function() {
   this.resizeContainer();
@@ -2589,7 +2589,7 @@ return Item;
   proto.getContainerWidth = function() {
     // container is parent if fit width
     var isFitWidth = this._getOption('fitWidth');
-    var container = isFitWidth ? this.element.parentNode : this.element;
+    var container = isFitWidth ? This.element.parentNode : this.element;
     // check that this.size and size are there
     // IE8 triggers resize on body size change, so they might not be
     var size = getSize( container );
@@ -2685,7 +2685,7 @@ return Item;
     var offset = this._getElementOffset( stamp );
     // get the columns that this stamp affects
     var isOriginLeft = this._getOption('originLeft');
-    var firstX = isOriginLeft ? offset.left : offset.right;
+    var firstX = isOriginLeft ? Offset.left : offset.right;
     var lastX = firstX + stampSize.outerWidth;
     var firstCol = Math.floor( firstX / this.columnWidth );
     firstCol = Math.max( 0, firstCol );
@@ -2696,7 +2696,7 @@ return Item;
     // set colYs to bottom of the stamp
 
     var isOriginTop = this._getOption('originTop');
-    var stampMaxY = ( isOriginTop ? offset.top : offset.bottom ) +
+    var stampMaxY = ( isOriginTop ? Offset.top : offset.bottom ) +
       stampSize.outerHeight;
     for ( var i = firstCol; i <= lastCol; i++ ) {
       this.colYs[i] = Math.max( stampMaxY, this.colYs[i] );
@@ -3299,7 +3299,7 @@ var trim = String.prototype.trim ?
       // use second argument as a parser
       var parser = Isotope.sortDataParsers[ args[1] ];
       // parse the value, if there was a parser
-      sorter = parser ? function( elem ) {
+      sorter = parser ? Function( elem ) {
         return elem && parser( getValue( elem ) );
       } :
       // otherwise just return value
@@ -3377,7 +3377,7 @@ var trim = String.prototype.trim ?
         var b = itemB.sortData[ sortBy ];
         if ( a > b || a < b ) {
           // if sortAsc is an object, use the value given the sortBy key
-          var isAscending = sortAsc[ sortBy ] !== undefined ? sortAsc[ sortBy ] : sortAsc;
+          var isAscending = sortAsc[ sortBy ] !== undefined ? SortAsc[ sortBy ] : sortAsc;
           var direction = isAscending ? 1 : -1;
           return ( a > b ? 1 : -1 ) * direction;
         }

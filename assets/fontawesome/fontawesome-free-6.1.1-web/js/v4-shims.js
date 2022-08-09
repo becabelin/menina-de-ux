@@ -4,7 +4,7 @@
  * Copyright 2022 Fonticons, Inc.
  */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? Module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global['fontawesome-free-shims'] = factory());
 }(this, (function () { 'use strict';

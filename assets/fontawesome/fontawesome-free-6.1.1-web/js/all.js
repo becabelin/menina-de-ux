@@ -39,7 +39,7 @@
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = null != arguments[i] ? arguments[i] : {};
-      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
@@ -167,7 +167,7 @@
   function defineIcons(prefix, icons) {
     var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
     var _params$skipHooks = params.skipHooks,
-        skipHooks = _params$skipHooks === void 0 ? false : _params$skipHooks;
+        skipHooks = _params$skipHooks === void 0 ? False : _params$skipHooks;
     var normalized = normalizeIcons(icons);
 
     if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
@@ -695,7 +695,7 @@
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = null != arguments[i] ? arguments[i] : {};
-      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
@@ -823,7 +823,7 @@
   function defineIcons(prefix, icons) {
     var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
     var _params$skipHooks = params.skipHooks,
-        skipHooks = _params$skipHooks === void 0 ? false : _params$skipHooks;
+        skipHooks = _params$skipHooks === void 0 ? False : _params$skipHooks;
     var normalized = normalizeIcons(icons);
 
     if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
@@ -1051,7 +1051,7 @@
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = null != arguments[i] ? arguments[i] : {};
-      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
@@ -1179,7 +1179,7 @@
   function defineIcons(prefix, icons) {
     var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
     var _params$skipHooks = params.skipHooks,
-        skipHooks = _params$skipHooks === void 0 ? false : _params$skipHooks;
+        skipHooks = _params$skipHooks === void 0 ? False : _params$skipHooks;
     var normalized = normalizeIcons(icons);
 
     if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
@@ -2613,7 +2613,7 @@
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = null != arguments[i] ? arguments[i] : {};
-      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
@@ -2626,7 +2626,7 @@
   function _typeof(obj) {
     "@babel/helpers - typeof";
 
-    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Function (obj) {
       return typeof obj;
     } : function (obj) {
       return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
@@ -2769,7 +2769,7 @@
   }
 
   function _iterableToArrayLimit(arr, i) {
-    var _i = arr == null ? null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
+    var _i = arr == null ? Null : typeof Symbol !== "undefined" && arr[Symbol.iterator] || arr["@@iterator"];
 
     if (_i == null) return;
     var _arr = [];
@@ -3138,7 +3138,7 @@
         _ref2$height = _ref2.height,
         height = _ref2$height === void 0 ? UNITS_IN_GRID : _ref2$height,
         _ref2$startCentered = _ref2.startCentered,
-        startCentered = _ref2$startCentered === void 0 ? false : _ref2$startCentered;
+        startCentered = _ref2$startCentered === void 0 ? False : _ref2$startCentered;
     var val = '';
 
     if (startCentered && IS_IE) {
@@ -3229,7 +3229,7 @@
 
   function domready (fn) {
     if (!IS_DOM) return;
-    loaded ? setTimeout(fn, 0) : functions.push(fn);
+    loaded ? SetTimeout(fn, 0) : functions.push(fn);
   }
 
   function toHtml(abstractNodes) {
@@ -3392,7 +3392,7 @@
   function defineIcons(prefix, icons) {
     var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
     var _params$skipHooks = params.skipHooks,
-        skipHooks = _params$skipHooks === void 0 ? false : _params$skipHooks;
+        skipHooks = _params$skipHooks === void 0 ? False : _params$skipHooks;
     var normalized = normalizeIcons(icons);
 
     if (typeof namespace.hooks.addPack === 'function' && !skipHooks) {
@@ -3576,13 +3576,13 @@
   function getCanonicalPrefix(styleOrPrefix) {
     var style = PREFIX_TO_STYLE[styleOrPrefix];
     var prefix = STYLE_TO_PREFIX[styleOrPrefix] || STYLE_TO_PREFIX[style];
-    var defined = styleOrPrefix in namespace.styles ? styleOrPrefix : null;
+    var defined = styleOrPrefix in namespace.styles ? StyleOrPrefix : null;
     return prefix || defined || null;
   }
   function getCanonicalIcon(values) {
     var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var _params$skipLookups = params.skipLookups,
-        skipLookups = _params$skipLookups === void 0 ? false : _params$skipLookups;
+        skipLookups = _params$skipLookups === void 0 ? False : _params$skipLookups;
     var givenPrefix = null;
     var canonical = values.reduce(function (acc, cls) {
       var iconName = getIconName(config.familyPrefix, cls);
@@ -3706,7 +3706,7 @@
     });
 
     _plugins.forEach(function (plugin) {
-      var mixout = plugin.mixout ? plugin.mixout() : {};
+      var mixout = plugin.mixout ? Plugin.mixout() : {};
       Object.keys(mixout).forEach(function (tk) {
         if (typeof mixout[tk] === 'function') {
           obj[tk] = mixout[tk];
@@ -3766,7 +3766,7 @@
   function callProvided() {
     var hook = arguments[0];
     var args = Array.prototype.slice.call(arguments, 1);
-    return providers[hook] ? providers[hook].apply(null, args) : undefined;
+    return providers[hook] ? Providers[hook].apply(null, args) : undefined;
   }
 
   function findIconDefinition(iconLookup) {
@@ -4000,9 +4000,9 @@
         titleId = params.titleId,
         extra = params.extra,
         _params$watchable = params.watchable,
-        watchable = _params$watchable === void 0 ? false : _params$watchable;
+        watchable = _params$watchable === void 0 ? False : _params$watchable;
 
-    var _ref = mask.found ? mask : main,
+    var _ref = mask.found ? Mask : main,
         width = _ref.width,
         height = _ref.height;
 
@@ -4080,7 +4080,7 @@
         title = params.title,
         extra = params.extra,
         _params$watchable2 = params.watchable,
-        watchable = _params$watchable2 === void 0 ? false : _params$watchable2;
+        watchable = _params$watchable2 === void 0 ? False : _params$watchable2;
 
     var attributes = _objectSpread2(_objectSpread2(_objectSpread2({}, extra.attributes), title ? {
       'title': title
@@ -4289,13 +4289,13 @@
   var noop$2 = function noop() {};
 
   function isWatched(node) {
-    var i2svg = node.getAttribute ? node.getAttribute(DATA_FA_I2SVG) : null;
+    var i2svg = node.getAttribute ? Node.getAttribute(DATA_FA_I2SVG) : null;
     return typeof i2svg === 'string';
   }
 
   function hasPrefixAndIcon(node) {
-    var prefix = node.getAttribute ? node.getAttribute(DATA_PREFIX) : null;
-    var icon = node.getAttribute ? node.getAttribute(DATA_ICON) : null;
+    var prefix = node.getAttribute ? Node.getAttribute(DATA_PREFIX) : null;
+    var icon = node.getAttribute ? Node.getAttribute(DATA_ICON) : null;
     return prefix && icon;
   }
 
@@ -4454,11 +4454,11 @@
     }
 
     var _options$treeCallback = options.treeCallback,
-        treeCallback = _options$treeCallback === void 0 ? noop$2 : _options$treeCallback,
+        treeCallback = _options$treeCallback === void 0 ? Noop$2 : _options$treeCallback,
         _options$nodeCallback = options.nodeCallback,
-        nodeCallback = _options$nodeCallback === void 0 ? noop$2 : _options$nodeCallback,
+        nodeCallback = _options$nodeCallback === void 0 ? Noop$2 : _options$nodeCallback,
         _options$pseudoElemen = options.pseudoElementsCallback,
-        pseudoElementsCallback = _options$pseudoElemen === void 0 ? noop$2 : _options$pseudoElemen,
+        pseudoElementsCallback = _options$pseudoElemen === void 0 ? Noop$2 : _options$pseudoElemen,
         _options$observeMutat = options.observeMutationsRoot,
         observeMutationsRoot = _options$observeMutat === void 0 ? DOCUMENT : _options$observeMutat;
     mo = new MUTATION_OBSERVER(function (objects) {
@@ -4528,7 +4528,7 @@
   function classParser (node) {
     var existingPrefix = node.getAttribute('data-prefix');
     var existingIconName = node.getAttribute('data-icon');
-    var innerText = node.innerText !== undefined ? node.innerText.trim() : '';
+    var innerText = node.innerText !== undefined ? Node.innerText.trim() : '';
     var val = getCanonicalIcon(classArray(node));
 
     if (!val.prefix) {
@@ -4607,7 +4607,7 @@
 
     var extraAttributes = attributesParser(node);
     var pluginMeta = chainHooks('parseNodeAttributes', {}, node);
-    var extraStyles = parser.styleParser ? styleParser(node) : [];
+    var extraStyles = parser.styleParser ? StyleParser(node) : [];
     return _objectSpread2({
       iconName: iconName,
       title: node.getAttribute('title'),
@@ -4632,7 +4632,7 @@
   var styles$2 = namespace.styles;
 
   function generateMutation(node) {
-    var nodeMeta = config.autoReplaceSvg === 'nest' ? parseMeta(node, {
+    var nodeMeta = config.autoReplaceSvg === 'nest' ? ParseMeta(node, {
       styleParser: false
     }) : parseMeta(node);
 
@@ -4726,11 +4726,11 @@
   function resolveIcons(next) {
     return function (maybeIconDefinition) {
       var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
-      var iconDefinition = (maybeIconDefinition || {}).icon ? maybeIconDefinition : findIconDefinition(maybeIconDefinition || {});
+      var iconDefinition = (maybeIconDefinition || {}).icon ? MaybeIconDefinition : findIconDefinition(maybeIconDefinition || {});
       var mask = params.mask;
 
       if (mask) {
-        mask = (mask || {}).icon ? mask : findIconDefinition(mask || {});
+        mask = (mask || {}).icon ? Mask : findIconDefinition(mask || {});
       }
 
       return next(iconDefinition, _objectSpread2(_objectSpread2({}, params), {}, {
@@ -4742,17 +4742,17 @@
   var render = function render(iconDefinition) {
     var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
     var _params$transform = params.transform,
-        transform = _params$transform === void 0 ? meaninglessTransform : _params$transform,
+        transform = _params$transform === void 0 ? MeaninglessTransform : _params$transform,
         _params$symbol = params.symbol,
-        symbol = _params$symbol === void 0 ? false : _params$symbol,
+        symbol = _params$symbol === void 0 ? False : _params$symbol,
         _params$mask = params.mask,
-        mask = _params$mask === void 0 ? null : _params$mask,
+        mask = _params$mask === void 0 ? Null : _params$mask,
         _params$maskId = params.maskId,
-        maskId = _params$maskId === void 0 ? null : _params$maskId,
+        maskId = _params$maskId === void 0 ? Null : _params$maskId,
         _params$title = params.title,
-        title = _params$title === void 0 ? null : _params$title,
+        title = _params$title === void 0 ? Null : _params$title,
         _params$titleId = params.titleId,
-        titleId = _params$titleId === void 0 ? null : _params$titleId,
+        titleId = _params$titleId === void 0 ? Null : _params$titleId,
         _params$classes = params.classes,
         classes = _params$classes === void 0 ? [] : _params$classes,
         _params$attributes = params.attributes,
@@ -4825,7 +4825,7 @@
         var _params$node = params.node,
             node = _params$node === void 0 ? DOCUMENT : _params$node,
             _params$callback = params.callback,
-            callback = _params$callback === void 0 ? function () {} : _params$callback;
+            callback = _params$callback === void 0 ? Function () {} : _params$callback;
         return onTree(node, callback);
       };
 
@@ -4840,7 +4840,7 @@
             maskId = nodeMeta.maskId,
             extra = nodeMeta.extra;
         return new Promise(function (resolve, reject) {
-          Promise.all([findIcon(iconName, prefix), mask.iconName ? findIcon(mask.iconName, mask.prefix) : Promise.resolve({
+          Promise.all([findIcon(iconName, prefix), mask.iconName ? FindIcon(mask.iconName, mask.prefix) : Promise.resolve({
             found: false,
             width: 512,
             height: 512,
@@ -4940,7 +4940,7 @@
         counter: function counter(content) {
           var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
           var _params$title = params.title,
-              title = _params$title === void 0 ? null : _params$title,
+              title = _params$title === void 0 ? Null : _params$title,
               _params$classes = params.classes,
               classes = _params$classes === void 0 ? [] : _params$classes,
               _params$attributes = params.attributes,
@@ -4976,9 +4976,9 @@
         text: function text(content) {
           var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
           var _params$transform = params.transform,
-              transform = _params$transform === void 0 ? meaninglessTransform : _params$transform,
+              transform = _params$transform === void 0 ? MeaninglessTransform : _params$transform,
               _params$title = params.title,
-              title = _params$title === void 0 ? null : _params$title,
+              title = _params$title === void 0 ? Null : _params$title,
               _params$classes = params.classes,
               classes = _params$classes === void 0 ? [] : _params$classes,
               _params$attributes = params.attributes,
@@ -5047,7 +5047,7 @@
     var isPrependTen = codePoint >= SECONDARY_UNICODE_RANGE[0] && codePoint <= SECONDARY_UNICODE_RANGE[1];
     var isDoubled = cleaned.length === 2 ? cleaned[0] === cleaned[1] : false;
     return {
-      value: isDoubled ? toHex(cleaned[0]) : toHex(cleaned),
+      value: isDoubled ? ToHex(cleaned[0]) : toHex(cleaned),
       isSecondary: isPrependTen || isDoubled
     };
   }
@@ -5575,7 +5575,7 @@
       return {
         parseNodeAttributes: function parseNodeAttributes(accumulator, node) {
           var symbolData = node.getAttribute('data-fa-symbol');
-          var symbol = symbolData === null ? false : symbolData === '' ? true : symbolData;
+          var symbol = symbolData === null ? False : symbolData === '' ? True : symbolData;
           accumulator['symbol'] = symbol;
           return accumulator;
         }

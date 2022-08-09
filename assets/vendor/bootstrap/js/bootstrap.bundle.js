@@ -4,7 +4,7 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? Module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory());
 })(this, (function () { 'use strict';
@@ -67,7 +67,7 @@
     const selector = getSelector(element);
 
     if (selector) {
-      return document.querySelector(selector) ? selector : null;
+      return document.querySelector(selector) ? Selector : null;
     }
 
     return null;
@@ -120,7 +120,7 @@
   const getElement = object => {
     // it's a jQuery object or a node element
     if (isElement$1(object)) {
-      return object.jquery ? object[0] : object;
+      return object.jquery ? Object[0] : object;
     }
 
     if (typeof object === 'string' && object.length > 0) {
@@ -182,7 +182,7 @@
 
     if (typeof element.getRootNode === 'function') {
       const root = element.getRootNode();
-      return root instanceof ShadowRoot ? root : null;
+      return root instanceof ShadowRoot ? Root : null;
     }
 
     if (element instanceof ShadowRoot) {
@@ -752,7 +752,7 @@
       const jsonConfig = isElement$1(element) ? Manipulator.getDataAttribute(element, 'config') : {}; // try to parse
 
       return { ...this.constructor.Default,
-        ...(typeof jsonConfig === 'object' ? jsonConfig : {}),
+        ...(typeof jsonConfig === 'object' ? JsonConfig : {}),
         ...(isElement$1(element) ? Manipulator.getDataAttributes(element) : {}),
         ...(typeof config === 'object' ? config : {})
       };
@@ -1199,7 +1199,7 @@
         return;
       }
 
-      execute(direction > 0 ? this._config.rightCallback : this._config.leftCallback);
+      execute(direction > 0 ? This._config.rightCallback : this._config.leftCallback);
     }
 
     _initEvents() {
@@ -2006,7 +2006,7 @@
 
     if (node.toString() !== '[object Window]') {
       var ownerDocument = node.ownerDocument;
-      return ownerDocument ? ownerDocument.defaultView || window : window;
+      return ownerDocument ? OwnerDocument.defaultView || window : window;
     }
 
     return node;
@@ -2086,7 +2086,7 @@
       Object.keys(state.elements).forEach(function (name) {
         var element = state.elements[name];
         var attributes = state.attributes[name] || {};
-        var styleProperties = Object.keys(state.styles.hasOwnProperty(name) ? state.styles[name] : initialStyles[name]); // Set all values to an empty string to unset them
+        var styleProperties = Object.keys(state.styles.hasOwnProperty(name) ? State.styles[name] : initialStyles[name]); // Set all values to an empty string to unset them
 
         var style = styleProperties.reduce(function (style, property) {
           style[property] = '';
@@ -2308,7 +2308,7 @@
   }
   function withinMaxClamp(min, value, max) {
     var v = within(min, value, max);
-    return v > max ? max : v;
+    return v > max ? Max : v;
   }
 
   function getFreshSideObject() {
@@ -2332,10 +2332,10 @@
   }
 
   var toPaddingObject = function toPaddingObject(padding, state) {
-    padding = typeof padding === 'function' ? padding(Object.assign({}, state.rects, {
+    padding = typeof padding === 'function' ? Padding(Object.assign({}, state.rects, {
       placement: state.placement
     })) : padding;
-    return mergePaddingObject(typeof padding !== 'number' ? padding : expandToHashMap(padding, basePlacements));
+    return mergePaddingObject(typeof padding !== 'number' ? Padding : expandToHashMap(padding, basePlacements));
   };
 
   function arrow(_ref) {
@@ -2357,7 +2357,7 @@
 
     var paddingObject = toPaddingObject(options.padding, state);
     var arrowRect = getLayoutRect(arrowElement);
-    var minProp = axis === 'y' ? top : left;
+    var minProp = axis === 'y' ? Top : left;
     var maxProp = axis === 'y' ? bottom : right;
     var endDiff = state.rects.reference[len] + state.rects.reference[axis] - popperOffsets[axis] - state.rects.popper[len];
     var startDiff = popperOffsets[axis] - state.rects.reference[axis];
@@ -2455,7 +2455,7 @@
         _offsets$y = offsets.y,
         y = _offsets$y === void 0 ? 0 : _offsets$y;
 
-    var _ref3 = typeof roundOffsets === 'function' ? roundOffsets({
+    var _ref3 = typeof roundOffsets === 'function' ? RoundOffsets({
       x: x,
       y: y
     }) : {
@@ -2490,7 +2490,7 @@
 
       if (placement === top || (placement === left || placement === right) && variation === end) {
         sideY = bottom;
-        var offsetY = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.height : // $FlowFixMe[prop-missing]
+        var offsetY = isFixed && offsetParent === win && win.visualViewport ? Win.visualViewport.height : // $FlowFixMe[prop-missing]
         offsetParent[heightProp];
         y -= offsetY - popperRect.height;
         y *= gpuAcceleration ? 1 : -1;
@@ -2498,7 +2498,7 @@
 
       if (placement === left || (placement === top || placement === bottom) && variation === end) {
         sideX = right;
-        var offsetX = isFixed && offsetParent === win && win.visualViewport ? win.visualViewport.width : // $FlowFixMe[prop-missing]
+        var offsetX = isFixed && offsetParent === win && win.visualViewport ? Win.visualViewport.width : // $FlowFixMe[prop-missing]
         offsetParent[widthProp];
         x -= offsetX - popperRect.width;
         x *= gpuAcceleration ? 1 : -1;
@@ -2509,7 +2509,7 @@
       position: position
     }, adaptive && unsetSides);
 
-    var _ref4 = roundOffsets === true ? roundOffsetsByDPR({
+    var _ref4 = roundOffsets === true ? RoundOffsetsByDPR({
       x: x,
       y: y
     }) : {
@@ -2533,11 +2533,11 @@
     var state = _ref5.state,
         options = _ref5.options;
     var _options$gpuAccelerat = options.gpuAcceleration,
-        gpuAcceleration = _options$gpuAccelerat === void 0 ? true : _options$gpuAccelerat,
+        gpuAcceleration = _options$gpuAccelerat === void 0 ? True : _options$gpuAccelerat,
         _options$adaptive = options.adaptive,
-        adaptive = _options$adaptive === void 0 ? true : _options$adaptive,
+        adaptive = _options$adaptive === void 0 ? True : _options$adaptive,
         _options$roundOffsets = options.roundOffsets,
-        roundOffsets = _options$roundOffsets === void 0 ? true : _options$roundOffsets;
+        roundOffsets = _options$roundOffsets === void 0 ? True : _options$roundOffsets;
 
     var commonStyles = {
       placement: getBasePlacement(state.placement),
@@ -2589,9 +2589,9 @@
         instance = _ref.instance,
         options = _ref.options;
     var _options$scroll = options.scroll,
-        scroll = _options$scroll === void 0 ? true : _options$scroll,
+        scroll = _options$scroll === void 0 ? True : _options$scroll,
         _options$resize = options.resize,
-        resize = _options$resize === void 0 ? true : _options$resize;
+        resize = _options$resize === void 0 ? True : _options$resize;
     var window = getWindow(state.elements.popper);
     var scrollParents = [].concat(state.scrollParents.reference, state.scrollParents.popper);
 
@@ -2716,7 +2716,7 @@
 
     var html = getDocumentElement(element);
     var winScroll = getWindowScroll(element);
-    var body = (_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body;
+    var body = (_element$ownerDocumen = element.ownerDocument) == null ? Void 0 : _element$ownerDocumen.body;
     var width = max(html.scrollWidth, html.clientWidth, body ? body.scrollWidth : 0, body ? body.clientWidth : 0);
     var height = max(html.scrollHeight, html.clientHeight, body ? body.scrollHeight : 0, body ? body.clientHeight : 0);
     var x = -winScroll.scrollLeft + getWindowScrollBarX(element);
@@ -2772,11 +2772,11 @@
     }
 
     var scrollParent = getScrollParent(element);
-    var isBody = scrollParent === ((_element$ownerDocumen = element.ownerDocument) == null ? void 0 : _element$ownerDocumen.body);
+    var isBody = scrollParent === ((_element$ownerDocumen = element.ownerDocument) == null ? Void 0 : _element$ownerDocumen.body);
     var win = getWindow(scrollParent);
-    var target = isBody ? [win].concat(win.visualViewport || [], isScrollParent(scrollParent) ? scrollParent : []) : scrollParent;
+    var target = isBody ? [win].concat(win.visualViewport || [], isScrollParent(scrollParent) ? ScrollParent : []) : scrollParent;
     var updatedList = list.concat(target);
-    return isBody ? updatedList : // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
+    return isBody ? UpdatedList : // $FlowFixMe[incompatible-call]: isBody tells us target will be an HTMLElement here
     updatedList.concat(listScrollParents(getParentNode(target)));
   }
 
@@ -2803,7 +2803,7 @@
   }
 
   function getClientRectFromMixedType(element, clippingParent) {
-    return clippingParent === viewport ? rectToClientRect(getViewportRect(element)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+    return clippingParent === viewport ? RectToClientRect(getViewportRect(element)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
   } // A "clipping parent" is an overflowable container with the characteristic of
   // clipping (or hiding) overflowing elements with a position different from
   // `initial`
@@ -2917,19 +2917,19 @@
 
     var _options = options,
         _options$placement = _options.placement,
-        placement = _options$placement === void 0 ? state.placement : _options$placement,
+        placement = _options$placement === void 0 ? State.placement : _options$placement,
         _options$boundary = _options.boundary,
         boundary = _options$boundary === void 0 ? clippingParents : _options$boundary,
         _options$rootBoundary = _options.rootBoundary,
-        rootBoundary = _options$rootBoundary === void 0 ? viewport : _options$rootBoundary,
+        rootBoundary = _options$rootBoundary === void 0 ? Viewport : _options$rootBoundary,
         _options$elementConte = _options.elementContext,
-        elementContext = _options$elementConte === void 0 ? popper : _options$elementConte,
+        elementContext = _options$elementConte === void 0 ? Popper : _options$elementConte,
         _options$altBoundary = _options.altBoundary,
-        altBoundary = _options$altBoundary === void 0 ? false : _options$altBoundary,
+        altBoundary = _options$altBoundary === void 0 ? False : _options$altBoundary,
         _options$padding = _options.padding,
         padding = _options$padding === void 0 ? 0 : _options$padding;
-    var paddingObject = mergePaddingObject(typeof padding !== 'number' ? padding : expandToHashMap(padding, basePlacements));
-    var altContext = elementContext === popper ? reference : popper;
+    var paddingObject = mergePaddingObject(typeof padding !== 'number' ? Padding : expandToHashMap(padding, basePlacements));
+    var altContext = elementContext === popper ? Reference : popper;
     var popperRect = state.rects.popper;
     var element = state.elements[altBoundary ? altContext : elementContext];
     var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary);
@@ -2941,7 +2941,7 @@
       placement: placement
     });
     var popperClientRect = rectToClientRect(Object.assign({}, popperRect, popperOffsets));
-    var elementClientRect = elementContext === popper ? popperClientRect : referenceClientRect; // positive = overflowing the clipping rect
+    var elementClientRect = elementContext === popper ? PopperClientRect : referenceClientRect; // positive = overflowing the clipping rect
     // 0 or negative = within the clipping rect
 
     var overflowOffsets = {
@@ -2976,9 +2976,9 @@
         padding = _options.padding,
         flipVariations = _options.flipVariations,
         _options$allowedAutoP = _options.allowedAutoPlacements,
-        allowedAutoPlacements = _options$allowedAutoP === void 0 ? placements : _options$allowedAutoP;
+        allowedAutoPlacements = _options$allowedAutoP === void 0 ? Placements : _options$allowedAutoP;
     var variation = getVariation(placement);
-    var placements$1 = variation ? flipVariations ? variationPlacements : variationPlacements.filter(function (placement) {
+    var placements$1 = variation ? FlipVariations ? VariationPlacements : variationPlacements.filter(function (placement) {
       return getVariation(placement) === variation;
     }) : basePlacements;
     var allowedPlacements = placements$1.filter(function (placement) {
@@ -3023,16 +3023,16 @@
     }
 
     var _options$mainAxis = options.mainAxis,
-        checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis,
+        checkMainAxis = _options$mainAxis === void 0 ? True : _options$mainAxis,
         _options$altAxis = options.altAxis,
-        checkAltAxis = _options$altAxis === void 0 ? true : _options$altAxis,
+        checkAltAxis = _options$altAxis === void 0 ? True : _options$altAxis,
         specifiedFallbackPlacements = options.fallbackPlacements,
         padding = options.padding,
         boundary = options.boundary,
         rootBoundary = options.rootBoundary,
         altBoundary = options.altBoundary,
         _options$flipVariatio = options.flipVariations,
-        flipVariations = _options$flipVariatio === void 0 ? true : _options$flipVariatio,
+        flipVariations = _options$flipVariatio === void 0 ? True : _options$flipVariatio,
         allowedAutoPlacements = options.allowedAutoPlacements;
     var preferredPlacement = state.options.placement;
     var basePlacement = getBasePlacement(preferredPlacement);
@@ -3069,7 +3069,7 @@
         altBoundary: altBoundary,
         padding: padding
       });
-      var mainVariationSide = isVertical ? isStartVariation ? right : left : isStartVariation ? bottom : top;
+      var mainVariationSide = isVertical ? isStartVariation ? Right : left : isStartVariation ? bottom : top;
 
       if (referenceRect[len] > popperRect[len]) {
         mainVariationSide = getOppositePlacement(mainVariationSide);
@@ -3207,7 +3207,7 @@
     var basePlacement = getBasePlacement(placement);
     var invertDistance = [left, top].indexOf(basePlacement) >= 0 ? -1 : 1;
 
-    var _ref = typeof offset === 'function' ? offset(Object.assign({}, rects, {
+    var _ref = typeof offset === 'function' ? Offset(Object.assign({}, rects, {
       placement: placement
     })) : offset,
         skidding = _ref[0],
@@ -3288,15 +3288,15 @@
         options = _ref.options,
         name = _ref.name;
     var _options$mainAxis = options.mainAxis,
-        checkMainAxis = _options$mainAxis === void 0 ? true : _options$mainAxis,
+        checkMainAxis = _options$mainAxis === void 0 ? True : _options$mainAxis,
         _options$altAxis = options.altAxis,
-        checkAltAxis = _options$altAxis === void 0 ? false : _options$altAxis,
+        checkAltAxis = _options$altAxis === void 0 ? False : _options$altAxis,
         boundary = options.boundary,
         rootBoundary = options.rootBoundary,
         altBoundary = options.altBoundary,
         padding = options.padding,
         _options$tether = options.tether,
-        tether = _options$tether === void 0 ? true : _options$tether,
+        tether = _options$tether === void 0 ? True : _options$tether,
         _options$tetherOffset = options.tetherOffset,
         tetherOffset = _options$tetherOffset === void 0 ? 0 : _options$tetherOffset;
     var overflow = detectOverflow(state, {
@@ -3313,7 +3313,7 @@
     var popperOffsets = state.modifiersData.popperOffsets;
     var referenceRect = state.rects.reference;
     var popperRect = state.rects.popper;
-    var tetherOffsetValue = typeof tetherOffset === 'function' ? tetherOffset(Object.assign({}, state.rects, {
+    var tetherOffsetValue = typeof tetherOffset === 'function' ? TetherOffset(Object.assign({}, state.rects, {
       placement: state.placement
     })) : tetherOffset;
     var normalizedTetherOffsetValue = typeof tetherOffsetValue === 'number' ? {
@@ -3323,7 +3323,7 @@
       mainAxis: 0,
       altAxis: 0
     }, tetherOffsetValue);
-    var offsetModifierState = state.modifiersData.offset ? state.modifiersData.offset[state.placement] : null;
+    var offsetModifierState = state.modifiersData.offset ? State.modifiersData.offset[state.placement] : null;
     var data = {
       x: 0,
       y: 0
@@ -3336,14 +3336,14 @@
     if (checkMainAxis) {
       var _offsetModifierState$;
 
-      var mainSide = mainAxis === 'y' ? top : left;
+      var mainSide = mainAxis === 'y' ? Top : left;
       var altSide = mainAxis === 'y' ? bottom : right;
       var len = mainAxis === 'y' ? 'height' : 'width';
       var offset = popperOffsets[mainAxis];
       var min$1 = offset + overflow[mainSide];
       var max$1 = offset - overflow[altSide];
       var additive = tether ? -popperRect[len] / 2 : 0;
-      var minLen = variation === start ? referenceRect[len] : popperRect[len];
+      var minLen = variation === start ? ReferenceRect[len] : popperRect[len];
       var maxLen = variation === start ? -popperRect[len] : -referenceRect[len]; // We need to include the arrow in the calculation so the arrow doesn't go
       // outside the reference bounds
 
@@ -3352,23 +3352,23 @@
         width: 0,
         height: 0
       };
-      var arrowPaddingObject = state.modifiersData['arrow#persistent'] ? state.modifiersData['arrow#persistent'].padding : getFreshSideObject();
+      var arrowPaddingObject = state.modifiersData['arrow#persistent'] ? State.modifiersData['arrow#persistent'].padding : getFreshSideObject();
       var arrowPaddingMin = arrowPaddingObject[mainSide];
       var arrowPaddingMax = arrowPaddingObject[altSide]; // If the reference length is smaller than the arrow length, we don't want
       // to include its full size in the calculation. If the reference is small
       // and near the edge of a boundary, the popper can overflow even if the
-      // reference is not overflowing as well (e.g. virtual elements with no
+      // reference is not overflowing as well (e.g. Virtual elements with no
       // width or height)
 
       var arrowLen = within(0, referenceRect[len], arrowRect[len]);
-      var minOffset = isBasePlacement ? referenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
+      var minOffset = isBasePlacement ? ReferenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
       var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
       var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
-      var clientOffset = arrowOffsetParent ? mainAxis === 'y' ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
-      var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
+      var clientOffset = arrowOffsetParent ? MainAxis === 'y' ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
+      var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? Void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
       var tetherMin = offset + minOffset - offsetModifierValue - clientOffset;
       var tetherMax = offset + maxOffset - offsetModifierValue;
-      var preventedOffset = within(tether ? min(min$1, tetherMin) : min$1, offset, tether ? max(max$1, tetherMax) : max$1);
+      var preventedOffset = within(tether ? Min(min$1, tetherMin) : min$1, offset, tether ? Max(max$1, tetherMax) : max$1);
       popperOffsets[mainAxis] = preventedOffset;
       data[mainAxis] = preventedOffset - offset;
     }
@@ -3376,7 +3376,7 @@
     if (checkAltAxis) {
       var _offsetModifierState$2;
 
-      var _mainSide = mainAxis === 'x' ? top : left;
+      var _mainSide = mainAxis === 'x' ? Top : left;
 
       var _altSide = mainAxis === 'x' ? bottom : right;
 
@@ -3390,13 +3390,13 @@
 
       var isOriginSide = [top, left].indexOf(basePlacement) !== -1;
 
-      var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
+      var _offsetModifierValue = (_offsetModifierState$2 = offsetModifierState == null ? Void 0 : offsetModifierState[altAxis]) != null ? _offsetModifierState$2 : 0;
 
       var _tetherMin = isOriginSide ? _min : _offset - referenceRect[_len] - popperRect[_len] - _offsetModifierValue + normalizedTetherOffsetValue.altAxis;
 
       var _tetherMax = isOriginSide ? _offset + referenceRect[_len] + popperRect[_len] - _offsetModifierValue - normalizedTetherOffsetValue.altAxis : _max;
 
-      var _preventedOffset = tether && isOriginSide ? withinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
+      var _preventedOffset = tether && isOriginSide ? WithinMaxClamp(_tetherMin, _offset, _tetherMax) : within(tether ? _tetherMin : _min, _offset, tether ? _tetherMax : _max);
 
       popperOffsets[altAxis] = _preventedOffset;
       data[altAxis] = _preventedOffset - _offset;
@@ -3601,7 +3601,7 @@
       var instance = {
         state: state,
         setOptions: function setOptions(setOptionsAction) {
-          var options = typeof setOptionsAction === 'function' ? setOptionsAction(state.options) : setOptionsAction;
+          var options = typeof setOptionsAction === 'function' ? SetOptionsAction(state.options) : setOptionsAction;
           cleanupModifierEffects();
           state.options = Object.assign({}, defaultOptions, state.options, options);
           state.scrollParents = {
@@ -3890,7 +3890,7 @@
 
 
     toggle() {
-      return this._isShown() ? this.hide() : this.show();
+      return this._isShown() ? This.hide() : this.show();
     }
 
     show() {
@@ -4098,7 +4098,7 @@
       }
 
       return { ...defaultBsPopperConfig,
-        ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
+        ...(typeof this._config.popperConfig === 'function' ? This._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
 
@@ -4676,7 +4676,7 @@
 
 
     toggle(relatedTarget) {
-      return this._isShown ? this.hide() : this.show(relatedTarget);
+      return this._isShown ? This.hide() : this.show(relatedTarget);
     }
 
     show(relatedTarget) {
@@ -5044,7 +5044,7 @@
 
 
     toggle(relatedTarget) {
-      return this._isShown ? this.hide() : this.show(relatedTarget);
+      return this._isShown ? This.hide() : this.show(relatedTarget);
     }
 
     show(relatedTarget) {
@@ -5493,7 +5493,7 @@
     }
 
     _maybeSanitize(arg) {
-      return this._config.sanitize ? sanitizeHtml(arg, this._config.allowList, this._config.sanitizeFn) : arg;
+      return this._config.sanitize ? SanitizeHtml(arg, this._config.allowList, this._config.sanitizeFn) : arg;
     }
 
     _resolvePossibleFunction(arg) {
@@ -5884,7 +5884,7 @@
     }
 
     _createPopper(tip) {
-      const placement = typeof this._config.placement === 'function' ? this._config.placement.call(this, tip, this._element) : this._config.placement;
+      const placement = typeof this._config.placement === 'function' ? This._config.placement.call(this, tip, this._element) : this._config.placement;
       const attachment = AttachmentMap[placement.toUpperCase()];
       this._popper = createPopper(this._element, tip, this._getPopperConfig(attachment));
     }
@@ -5944,7 +5944,7 @@
         }]
       };
       return { ...defaultBsPopperConfig,
-        ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
+        ...(typeof this._config.popperConfig === 'function' ? This._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
 
@@ -5955,8 +5955,8 @@
         if (trigger === 'click') {
           EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK$1), this._config.selector, event => this.toggle(event));
         } else if (trigger !== TRIGGER_MANUAL) {
-          const eventIn = trigger === TRIGGER_HOVER ? this.constructor.eventName(EVENT_MOUSEENTER) : this.constructor.eventName(EVENT_FOCUSIN$1);
-          const eventOut = trigger === TRIGGER_HOVER ? this.constructor.eventName(EVENT_MOUSELEAVE) : this.constructor.eventName(EVENT_FOCUSOUT$1);
+          const eventIn = trigger === TRIGGER_HOVER ? This.constructor.eventName(EVENT_MOUSEENTER) : this.constructor.eventName(EVENT_FOCUSIN$1);
+          const eventOut = trigger === TRIGGER_HOVER ? This.constructor.eventName(EVENT_MOUSELEAVE) : this.constructor.eventName(EVENT_FOCUSOUT$1);
           EventHandler.on(this._element, eventIn, this._config.selector, event => {
             const context = this._initializeOnDelegatedTarget(event);
 
@@ -6271,7 +6271,7 @@
 
       this._targetLinks = new Map();
       this._observableSections = new Map();
-      this._rootElement = getComputedStyle(this._element).overflowY === 'visible' ? null : this._element;
+      this._rootElement = getComputedStyle(this._element).overflowY === 'visible' ? Null : this._element;
       this._activeTarget = null;
       this._observer = null;
       this._previousScrollData = {

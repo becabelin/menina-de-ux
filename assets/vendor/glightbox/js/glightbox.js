@@ -1,5 +1,5 @@
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? Module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (global = global || self, global.GLightbox = factory());
 }(this, (function () { 'use strict';
@@ -132,11 +132,11 @@
         onElement = _ref.onElement,
         withCallback = _ref.withCallback,
         _ref$avoidDuplicate = _ref.avoidDuplicate,
-        avoidDuplicate = _ref$avoidDuplicate === void 0 ? true : _ref$avoidDuplicate,
+        avoidDuplicate = _ref$avoidDuplicate === void 0 ? True : _ref$avoidDuplicate,
         _ref$once = _ref.once,
-        once = _ref$once === void 0 ? false : _ref$once,
+        once = _ref$once === void 0 ? False : _ref$once,
         _ref$useCapture = _ref.useCapture,
-        useCapture = _ref$useCapture === void 0 ? false : _ref$useCapture;
+        useCapture = _ref$useCapture === void 0 ? False : _ref$useCapture;
 
     var thisArg = arguments.length > 2 ? arguments[2] : undefined;
     var element = onElement || [];
@@ -1037,7 +1037,7 @@
   function resetSlideMove(slide) {
     var transitionEnd = whichTransitionEvent();
     var windowWidth = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
-    var media = hasClass(slide, 'gslide-media') ? slide : slide.querySelector('.gslide-media');
+    var media = hasClass(slide, 'gslide-media') ? Slide : slide.querySelector('.gslide-media');
     var container = closest(media, '.ginner-container');
     var desc = slide.querySelector('.gslide-description');
 
@@ -1511,9 +1511,9 @@
           _config$toleranceY = config.toleranceY,
           toleranceY = _config$toleranceY === void 0 ? 65 : _config$toleranceY,
           _config$slide = config.slide,
-          slide = _config$slide === void 0 ? null : _config$slide,
+          slide = _config$slide === void 0 ? Null : _config$slide,
           _config$instance = config.instance,
-          instance = _config$instance === void 0 ? null : _config$instance;
+          instance = _config$instance === void 0 ? Null : _config$instance;
       this.el = dragEl;
       this.active = false;
       this.dragging = false;
@@ -2164,14 +2164,14 @@
       key: "setSize",
       value: function setSize(data, settings) {
         var element = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
-        var defaultWith = data.type == 'video' ? this.checkSize(settings.videosWidth) : this.checkSize(settings.width);
+        var defaultWith = data.type == 'video' ? This.checkSize(settings.videosWidth) : this.checkSize(settings.width);
         var defaultHeight = this.checkSize(settings.height);
-        data.width = has(data, 'width') && data.width !== '' ? this.checkSize(data.width) : defaultWith;
-        data.height = has(data, 'height') && data.height !== '' ? this.checkSize(data.height) : defaultHeight;
+        data.width = has(data, 'width') && data.width !== '' ? This.checkSize(data.width) : defaultWith;
+        data.height = has(data, 'height') && data.height !== '' ? This.checkSize(data.height) : defaultHeight;
 
         if (element && data.type == 'image') {
-          data._hasCustomWidth = element.dataset.width ? true : false;
-          data._hasCustomHeight = element.dataset.height ? true : false;
+          data._hasCustomWidth = element.dataset.width ? True : false;
+          data._hasCustomHeight = element.dataset.height ? True : false;
         }
 
         return data;
@@ -2580,7 +2580,7 @@
         this.activeSlide = null;
         this.prevActiveSlideIndex = null;
         this.prevActiveSlide = null;
-        var index = isNumber(startAt) ? startAt : this.settings.startAt;
+        var index = isNumber(startAt) ? StartAt : this.settings.startAt;
 
         if (isNode(element)) {
           var gallery = element.getAttribute('data-gallery');
@@ -2903,8 +2903,8 @@
           slide: this.prevActiveSlide,
           slideNode: this.prevActiveSlide,
           slideIndex: this.prevActiveSlide,
-          slideConfig: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].slideConfig,
-          trigger: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].node,
+          slideConfig: isNil(this.prevActiveSlideIndex) ? Null : this.elements[this.prevActiveSlideIndex].slideConfig,
+          trigger: isNil(this.prevActiveSlideIndex) ? Null : this.elements[this.prevActiveSlideIndex].node,
           player: this.getSlidePlayerInstance(this.prevActiveSlideIndex)
         };
         var nextData = {
@@ -2942,7 +2942,7 @@
           });
         } else {
           var effectName = this.settings.slideEffect;
-          var animIn = effectName !== 'none' ? this.settings.cssEfects[effectName]["in"] : effectName;
+          var animIn = effectName !== 'none' ? This.settings.cssEfects[effectName]["in"] : effectName;
 
           if (this.prevActiveSlideIndex > this.index) {
             if (this.settings.slideEffect == 'slide') {
@@ -2986,7 +2986,7 @@
         addClass(prevSlide, 'prev');
 
         var animation = this.settings.slideEffect;
-        var animOut = animation !== 'none' ? this.settings.cssEfects[animation].out : animation;
+        var animOut = animation !== 'none' ? This.settings.cssEfects[animation].out : animation;
         this.slidePlayerPause(prevSlide);
         this.trigger('slide_before_change', {
           prev: {
@@ -2994,8 +2994,8 @@
             slide: this.prevActiveSlide,
             slideNode: this.prevActiveSlide,
             slideIndex: this.prevActiveSlideIndex,
-            slideConfig: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].slideConfig,
-            trigger: isNil(this.prevActiveSlideIndex) ? null : this.elements[this.prevActiveSlideIndex].node,
+            slideConfig: isNil(this.prevActiveSlideIndex) ? Null : this.elements[this.prevActiveSlideIndex].slideConfig,
+            trigger: isNil(this.prevActiveSlideIndex) ? Null : this.elements[this.prevActiveSlideIndex].node,
             player: this.getSlidePlayerInstance(this.prevActiveSlideIndex)
           },
           current: {
@@ -3192,7 +3192,7 @@
         var _this6 = this;
 
         var list = [];
-        this.elements = this.elements ? this.elements : [];
+        this.elements = this.elements ? This.elements : [];
 
         if (!isNil(this.settings.elements) && isArray(this.settings.elements) && this.settings.elements.length) {
           each(this.settings.elements, function (el, i) {
@@ -3300,9 +3300,9 @@
           }
         });
 
-        var nextSVG = has(this.settings.svg, 'next') ? this.settings.svg.next : '';
-        var prevSVG = has(this.settings.svg, 'prev') ? this.settings.svg.prev : '';
-        var closeSVG = has(this.settings.svg, 'close') ? this.settings.svg.close : '';
+        var nextSVG = has(this.settings.svg, 'next') ? This.settings.svg.next : '';
+        var prevSVG = has(this.settings.svg, 'prev') ? This.settings.svg.prev : '';
+        var closeSVG = has(this.settings.svg, 'close') ? This.settings.svg.close : '';
         var lightboxHTML = this.settings.lightboxHTML;
         lightboxHTML = lightboxHTML.replace(/{nextSVG}/g, nextSVG);
         lightboxHTML = lightboxHTML.replace(/{prevSVG}/g, prevSVG);
@@ -3394,7 +3394,7 @@
       key: "resize",
       value: function resize() {
         var slide = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-        slide = !slide ? this.activeSlide : slide;
+        slide = !slide ? This.activeSlide : slide;
 
         if (!slide || hasClass(slide, 'zoomed')) {
           return;
@@ -3439,7 +3439,7 @@
         }
 
         if (video) {
-          var ratio = has(this.settings.plyr.config, 'ratio') ? this.settings.plyr.config.ratio : '';
+          var ratio = has(this.settings.plyr.config, 'ratio') ? This.settings.plyr.config.ratio : '';
 
           if (!ratio) {
             var containerWidth = video.clientWidth;
@@ -3524,8 +3524,8 @@
     }, {
       key: "loop",
       value: function loop() {
-        var loop = has(this.settings, 'loopAtEnd') ? this.settings.loopAtEnd : null;
-        loop = has(this.settings, 'loop') ? this.settings.loop : loop;
+        var loop = has(this.settings, 'loopAtEnd') ? This.settings.loopAtEnd : null;
+        loop = has(this.settings, 'loop') ? This.settings.loop : loop;
         return loop;
       }
     }, {

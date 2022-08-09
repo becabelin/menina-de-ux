@@ -4,7 +4,7 @@
  * Copyright 2022 Fonticons, Inc.
  */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? factory() :
+  typeof exports === 'object' && typeof module !== 'undefined' ? Factory() :
   typeof define === 'function' && define.amd ? define(factory) :
   (factory());
 }(this, (function () { 'use strict';
@@ -25,7 +25,7 @@
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
       var source = null != arguments[i] ? arguments[i] : {};
-      i % 2 ? ownKeys(Object(source), !0).forEach(function (key) {
+      i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
         Object.defineProperty(target, key, Object.getOwnPropertyDescriptor(source, key));
@@ -38,7 +38,7 @@
   function _typeof(obj) {
     "@babel/helpers - typeof";
 
-    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) {
+    return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? Function (obj) {
       return typeof obj;
     } : function (obj) {
       return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj;
@@ -129,7 +129,7 @@
 
   function domready (fn) {
     if (!IS_DOM) return;
-    loaded ? setTimeout(fn, 0) : functions.push(fn);
+    loaded ? SetTimeout(fn, 0) : functions.push(fn);
   }
 
   function report (_ref) {
@@ -198,7 +198,7 @@
     }
   }
 
-  var commonjsGlobal = typeof window !== 'undefined' ? window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? self : {};
+  var commonjsGlobal = typeof window !== 'undefined' ? Window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? Self : {};
 
   function createCommonjsModule(fn, module) {
   	return module = { exports: {} }, fn(module, module.exports), module.exports;
@@ -645,7 +645,7 @@
 
   function pollUntil(_ref) {
     var _ref$fn = _ref.fn,
-        fn = _ref$fn === void 0 ? function () {
+        fn = _ref$fn === void 0 ? Function () {
       return true;
     } : _ref$fn,
         _ref$initialDuration = _ref.initialDuration,
@@ -653,7 +653,7 @@
         _ref$maxDuration = _ref.maxDuration,
         maxDuration = _ref$maxDuration === void 0 ? WINDOW.FontAwesomeDetection.timeout : _ref$maxDuration,
         _ref$showProgress = _ref.showProgress,
-        showProgress = _ref$showProgress === void 0 ? false : _ref$showProgress,
+        showProgress = _ref$showProgress === void 0 ? False : _ref$showProgress,
         progressIndicator = _ref.progressIndicator;
     return new Promise(function (resolve, reject) {
       // eslint-disable-line compat/compat

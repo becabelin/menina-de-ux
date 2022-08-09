@@ -4,7 +4,7 @@
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
   */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('@popperjs/core')) :
+  typeof exports === 'object' && typeof module !== 'undefined' ? Module.exports = factory(require('@popperjs/core')) :
   typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
   (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
 })(this, (function (Popper) { 'use strict';
@@ -87,7 +87,7 @@
     const selector = getSelector(element);
 
     if (selector) {
-      return document.querySelector(selector) ? selector : null;
+      return document.querySelector(selector) ? Selector : null;
     }
 
     return null;
@@ -140,7 +140,7 @@
   const getElement = object => {
     // it's a jQuery object or a node element
     if (isElement(object)) {
-      return object.jquery ? object[0] : object;
+      return object.jquery ? Object[0] : object;
     }
 
     if (typeof object === 'string' && object.length > 0) {
@@ -202,7 +202,7 @@
 
     if (typeof element.getRootNode === 'function') {
       const root = element.getRootNode();
-      return root instanceof ShadowRoot ? root : null;
+      return root instanceof ShadowRoot ? Root : null;
     }
 
     if (element instanceof ShadowRoot) {
@@ -772,7 +772,7 @@
       const jsonConfig = isElement(element) ? Manipulator.getDataAttribute(element, 'config') : {}; // try to parse
 
       return { ...this.constructor.Default,
-        ...(typeof jsonConfig === 'object' ? jsonConfig : {}),
+        ...(typeof jsonConfig === 'object' ? JsonConfig : {}),
         ...(isElement(element) ? Manipulator.getDataAttributes(element) : {}),
         ...(typeof config === 'object' ? config : {})
       };
@@ -1219,7 +1219,7 @@
         return;
       }
 
-      execute(direction > 0 ? this._config.rightCallback : this._config.leftCallback);
+      execute(direction > 0 ? This._config.rightCallback : this._config.leftCallback);
     }
 
     _initEvents() {
@@ -2075,7 +2075,7 @@
 
 
     toggle() {
-      return this._isShown() ? this.hide() : this.show();
+      return this._isShown() ? This.hide() : this.show();
     }
 
     show() {
@@ -2283,7 +2283,7 @@
       }
 
       return { ...defaultBsPopperConfig,
-        ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
+        ...(typeof this._config.popperConfig === 'function' ? This._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
 
@@ -2861,7 +2861,7 @@
 
 
     toggle(relatedTarget) {
-      return this._isShown ? this.hide() : this.show(relatedTarget);
+      return this._isShown ? This.hide() : this.show(relatedTarget);
     }
 
     show(relatedTarget) {
@@ -3229,7 +3229,7 @@
 
 
     toggle(relatedTarget) {
-      return this._isShown ? this.hide() : this.show(relatedTarget);
+      return this._isShown ? This.hide() : this.show(relatedTarget);
     }
 
     show(relatedTarget) {
@@ -3678,7 +3678,7 @@
     }
 
     _maybeSanitize(arg) {
-      return this._config.sanitize ? sanitizeHtml(arg, this._config.allowList, this._config.sanitizeFn) : arg;
+      return this._config.sanitize ? SanitizeHtml(arg, this._config.allowList, this._config.sanitizeFn) : arg;
     }
 
     _resolvePossibleFunction(arg) {
@@ -4069,7 +4069,7 @@
     }
 
     _createPopper(tip) {
-      const placement = typeof this._config.placement === 'function' ? this._config.placement.call(this, tip, this._element) : this._config.placement;
+      const placement = typeof this._config.placement === 'function' ? This._config.placement.call(this, tip, this._element) : this._config.placement;
       const attachment = AttachmentMap[placement.toUpperCase()];
       this._popper = Popper__namespace.createPopper(this._element, tip, this._getPopperConfig(attachment));
     }
@@ -4129,7 +4129,7 @@
         }]
       };
       return { ...defaultBsPopperConfig,
-        ...(typeof this._config.popperConfig === 'function' ? this._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
+        ...(typeof this._config.popperConfig === 'function' ? This._config.popperConfig(defaultBsPopperConfig) : this._config.popperConfig)
       };
     }
 
@@ -4140,8 +4140,8 @@
         if (trigger === 'click') {
           EventHandler.on(this._element, this.constructor.eventName(EVENT_CLICK$1), this._config.selector, event => this.toggle(event));
         } else if (trigger !== TRIGGER_MANUAL) {
-          const eventIn = trigger === TRIGGER_HOVER ? this.constructor.eventName(EVENT_MOUSEENTER) : this.constructor.eventName(EVENT_FOCUSIN$1);
-          const eventOut = trigger === TRIGGER_HOVER ? this.constructor.eventName(EVENT_MOUSELEAVE) : this.constructor.eventName(EVENT_FOCUSOUT$1);
+          const eventIn = trigger === TRIGGER_HOVER ? This.constructor.eventName(EVENT_MOUSEENTER) : this.constructor.eventName(EVENT_FOCUSIN$1);
+          const eventOut = trigger === TRIGGER_HOVER ? This.constructor.eventName(EVENT_MOUSELEAVE) : this.constructor.eventName(EVENT_FOCUSOUT$1);
           EventHandler.on(this._element, eventIn, this._config.selector, event => {
             const context = this._initializeOnDelegatedTarget(event);
 
@@ -4456,7 +4456,7 @@
 
       this._targetLinks = new Map();
       this._observableSections = new Map();
-      this._rootElement = getComputedStyle(this._element).overflowY === 'visible' ? null : this._element;
+      this._rootElement = getComputedStyle(this._element).overflowY === 'visible' ? Null : this._element;
       this._activeTarget = null;
       this._observer = null;
       this._previousScrollData = {
