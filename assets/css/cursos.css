@@ -93,7 +93,7 @@
 --------------------------------------------------------------*/
 
 .cursos {
-  background: #f7f7f7;
+  background: #FAFAFA;
   padding-bottom: 10%;
 }
 
@@ -270,7 +270,7 @@
   margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
-  background: #f7f7f7;
+  background: #FAFAFA;
   border-radius: 50px;
   padding: 2px 15px;
 }
@@ -286,7 +286,7 @@
   margin: 0 4px 8px 4px;
   transition: 0.3s;
   border-radius: 50px;
-  border: 1px solid #f7f7f7;
+  border: 1px solid #FAFAFA;
 }
 
 .cursos #cursos-flters li:hover,
