@@ -10,6 +10,8 @@
   height: 60%;
 }
 
+.hero-carousel {padding-bottom: 20px;}
+
 .hero .container,
 .hero-carousel .container {
   padding: 7% 0% 0% 0%;
@@ -24,7 +26,7 @@
   color: #20376C;
   font-family: "Goldplay", 'Poppins', sans-serif;
   font-style: normal;
-  line-height: 100%;
+  line-height: 110%;
   text-align: left;
 }
 
@@ -36,6 +38,7 @@
 .hero .hero-img img,
 .hero-carousel .hero-img img {
   border-radius: 20px;
+  width: 70%;
 }
 
 .hero p,
