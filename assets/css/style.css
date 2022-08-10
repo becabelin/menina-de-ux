@@ -449,7 +449,7 @@ section {
 .apoie .container,
 .em-construcao .container,
 .telegram .container {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .sobre .align-end,
@@ -484,6 +484,15 @@ section {
   font-style: normal;
   text-align: left;
   margin-bottom: 20px;
+}
+
+.sobre a:hover,
+.telegram a:hover,
+.apoie a:hover,
+.em-construcao a:hover,
+.contato a:hover {
+  color: #20376C;
+  transition: 0.5s;
 }
 
 .sobre .img-fluid,
@@ -656,10 +665,14 @@ section {
   width: 20%;
   border-radius: 10px;
   margin: 10px;
-  height: auto;
 }
 
-.aulas .card-body {
+.aulas .card-2{
+  height: auto;
+  padding-bottom: 0px;
+}
+
+.aulas .card-body-2 {
   padding: 0px;
   padding-bottom: 10px;
 }
