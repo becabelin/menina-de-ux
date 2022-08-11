@@ -505,7 +505,8 @@ section {
 
 .sobre .btn-quero-apoiar,
 .telegram .btn-quero-apoiar,
-.apoie .btn-quero-apoiar {
+.apoie .btn-quero-apoiar,
+.conteudos .btn-projeto {
   font-family: "Goldplay", "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
@@ -519,12 +520,24 @@ section {
   border-radius: 50px;
   text-align: center;
   margin-top: 10px;
-  border: #FAFAFA solid 1px;
+  border: #4678BC solid 1px;
 }
 
 .sobre .btn-quero-apoiar:hover,
 .telegram .btn-quero-apoiar:hover,
-.apoie .btn-quero-apoiar:hover {
+.apoie .btn-quero-apoiar:hover,
+.conteudos .btn-projeto:hover {
+  font-family: "Goldplay", "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  border-radius: 50px;
+  text-align: center;
+  margin-top: 10px;
   background: none;
   color: #4678BC;
   border: #4678BC solid 1px;
@@ -667,7 +680,7 @@ section {
   margin: 10px;
 }
 
-.aulas .card-2{
+.aulas .card-2 {
   height: auto;
   padding-bottom: 0px;
 }
@@ -957,10 +970,8 @@ section {
   background: #4678BC;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px;
-  border: #FAFAFA solid 1px;
-  margin-bottom: 30px;
-  margin-left: 20px;
+  margin-top: 10px 20 30;
+  border: #4678BC solid 1px;
 }
 
 .conteudos .btn-quero-apoiar:hover {
@@ -1222,8 +1233,6 @@ section {
 
 .apoie,
 .telegram {
-  border-bottom: #d9d9d9 solid 1px;
-  border-top: #d9d9d9 solid 1px;
   margin: 0px;
   padding: 10px 0px;
 }
@@ -1315,9 +1324,8 @@ section {
 
 .carousel .h1 {
   color: #20376C;
-  font-size: 24px;
-  margin-bottom: 0;
-  margin-top: 0;
+  font-size: 26px;
+  margin: 0px;
   font-weight: 700;
   line-height: 30px;
 }
