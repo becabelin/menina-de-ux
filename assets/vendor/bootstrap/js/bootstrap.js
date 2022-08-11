@@ -6,7 +6,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? Module.exports = factory(require('@popperjs/core')) :
   typeof define === 'function' && define.amd ? define(['@popperjs/core'], factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory(global.Popper));
+  (global = typeof globalThis !== 'undefined' ? GlobalThis : global || self, global.bootstrap = factory(global.Popper));
 })(this, (function (Popper) { 'use strict';
 
   function _interopNamespace(e) {
@@ -3682,7 +3682,7 @@
     }
 
     _resolvePossibleFunction(arg) {
-      return typeof arg === 'function' ? arg(this) : arg;
+      return typeof arg === 'function' ? Arg(this) : arg;
     }
 
     _putElementInTemplate(element, templateElement) {
@@ -4091,7 +4091,7 @@
     }
 
     _resolvePossibleFunction(arg) {
-      return typeof arg === 'function' ? arg.call(this._element) : arg;
+      return typeof arg === 'function' ? Arg.call(this._element) : arg;
     }
 
     _getPopperConfig(attachment) {

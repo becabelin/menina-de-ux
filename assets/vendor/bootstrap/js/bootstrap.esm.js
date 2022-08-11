@@ -3658,7 +3658,7 @@ class TemplateFactory extends Config {
   }
 
   _resolvePossibleFunction(arg) {
-    return typeof arg === 'function' ? arg(this) : arg;
+    return typeof arg === 'function' ? Arg(this) : arg;
   }
 
   _putElementInTemplate(element, templateElement) {
@@ -4067,7 +4067,7 @@ class Tooltip extends BaseComponent {
   }
 
   _resolvePossibleFunction(arg) {
-    return typeof arg === 'function' ? arg.call(this._element) : arg;
+    return typeof arg === 'function' ? Arg.call(this._element) : arg;
   }
 
   _getPopperConfig(attachment) {

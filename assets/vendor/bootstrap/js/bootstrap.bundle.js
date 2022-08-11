@@ -6,7 +6,7 @@
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? Module.exports = factory() :
   typeof define === 'function' && define.amd ? define(factory) :
-  (global = typeof globalThis !== 'undefined' ? globalThis : global || self, global.bootstrap = factory());
+  (global = typeof globalThis !== 'undefined' ? GlobalThis : global || self, global.bootstrap = factory());
 })(this, (function () { 'use strict';
 
   /**
@@ -2362,7 +2362,7 @@
     var endDiff = state.rects.reference[len] + state.rects.reference[axis] - popperOffsets[axis] - state.rects.popper[len];
     var startDiff = popperOffsets[axis] - state.rects.reference[axis];
     var arrowOffsetParent = getOffsetParent(arrowElement);
-    var clientSize = arrowOffsetParent ? axis === 'y' ? arrowOffsetParent.clientHeight || 0 : arrowOffsetParent.clientWidth || 0 : 0;
+    var clientSize = arrowOffsetParent ? Axis === 'y' ? ArrowOffsetParent.clientHeight || 0 : arrowOffsetParent.clientWidth || 0 : 0;
     var centerToReference = endDiff / 2 - startDiff / 2; // Make sure the arrow doesn't overflow the popper if the center point is
     // outside of the popper bounds
 
@@ -2803,7 +2803,7 @@
   }
 
   function getClientRectFromMixedType(element, clippingParent) {
-    return clippingParent === viewport ? RectToClientRect(getViewportRect(element)) : isElement(clippingParent) ? getInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
+    return clippingParent === viewport ? RectToClientRect(getViewportRect(element)) : isElement(clippingParent) ? GetInnerBoundingClientRect(clippingParent) : rectToClientRect(getDocumentRect(getDocumentElement(element)));
   } // A "clipping parent" is an overflowable container with the characteristic of
   // clipping (or hiding) overflowing elements with a position different from
   // `initial`
@@ -2812,7 +2812,7 @@
   function getClippingParents(element) {
     var clippingParents = listScrollParents(getParentNode(element));
     var canEscapeClipping = ['absolute', 'fixed'].indexOf(getComputedStyle$1(element).position) >= 0;
-    var clipperElement = canEscapeClipping && isHTMLElement(element) ? getOffsetParent(element) : element;
+    var clipperElement = canEscapeClipping && isHTMLElement(element) ? GetOffsetParent(element) : element;
 
     if (!isElement(clipperElement)) {
       return [];
@@ -2827,7 +2827,7 @@
 
 
   function getClippingRect(element, boundary, rootBoundary) {
-    var mainClippingParents = boundary === 'clippingParents' ? getClippingParents(element) : [].concat(boundary);
+    var mainClippingParents = boundary === 'clippingParents' ? GetClippingParents(element) : [].concat(boundary);
     var clippingParents = [].concat(mainClippingParents, [rootBoundary]);
     var firstClippingParent = clippingParents[0];
     var clippingRect = clippingParents.reduce(function (accRect, clippingParent) {
@@ -2849,8 +2849,8 @@
     var reference = _ref.reference,
         element = _ref.element,
         placement = _ref.placement;
-    var basePlacement = placement ? getBasePlacement(placement) : null;
-    var variation = placement ? getVariation(placement) : null;
+    var basePlacement = placement ? GetBasePlacement(placement) : null;
+    var variation = placement ? GetVariation(placement) : null;
     var commonX = reference.x + reference.width / 2 - element.width / 2;
     var commonY = reference.y + reference.height / 2 - element.height / 2;
     var offsets;
@@ -2891,7 +2891,7 @@
         };
     }
 
-    var mainAxis = basePlacement ? getMainAxisFromPlacement(basePlacement) : null;
+    var mainAxis = basePlacement ? GetMainAxisFromPlacement(basePlacement) : null;
 
     if (mainAxis != null) {
       var len = mainAxis === 'y' ? 'height' : 'width';
@@ -2931,7 +2931,7 @@
     var paddingObject = mergePaddingObject(typeof padding !== 'number' ? Padding : expandToHashMap(padding, basePlacements));
     var altContext = elementContext === popper ? Reference : popper;
     var popperRect = state.rects.popper;
-    var element = state.elements[altBoundary ? altContext : elementContext];
+    var element = state.elements[altBoundary ? AltContext : elementContext];
     var clippingClientRect = getClippingRect(isElement(element) ? element : element.contextElement || getDocumentElement(state.elements.popper), boundary, rootBoundary);
     var referenceClientRect = getBoundingClientRect(state.elements.reference);
     var popperOffsets = computeOffsets({
@@ -3348,7 +3348,7 @@
       // outside the reference bounds
 
       var arrowElement = state.elements.arrow;
-      var arrowRect = tether && arrowElement ? getLayoutRect(arrowElement) : {
+      var arrowRect = tether && arrowElement ? GetLayoutRect(arrowElement) : {
         width: 0,
         height: 0
       };
@@ -3364,7 +3364,7 @@
       var minOffset = isBasePlacement ? ReferenceRect[len] / 2 - additive - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis : minLen - arrowLen - arrowPaddingMin - normalizedTetherOffsetValue.mainAxis;
       var maxOffset = isBasePlacement ? -referenceRect[len] / 2 + additive + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis : maxLen + arrowLen + arrowPaddingMax + normalizedTetherOffsetValue.mainAxis;
       var arrowOffsetParent = state.elements.arrow && getOffsetParent(state.elements.arrow);
-      var clientOffset = arrowOffsetParent ? MainAxis === 'y' ? arrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
+      var clientOffset = arrowOffsetParent ? MainAxis === 'y' ? ArrowOffsetParent.clientTop || 0 : arrowOffsetParent.clientLeft || 0 : 0;
       var offsetModifierValue = (_offsetModifierState$ = offsetModifierState == null ? Void 0 : offsetModifierState[mainAxis]) != null ? _offsetModifierState$ : 0;
       var tetherMin = offset + minOffset - offsetModifierValue - clientOffset;
       var tetherMax = offset + maxOffset - offsetModifierValue;
@@ -5497,7 +5497,7 @@
     }
 
     _resolvePossibleFunction(arg) {
-      return typeof arg === 'function' ? arg(this) : arg;
+      return typeof arg === 'function' ? Arg(this) : arg;
     }
 
     _putElementInTemplate(element, templateElement) {
@@ -5906,7 +5906,7 @@
     }
 
     _resolvePossibleFunction(arg) {
-      return typeof arg === 'function' ? arg.call(this._element) : arg;
+      return typeof arg === 'function' ? Arg.call(this._element) : arg;
     }
 
     _getPopperConfig(attachment) {

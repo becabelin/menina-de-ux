@@ -38,7 +38,7 @@
 
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = null != arguments[i] ? arguments[i] : {};
+      var source = null != arguments[i] ? Arguments[i] : {};
       i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
@@ -165,7 +165,7 @@
   }
 
   function defineIcons(prefix, icons) {
-    var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var params = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : {};
     var _params$skipHooks = params.skipHooks,
         skipHooks = _params$skipHooks === void 0 ? False : _params$skipHooks;
     var normalized = normalizeIcons(icons);

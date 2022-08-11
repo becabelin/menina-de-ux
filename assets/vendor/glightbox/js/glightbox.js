@@ -106,8 +106,8 @@
     }
   }
   function getNodeEvents(node) {
-    var name = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
-    var fn = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+    var name = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : null;
+    var fn = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : null;
     var cache = node[uid] = node[uid] || [];
     var data = {
       all: cache,
@@ -128,7 +128,7 @@
     return data;
   }
   function addEvent(eventName) {
-    var _ref = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {},
+    var _ref = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {},
         onElement = _ref.onElement,
         withCallback = _ref.withCallback,
         _ref$avoidDuplicate = _ref.avoidDuplicate,
@@ -138,7 +138,7 @@
         _ref$useCapture = _ref.useCapture,
         useCapture = _ref$useCapture === void 0 ? False : _ref$useCapture;
 
-    var thisArg = arguments.length > 2 ? arguments[2] : undefined;
+    var thisArg = arguments.length > 2 ? Arguments[2] : undefined;
     var element = onElement || [];
 
     if (isString(element)) {
@@ -211,8 +211,8 @@
     }
   }
   function animateElement(element) {
-    var animation = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
-    var callback = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+    var animation = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : '';
+    var callback = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : false;
 
     if (!element || animation === '') {
       return false;
@@ -247,7 +247,7 @@
     });
   }
   function cssTransform(node) {
-    var translate = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : '';
+    var translate = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : '';
 
     if (translate == '') {
       node.style.webkitTransform = '';
@@ -529,7 +529,7 @@
   }
 
   function getNextFocusElement() {
-    var current = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : -1;
+    var current = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : -1;
     var btns = document.querySelectorAll('.gbtn[data-taborder]:not(.disabled)');
 
     if (!btns.length) {
@@ -1323,7 +1323,7 @@
     function ZoomImages(el, slide) {
       var _this = this;
 
-      var onclose = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+      var onclose = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : null;
 
       _classCallCheck(this, ZoomImages);
 
@@ -1501,7 +1501,7 @@
     function DragSlides() {
       var _this = this;
 
-      var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var config = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
 
       _classCallCheck(this, DragSlides);
 
@@ -1714,7 +1714,7 @@
     }, {
       key: "setTranslate",
       value: function setTranslate(node, xPos, yPos) {
-        var animated = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : false;
+        var animated = arguments.length > 3 && arguments[3] !== undefined ? Arguments[3] : false;
 
         if (animated) {
           node.style.transition = 'all .2s ease';
@@ -1971,7 +1971,7 @@
 
   var SlideConfigParser = function () {
     function SlideConfigParser() {
-      var slideParamas = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var slideParamas = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
 
       _classCallCheck(this, SlideConfigParser);
 
@@ -2163,7 +2163,7 @@
     }, {
       key: "setSize",
       value: function setSize(data, settings) {
-        var element = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+        var element = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : null;
         var defaultWith = data.type == 'video' ? This.checkSize(settings.videosWidth) : this.checkSize(settings.width);
         var defaultHeight = this.checkSize(settings.height);
         data.width = has(data, 'width') && data.width !== '' ? This.checkSize(data.width) : defaultWith;
@@ -2209,8 +2209,8 @@
       value: function setContent() {
         var _this = this;
 
-        var slide = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-        var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+        var slide = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : null;
+        var callback = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : false;
 
         if (hasClass(slide, 'loaded')) {
           return false;
@@ -2346,8 +2346,8 @@
     }, {
       key: "slideShortDesc",
       value: function slideShortDesc(string) {
-        var n = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 50;
-        var wordBoundary = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+        var n = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : 50;
+        var wordBoundary = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : false;
         var div = document.createElement('div');
         div.innerHTML = string;
         var cleanedString = div.innerText;
@@ -2535,7 +2535,7 @@
 
   var GlightboxInit = function () {
     function GlightboxInit() {
-      var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var options = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
 
       _classCallCheck(this, GlightboxInit);
 
@@ -2570,8 +2570,8 @@
     }, {
       key: "open",
       value: function open() {
-        var element = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
-        var startAt = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+        var element = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : null;
+        var startAt = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : null;
 
         if (this.elements.length == 0) {
           return false;
@@ -2660,7 +2660,7 @@
     }, {
       key: "openAt",
       value: function openAt() {
-        var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
+        var index = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : 0;
         this.open(null, index);
       }
     }, {
@@ -2668,8 +2668,8 @@
       value: function showSlide() {
         var _this2 = this;
 
-        var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : 0;
-        var first = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+        var index = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : 0;
+        var first = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : false;
 
         show(this.loader);
 
@@ -2780,7 +2780,7 @@
     }, {
       key: "goToSlide",
       value: function goToSlide() {
-        var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : false;
+        var index = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : false;
         this.prevActiveSlide = this.activeSlide;
         this.prevActiveSlideIndex = this.index;
 
@@ -2799,8 +2799,8 @@
     }, {
       key: "insertSlide",
       value: function insertSlide() {
-        var config = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
-        var index = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : -1;
+        var config = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
+        var index = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : -1;
 
         if (index < 0) {
           index = this.elements.length;
@@ -2864,7 +2864,7 @@
     }, {
       key: "removeSlide",
       value: function removeSlide() {
-        var index = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : -1;
+        var index = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : -1;
 
         if (index < 0 || index > this.elements.length - 1) {
           return false;
@@ -3393,7 +3393,7 @@
     }, {
       key: "resize",
       value: function resize() {
-        var slide = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : null;
+        var slide = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : null;
         slide = !slide ? This.activeSlide : slide;
 
         if (!slide || hasClass(slide, 'zoomed')) {
@@ -3621,7 +3621,7 @@
     }, {
       key: "on",
       value: function on(evt, callback) {
-        var once = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : false;
+        var once = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : false;
 
         if (!evt || !isFunction(callback)) {
           throw new TypeError('Event name and callback must be defined');
@@ -3643,7 +3643,7 @@
       value: function trigger(eventName) {
         var _this9 = this;
 
-        var data = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+        var data = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : null;
         var onceTriggered = [];
 
         each(this.apiEvents, function (event, i) {
@@ -3682,7 +3682,7 @@
   }();
 
   function glightbox () {
-    var options = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var options = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
     var instance = new GlightboxInit(options);
     instance.init();
     return instance;

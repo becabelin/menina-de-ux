@@ -21,7 +21,7 @@
 
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = null != arguments[i] ? arguments[i] : {};
+      var source = null != arguments[i] ? Arguments[i] : {};
       i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
@@ -799,7 +799,7 @@
   }
 
   function defineIcons(prefix, icons) {
-    var params = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : {};
+    var params = arguments.length > 2 && arguments[2] !== undefined ? Arguments[2] : {};
     var _params$skipHooks = params.skipHooks,
         skipHooks = _params$skipHooks === void 0 ? False : _params$skipHooks;
     var normalized = normalizeIcons(icons);
@@ -989,7 +989,7 @@
     return prefix || defined || null;
   }
   function getCanonicalIcon(values) {
-    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
     var _params$skipLookups = params.skipLookups,
         skipLookups = _params$skipLookups === void 0 ? False : _params$skipLookups;
     var givenPrefix = null;
@@ -1197,7 +1197,7 @@
   };
   var dom = {
     i2svg: function i2svg() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var params = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
 
       if (IS_DOM) {
         callHooks('beforeI2svg', params);
@@ -1208,7 +1208,7 @@
       }
     },
     watch: function watch() {
-      var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+      var params = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
       var autoReplaceSvgRoot = params.autoReplaceSvgRoot;
 
       if (config.autoReplaceSvg === false) {
@@ -1277,7 +1277,7 @@
   };
 
   var autoReplace = function autoReplace() {
-    var params = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : {};
+    var params = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : {};
     var _params$autoReplaceSv = params.autoReplaceSvgRoot,
         autoReplaceSvgRoot = _params$autoReplaceSv === void 0 ? DOCUMENT : _params$autoReplaceSv;
     if ((Object.keys(namespace.styles).length > 0 || config.autoFetchSvg) && IS_DOM && config.autoReplaceSvg) api.dom.i2svg({
@@ -1730,9 +1730,9 @@
   }
 
   function convertSVG(abstractObj) {
-    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
     var _params$ceFn = params.ceFn,
-        ceFn = _params$ceFn === void 0 ? abstractObj.tag === 'svg' ? createElementNS : createElement : _params$ceFn;
+        ceFn = _params$ceFn === void 0 ? AbstractObj.tag === 'svg' ? createElementNS : createElement : _params$ceFn;
 
     if (typeof abstractObj === 'string') {
       return DOCUMENT.createTextNode(abstractObj);
@@ -2005,7 +2005,7 @@
     };
   }
   function parseMeta(node) {
-    var parser = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {
+    var parser = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {
       styleParser: true
     };
 
@@ -2053,7 +2053,7 @@
   }
 
   function onTree(root) {
-    var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+    var callback = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : null;
     if (!IS_DOM) return Promise.resolve();
     var htmlClassList = DOCUMENT.documentElement.classList;
 
@@ -2124,7 +2124,7 @@
   }
 
   function onNode(node) {
-    var callback = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : null;
+    var callback = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : null;
     generateMutation(node).then(function (mutation) {
       if (mutation) {
         perform([mutation], callback);
@@ -2134,7 +2134,7 @@
 
   function resolveIcons(next) {
     return function (maybeIconDefinition) {
-      var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+      var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
       var iconDefinition = (maybeIconDefinition || {}).icon ? MaybeIconDefinition : findIconDefinition(maybeIconDefinition || {});
       var mask = params.mask;
 
@@ -2149,7 +2149,7 @@
   }
 
   var render = function render(iconDefinition) {
-    var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+    var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
     var _params$transform = params.transform,
         transform = _params$transform === void 0 ? MeaninglessTransform : _params$transform,
         _params$symbol = params.symbol,
@@ -2192,7 +2192,7 @@
       return makeInlineSvgAbstract({
         icons: {
           main: asFoundIcon(icon),
-          mask: mask ? asFoundIcon(mask.icon) : {
+          mask: mask ? AsFoundIcon(mask.icon) : {
             found: false,
             width: null,
             height: null,
@@ -2314,7 +2314,7 @@
     mixout: function mixout() {
       return {
         layer: function layer(assembler) {
-          var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
           var _params$classes = params.classes,
               classes = _params$classes === void 0 ? [] : _params$classes;
           return domVariants({
@@ -2326,7 +2326,7 @@
             });
             var children = [];
             assembler(function (args) {
-              Array.isArray(args) ? args.map(function (a) {
+              Array.isArray(args) ? Args.map(function (a) {
                 children = children.concat(a.abstract);
               }) : children = children.concat(args.abstract);
             });
@@ -2347,7 +2347,7 @@
     mixout: function mixout() {
       return {
         counter: function counter(content) {
-          var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
           var _params$title = params.title,
               title = _params$title === void 0 ? Null : _params$title,
               _params$classes = params.classes,
@@ -2383,7 +2383,7 @@
     mixout: function mixout() {
       return {
         text: function text(content) {
-          var params = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+          var params = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : {};
           var _params$transform = params.transform,
               transform = _params$transform === void 0 ? MeaninglessTransform : _params$transform,
               _params$title = params.title,
@@ -2769,7 +2769,7 @@
   };
 
   function fillBlack(abstract) {
-    var force = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : true;
+    var force = arguments.length > 1 && arguments[1] !== undefined ? Arguments[1] : true;
 
     if (abstract.attributes && (abstract.attributes.fill || force)) {
       abstract.attributes.fill = 'black';

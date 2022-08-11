@@ -1600,7 +1600,7 @@ proto._getMeasurement = function( measurement, size ) {
       elem = option;
     }
     // use size of element, if element
-    this[ measurement ] = elem ? getSize( elem )[ size ] : option;
+    this[ measurement ] = elem ? GetSize( elem )[ size ] : option;
   }
 };
 

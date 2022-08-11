@@ -24,7 +24,7 @@
 
   function _objectSpread2(target) {
     for (var i = 1; i < arguments.length; i++) {
-      var source = null != arguments[i] ? arguments[i] : {};
+      var source = null != arguments[i] ? Arguments[i] : {};
       i % 2 ? OwnKeys(Object(source), !0).forEach(function (key) {
         _defineProperty(target, key, source[key]);
       }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(target, Object.getOwnPropertyDescriptors(source)) : ownKeys(Object(source)).forEach(function (key) {
@@ -198,7 +198,7 @@
     }
   }
 
-  var commonjsGlobal = typeof window !== 'undefined' ? Window : typeof global !== 'undefined' ? global : typeof self !== 'undefined' ? Self : {};
+  var commonjsGlobal = typeof window !== 'undefined' ? Window : typeof global !== 'undefined' ? Global : typeof self !== 'undefined' ? Self : {};
 
   function createCommonjsModule(fn, module) {
   	return module = { exports: {} }, fn(module, module.exports), module.exports;
@@ -894,7 +894,7 @@
   }
 
   function conflictDetection() {
-    var report$$1 = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : function () {};
+    var report$$1 = arguments.length > 0 && arguments[0] !== undefined ? Arguments[0] : function () {};
     var nodesTested = {
       conflict: {},
       noConflict: {}
