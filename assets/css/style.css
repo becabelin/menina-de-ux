@@ -27,6 +27,20 @@ h6 {
   font-family: "Poppins", sans-serif;
 }
 
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: none;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #4678BC;
+  border-radius: 20px;
+  border: 3px solid #FAFAFA;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
