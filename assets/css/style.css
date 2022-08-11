@@ -594,7 +594,8 @@ section {
     margin-bottom: -20% !important;
   }
 
-  .sobre .col {
+  .sobre .col,
+  .apoie .col {
     margin: 0px 20px;
   }
 
@@ -1404,10 +1405,14 @@ section {
 @media (max-width: 980px) {
   .carousel {
     align-items: center !important;
+    margin-top: 30px;
+    height: auto;
   }
 
   .carousel-item {
     margin: 0px 30px !important;
+    margin-bottom: 20%;
+    height: auto;
   }
 
   .carousel .h1 {
@@ -1418,6 +1423,7 @@ section {
   .carousel .p {
     margin-bottom: 20px;
     width: 80%;
+    font-size: 16px;
   }
 
   .carousel .img-fluid {

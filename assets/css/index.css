@@ -111,7 +111,6 @@
   .hero {
     padding: 10vh 0vh 5vh 0vh !important;
     height: auto;
-    padding: 120px 0 60px 0;
   }
 
   .hero-carousel {
@@ -129,6 +128,7 @@
     padding: 20px 20px 0px;
     line-height: 36px;
     width: 100%;
+    margin-left: 10px;
   }
 
   .hero .left {
@@ -140,6 +140,7 @@
     font-size: 16px;
     width: 100%;
     padding: 10px 20px;
+    margin-left: 10px;
   }
 
   .hero .text-left {
