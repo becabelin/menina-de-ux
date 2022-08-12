@@ -422,6 +422,7 @@ section {
     padding: 10% 0;
     overflow: hidden;
   }
+
   .section-title p {
     font-size: 30px;
     padding-top: 10px;
@@ -694,9 +695,10 @@ section {
   width: 100%;
 }
 
-.aulas .txt-apagado{
+.aulas .txt-apagado {
   margin-top: -10px;
 }
+
 .aulas .card {
   width: 20%;
   border-radius: 10px;
@@ -800,7 +802,7 @@ section {
     margin-bottom: -50px;
   }
 
-  .aulas .txt-apagado{
+  .aulas .txt-apagado {
     margin-top: 20%;
   }
 
