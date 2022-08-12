@@ -689,6 +689,9 @@ section {
   width: 100%;
 }
 
+.aulas .txt-apagado{
+  margin-top: -10px;
+}
 .aulas .card {
   width: 20%;
   border-radius: 10px;
@@ -790,6 +793,10 @@ section {
 
   .aulas {
     margin-bottom: -50px;
+  }
+
+  .aulas .txt-apagado{
+    margin-top: 20%;
   }
 
   .aulas .title {
