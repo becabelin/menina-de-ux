@@ -125,6 +125,13 @@ body::-webkit-scrollbar-thumb {
   text-decoration: none;
 }
 
+
+@media (max-width: 1084px) {
+  #header .logo img {
+    margin-left: 20px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -287,7 +294,6 @@ section {
   font-size: 14px;
   padding: 0;
   margin: 0 0 5px 0;
-  letter-spacing: 2px;
   color: #20376C;
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
 }
@@ -322,7 +328,7 @@ section {
   }
 
   .section-title h2 {
-    font-size: 15px;
+    font-size: 18px;
     width: 100vw;
   }
 }
@@ -505,14 +511,14 @@ section {
   .telegram .btn-quero-apoiar,
   .apoie .btn-quero-apoiar {
     width: 80vw;
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .sobre .btn-quero-apoiar-2,
   .telegram .btn-quero-apoiar-2,
   .apoie .btn-quero-apoiar-2 {
     width: 80vw;
-    font-size: 14px;
+    font-size: 16px;
     margin-left: 0px;
   }
 
@@ -531,14 +537,13 @@ section {
   .apoie h1,
   .em-construcao h1 {
     padding-top: 30px;
-    width: 90%;
   }
 
   .sobre p,
   .telegram p,
   .apoie p,
   .em-construcao p {
-    font-size: 16px;
+    font-size: 18px;
     width: 100%;
     padding-bottom: 10px;
     height: auto;
@@ -580,7 +585,6 @@ section {
 .conteudos .title {
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   text-align: center;
-  font-weight: 700;
   margin: 20px 0px;
   width: 100%;
 }
@@ -695,7 +699,12 @@ section {
   .aulas .txt-apagado {
     margin-top: 20%;
   }
-
+  .aulas .card-title {
+    font-size: 22px;
+  }
+  .aulas .card-text {
+    font-size: 16px;
+  }
   .aulas .title {
     margin-bottom: -60px;
   }
@@ -820,7 +829,7 @@ section {
   .apoie-2 .btn-quero-apoiar,
   .apoie-2 .btn-quero-apoiar-2 {
     margin-left: 0px;
-    font-size: 14px;
+    font-size: 16px;
     width: auto;
   }
 
@@ -1105,7 +1114,7 @@ section {
   }
 
   .conteudos .btn-quero-apoiar {
-    font-size: 14px;
+    font-size: 16px;
     width: 70vw;
     margin-left: 10px;
   }
@@ -1128,7 +1137,7 @@ section {
   }
 
   .conteudos p {
-    font-size: 16px;
+    font-size: 18px;
     width: 80vw;
     padding-bottom: 10px;
     margin-left: 10px;
