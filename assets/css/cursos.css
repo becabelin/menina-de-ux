@@ -15,20 +15,19 @@
 
 .hero h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 46px;
   color: #20376C;
-  font-family: "Goldplay", 'Poppins', sans-serif;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
   font-style: normal;
   line-height: 125%;
   text-align: center;
 }
 
 .hero p {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   color: #20376C;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Avenir LT STD', sans-serif;
   font-style: normal;
   text-align: center;
   padding-top: 20px;
@@ -144,18 +143,17 @@
 }
 
 .cursos .post-box .post-title {
-  font-size: 24px;
+  font-size: 22px;
   color: #20376C;
-  font-weight: 600;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 20px 10px 20px;
   position: relative;
   transition: 0.3s;
-  font-family: "Goldplay", 'Poppins', sans-serif;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
 }
 
 .cursos .description {
-  font-family: "Montserrat", 'Poppins', sans-serif;
-  font-size: 14px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 16px;
   font-weight: 500;
   margin: 0px 20px 20px 20px;
   color: #20376C;
@@ -166,7 +164,7 @@
   color: #757575;
   font-weight: 500;
   margin: 0px 20px 5px 20px !important;
-  font-family: "Montserrat", 'Poppins', sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
 }
 
 .cursos .post-box .readmore {
@@ -279,7 +277,7 @@
   cursor: pointer;
   display: inline-block;
   padding: 8px 20px 10px 20px;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
   line-height: 1;
   color: #444444;

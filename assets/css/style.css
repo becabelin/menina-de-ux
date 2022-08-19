@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
   color: #20376C;
   background-color: #FAFAFA;
 }
@@ -24,7 +24,7 @@ h1,
 h4,
 h5,
 h6 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -105,8 +105,13 @@ body::-webkit-scrollbar-thumb {
   height: 60px;
 }
 
+#header .logo img {
+  padding: 0;
+  max-height: 40px;
+}
+
 #header .logo h1 {
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   font-size: 28px;
   margin: 0;
   padding: 0;
@@ -149,8 +154,8 @@ body::-webkit-scrollbar-thumb {
   justify-content: space-between;
   padding: 10px 0 10px 30px;
   font-size: 16px;
-  font-weight: 600;
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-weight: 300;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   color: rgba(39, 39, 39, 0.7);
   white-space: nowrap;
   transition: 0.3s;
@@ -188,74 +193,6 @@ body::-webkit-scrollbar-thumb {
 .navbar .active:focus,
 .navbar li:hover>A {
   color: #20376C;
-}
-
-.navbar .dropdown ul {
-  display: block;
-  position: absolute;
-  left: 25px;
-  top: calc(100% + 30px);
-  margin: 0;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  background: #FAFAFA;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-  border-radius: 10px;
-  margin-top: 10px;
-}
-
-.navbar .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar .dropdown ul a {
-  padding: 5px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  text-transform: none;
-  color: #20376C;
-}
-
-.navbar .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar .dropdown ul a:hover,
-.navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>A {
-  color: #20376C;
-}
-
-.navbar .dropdown:hover>Ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.navbar .dropdown .dropdown ul {
-  top: 0;
-  left: calc(100% - 30px);
-  visibility: hidden;
-}
-
-.navbar .dropdown .dropdown:hover>Ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-  visibility: visible;
-}
-
-@media (max-width: 1366px) {
-  .navbar .dropdown .dropdown ul {
-    left: -90%;
-  }
-
-  .navbar .dropdown .dropdown:hover>Ul {
-    left: -100%;
-  }
 }
 
 /** Mobile Navigation */
@@ -328,48 +265,6 @@ body::-webkit-scrollbar-thumb {
   color: #20376C;
 }
 
-.navbar-mobile .dropdown ul,
-.navbar-mobile .dropdown .dropdown ul {
-  position: static;
-  display: none;
-  margin: 10px 20px;
-  padding: 10px 0;
-  z-index: 99;
-  opacity: 1;
-  visibility: visible;
-  background: #FAFAFA;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-}
-
-.navbar-mobile .dropdown ul li,
-.navbar-mobile .dropdown .dropdown ul li {
-  min-width: 200px;
-}
-
-.navbar-mobile .dropdown ul a,
-.navbar-mobile .dropdown .dropdown ul a {
-  padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i,
-.navbar-mobile .dropdown .dropdown ul a i {
-  font-size: 12px;
-}
-
-.navbar-mobile .dropdown ul a:hover,
-.navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>A,
-.navbar-mobile .dropdown .dropdown ul a:hover,
-.navbar-mobile .dropdown .dropdown ul .active:hover,
-.navbar-mobile .dropdown .dropdown ul li:hover>A {
-  color: #20376C;
-}
-
-.navbar-mobile .dropdown>.dropdown-active,
-.navbar-mobile .dropdown .dropdown>.dropdown-active {
-  display: block;
-}
-
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
@@ -390,13 +285,11 @@ section {
 
 .section-title h2 {
   font-size: 14px;
-  font-weight: 500;
   padding: 0;
   margin: 0 0 5px 0;
   letter-spacing: 2px;
-  text-transform: uppercase;
   color: #20376C;
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
 }
 
 .section-title h2::after {
@@ -410,10 +303,8 @@ section {
 
 .section-title p {
   margin: 0;
-  font-size: 36px;
-  font-weight: 650;
-  text-transform: uppercase;
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-size: 34px;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   color: #20376C;
 }
 
@@ -483,9 +374,8 @@ section {
 .apoie h1,
 .em-construcao h1,
 .contato h1 {
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   font-size: 32px;
-  font-weight: 700;
   color: #20376C;
   padding-bottom: 10px;
 }
@@ -495,8 +385,8 @@ section {
 .apoie p,
 .em-construcao p,
 .contato p {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   width: 80%;
   color: #20376C;
@@ -526,8 +416,8 @@ section {
 .telegram .btn-quero-apoiar,
 .apoie .btn-quero-apoiar,
 .conteudos .btn-projeto {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -546,8 +436,8 @@ section {
 .telegram .btn-quero-apoiar:hover,
 .apoie .btn-quero-apoiar:hover,
 .conteudos .btn-projeto:hover {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -565,9 +455,9 @@ section {
 .sobre .btn-quero-apoiar-2,
 .telegram .btn-quero-apoiar-2,
 .apoie .btn-quero-apoiar-2 {
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
   margin-left: 10px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -688,7 +578,7 @@ section {
 .aulas .title,
 .posts .title,
 .conteudos .title {
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   text-align: center;
   font-weight: 700;
   margin: 20px 0px;
@@ -726,7 +616,7 @@ section {
 
 .aulas .card-title {
   margin-top: 5px;
-  font-family: "Goldplay", "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
   font-weight: 600;
 }
 
@@ -889,8 +779,8 @@ section {
 }
 
 .em-construcao .btn-voltar-inicio {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -958,9 +848,8 @@ section {
 }
 
 .conteudos h1 {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-size: 36px;
-  font-weight: 700;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+  font-size: 34px;
   color: #20376C;
   padding-bottom: 10px;
   width: 100%;
@@ -968,7 +857,7 @@ section {
 }
 
 .conteudos p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
   font-size: 18px;
   font-weight: 500;
   width: 80%;
@@ -987,8 +876,8 @@ section {
 }
 
 .conteudos .btn-quero-apoiar {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -1011,8 +900,8 @@ section {
 
 .conteudos .btn-em-breve,
 .conteudos .btn-em-breve-2 {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -1067,20 +956,19 @@ section {
 .conteudos .post-box .post-title {
   font-size: 24px;
   color: #20376C;
-  font-weight: 600;
   margin: 10px 20px 0px 20px;
   position: relative;
   transition: 0.3s;
-  font-family: "Goldplay", 'Poppins', sans-serif;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
 }
 
 .conteudos .description {
-  font-family: "Montserrat", 'Poppins', sans-serif;
-  font-size: 14px;
+  font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
+  font-size: 16px;
   font-weight: 500;
   margin: 0px 20px 30px 20px;
   color: #20376C;
-  width: 90%;
+  width: 85%;
   height: 20%;
 }
 
@@ -1089,7 +977,7 @@ section {
   color: #757575;
   font-weight: 500;
   margin: 0px 20px 10px 20px !important;
-  font-family: "Montserrat", 'Poppins', sans-serif;
+  font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
 }
 
 .conteudos .post-box .readmore {
@@ -1361,7 +1249,7 @@ section {
 
 .carousel .h2 {
   color: #20376C;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 0;
   margin-top: 0;
   font-weight: 700;
@@ -1369,7 +1257,7 @@ section {
 
 .carousel .p {
   color: #272727;
-  font-size: 15px;
+  font-size: 18px;
   margin: 10px 0px;
 }
 
@@ -1485,8 +1373,8 @@ section {
 --------------------------------------------------------------*/
 
 .contato .texto {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
+  font-family: "Avenir LT STD", sans-serif;
+  font-size: 18px;
   font-weight: 500;
   width: 80%;
   color: #20376C;
@@ -1511,7 +1399,7 @@ section {
 }
 
 .contato .btn-primary {
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
   align-items: center;
   text-align: center;
   font-size: 18px;
@@ -1571,7 +1459,13 @@ section {
 .footer {
   background: rgba(245, 197, 210, 0.25);
   padding: 10px 0px 0px;
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
+}
+
+.footer .logo img {
+  padding: 0;
+  margin-bottom: 20px;
+  width: 80%;
 }
 
 .footer .ods {
@@ -1580,22 +1474,20 @@ section {
 }
 
 .footer .text {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-weight: 700;
-  font-size: 38px;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
+  font-size: 36px;
   color: #20376C;
 }
 
 .footer .text-p {
-  font-family: "Poppins", sans-serif;
+  font-family: "Avenir LT STD", sans-serif;
   margin-top: -5px;
   font-weight: 500;
   font-size: 18px;
 }
 
 .footer p {
-  font-family: "Goldplay", "Poppins", sans-serif;
-  font-weight: 600;
+  font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
 }
 
 .footer h6 {
@@ -1614,7 +1506,7 @@ section {
 }
 
 .footer .copyright {
-  font-size: 14px;
+  font-size: 16px;
   color: #20376C;
   text-align: center;
   padding-top: 30px;
@@ -1651,7 +1543,6 @@ section {
 
 .footer .text-ods {
   font-size: 16px;
-  font-weight: 600;
   margin-top: 10px;
 }
 

@@ -1,18 +1,18 @@
 body {
     line-height: 1;
     font-style: normal;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Avenir LT STD', sans-serif;
     background-color: rgba(245, 197, 210, 0.25);
     color: #272727 !important;
     text-align: left;
 }
 
 .title h3 {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Avenir LT STD', sans-serif !important;
 }
 
 .title a {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Avenir LT STD', sans-serif !important;
     color: #20376C;
     transition: 0.5s;
 }
@@ -41,7 +41,7 @@ body {
 }
 
 .text {
-    font-family: 'Poppins', sans-serif !important;
+    font-family: 'Avenir LT STD', sans-serif !important;
     display: flex;
     flex-flow: row wrap;
     -webkit-box-align: center;

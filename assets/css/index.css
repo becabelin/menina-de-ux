@@ -5,7 +5,6 @@
 .hero,
 .hero-carousel {
   background: rgba(245, 197, 210, 0.25);
-  ;
   padding-bottom: 60px;
   width: 100%;
   height: 60%;
@@ -23,11 +22,10 @@
 .hero h1,
 .hero-carousel h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 46px;
   width: 100%;
   color: #20376C;
-  font-family: "Goldplay", 'Poppins', sans-serif;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
   font-style: normal;
   line-height: 110%;
   text-align: left;
@@ -46,9 +44,9 @@
 
 .hero p,
 .hero-carousel p {
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Avenir LT STD', sans-serif;
   padding: 30px 0px 0px 0px;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 500;
   width: 100%;
   color: #20376C;
@@ -62,7 +60,7 @@
 }
 
 .hero .btn-descobrir-cursos {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
@@ -82,7 +80,7 @@
 }
 
 .hero .btn-descobrir-processos {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   padding: 10px 30px;
@@ -225,7 +223,6 @@
 
 .cursos {
   background: rgba(245, 197, 210, 0.25);
-  ;
   background-repeat: no-repeat;
   height: auto;
 }
@@ -276,29 +273,20 @@
 }
 
 .cursos .post-box .post-title {
-  font-size: 24px;
+  font-size: 22px;
   color: #20376C;
-  font-weight: 600;
-  margin: 10px 20px 0px 20px;
+  margin: 10px 20px 5px 20px;
   position: relative;
   transition: 0.3s;
-  font-family: "Goldplay", 'Poppins', sans-serif;
-}
-
-.cursos .description {
-  font-family: "Montserrat", 'Poppins', sans-serif;
-  font-size: 14px;
-  font-weight: 500;
-  margin: 0px 20px 20px 20px;
-  color: #20376C;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
 }
 
 .cursos .post-date {
-  font-size: 16px;
+  font-size: 18px;
   color: #757575;
   font-weight: 500;
-  margin: 5px 20px 5px 20px !important;
-  font-family: "Montserrat", 'Poppins', sans-serif;
+  margin: 0px 20px 10px 20px !important;
+  font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
 }
 
 .cursos .post-box .readmore {
@@ -332,7 +320,7 @@
 .cursos .btn-ver-todos {
   margin-top: 20px;
   margin-bottom: 40px;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
   letter-spacing: 0px;
   padding: 10px 80px;
@@ -342,7 +330,7 @@
   border-radius: 50px;
   border: #20376C41 solid 1px;
   background-color: none;
-  font-family: "Goldplay", 'Poppins', sans-serif;
+  font-family: 'Avenir LT STD', sans-serif;
 }
 
 .cursos .btn-ver-todos:hover {
