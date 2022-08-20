@@ -43,6 +43,14 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #FAFAFA;
 }
 
+.container, .col {
+  padding: 0;
+}
+
+.container {
+  padding: 10px 36px;
+}
+
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
@@ -295,7 +303,7 @@ section {
 .section-title h2 {
   font-size: 14px;
   padding: 0;
-  margin: 0 0 5px 0;
+  margin-bottom: 5px;
   color: #20376C;
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
 }
@@ -306,7 +314,6 @@ section {
   height: 1px;
   display: inline-block;
   background: #20376C;
-  margin: 4px 10px;
 }
 
 .section-title p {
@@ -465,7 +472,7 @@ section {
   .em-construcao .container,
   .cursos .cursos-container,
   .contato .container {
-    padding-bottom: 40px;
+    padding: 10px 36px;
   }
 
   .sobre .btn-quero-apoiar,
@@ -999,7 +1006,7 @@ section {
 
 @media (max-width: 1084px) {
   .telegram .container {
-    padding: 40px 20px 30px
+    padding: 10px 36px;
   }
 }
 
@@ -1220,7 +1227,7 @@ section {
 
 @media (max-width: 991px) {
   .contato .container {
-    padding: 20px 20px 0px;
+    padding: 10px 36px;
   }
 
   .contato .btn-primary {
