@@ -203,6 +203,10 @@
 
 @media (max-width: 991px) {
 
+  .cursos-container{
+    margin-bottom: 30%;
+  }
+
   .cursos .section-title h2 {
     width: auto;
   }
