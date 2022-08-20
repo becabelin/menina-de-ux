@@ -2,6 +2,14 @@
 # General
 --------------------------------------------------------------*/
 
+@import url(//db.onlinewebfonts.com/c/4050b0ba6e521d334f956c60aa58cf66?family=NCS+Radhiumz);
+
+@font-face {
+  font-family: "NCS Radhiumz";
+  src: url("//db.onlinewebfonts.com/t/4050b0ba6e521d334f956c60aa58cf66.eot");
+  src: url("//db.onlinewebfonts.com/t/4050b0ba6e521d334f956c60aa58cf66.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/4050b0ba6e521d334f956c60aa58cf66.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/4050b0ba6e521d334f956c60aa58cf66.woff") format("woff"), url("//db.onlinewebfonts.com/t/4050b0ba6e521d334f956c60aa58cf66.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/4050b0ba6e521d334f956c60aa58cf66.svg#NCS Radhiumz") format("svg");
+}
+
 body {
   font-family: "Avenir LT STD", sans-serif;
   color: #20376C;
@@ -380,7 +388,8 @@ section {
 .sobre .img-fluid,
 .telegram .img-fluid,
 .apoie .img-fluid,
-.em-construcao .img-fluid, .contato .img-fluid {
+.em-construcao .img-fluid,
+.contato .img-fluid {
   width: 70%;
   text-align: right;
 }
@@ -669,6 +678,7 @@ section {
   .posts {
     padding-bottom: 30px;
   }
+
   .posts a {
     width: 100vw;
     font-size: 0px;
