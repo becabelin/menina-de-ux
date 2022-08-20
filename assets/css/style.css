@@ -380,8 +380,8 @@ section {
 .sobre .img-fluid,
 .telegram .img-fluid,
 .apoie .img-fluid,
-.em-construcao .img-fluid {
-  width: 65%;
+.em-construcao .img-fluid, .contato .img-fluid {
+  width: 70%;
   text-align: right;
 }
 

@@ -83,7 +83,7 @@
 
 .cursos {
   background: #FAFAFA;
- padding-bottom: 10%;
+  padding-bottom: 10%;
 }
 
 .cursos .section-title h2,
@@ -185,7 +185,7 @@
 @media (max-width: 1350px) {
   .cursos .post-box {
     width: 20vw;
-    height: 80vh;
+    position: sticky;
   }
 
   .cursos .post-box .post-title {
@@ -212,9 +212,8 @@
   }
 
   .cursos .post-box {
-    width: 80vw;
-    height: auto;
     left: 0px !important;
+    position: sticky;
   }
 
   .cursos .post-box .img-fluid {
@@ -229,8 +228,8 @@
 @media (max-width: 890px) {
   .cursos .post-box {
     width: 90vw;
-    height: auto;
     left: 0px !important;
+    position: sticky;
   }
 }
 
