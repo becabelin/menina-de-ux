@@ -11,20 +11,13 @@ body {
 a {
   color: #D5626D;
   text-decoration: none;
+  transition: 0.5s;
 }
 
 a:hover {
-  color: #D5626D;
+  color: #20376C;
   text-decoration: none;
-}
-
-h1,
-h2,
-h1,
-h4,
-h5,
-h6 {
-  font-family: "Avenir LT STD", sans-serif;
+  transition: 0.5s;
 }
 
 body::-webkit-scrollbar {
@@ -102,7 +95,6 @@ body::-webkit-scrollbar-thumb {
 
 #header.header-scrolled {
   background: #FAFAFA;
-  height: 60px;
 }
 
 #header .logo img {
@@ -128,7 +120,7 @@ body::-webkit-scrollbar-thumb {
 
 @media (max-width: 1084px) {
   #header .logo img {
-    margin-left: 20px;
+    margin: 20px 0px;
   }
 }
 
@@ -221,6 +213,8 @@ body::-webkit-scrollbar-thumb {
   .navbar ul {
     display: none;
   }
+
+
 }
 
 .navbar-mobile {
@@ -286,8 +280,7 @@ section {
 }
 
 .section-title {
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 20px 0px;
 }
 
 .section-title h2 {
@@ -316,7 +309,7 @@ section {
 
 @media (max-width: 991px) {
   section {
-    padding: 10% 0;
+    padding: 10% 0 0;
     overflow: hidden;
   }
 
@@ -337,10 +330,6 @@ section {
 # Breadcrumb
 --------------------------------------------------------------*/
 
-.breadcrumb {
-  margin: 20px 0px;
-}
-
 .breadcrumb .breadcrumb-item a {
   color: #D5626D;
   transition: 0.5s;
@@ -351,29 +340,9 @@ section {
   transition: 0.5s;
 }
 
-@media (max-width: 991px) {
-  .breadcrumb {
-    margin: 0px 30px 0px 30px;
-  }
-}
-
 /*--------------------------------------------------------------
 # Sobre, Apoie e Em Construção
 --------------------------------------------------------------*/
-
-.sobre .container,
-.apoie .container,
-.em-construcao .container,
-.telegram .container {
-  margin-bottom: 20px;
-}
-
-.sobre .align-end,
-.telegram .align-end,
-.apoie .align-end,
-.em-construcao .align-end {
-  margin-left: 20%;
-}
 
 .sobre h1,
 .telegram h1,
@@ -383,7 +352,6 @@ section {
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   font-size: 32px;
   color: #20376C;
-  padding-bottom: 10px;
 }
 
 .sobre p,
@@ -394,11 +362,10 @@ section {
   font-family: "Avenir LT STD", sans-serif;
   font-size: 18px;
   font-weight: 500;
-  width: 80%;
   color: #20376C;
   font-style: normal;
   text-align: left;
-  margin-bottom: 20px;
+  margin: 10px 0px 20px;
 }
 
 .sobre a:hover,
@@ -414,8 +381,8 @@ section {
 .telegram .img-fluid,
 .apoie .img-fluid,
 .em-construcao .img-fluid {
-  width: 70%;
-  margin-bottom: 30px;
+  width: 65%;
+  text-align: right;
 }
 
 .sobre .btn-quero-apoiar,
@@ -427,15 +394,14 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
   color: #FAFAFA;
   background: #4678BC;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px;
   border: #4678BC solid 1px;
+  padding: 10px 30px;
 }
 
 .sobre .btn-quero-apoiar:hover,
@@ -447,12 +413,10 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px;
   background: none;
   color: #4678BC;
   border: #4678BC solid 1px;
@@ -462,20 +426,18 @@ section {
 .telegram .btn-quero-apoiar-2,
 .apoie .btn-quero-apoiar-2 {
   font-family: "Avenir LT STD", sans-serif;
-  margin-left: 10px;
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
   color: #D5626D;
   background: none;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px;
   border: #D5626D solid 1px;
+  padding: 10px 30px;
 }
 
 .sobre .btn-quero-apoiar-2:hover,
@@ -491,20 +453,16 @@ section {
   .telegram .container,
   .apoie .container,
   .em-construcao .container,
-  .cursos .cursos-container {
-    margin-bottom: -20% !important;
+  .cursos .cursos-container,
+  .contato .container {
+    padding-bottom: 40px;
   }
 
-  .sobre .col,
-  .apoie .col {
-    margin: 0px 20px;
-  }
-
-  .sobre,
-  .telegram,
-  .apoie,
-  .em-construcao {
-    margin: 0px !important;
+  .sobre .btn-quero-apoiar,
+  .telegram .btn-quero-apoiar,
+  .apoie .btn-quero-apoiar,
+  .conteudos .btn-projeto {
+    width: 100%;
   }
 
   .sobre .btn-quero-apoiar,
@@ -512,6 +470,7 @@ section {
   .apoie .btn-quero-apoiar {
     width: 80vw;
     font-size: 16px;
+    margin-bottom: 10px;
   }
 
   .sobre .btn-quero-apoiar-2,
@@ -519,24 +478,16 @@ section {
   .apoie .btn-quero-apoiar-2 {
     width: 80vw;
     font-size: 16px;
-    margin-left: 0px;
   }
 
   .sobre .img-fluid,
   .telegram .img-fluid,
   .apoie .img-fluid,
-  .em-construcao .img-fluid {
-    margin: -10px 0px;
+  .em-construcao .img-fluid,
+  .contato .img-fluid {
     width: 80vw;
     max-width: 90vw;
-    margin-top: 10px;
-  }
-
-  .sobre h1,
-  .telegram h1,
-  .apoie h1,
-  .em-construcao h1 {
-    padding-top: 30px;
+    margin: 20px 0px;
   }
 
   .sobre p,
@@ -545,15 +496,7 @@ section {
   .em-construcao p {
     font-size: 18px;
     width: 100%;
-    padding-bottom: 10px;
     height: auto;
-  }
-
-  .sobre .row,
-  .telegram .row,
-  .apoie .row,
-  .em-construcao .row {
-    padding-bottom: 100px;
   }
 
   .sobre .text-center,
@@ -561,13 +504,10 @@ section {
   .apoie .text-center,
   .em-construcao .text-center {
     text-align: left !important;
-    padding-bottom: 40px;
   }
 
   .telegram .text-center-2 {
-    margin-left: 20px;
     text-align: left !important;
-    padding-bottom: 40px;
   }
 }
 
@@ -577,7 +517,8 @@ section {
 
 .aulas,
 .aulas .card {
-  background-color: none;
+  margin: 10px;
+  padding: 10px;
 }
 
 .aulas .title,
@@ -585,32 +526,19 @@ section {
 .conteudos .title {
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   text-align: center;
-  margin: 20px 0px;
   width: 100%;
-}
-
-.aulas .txt-apagado {
-  margin-top: -10px;
 }
 
 .aulas .card {
   width: 20%;
   border-radius: 10px;
-  margin: 10px;
 }
 
 .aulas .card-2 {
   height: auto;
-  padding-bottom: 0px;
-}
-
-.aulas .card-body-2 {
-  padding: 0px;
-  padding-bottom: 10px;
 }
 
 .aulas .card-img-top {
-  margin: 10px 0px;
   border-radius: 10px;
   width: 100%;
   height: auto;
@@ -619,9 +547,8 @@ section {
 }
 
 .aulas .card-title {
-  margin-top: 5px;
   font-family: "Avenir LT STD", sans-serif;
-  font-weight: 600;
+  margin: 10px 0px 0px;
 }
 
 .aulas .card-text {
@@ -646,11 +573,10 @@ section {
   text-align: center;
   font-size: 16px;
   width: 100%;
-  padding: 5px 20px;
   border: none;
   transition: 0.5s;
-  margin: 5px 0px 15px 0px;
   border-radius: 50px;
+  padding: 10px 30px;
 }
 
 .aulas .btn-primary:hover {
@@ -667,16 +593,15 @@ section {
   text-align: center;
   font-size: 16px;
   width: 100%;
-  padding: 5px 20px;
   border: none;
   transition: 0.5s;
-  margin: 5px 0px 15px 0px;
   border-radius: 50px;
   cursor: auto;
+  padding: 10px 30px;
 }
 
 .items {
-  margin-bottom: 5px !important;
+  margin: 5px 0 0 !important;
 }
 
 @media (max-width: 1350px) {
@@ -692,31 +617,20 @@ section {
 
 @media (max-width: 991px) {
 
-  .aulas {
-    margin-bottom: -50px;
-  }
-
-  .aulas .txt-apagado {
-    margin-top: 20%;
-  }
   .aulas .card-title {
     font-size: 22px;
   }
+
   .aulas .card-text {
     font-size: 16px;
-  }
-  .aulas .title {
-    margin-bottom: -60px;
   }
 
   .aulas .card {
     width: 80vw;
-    margin-bottom: 5px;
   }
 
   .aulas .btn-primary {
     width: 100%;
-    margin-bottom: 10px;
   }
 
   .aulas .card-img-top {
@@ -724,18 +638,12 @@ section {
   }
 
   .aulas .img-fluid {
-    margin: 10px -20px -20px -20px !important;
     width: 100vw;
     max-width: 100vw;
   }
 
-  .aulas .row {
-    padding-bottom: 100px;
-  }
-
   .aulas .text-center {
     text-align: left !important;
-    padding-bottom: 40px;
   }
 }
 
@@ -749,40 +657,32 @@ section {
 
 .posts .img-fluid {
   border-radius: 10px;
-  margin: 20px 0px 5px 5px;
-  padding: 0px;
+  margin-top: 24px;
 }
 
 .posts a {
   width: 25%;
   font-size: 0px;
-  margin-bottom: 10px;
 }
 
 @media (max-width: 991px) {
+  .posts {
+    padding-bottom: 30px;
+  }
   .posts a {
     width: 100vw;
     font-size: 0px;
-    margin-bottom: 10px;
   }
 
   .posts .img-fluid {
     width: 100%;
     border-radius: 30px;
-    margin: 10px 0px;
-    padding: 0px;
   }
 }
 
 /*--------------------------------------------------------------
 # Em construção
 --------------------------------------------------------------*/
-
-.em-construcao,
-.apoie-2 {
-  padding: 30px;
-}
-
 .em-construcao .img-fluid {
   width: 90%;
 }
@@ -793,14 +693,12 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
   color: #FAFAFA;
   background: #4678BC;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px;
   border: #FAFAFA solid 1px;
 }
 
@@ -810,31 +708,13 @@ section {
   border: #FAFAFA solid 1px;
 }
 
-@media (max-width: 1350px) {
-
-  .em-construcao,
-  .apoie-2 {
-    padding: 140px 0px !important;
-  }
-}
-
 @media (max-width: 980px) {
-
-  .em-construcao,
-  .apoie-2 {
-    padding: 100px 20px 0px 0px !important;
-  }
 
   .em-construcao .btn-voltar-inicio,
   .apoie-2 .btn-quero-apoiar,
   .apoie-2 .btn-quero-apoiar-2 {
-    margin-left: 0px;
     font-size: 16px;
     width: auto;
-  }
-
-  .apoie-2 .btn-quero-apoiar-2 {
-    margin-bottom: 20px;
   }
 }
 
@@ -844,25 +724,17 @@ section {
 
 .conteudos .conteudo {
   border: #d9d9d9 solid 1px;
-  padding: 20px 0px 0px 0px;
   border-radius: 20px;
   background-color: #FAFAFA;
-  margin: 10px 0px 30px 0px;
   height: auto;
   box-shadow: #dfdfdf 0px 0px 10px;
-}
-
-.conteudos-container {
-  margin-top: 0%;
 }
 
 .conteudos h1 {
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
   font-size: 34px;
   color: #20376C;
-  padding-bottom: 10px;
   width: 100%;
-  margin-left: 20px;
 }
 
 .conteudos p {
@@ -873,15 +745,11 @@ section {
   color: #20376C;
   font-style: normal;
   text-align: left;
-  margin-bottom: 20px;
   width: 100%;
-  margin-left: 20px;
 }
 
 .conteudos .img-fluid {
   width: 80%;
-  margin-left: 20%;
-  margin-bottom: 10px;
 }
 
 .conteudos .btn-quero-apoiar {
@@ -890,14 +758,12 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
   color: #FAFAFA;
   background: #4678BC;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px 20 30;
   border: #4678BC solid 1px;
 }
 
@@ -914,47 +780,43 @@ section {
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 60px;
   border-radius: 50px;
   transition: 0.5s;
   color: #4f4f4f;
   background: #d5d5d5;
   border-radius: 50px;
   text-align: center;
-  margin-top: 10px;
   border: #FAFAFA solid 1px;
-  margin-bottom: 30px;
-  margin-left: 20px;
+  padding: 10px 30px;
 }
 
 .conteudos .btn-em-breve-2 {
-  margin-left: 0px;
+  padding: 10px 30px;
 }
 
 .conteudos .post-box {
   transition: 0.3s;
   width: 16vw;
-  height: 70vh;
+  height: auto;
   overflow: hidden;
-  margin: 10px;
   border-radius: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   background: #20376C;
   border: 0.3px solid #cbcbcb;
-  padding: 0%;
   background-color: rgba(247, 247, 247, 0.2);
+  margin: 10px;
 }
 
 .conteudos .post-box .post-img {
-  margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   border-radius: 8px 0px 0px 0px;
   width: 100%;
   max-width: 100%;
   background-size: cover;
+  margin-bottom: 10px;
 }
 
 .conteudos .post-box .post-img img {
@@ -965,7 +827,6 @@ section {
 .conteudos .post-box .post-title {
   font-size: 24px;
   color: #20376C;
-  margin: 10px 20px 0px 20px;
   position: relative;
   transition: 0.3s;
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
@@ -975,23 +836,20 @@ section {
   font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
   font-size: 16px;
   font-weight: 500;
-  margin: 0px 20px 30px 20px;
   color: #20376C;
-  width: 85%;
   height: 20%;
+  margin-bottom: 30px;
 }
 
 .conteudos .post-date {
   font-size: 16px;
   color: #757575;
   font-weight: 500;
-  margin: 0px 20px 10px 20px !important;
   font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
 }
 
 .conteudos .post-box .readmore {
   display: flex;
-  margin: 20px 20px;
   align-items: center;
   font-weight: 500;
   line-height: 1;
@@ -1001,7 +859,6 @@ section {
 
 .conteudos .post-box .readmore i {
   line-height: 0;
-  margin-left: 8px;
   font-size: 16px;
   color: #20376C;
 }
@@ -1028,128 +885,91 @@ section {
   }
 
   .conteudos .post-date {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .conteudos .description {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 991px) {
   .conteudos {
-    padding-top: 40px;
-  }
-
-  .conteudos-container {
-    margin-top: 20%;
+    margin: 20px 0px;
   }
 
   .conteudos .conteudo {
     width: 100%;
-    margin-left: 0px !important;
   }
 
   .conteudos .section-title h2 {
-    margin: -10px 30px;
     width: auto;
   }
 
   .conteudos .section-title p {
-    margin: 10px 30px;
     width: auto;
-    margin-bottom: -30px;
   }
 
   .conteudos .post-box {
-    width: 100vw;
+    width: 80vw;
     height: 20%;
     left: 0px !important;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-
-  .conteudos .row {
-    margin: 0px 20px;
   }
 
   .conteudos .post-box .img-fluid {
-    width: 100%;
+    width: 80%;
   }
 
   .conteudos .text-center {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: auto;
+    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 890px) {
   .conteudos .post-box {
-    width: 100vw;
+    width: 80vw;
     height: 30%;
     left: 0px !important;
-    margin: 0px;
-    margin-bottom: 20px;
   }
 
   .conteudos .text-center {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: auto;
+    margin-bottom: 20px;
+  }
+
+  .conteudos .description {
+    width: 90%;
   }
 }
 
 @media (max-width: 1084px) {
-  .conteudos .container {
-    margin-bottom: -10% !important;
-  }
-
-  .conteudos .title {
-    margin-bottom: -70px;
-  }
-
-  .conteudos {
-    margin: 0px 10px -40px 10px;
-  }
 
   .conteudos .btn-quero-apoiar {
     font-size: 16px;
     width: 70vw;
-    margin-left: 10px;
   }
 
   .conteudos .btn-em-breve {
     width: 70vw;
-    margin-left: 10px;
   }
 
   .conteudos .img-fluid {
-    margin: -20px 0px -60px 0px;
     width: 80vw;
     max-width: 80vw;
   }
 
   .conteudos h1 {
-    padding-top: 10px;
     width: auto;
-    margin-left: 10px;
   }
 
   .conteudos p {
     font-size: 18px;
     width: 80vw;
-    padding-bottom: 10px;
-    margin-left: 10px;
-  }
-
-  .conteudos .row {
-    padding-bottom: 100px;
   }
 
   .conteudos .text-center {
     text-align: left !important;
-    padding-bottom: 0px;
   }
 }
 
@@ -1159,34 +979,7 @@ section {
 
 .apoie,
 .telegram {
-  margin: 0px;
-  padding: 10px 0px;
-}
-
-@media (max-width: 1084px) {
-  .apoie .img-fluid {
-    margin-top: 20px;
-  }
-
-  .apoie,
-  .telegram {
-    margin-bottom: 0px !important;
-    margin: 0px !important;
-    padding: 20px !important;
-  }
-
-  .apoie .text-center {
-    margin-bottom: -60px !important;
-  }
-}
-
-@media (min-width: 1350px) {
-
-  .apoie {
-    margin-bottom: 0px !important;
-    margin: 0px !important;
-    padding: 100px !important;
-  }
+  padding-top: 5%;
 }
 
 /*--------------------------------------------------------------
@@ -1195,13 +988,17 @@ section {
 
 @media (max-width: 1084px) {
   .telegram .container {
-    margin-bottom: -70px !important;
+    padding: 40px 20px 30px
   }
 }
 
 /*--------------------------------------------------------------
 # Carrossel
 --------------------------------------------------------------*/
+
+.carousel .container {
+  margin-top: -3%;
+}
 
 .carousel-indicators li {
   background-color: #20376C !important;
@@ -1225,7 +1022,10 @@ section {
   height: 70vh;
   object-fit: contain;
   border-radius: 20px;
-  margin-left: 10%;
+}
+
+.carousel .col-lg-6 {
+  padding-left: 6%;
 }
 
 .carousel-control-next,
@@ -1244,30 +1044,24 @@ section {
 }
 
 .carousel .text-align-left {
-  margin-left: 20%;
   width: 90%;
 }
 
 .carousel .h1 {
   color: #20376C;
   font-size: 26px;
-  margin: 0px;
-  font-weight: 700;
   line-height: 30px;
 }
 
 .carousel .h2 {
   color: #20376C;
   font-size: 20px;
-  margin-bottom: 0;
-  margin-top: 0;
   font-weight: 700;
 }
 
 .carousel .p {
   color: #272727;
   font-size: 18px;
-  margin: 10px 0px;
 }
 
 .carousel a {
@@ -1282,11 +1076,12 @@ section {
   transition: 0.3s;
 }
 
-.carousel .row {
-  margin-bottom: 60px;
-}
-
 @media (max-width: 1040px) {
+
+  .carousel .section {
+    padding: 0px !important;
+  }
+
   .carousel-item {
     height: auto;
   }
@@ -1294,7 +1089,7 @@ section {
   .carousel .img-fluid {
     width: 500px;
     height: 300px;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
 
   .carousel .h1 {
@@ -1314,25 +1109,32 @@ section {
 }
 
 @media (max-width: 980px) {
+  .carousel .section {
+    padding: 0px !important;
+  }
+
+  .carousel-indicators li {
+    padding: 0px;
+  }
+
+  .carousel .col-lg-6 {
+    padding-left: 0%;
+  }
+
   .carousel {
     align-items: center !important;
-    margin-top: 30px;
     height: auto;
   }
 
   .carousel-item {
-    margin: 0px 30px !important;
-    margin-bottom: 20%;
     height: auto;
   }
 
   .carousel .h1 {
-    margin-bottom: 10px;
     width: 80%;
   }
 
   .carousel .p {
-    margin-bottom: 20px;
     width: 80%;
     font-size: 16px;
   }
@@ -1340,34 +1142,29 @@ section {
   .carousel .img-fluid {
     width: 70%;
     height: auto;
-    margin-bottom: 20px;
   }
 }
 
 @media (max-width: 890px) {
-  .carousel-item {
-    margin: 0px 10px !important;
+  .carousel .section {
+    padding: 0px !important;
   }
 
   .carousel .img-fluid {
     width: 90%;
     height: auto;
-    margin-bottom: 20px;
-    margin: 0px 10px;
   }
 
   .carousel .h1 {
-    margin-bottom: 10px;
     width: 100%;
   }
 
   .carousel .p {
-    margin-bottom: 20px;
     width: 100%;
+    margin: 20px 0px;
   }
 
   .carousel .text-align-left {
-    margin: 0px -10px 0px -10px !important;
     width: 100%;
   }
 
@@ -1389,22 +1186,6 @@ section {
   color: #20376C;
   font-style: normal;
   text-align: left;
-  margin-bottom: 20px;
-  margin-top: -20px;
-}
-
-.contato h1 {
-  margin-top: 20px;
-}
-
-.contato .img-fluid {
-  width: 70%;
-  margin-bottom: 30px;
-  margin-left: 30%;
-}
-
-.contato .col {
-  margin-left: -12px;
 }
 
 .contato .btn-primary {
@@ -1414,10 +1195,8 @@ section {
   font-size: 18px;
   background-color: #4678BC;
   width: auto;
-  padding: 10px 20px;
   border: #4678BC solid 1px;
   transition: 0.5s;
-  margin: 10px 10px 30px 0px;
   border-radius: 50px;
 }
 
@@ -1430,34 +1209,20 @@ section {
 
 @media (max-width: 991px) {
   .contato .container {
-    padding-top: 20px;
-    padding-bottom: 10px;
-    margin: 0px 30px;
-    margin-bottom: -10% !important;
-  }
-
-  .contato {
-    margin: -40px 0px;
+    padding: 20px 20px 0px;
   }
 
   .contato .btn-primary {
     width: 80%;
-    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .contato .img-fluid {
-    margin: 10px -20px -20px -20px !important;
     width: 90vw;
-    max-width: 90vw;
-  }
-
-  .contato .row {
-    padding-bottom: 100px;
   }
 
   .contato .text-center {
     text-align: left !important;
-    padding-bottom: 40px;
   }
 }
 
@@ -1467,18 +1232,20 @@ section {
 
 .footer {
   background: rgba(245, 197, 210, 0.25);
-  padding: 10px 0px 0px;
   font-family: "Avenir LT STD", sans-serif;
+  padding-top: 1%;
+}
+
+.footer .container {
+  padding-bottom: 1%;
 }
 
 .footer .logo img {
-  padding: 0;
-  margin-bottom: 20px;
   width: 80%;
+  margin-bottom: 10px;
 }
 
 .footer .ods {
-  margin: 40px 0px;
   border-top: #626262 solid 1px;
 }
 
@@ -1490,17 +1257,12 @@ section {
 
 .footer .text-p {
   font-family: "Avenir LT STD", sans-serif;
-  margin-top: -5px;
   font-weight: 500;
   font-size: 18px;
 }
 
 .footer p {
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
-}
-
-.footer h6 {
-  margin-top: 20px;
 }
 
 .footer .links {
@@ -1518,13 +1280,13 @@ section {
   font-size: 16px;
   color: #20376C;
   text-align: center;
-  padding-top: 30px;
 }
 
 .footer .credits {
-  padding-top: 10px;
+  font-family: "Avenir LT STD", sans-serif;
   text-align: center;
   color: #20376C;
+  margin-top: 10px;
 }
 
 .footer .credits a {
@@ -1547,12 +1309,11 @@ section {
 .footer .img-fluid {
   width: 45%;
   border-radius: 10px;
-  margin-right: 10px;
 }
 
 .footer .text-ods {
-  font-size: 16px;
   margin-top: 10px;
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {

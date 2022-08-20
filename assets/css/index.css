@@ -5,23 +5,16 @@
 .hero,
 .hero-carousel {
   background: rgba(245, 197, 210, 0.25);
-  padding-bottom: 60px;
   width: 100%;
-  height: 60%;
+  padding: 70px 0px;
 }
 
 .hero-carousel {
-  padding-bottom: 20px;
-}
-
-.hero .container,
-.hero-carousel .container {
-  padding: 7% 0% 0% 0%;
+  padding: 60px 0px 0px;
 }
 
 .hero h1,
 .hero-carousel h1 {
-  margin: 0;
   font-size: 46px;
   width: 100%;
   color: #20376C;
@@ -29,6 +22,7 @@
   font-style: normal;
   line-height: 110%;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .hero .hero-img,
@@ -44,53 +38,44 @@
 
 .hero p,
 .hero-carousel p {
-  font-family: 'Avenir LT STD', sans-serif;
-  padding: 30px 0px 0px 0px;
   font-size: 20px;
   font-weight: 500;
   width: 100%;
   color: #20376C;
   font-style: normal;
   text-align: left;
+  margin-bottom: 20px;
 }
 
-.hero .left,
-.hero-carousel .left {
-  margin-top: 6%;
-}
-
-.hero .btn-descobrir-cursos {
+.hero .btn-descobrir-cursos,
+.hero .btn-descobrir-processos,
+.cursos .btn-ver-todos {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 10px 30px;
   border-radius: 50px;
   transition: 0.5s;
+  text-align: center;
+  padding: 10px 30px;
+}
+
+.hero .btn-descobrir-cursos {
   color: #FAFAFA;
   background: #4678BC;
-  border-radius: 50px;
-  text-align: center;
-  margin-top: 20px;
+  border: #4678BC solid 1px;
+  margin-right: 10px;
 }
 
 .hero .btn-descobrir-cursos:hover {
   background: #FAFAFA;
   color: #4678BC;
+  border: #FAFAFA solid 1px;
 }
 
 .hero .btn-descobrir-processos {
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  padding: 10px 30px;
-  border-radius: 50px;
-  transition: 0.5s;
   color: #D5626D;
-  border-radius: 50px;
-  text-align: center;
   border: #D5626D solid 1px;
-  margin-left: 10px;
 }
 
 .hero .btn-descobrir-processos:hover {
@@ -107,26 +92,16 @@
 
 @media (max-width: 991px) {
   .hero {
-    padding: 10vh 0vh 5vh 0vh !important;
     height: auto;
-  }
-
-  .hero-carousel {
-    padding: 5vh 0vh 0vh 0vh !important;
-  }
-
-  .hero .container {
-    padding: 2% 0% 0% 0%;
+    padding-top: 12vh !important;
   }
 
   .hero h1,
   .hero-carousel h1 {
     text-align: left;
     font-size: 36px;
-    padding: 20px 20px 0px;
     line-height: 36px;
     width: 100%;
-    margin-left: 10px;
   }
 
   .hero .left {
@@ -137,41 +112,21 @@
     text-align: left;
     font-size: 18px;
     width: 100%;
-    padding: 10px 30px;
-  }
-
-  .hero .text-left {
-    margin-top: 30px;
   }
 
   .hero .hero-img {
-    margin-top: 10px !important;
-    margin-bottom: -10px;
     text-align: right;
-    width: 70%;
-    margin-left: 10%;
+    width: 80%;
+    margin: 10vw;
   }
 
   .hero .btn-descobrir-cursos {
-    padding: 10px;
-    margin-top: 0px;
-    margin-bottom: 20px;
     width: 80vw;
+    margin-bottom: 10px;
   }
 
   .hero .btn-descobrir-processos {
-    padding: 10px 50px;
-    margin-left: 0px;
-    width: 100vw;
-  }
-
-  .hero .hero-img {
-    text-align: center;
-    margin-top: 80px;
-  }
-
-  .hero .text-center {
-    margin-left: 2%;
+    width: 80vw;
   }
 }
 
@@ -193,7 +148,6 @@
 
   .hero .hero-img img {
     width: 100%;
-    margin-top: 10px;
   }
 }
 
@@ -244,21 +198,19 @@
 
 .cursos .post-box {
   transition: 0.3s;
-  width: 21vw;
+  width: 20vw;
   height: auto;
   overflow: hidden;
-  margin: 10px;
   border-radius: 10px;
   position: relative;
   display: flex;
   flex-direction: column;
   border: 0.3px solid #20376C41;
+  margin: 10px;
   padding: 0%;
-  background-color: none;
 }
 
 .cursos .post-box .post-img {
-  margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   border-radius: 8px 0px 0px 0px;
@@ -275,18 +227,18 @@
 .cursos .post-box .post-title {
   font-size: 22px;
   color: #20376C;
-  margin: 10px 20px 5px 20px;
   position: relative;
   transition: 0.3s;
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  margin: 20px 20px 5px 20px;
 }
 
 .cursos .post-date {
   font-size: 18px;
   color: #757575;
   font-weight: 500;
-  margin: 0px 20px 10px 20px !important;
   font-family: "Avenir LT STD", 'Avenir LT STD', sans-serif;
+  margin: 0px 20px 10px 20px !important;
 }
 
 .cursos .post-box .readmore {
@@ -297,13 +249,15 @@
   line-height: 1;
   transition: 0.3s;
   color: #20376C;
+  font-weight: bold;
 }
 
 .cursos .post-box .readmore i {
   line-height: 0;
-  margin-left: 8px;
   font-size: 16px;
   color: #20376C;
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 .cursos .post-box:hover .post-img img {
@@ -315,22 +269,16 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-bottom: 5%;
 }
 
 .cursos .btn-ver-todos {
-  margin-top: 20px;
-  margin-bottom: 40px;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 0px;
-  padding: 10px 80px;
-  border-radius: 50px;
-  transition: 0.5s;
   color: #20376C;
   border-radius: 50px;
   border: #20376C41 solid 1px;
-  background-color: none;
-  font-family: 'Avenir LT STD', sans-serif;
+
+  margin-top: 20px;
+  transition: 0.5s;
 }
 
 .cursos .btn-ver-todos:hover {
@@ -338,23 +286,18 @@
   background: #FAFAFA;
   border: #FAFAFA solid 1px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  transition: 0.5s;
 }
 
 @media (max-width: 1084px) {
-  .cursos {
-    padding-top: 40px;
-  }
 
   .cursos .section-title h2 {
-    margin: -10px 10px;
     width: auto;
     font-size: 14px;
   }
 
   .cursos .section-title p {
-    margin: 10px 10px;
     width: auto;
-    margin-bottom: -30px;
     font-size: 26px;
   }
 
@@ -363,12 +306,8 @@
   }
 
   .cursos .post-box {
-    width: 100vw;
+    width: 90vw;
     height: auto;
-  }
-
-  .cursos .row {
-    margin: 0px 30px;
   }
 
   .cursos .post-box .img-fluid {
@@ -376,13 +315,10 @@
   }
 
   .cursos .text-center {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: auto;
   }
 
   .cursos .btn-ver-todos {
-    padding: 10px 60px;
     width: 90vw;
   }
 }

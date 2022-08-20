@@ -4,23 +4,17 @@
 
 .hero {
   background: rgba(245, 197, 210, 0.25);
-  padding-bottom: 60px;
-  width: 100%;
-  height: 60%;
-}
-
-.hero .container {
-  padding: 8% 0% 0% 0%;
+  padding: 120px 0px 70px;
 }
 
 .hero h1 {
-  margin: 0;
   font-size: 46px;
   color: #20376C;
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
   font-style: normal;
   line-height: 125%;
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .hero p {
@@ -30,7 +24,6 @@
   font-family: 'Avenir LT STD', sans-serif;
   font-style: normal;
   text-align: center;
-  padding-top: 20px;
 }
 
 @media (min-width: 1024px) {
@@ -41,7 +34,6 @@
 
 @media (max-width: 991px) {
   .hero {
-    padding: 90px 0px 40px 0px;
     height: 70%;
   }
 
@@ -50,12 +42,10 @@
     font-size: 36px;
     line-height: 40px;
     width: auto;
-    margin: 10px 30px;
   }
 
   .hero p {
     text-align: center;
-    margin: 0px 30px;
     font-size: 16px;
     width: auto;
   }
@@ -93,7 +83,7 @@
 
 .cursos {
   background: #FAFAFA;
-  padding-bottom: 10%;
+ padding-bottom: 10%;
 }
 
 .cursos .section-title h2,
@@ -108,27 +98,21 @@
   height: 1px;
   display: inline-block;
   background: #20376C;
-  margin: 4px 10px;
 }
 
 .cursos .post-box {
   transition: 0.3s;
   width: 16vw;
-  height: 60vh;
   overflow: hidden;
-  margin: 10px;
   border-radius: 10px;
-  position: relative;
-  display: flex;
   flex-direction: column;
-  background: #20376C;
-  border: 0.3px solid #cbcbcb;
+  border: 0.3px solid #20376C41;
+  margin: 10px;
   padding: 0%;
-  background-color: rgba(247, 247, 247, 0.2);
+  position: sticky !important;
 }
 
 .cursos .post-box .post-img {
-  margin-bottom: 10px;
   overflow: hidden;
   position: relative;
   border-radius: 8px 0px 0px 0px;
@@ -145,26 +129,27 @@
 .cursos .post-box .post-title {
   font-size: 22px;
   color: #20376C;
-  margin: 10px 20px 10px 20px;
   position: relative;
   transition: 0.3s;
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  margin: 20px 20px 5px 20px;
+  line-height: 28px;
 }
 
 .cursos .description {
   font-family: "Avenir LT STD", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  margin: 0px 20px 20px 20px;
   color: #20376C;
+  margin: 0px 20px 20px;
 }
 
 .cursos .post-date {
   font-size: 16px;
   color: #757575;
   font-weight: 500;
-  margin: 0px 20px 5px 20px !important;
   font-family: "Avenir LT STD", sans-serif;
+  margin: 0px 20px 10px 20px !important;
 }
 
 .cursos .post-box .readmore {
@@ -175,13 +160,15 @@
   line-height: 1;
   transition: 0.3s;
   color: #20376C;
+  font-weight: bold;
 }
 
 .cursos .post-box .readmore i {
   line-height: 0;
-  margin-left: 8px;
   font-size: 16px;
   color: #20376C;
+  margin-left: 5px;
+  font-weight: bold;
 }
 
 .cursos .post-box:hover .post-img img {
@@ -198,7 +185,7 @@
 @media (max-width: 1350px) {
   .cursos .post-box {
     width: 20vw;
-    height: 90vh;
+    height: 80vh;
   }
 
   .cursos .post-box .post-title {
@@ -206,40 +193,28 @@
   }
 
   .cursos .post-date {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .cursos .description {
-    font-size: 13px;
+    font-size: 16px;
   }
 }
 
 @media (max-width: 991px) {
-  .cursos {
-    padding-top: 40px;
-  }
 
   .cursos .section-title h2 {
-    margin: -10px 30px;
     width: auto;
   }
 
   .cursos .section-title p {
-    margin: 10px 30px;
     width: auto;
-    margin-bottom: -30px;
   }
 
   .cursos .post-box {
-    width: 100vw;
+    width: 80vw;
     height: auto;
     left: 0px !important;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-
-  .cursos .row {
-    margin: 0px 30px;
   }
 
   .cursos .post-box .img-fluid {
@@ -247,44 +222,38 @@
   }
 
   .cursos .text-center {
-    margin-top: 10px;
-    margin-bottom: 10px;
     width: auto;
   }
 }
 
 @media (max-width: 890px) {
   .cursos .post-box {
-    width: 100vw;
+    width: 90vw;
     height: auto;
     left: 0px !important;
-    margin: 0px;
-    margin-bottom: 20px;
   }
 }
 
 .cursos #cursos-flters {
-  padding: 0;
-  margin: 0 auto 25px auto;
   list-style: none;
   text-align: center;
   background: #FAFAFA;
   border-radius: 50px;
-  padding: 2px 0px;
+  padding: 0;
 }
 
 .cursos #cursos-flters li {
   cursor: pointer;
   display: inline-block;
-  padding: 8px 20px 10px 20px;
   font-size: 16px;
   font-weight: 600;
   line-height: 1;
   color: #444444;
-  margin: 0 4px 8px 4px;
   transition: 0.3s;
   border-radius: 50px;
   border: 1px solid #FAFAFA;
+  padding: 10px;
+  margin: 0px 5px;
 }
 
 .cursos #cursos-flters li:hover,
