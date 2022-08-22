@@ -109,7 +109,7 @@
   border: 0.3px solid #20376C41;
   margin: 10px;
   padding: 0%;
-  position: sticky !important;
+  position: absolute !important;
 }
 
 .cursos .post-box .post-img {
@@ -185,7 +185,7 @@
 @media (max-width: 1350px) {
   .cursos .post-box {
     width: 20vw;
-    position: sticky;
+    position: absolute;
   }
 
   .cursos .post-box .post-title {
@@ -217,7 +217,6 @@
 
   .cursos .post-box {
     left: 0px !important;
-    position: sticky;
   }
 
   .cursos .post-box .img-fluid {
@@ -233,7 +232,6 @@
   .cursos .post-box {
     width: 90vw;
     left: 0px !important;
-    position: sticky;
   }
 }
 
