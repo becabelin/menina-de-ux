@@ -185,7 +185,6 @@
 @media (max-width: 1350px) {
   .cursos .post-box {
     width: 20vw;
-    position: absolute;
   }
 
   .cursos .post-box .post-title {
