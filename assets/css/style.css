@@ -405,7 +405,7 @@ section {
 .sobre .btn-quero-apoiar,
 .telegram .btn-quero-apoiar,
 .apoie .btn-quero-apoiar,
-.conteudos .btn-projeto {
+.conteudos .btn-projeto, .sobre .btn-projeto {
   font-family: "Avenir LT STD", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -424,7 +424,7 @@ section {
 .sobre .btn-quero-apoiar:hover,
 .telegram .btn-quero-apoiar:hover,
 .apoie .btn-quero-apoiar:hover,
-.conteudos .btn-projeto:hover {
+.conteudos .btn-projeto:hover, .sobre .btn-projeto:hover {
   font-family: "Avenir LT STD", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -825,6 +825,7 @@ section {
   border: 0.3px solid #cbcbcb;
   background-color: rgba(247, 247, 247, 0.2);
   margin: 10px;
+  padding: 20px;
 }
 
 .conteudos .post-box .post-img {
@@ -848,6 +849,7 @@ section {
   position: relative;
   transition: 0.3s;
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  margin-top: 10px;
 }
 
 .conteudos .description {
@@ -855,7 +857,7 @@ section {
   font-size: 16px;
   font-weight: 500;
   color: #20376C;
-  height: 20%;
+  height: 36%;
   margin-bottom: 30px;
 }
 
