@@ -175,7 +175,7 @@ body {
     font-style: normal;
     font-weight: 600;
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: auto;
 }
 
 .link h6 {
