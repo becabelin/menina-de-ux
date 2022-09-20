@@ -34,7 +34,8 @@ body::-webkit-scrollbar-thumb {
   border: 3px solid #FAFAFA;
 }
 
-.container, .col {
+.container,
+.col {
   padding: 0;
 }
 
@@ -297,14 +298,7 @@ section {
   margin-bottom: 5px;
   color: #20376C;
   font-family: "NCS Radhiumz", "Avenir LT STD", sans-serif;
-}
-
-.section-title h2::after {
-  content: "";
-  width: 90px;
-  height: 1px;
-  display: inline-block;
-  background: #20376C;
+  text-transform: uppercase;
 }
 
 .section-title p {
@@ -396,7 +390,8 @@ section {
 .sobre .btn-quero-apoiar,
 .telegram .btn-quero-apoiar,
 .apoie .btn-quero-apoiar,
-.conteudos .btn-projeto, .sobre .btn-projeto {
+.conteudos .btn-projeto,
+.sobre .btn-projeto {
   font-family: "Avenir LT STD", sans-serif;
   font-size: 18px;
   font-weight: 500;
@@ -415,7 +410,8 @@ section {
 .sobre .btn-quero-apoiar:hover,
 .telegram .btn-quero-apoiar:hover,
 .apoie .btn-quero-apoiar:hover,
-.conteudos .btn-projeto:hover, .sobre .btn-projeto:hover {
+.conteudos .btn-projeto:hover,
+.sobre .btn-projeto:hover {
   font-family: "Avenir LT STD", sans-serif;
   font-size: 18px;
   font-weight: 500;

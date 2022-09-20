@@ -90,14 +90,7 @@
 .cursos .section-title p,
 .cursos h2 {
   color: #20376C;
-}
-
-.cursos .section-title h2::after {
-  content: "";
-  width: 90px;
-  height: 1px;
-  display: inline-block;
-  background: #20376C;
+  text-transform: uppercase;
 }
 
 .cursos .post-box {
