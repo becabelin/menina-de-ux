@@ -1,5 +1,13 @@
+// Components
+import Title from "@/components/common/Title";
 import Head from "next/head";
-import styled from "../styles/Home.module.scss";
+
+// Styles
+import styledComp from "../styles/common.module.scss";
+
+// Utilities
+// Hooks
+// Interfaces
 
 export default function Home() {
   return (
@@ -10,7 +18,36 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styled.container}>Hello World - Menina de UX</main>
+      <main>
+        <h1>Component Title</h1>
+        <ul>
+          <li>
+            <Title type="Primary" style={styledComp["title-base"]}>
+              Ajudando meninas como eu
+            </Title>
+          </li>
+          <li>
+            <Title type="Primary" style={styledComp["title-xl"]}>
+              Cursinhos Tops e Gratuitos
+            </Title>
+          </li>
+          <li>
+            <Title type="Secondary" style={styledComp["title-lg"]}>
+              OS MELHORES EM VÁRIAS ÁREAS
+            </Title>
+          </li>
+          <li>
+            <Title type="Secondary" style={styledComp["title-sm"]}>
+              Quer ficar por dentro de todas as novidades?
+            </Title>
+          </li>
+          <li>
+            <Title type="Secondary" style={styledComp["title-xs"]}>
+              Crie seu Case
+            </Title>
+          </li>
+        </ul>
+      </main>
     </>
   );
 }
