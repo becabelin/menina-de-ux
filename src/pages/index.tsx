@@ -1,4 +1,5 @@
 // Components
+import MenuLinks from "@/components/common/MenuLinks";
 import Title from "@/components/common/Title";
 import Head from "next/head";
 
@@ -45,6 +46,16 @@ export default function Home() {
             <Title type="Secondary" style={styledComp["title-xs"]}>
               Crie seu Case
             </Title>
+          </li>
+        </ul>
+
+        <h1>Component MenuLinks</h1>
+        <ul>
+          <li>
+            <MenuLinks type="Primary" />
+          </li>
+          <li>
+            <MenuLinks type="Secondary" />
           </li>
         </ul>
       </main>
