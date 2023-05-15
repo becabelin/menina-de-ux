@@ -1,7 +1,7 @@
 // Components
-import MenuLinks from "@/components/common/MenuLinks";
 import Title from "@/components/common/Title";
 import Head from "next/head";
+import styled from "../styles/Home.module.scss";
 
 // Styles
 import styledComp from "../styles/common.module.scss";
@@ -19,7 +19,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className={styled.container}>
         <h1>Component Title</h1>
         <ul>
           <li>
@@ -46,16 +46,6 @@ export default function Home() {
             <Title type="Secondary" style={styledComp["title-xs"]}>
               Crie seu Case
             </Title>
-          </li>
-        </ul>
-
-        <h1>Component MenuLinks</h1>
-        <ul>
-          <li>
-            <MenuLinks type="Primary" />
-          </li>
-          <li>
-            <MenuLinks type="Secondary" />
           </li>
         </ul>
       </main>
