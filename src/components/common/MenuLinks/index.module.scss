@@ -22,8 +22,6 @@
   // Desktop | Tablet | Mobile
   align-items: center;
   display: flex;
-  max-width: 600px;
-  justify-content: space-around;
   font-size: 22px;
   font-style: normal;
   font-weight: 700;
@@ -33,6 +31,7 @@
 .ulPrimary {
   // Desktop | Tablet | Mobile
   @extend .ulBase; // Estende a classe .ulBase
+  gap: 30px;
   :hover {
     color: $blue-400;
     transition: color 0.6s ease-in-out;
@@ -43,8 +42,9 @@
   // Desktop | Tablet | Mobile
   @extend .ulBase; // Estende a classe .ulBase
   flex-direction: column;
-  gap: 16px 0;
+  gap: 24px 0;
   align-items: flex-start;
+  padding: 0;
 }
 // Estilização CSS base da tag li
 .liBase {
@@ -69,9 +69,9 @@
 }
 // Estilização CSS Primary da tag li
 .liPrimary {
-  // Desktop
-  @extend .liBase; // Estende a classe .liBase
   //  Tablet | Mobile
+  @extend .liBase; // Estende a classe .liBase
+  // Desktop
   @media (max-width: 994px) {
     display: none;
   }
@@ -80,6 +80,8 @@
 .liSecondary {
   // Desktop
   @extend .liBase; // Estende a classe .liBase
+  border-bottom: 1px solid $pink-400;
+  width: 95%;
   // Tablet | Mobile
   @media (min-width: 994px) {
     display: none;
