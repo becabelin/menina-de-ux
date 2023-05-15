@@ -14,3 +14,6 @@ a {
     text-decoration: underline;
   }
 }
+::-webkit-scrollbar {
+  display: none;
+}
