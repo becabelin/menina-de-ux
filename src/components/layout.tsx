@@ -1,4 +1,5 @@
 // Components
+import Header from "./Header";
 // Styles
 // Utilities
 // Hooks
@@ -11,7 +12,7 @@ interface LayoutProps {
 export default function Layout({ children }: LayoutProps) {
   return (
     <>
-      {/* Header */}
+      <Header />
       {children}
       {/* Footer */}
     </>
