@@ -1,0 +1,39 @@
+@import "/src/styles/colors.module";
+
+// Estilização CSS do Componente Header - base
+.base {
+  // Desktop | Tablet | Mobile
+  width: 100%;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+}
+// Estilização CSS do Componente Header - deixa o componente transparente
+.transparent {
+  // Desktop | Tablet | Mobile
+  @extend .base; // Estende a classe .base
+  background-color: transparent;
+  transition: background-color 0.8s ease;
+}
+// Estilização CSS do Componente Header - deixa o componente branco
+.normal {
+  // Desktop | Tablet | Mobile
+  @extend .base; // Estende a classe .base
+  background-color: $white;
+  box-shadow: 0px 10px 13px -10px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.8s ease;
+}
+// Estilização CSS da tag div
+.content {
+  // Desktop
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.4rem 5.2rem;
+  // Tablet | Mobile
+  @media (max-width: 994px) {
+    padding: 1rem 2rem;
+  }
+}
