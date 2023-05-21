@@ -5,6 +5,7 @@ import styled from "../styles/Home.module.scss";
 
 // Styles
 import styledComp from "../styles/common.module.scss";
+import Card from "@/components/common/Card";
 
 // Utilities
 // Hooks
@@ -46,6 +47,49 @@ export default function Home() {
             <Title type="Secondary" style={styledComp["title-xs"]}>
               Crie seu Case
             </Title>
+          </li>
+        </ul>
+        <h1>Component Card</h1>
+        <ul>
+          <li>
+            <Card
+              type="Primary"
+              src="./CardCourse/image1.svg"
+              alt="alt img"
+              title="Capacitação Gratuita em Introdução à Programação"
+              subtitle="inscrições até 24/05/2023"
+              href="#"
+            />
+          </li>
+          <li>
+            <Card
+              type="Primary"
+              src="./CardCourse/image1.svg"
+              alt="alt img"
+              title="Capacitação Gratuita em Introdução à Programação"
+              href="#"
+            />
+          </li>
+          <li>
+            <Card
+              type="Secondary"
+              src="./CardCourse/image1.svg"
+              alt="alt img"
+              title="Capacitação Gratuita em Introdução à Programação"
+              subtitle="inscrições até 24/05/2023"
+              description="O CIEE Saber Virtual é uma plataforma de cursos que permite a realização totalmente a distância. Nesse portal, é possível realizar 5 trilhas de conhecimento, que foram feitas com a intenção de preparar estudantes para o mundo do trabalho, sendo que, aqueles que concluírem os cursos, terão direito a um certificado."
+              href="#"
+            />
+          </li>
+          <li>
+            <Card
+              type="Secondary"
+              src="./CardCourse/image1.svg"
+              alt="alt img"
+              title="Capacitação Gratuita em Introdução à Programação"
+              description="O CIEE Saber Virtual é uma plataforma de cursos que permite a realização totalmente a distância. Nesse portal, é possível realizar 5 trilhas de conhecimento, que foram feitas com a intenção de preparar estudantes para o mundo do trabalho, sendo que, aqueles que concluírem os cursos, terão direito a um certificado."
+              href="#"
+            />
           </li>
         </ul>
       </main>
