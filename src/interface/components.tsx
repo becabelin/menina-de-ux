@@ -11,11 +11,26 @@ export interface IMenuLinks {
   onClickHandler?: () => void;
 }
 
-// Interface do component Logo
-export interface ILogo {
+// Interface elements with img
+interface Image {
   src: string;
-  href: string;
   width: number;
   height: number;
   alt: string;
+}
+
+// Interface do component Logo
+export interface ILogo extends Image {
+  href: string;
+}
+
+// Interface do component Card
+export interface ICard {
+  src: string;
+  alt: string;
+  href: string;
+  title: string;
+  subtitle?: string;
+  description?: string;
+  type: "Primary" | "Secondary";
 }
