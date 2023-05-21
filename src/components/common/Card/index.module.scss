@@ -1,0 +1,96 @@
+@import "/src/styles/colors.module";
+
+// Estilização CSS do Componente Card
+
+// Estilização CSS da div de Card
+.divBase {
+  // Desktop | Tablet | Mobile
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+}
+// Estilização CSS do tipo Primary
+.primary {
+  // Desktop
+  @extend .divBase; // Estende a classe .divBase
+  width: 300px;
+  max-height: 329px;
+  border: 1px solid $blue-300;
+  border-radius: 10px;
+  overflow: hidden;
+  // Tablet | Mobile
+  @media (max-width: 994px) {
+    width: 100%;
+    max-height: 600px;
+  }
+}
+
+// Estilização CSS do tipo Secondary
+.secondary {
+  // Desktop
+  @extend .divBase; // Estende a classe .divBase
+  width: 240px;
+  height: 570px;
+  border: 1px solid $blue-300;
+  border-radius: 10px;
+  overflow: hidden;
+  //  Tablet | Mobile
+  @media (max-width: 994px) {
+    width: 100%;
+    max-height: 520px;
+  }
+}
+
+// Estilização CSS de elementos do Componente Card
+.img {
+  // Desktop
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  // Tablet | Mobile
+  @media (max-width: 994px) {
+  }
+}
+.divCardContent {
+  // Desktop | Tablet | Mobile
+  height: 100%;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.divCardText {
+  // Desktop | Tablet | Mobile
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  height: 100%;
+  margin-bottom: 10px;
+}
+.title {
+  // Desktop | Tablet | Mobile
+  font-size: 22px;
+  color: $blue-400;
+}
+.subtitle {
+  // Desktop | Tablet | Mobile
+  font-size: 18px;
+  color: $gray-400;
+}
+.description {
+  // Desktop | Tablet | Mobile
+  padding-top: 4px;
+  font-size: 16px;
+  color: $blue-400;
+}
+.link {
+  // Desktop | Tablet | Mobile
+  display: flex;
+  cursor: pointer;
+  align-items: center;
+  gap: 4px;
+  font-style: normal;
+  font-weight: 750;
+  font-size: 16px;
+  color: $blue-400;
+}
