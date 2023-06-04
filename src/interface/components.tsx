@@ -1,8 +1,21 @@
-// Interface do component Title
-export interface ITitle {
+// Interface text - Base
+interface text {
   children: React.ReactNode;
-  type: "Primary" | "Secondary";
   style: string;
+}
+
+// Interface do component Title
+export interface ITitle extends text {
+  type: "Primary" | "Secondary";
+}
+
+// Interface do component SubTitle
+export interface ISubTitle extends text {}
+
+// Interface do component Tags
+export interface ITag {
+  children: React.ReactNode;
+  type: "Default" | "Strong";
 }
 
 // Interface do component MenuLinks
