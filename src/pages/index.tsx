@@ -1,11 +1,13 @@
 // Components
 import Title from "@/components/common/Title";
 import Head from "next/head";
-import styled from "../styles/Home.module.scss";
+import Card from "@/components/common/Card";
+import SubTitle from "@/components/common/SubTitle";
 
 // Styles
 import styledComp from "../styles/common.module.scss";
-import Card from "@/components/common/Card";
+import styled from "../styles/Home.module.scss";
+import Tag from "@/components/common/Tag";
 
 // Utilities
 // Hooks
@@ -47,6 +49,27 @@ export default function Home() {
             <Title type="Secondary" style={styledComp["title-xs"]}>
               Crie seu Case
             </Title>
+          </li>
+        </ul>
+        <h1>Component SubTitle</h1>
+        <ul>
+          <li>
+            <SubTitle style={styledComp["subTitle-default"]}>Default</SubTitle>
+          </li>
+          <li>
+            <SubTitle style={styledComp["subTitle-lg"]}>lg</SubTitle>
+          </li>
+        </ul>
+        <h1>Component Tag</h1>
+        <ul>
+          <li>
+            <SubTitle style={styledComp["subTitle-default"]}>
+              Default
+              <Tag type="Strong"> Strong</Tag>
+            </SubTitle>
+          </li>
+          <li>
+            <Tag type="Default">Default</Tag>
           </li>
         </ul>
         <h1>Component Card</h1>
