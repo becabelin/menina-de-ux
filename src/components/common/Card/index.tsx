@@ -1,28 +1,28 @@
 // Components
 // Styles
-import styled from "./index.module.scss";
+import styled from './index.module.scss'
 // Utilities
-import Image from "next/image";
-import Link from "next/link";
-import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import { convertStringCharacters } from "@/utilities/Converts";
+import Image from 'next/image'
+import Link from 'next/link'
+import { HiOutlineArrowLongRight } from 'react-icons/hi2'
+import { convertStringCharacters } from '@/utilities/Converts'
 
 // Hooks
 // Interfaces
-import { ICard } from "@/interface/components";
+import { ICard } from '@/interface/components'
 
 export default function Card(props: ICard) {
-  const { alt, src, title, description, href, subtitle, type = "base" } = props;
+  const { alt, src, title, description, href, subtitle, type = 'base' } = props
 
-  const style = type === "Primary" ? styled.primary : styled.secondary;
+  const style = type === 'Primary' ? styled.primary : styled.secondary
 
   return (
     <>
       <div className={style}>
         <Image
           src={`${src}`}
-          width={type === "Primary" ? 300 : 240}
-          height={type === "Primary" ? 150 : 120}
+          width={type === 'Primary' ? 300 : 240}
+          height={type === 'Primary' ? 150 : 120}
           alt={alt}
           className={styled.img}
         />
@@ -48,5 +48,5 @@ export default function Card(props: ICard) {
         </div>
       </div>
     </>
-  );
+  )
 }

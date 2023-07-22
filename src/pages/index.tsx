@@ -1,13 +1,13 @@
 // Components
-import Title from "@/components/common/Title";
-import Head from "next/head";
-import Card from "@/components/common/Card";
-import SubTitle from "@/components/common/SubTitle";
+import Title from '@/components/common/Title'
+import Head from 'next/head'
+import Card from '@/components/common/Card'
+import SubTitle from '@/components/common/SubTitle'
 
 // Styles
-import styledComp from "../styles/common.module.scss";
-import styled from "../styles/Home.module.scss";
-import Tag from "@/components/common/Tag";
+import styledComp from '@/styles/common/common.module.scss'
+import styled from '@/styles/Home.module.scss'
+import Tag from '@/components/common/Tag'
 
 // Utilities
 // Hooks
@@ -26,27 +26,27 @@ export default function Home() {
         <h1>Component Title</h1>
         <ul>
           <li>
-            <Title type="Primary" style={styledComp["title-base"]}>
+            <Title type="Primary" style={styledComp['title-base']}>
               Ajudando meninas como eu
             </Title>
           </li>
           <li>
-            <Title type="Primary" style={styledComp["title-xl"]}>
+            <Title type="Primary" style={styledComp['title-xl']}>
               Cursinhos Tops e Gratuitos
             </Title>
           </li>
           <li>
-            <Title type="Secondary" style={styledComp["title-lg"]}>
+            <Title type="Secondary" style={styledComp['title-lg']}>
               OS MELHORES EM VÁRIAS ÁREAS
             </Title>
           </li>
           <li>
-            <Title type="Secondary" style={styledComp["title-sm"]}>
+            <Title type="Secondary" style={styledComp['title-sm']}>
               Quer ficar por dentro de todas as novidades?
             </Title>
           </li>
           <li>
-            <Title type="Secondary" style={styledComp["title-xs"]}>
+            <Title type="Secondary" style={styledComp['title-xs']}>
               Crie seu Case
             </Title>
           </li>
@@ -54,16 +54,16 @@ export default function Home() {
         <h1>Component SubTitle</h1>
         <ul>
           <li>
-            <SubTitle style={styledComp["subTitle-default"]}>Default</SubTitle>
+            <SubTitle style={styledComp['subTitle-default']}>Default</SubTitle>
           </li>
           <li>
-            <SubTitle style={styledComp["subTitle-lg"]}>lg</SubTitle>
+            <SubTitle style={styledComp['subTitle-lg']}>lg</SubTitle>
           </li>
         </ul>
         <h1>Component Tag</h1>
         <ul>
           <li>
-            <SubTitle style={styledComp["subTitle-default"]}>
+            <SubTitle style={styledComp['subTitle-default']}>
               Default
               <Tag type="Strong"> Strong</Tag>
             </SubTitle>
@@ -117,5 +117,5 @@ export default function Home() {
         </ul>
       </main>
     </>
-  );
+  )
 }
