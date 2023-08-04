@@ -47,3 +47,27 @@ export interface ICard {
   description?: string
   type: 'Primary' | 'Secondary'
 }
+
+// Interface do component TitleLinks
+export interface ITitleLinks {
+  type: 'Primary' | 'Secondary'
+  children: React.ReactNode
+}
+
+// Interface do component TextLinks
+export interface ITextLinks {
+  children: React.ReactNode
+}
+
+// Interface do component subtitleLinks
+export interface ISubtitleLinks {
+  type: 'Primary' | 'Secondary'
+  children: React.ReactNode
+}
+
+// Interface do component CardLinks
+export interface ICardLinks {
+  emoji: string
+  link: string
+  children: React.ReactNode
+}

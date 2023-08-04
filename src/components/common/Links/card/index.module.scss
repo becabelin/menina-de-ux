@@ -1,0 +1,34 @@
+.card_container {
+    width: 100%;
+    border-radius: 0.5rem;
+    height: 5.3rem;
+    min-width: 280px;
+    max-width: 530px;
+    cursor: pointer;
+    display: block;
+}
+
+.card {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: rgb(255 255 255);
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.card__text {
+    font-weight: 500;
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.card__emoji {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
