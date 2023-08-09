@@ -10,11 +10,13 @@ export default function CardLinks({
   return (
     <div className={styles.card_container}>
       <a href={link} target="_blank" rel="noopener noreferrer">
-        <div className={`${principal ? styles.card__principal : styles.card}`}>
+        <div
+          className={`${principal ? styles.card__principal : styles.card} ${
+            styles.bounce
+          }`}
+        >
           <div
-            className={`${
-              principal ? styles.card__principal : styles.card__text
-            }`}
+            className={`${principal ? styles.card__text : styles.card__text}`}
           >
             {children}
           </div>
