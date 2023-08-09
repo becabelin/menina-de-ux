@@ -1,3 +1,5 @@
+@import "/src/styles/colors.module";
+
 .card_container {
     width: 100%;
     border-radius: 0.5rem;
@@ -16,7 +18,21 @@
     column-gap: 0.5rem;
     padding-left: 1rem;
     padding-right: 1rem;
-    background-color: rgb(255 255 255);
+    background-color: $white;
+    width: 100%;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.card__principal {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    background-color: $blue-400;
     width: 100%;
     border-radius: 0.5rem;
     cursor: pointer;
@@ -26,6 +42,7 @@
     font-weight: 500;
     font-size: .875rem;
     line-height: 1.25rem;
+    color: black;
 }
 
 .card__emoji {
