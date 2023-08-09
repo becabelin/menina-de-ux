@@ -1,5 +1,15 @@
 @import "/src/styles/colors.module";
 
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-15px);
+      }
+}
+    
+
 .card_container {
     width: 100%;
     border-radius: 0.5rem;
@@ -22,6 +32,15 @@
     width: 100%;
     border-radius: 0.5rem;
     cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card:hover {
+    background-color: $blue-400;
+}
+
+.card:hover .card__text {
+    color: $white; 
 }
 
 .card__principal {
@@ -36,6 +55,9 @@
     width: 100%;
     border-radius: 0.5rem;
     cursor: pointer;
+    animation: bounce 2s ease 0s infinite;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);    
+    
 }
 
 .card__text {
@@ -43,9 +65,11 @@
     font-size: .875rem;
     line-height: 1.25rem;
     color: black;
+    text-align: left;
+    padding-right: 1.5rem;
 }
 
 .card__emoji {
-    font-size: 1.875rem;
+    font-size: 2.15rem;
     line-height: 2.25rem;
 }
