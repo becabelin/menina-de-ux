@@ -70,4 +70,5 @@ export interface ICardLinks {
   emoji: string
   link: string
   children: React.ReactNode
+  principal?: boolean
 }
