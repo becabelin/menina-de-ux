@@ -3,10 +3,7 @@ import TextLinks from '@/components/common/Links/text/textLinks'
 import SubtitleLinks from '@/components/common/Links/subtitle/subtitleLinks'
 import CardLinks from '@/components/common/Links/card/cardLinks'
 import Logo from '@/components/common/Logo'
-import styles from './index.module.scss'
-// import Image from 'next/image'
-// import link from 'next/link'
-// import '../../components/common/Links/card/index.module.scss'
+import styles from '@/styles/Links.module.scss'
 
 export default function Link() {
   return (
@@ -27,9 +24,12 @@ export default function Link() {
             <TitleLinks type="Primary">Oiê, tudo bem? 👩🏻‍💻</TitleLinks>
 
             <TextLinks>
-              A Menina de UX é uma iniciativa focada para ajudar meninas que
-              querem começar suas carreiras na área de UX Design e não sabem por
-              onde começar 😉
+              A <span className={styles.highlightBlue}>Menina de UX</span> é uma
+              iniciativa focada para{' '}
+              <span className={styles.highlightBlue}>ajudar meninas</span> que
+              querem começar suas carreiras na área de{' '}
+              <span className={styles.highlightBlue}>UX Design</span> e não
+              sabem por onde começar 😉
             </TextLinks>
             <TextLinks>Espero que eu possa te ajudar! 😊</TextLinks>
           </div>
@@ -40,22 +40,27 @@ export default function Link() {
                 link="https://coderhouse.com.br/?utm_source=alianzas&utm_medium=alianzas&utm_campaign=alianza"
                 emoji="🎟️"
               >
-                Use nosso cupom MENINADEUX para ganhar 20% de desconto nos curso
-                da Coderhouse
+                Use nosso cupom{' '}
+                <span className={styles.highlightPink}>MENINADEUX </span>
+                para ganhar 20% de desconto nos curso da
+                <span className={styles.highlight}> Coderhouse</span>
               </CardLinks>
               <CardLinks
                 link="https://cubos.academy/cursos/design-uxui?utm_source=meninadeux&utm_medium=influencerPaid&utm_campaign=20230727_instagram_userExperience&utm_content=sales"
                 emoji="🎟️"
               >
-                Use nosso cupom MENINA10 para ganhar 10% de desconto no curso de
-                UX Design da Cubos Academy
+                Use nosso cupom{' '}
+                <span className={styles.highlightPink}>MENINA10 </span>
+                para ganhar 10% de desconto no curso de UX Design da
+                <span className={styles.highlight}> Cubos Academy</span>
               </CardLinks>
 
               <CardLinks
                 link="https://aulas.cubos.academy/criar-conta?utm_source=meninadeux&utm_medium=influencerPaid&utm_campaign=20230720_instagram_userExperience&utm_content=sales&utm_keyword=minicursogratuito"
                 emoji="📚"
               >
-                Minicurso de UX da Cubos Academy
+                Minicurso de UX da
+                <span className={styles.highlight}> Cubos Academy</span>
               </CardLinks>
             </div>
           </div>
@@ -65,8 +70,11 @@ export default function Link() {
               <CardLinks
                 link="https://www.atados.com.br/ong/menina-de-ux"
                 emoji="💪🏻"
+                principal={true}
               >
-                Seja uma voluntária!
+                <span className={styles.cardVoluntaria}>
+                  Seja uma voluntária!
+                </span>
               </CardLinks>
 
               <CardLinks link="https://meninadeux.com/" emoji="🌏">
