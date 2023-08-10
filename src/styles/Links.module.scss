@@ -12,6 +12,7 @@
     background-color: $pink-400;
     margin: 0;
 }
+  
 
 .logo {
     display: flex;
@@ -23,6 +24,12 @@
     max-width: 100%;
     height: auto;
     display: block;
+}
+
+.paragraph {
+    color: $gray-400;
+    font-size: .835rem;
+    line-height: 2.4rem;
 }
 
 .section {
