@@ -13,11 +13,11 @@ export default function Link() {
           <Logo
             href="https://meninadeux.com/"
             src="/logo_rosa.svg"
-            width={180}
-            height={180}
+            width={185}
+            height={185}
             alt="Logo do projeto Menina de UX"
           />
-          <p className="text-sm text-gray-300">Ajudando meninas como eu</p>
+          <p className={styles.paragraph}>Ajudando meninas como eu</p>
         </div>
         <div className={styles.divGlobal}>
           <div className={styles.divText}>
