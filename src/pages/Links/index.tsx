@@ -1,9 +1,14 @@
+// Components
 import TitleLinks from '@/components/common/Links/title/titleLinks'
 import TextLinks from '@/components/common/Links/text/textLinks'
 import SubtitleLinks from '@/components/common/Links/subtitle/subtitleLinks'
 import CardLinks from '@/components/common/Links/card/cardLinks'
 import Logo from '@/components/common/Logo'
+
+// Styles
 import styles from '@/styles/Links.module.scss'
+// Utilities
+import { TypingText } from '@/utilities/useTypingEffect'
 
 export default function Link() {
   return (
@@ -13,16 +18,18 @@ export default function Link() {
           <Logo
             href="https://meninadeux.com/"
             src="/logo_rosa.svg"
-            width={185}
-            height={185}
+            width={180}
+            height={180}
             alt="Logo do projeto Menina de UX"
           />
           <p className={styles.paragraph}>Ajudando meninas como eu</p>
         </div>
         <div className={styles.divGlobal}>
           <div className={styles.divText}>
-            <TitleLinks type="Primary">Oiê, tudo bem? 👩🏻‍💻</TitleLinks>
-
+            <TitleLinks type="Primary">
+              <TypingText text="Oiê, tudo bem? " delay={100} />
+              👩🏻‍💻
+            </TitleLinks>
             <TextLinks>
               A <span className={styles.highlightBlue}>Menina de UX</span> é uma
               iniciativa focada para{' '}
