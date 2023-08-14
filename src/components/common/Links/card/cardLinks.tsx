@@ -1,5 +1,9 @@
-import { ICardLinks } from '@/interface/components'
+// Components
+// Styles
 import styles from './index.module.scss'
+
+// Interfaces
+import { ICardLinks } from '@/interface/components'
 
 export default function CardLinks({
   emoji,

@@ -1,7 +1,9 @@
+// Components
+// Styles
+import styles from './index.module.scss'
+
 // Interface
 import { ISubtitleLinks } from '@/interface/components'
-
-import styles from './index.module.scss'
 
 export default function SubtitleLinks({ type, children }: ISubtitleLinks) {
   // Verifica se o título é do tipo principal. Se for, a tag será h1. Se não, será h2.
