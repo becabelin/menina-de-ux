@@ -11,9 +11,9 @@
     display: flex;
     background-color: $pink-400;
     margin: 0;
+    font-family: 'NCS Radhiumz';
 }
   
-
 .logo {
     display: flex;
     flex-direction: column;
@@ -28,7 +28,7 @@
 
 .paragraph {
     color: $gray-400;
-    font-size: .835rem;
+    font-size: 1rem;
     line-height: 2.4rem;
 }
 
