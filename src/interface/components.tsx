@@ -72,3 +72,9 @@ export interface ICardLinks {
   children: React.ReactNode
   principal?: boolean
 }
+
+// Interface do component TypingText
+export interface ITypingText {
+  text: string
+  delay: number
+}
