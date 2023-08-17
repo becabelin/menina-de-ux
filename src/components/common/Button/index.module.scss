@@ -1,0 +1,134 @@
+@import "/src/styles/colors.module";
+
+.ButtonBase {
+  min-width: 8.125rem;
+  height: 3rem;
+  padding: 0rem 1.7rem;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 48px;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
+}
+
+
+
+.ButtonDefault {
+  @extend .ButtonBase;
+  background-color: $blue-500;
+  border: 1px solid  $blue-500;
+  span {
+    color: $white;
+  }
+  
+
+  &:hover {
+    background-color: transparent;
+    border: 1px solid  $blue-100;
+    
+    span {
+      color: $blue-400;
+    }
+  }
+  
+}
+
+.ButtonWhite {
+  @extend .ButtonBase;
+  background-color: $white;
+  span {
+    color: $blue-500
+  }
+  &:hover {
+    
+    span {
+      color: $blue-400;
+    }
+  }
+}
+
+.ButtonBluePrimary {
+    
+  @extend .ButtonBase;
+  background-color: $blue-500;
+  span {
+    color: $white;
+  }
+
+  &:hover {
+    background-color: $white;
+    
+    span {
+      color: $gray-600;
+    }
+  }
+}
+
+
+.ButtonBlueSecondary {
+  @extend .ButtonBase;
+  background-color: $white;
+  border: 1px solid  $blue-500;
+  span {
+    color: $blue-500;
+  }
+
+  &:hover {
+    background-color: $white;
+    border: 1px solid  $blue-400;
+    
+    span {
+      color: $blue-400;
+    }
+  }
+}
+.ButtonPinkPrimary {
+  @extend .ButtonBase;
+  background-color: $pink-500;
+  span {
+    color: $white;
+  }
+  &:hover {
+    background-color: $gray-200;
+    
+    span {
+      color: $gray-600;
+    }
+  }
+}
+
+.ButtonPinkSecondary {
+  @extend .ButtonBase;
+  background-color: transparent;
+  border: 1px solid  $pink-500;
+  
+  span {
+    color: $pink-500;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 1px solid  $blue-100;
+
+    
+    span {
+      color: $gray-600;
+    }
+  }
+}
+.ButtonDisabled {
+  @extend .ButtonBase;
+  cursor: none;
+  background-color: $gray-200;
+    
+  span {
+    color: $gray-600;
+  }
+}
