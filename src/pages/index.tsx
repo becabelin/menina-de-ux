@@ -3,13 +3,15 @@ import Title from '@/components/common/Title'
 import Head from 'next/head'
 import Card from '@/components/common/Card'
 import SubTitle from '@/components/common/SubTitle'
+import Button from '@/components/common/Button'
+import Tag from '@/components/common/Tag'
 
 // Styles
 import styledComp from '@/styles/common/common.module.scss'
 import styled from '@/styles/Home.module.scss'
-import Tag from '@/components/common/Tag'
 
 // Utilities
+import { FaHome } from 'react-icons/fa'
 // Hooks
 // Interfaces
 
@@ -115,6 +117,14 @@ export default function Home() {
             />
           </li>
         </ul>
+        <h2>Component Button</h2>
+        <Button>Default</Button>
+        <Button type="White">White</Button>
+        <Button type="BluePrimary">Blue Primary</Button>
+        <Button type="BlueSecondary">Blue Secondary</Button>
+        <Button type="PinkPrimary">Pink Primary</Button>
+        <Button type="PinkSecondary">Pink Secondary</Button>
+        <Button type="Disabled">Disabled</Button>
       </main>
     </>
   )
