@@ -1,16 +1,18 @@
 // Interface text - Base
 interface text {
   children: React.ReactNode
-  style: string
+  // style: string
 }
 
 // Interface do component Title
 export interface ITitle extends text {
-  type: 'Primary' | 'Secondary'
+  type: 'Default' | 'Xl' | 'Lg' | 'Sm' | 'Xs'
 }
 
 // Interface do component SubTitle
-export type ISubTitle = text
+export interface ISubTitle extends text {
+  type: 'Default' | 'Lg'
+}
 
 // Interface do component Tags
 export interface ITag {

@@ -1,6 +1,6 @@
 // Components
 import MenuLinks from '@/components/common/MenuLinks'
-import Title from '@/components/common/Title'
+import Title from '@/components/common/Title/Title'
 
 // Styles
 import styled from './index.module.scss'
@@ -33,9 +33,7 @@ export default function MenuMob() {
         {showMenu && (
           <nav className={styled.content}>
             <div className={styled.divHeader}>
-              <Title type="Secondary" style={styledComp['title-xs']}>
-                Menu
-              </Title>
+              <Title type="Xs">Menu</Title>
               <SlClose size={40} className={styled.figure} />
             </div>
             <MenuLinks type="Secondary" onClickHandler={toggleMenu} />

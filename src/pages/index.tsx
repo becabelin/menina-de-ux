@@ -1,13 +1,12 @@
 // Components
-import Title from '@/components/common/Title'
+import Title from '@/components/common/Title/Title'
 import Head from 'next/head'
 import Card from '@/components/common/Card'
-import SubTitle from '@/components/common/SubTitle'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
 import Button from '@/components/common/Button'
 import Tag from '@/components/common/Tag'
 
 // Styles
-import styledComp from '@/styles/common/common.module.scss'
 import styled from '@/styles/Home.module.scss'
 
 // Utilities
@@ -28,44 +27,36 @@ export default function Home() {
         <h1>Component Title</h1>
         <ul>
           <li>
-            <Title type="Primary" style={styledComp['title-base']}>
-              Ajudando meninas como eu
-            </Title>
+            <Title type="Default">Ajudando meninas como eu</Title>
           </li>
           <li>
-            <Title type="Primary" style={styledComp['title-xl']}>
-              Cursinhos Tops e Gratuitos
-            </Title>
+            <Title type="Xl">Cursinhos Tops e Gratuitos</Title>
           </li>
           <li>
-            <Title type="Secondary" style={styledComp['title-lg']}>
-              OS MELHORES EM VÁRIAS ÁREAS
-            </Title>
+            <Title type="Lg">OS MELHORES EM VÁRIAS ÁREAS</Title>
           </li>
           <li>
-            <Title type="Secondary" style={styledComp['title-sm']}>
+            <Title type="Sm">
               Quer ficar por dentro de todas as novidades?
             </Title>
           </li>
           <li>
-            <Title type="Secondary" style={styledComp['title-xs']}>
-              Crie seu Case
-            </Title>
+            <Title type="Xs">Crie seu Case</Title>
           </li>
         </ul>
         <h1>Component SubTitle</h1>
         <ul>
           <li>
-            <SubTitle style={styledComp['subTitle-default']}>Default</SubTitle>
+            <SubTitle type="Default">Default</SubTitle>
           </li>
           <li>
-            <SubTitle style={styledComp['subTitle-lg']}>lg</SubTitle>
+            <SubTitle type="Lg">lg</SubTitle>
           </li>
         </ul>
         <h1>Component Tag</h1>
         <ul>
           <li>
-            <SubTitle style={styledComp['subTitle-default']}>
+            <SubTitle type="Default">
               Default
               <Tag type="Strong"> Strong</Tag>
             </SubTitle>
