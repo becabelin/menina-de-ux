@@ -1,3 +1,5 @@
+import { ReactNode } from 'react'
+
 // Interface text - Base
 interface text {
   children: React.ReactNode
@@ -77,4 +79,28 @@ export interface ICardLinks {
 export interface ITypingText {
   text: string
   delay: number
+}
+
+// Interface do componente CardInfo
+export interface ICardInfo {
+  src: string
+  alt: string
+  containerTitle: string
+  containerDescription: string
+  type?: 'Active' | 'Disabled'
+}
+
+// Interface do componente Button
+export interface IButton {
+  children: ReactNode
+  icon?: React.ElementType
+  url?: string
+  type?:
+    | 'Default'
+    | 'White'
+    | 'BluePrimary'
+    | 'BlueSecondary'
+    | 'PinkPrimary'
+    | 'PinkSecondary'
+    | 'Disabled'
 }
