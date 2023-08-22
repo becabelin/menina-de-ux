@@ -131,21 +131,21 @@ export default function Home() {
         <ul>
           <li>
             <CardInfo
-              type="container"
+              type="Active"
+              alt="/"
               src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=50"
               containerTitle="Currículo de Milhões"
               containerDescription="Aprenda a criar o currículo campeão para enviar nos processos seletivos
               e descubra coisas super importantes que você não sabia antes!"
-              button="Em breve"
             />
           </li>
           <li>
             <CardInfo
-              type="container"
+              type="Disabled"
+              alt="/"
               src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=50"
               containerTitle="O Poder do LinkedIn"
               containerDescription="Tudo sobre a maior rede profissional de todas e as melhores dicas para deixar o seu perfil atrativo para recrutadores!"
-              button="Ver mais"
             />
           </li>
         </ul>
