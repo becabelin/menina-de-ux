@@ -1,20 +1,13 @@
-import { ReactNode } from 'react'
+// Components
+// Styles
 import styles from './index.module.scss'
+
+// Utilities
 import Link from 'next/link'
 
-interface IButton {
-  children: ReactNode
-  icon?: React.ElementType
-  url?: string
-  type?:
-    | 'Default'
-    | 'White'
-    | 'BluePrimary'
-    | 'BlueSecondary'
-    | 'PinkPrimary'
-    | 'PinkSecondary'
-    | 'Disabled'
-}
+// Hooks
+// Interfaces
+import { IButton } from '@/interface/components'
 
 export default function Button({
   children,
