@@ -1,96 +1,71 @@
 @import "/src/styles/colors.module";
 
-// Estilização CSS do Componente Card
-
-// Estilização CSS da div de Card
-.divBase {
-  // Desktop | Tablet | Mobile
+// Estilização Componente Card
+//Style Base
+.CardBase {
   background-color: $white;
   display: flex;
   flex-direction: column;
+  color: $blue-400;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid $blue-300;
+  border-radius: 10px;
+  overflow: hidden;
 }
-// Estilização CSS do tipo Primary
+
+// Estilização Card Primary 
 .primary {
-  // Desktop
-  @extend .divBase; // Estende a classe .divBase
-  width: 300px;
-  max-height: 329px;
-  border: 1px solid $blue-300;
-  border-radius: 10px;
-  overflow: hidden;
-  // Tablet | Mobile
-  @media (max-width: 994px) {
-    width: 100%;
-    max-height: 600px;
-  }
+  @extend .CardBase;
+  width: 24rem;
+  height: auto;
+  gap: 16px;
 }
 
-// Estilização CSS do tipo Secondary
+// Estilização Card Secondary 
 .secondary {
-  // Desktop
-  @extend .divBase; // Estende a classe .divBase
-  width: 240px;
-  height: 570px;
-  border: 1px solid $blue-300;
-  border-radius: 10px;
-  overflow: hidden;
-  //  Tablet | Mobile
-  @media (max-width: 994px) {
-    width: 100%;
-    max-height: 520px;
-  }
+  @extend .CardBase;
+  width: 15rem;
+  height: 36.9rem;
+  gap: 20px;
 }
 
-// Estilização CSS de elementos do Componente Card
 .img {
-  // Desktop
   width: 100%;
   height: auto;
-  object-fit: cover;
-  // Tablet | Mobile
-  @media (max-width: 994px) {
-  }
 }
-.divCardContent {
-  // Desktop | Tablet | Mobile
-  height: 100%;
-  padding: 10px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.divCardText {
-  // Desktop | Tablet | Mobile
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  height: 100%;
-  margin-bottom: 10px;
-}
+
 .title {
-  // Desktop | Tablet | Mobile
   font-size: 22px;
-  color: $blue-400;
+  line-height: 28px;
+  padding: 0 8px 8px;
 }
-.subtitle {
-  // Desktop | Tablet | Mobile
-  font-size: 18px;
-  color: $gray-400;
-}
+
 .description {
-  // Desktop | Tablet | Mobile
-  padding-top: 4px;
-  font-size: 16px;
-  color: $blue-400;
+  font-weight: 400;
+  padding: 0 8px;
 }
+
+.subtitle {
+  color: $gray-400;
+  font-weight: 500;
+  padding: 0 8px;
+}
+
 .link {
-  // Desktop | Tablet | Mobile
   display: flex;
-  cursor: pointer;
-  align-items: center;
-  gap: 4px;
-  font-style: normal;
-  font-weight: 750;
-  font-size: 16px;
   color: $blue-400;
+  gap: 4px;
+  line-height: 16px;
+  font-weight: 700;
+  padding: 0 8px ;
+  cursor: pointer;
+}
+
+@media (max-width: 994px) {
+  .CardBase{
+    width: 80%; // width: 100%;
+    height: auto;
+  }
 }
