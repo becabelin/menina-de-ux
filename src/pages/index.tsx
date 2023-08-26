@@ -87,6 +87,7 @@ export default function Home() {
               href="#"
             />
           </li>
+
           <li>
             <Card
               type="Primary"
@@ -94,6 +95,14 @@ export default function Home() {
               alt="alt img"
               title="Capacitação Gratuita em Introdução à Programação"
               href="#"
+            />
+          </li>
+          <li>
+            <Card
+              type="Primary"
+              src="./CardCourse/image1.svg"
+              alt="alt img"
+              title="Capacitação Gratuita em Introdução à Programação"
             />
           </li>
           <li>
