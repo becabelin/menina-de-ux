@@ -43,10 +43,10 @@ export interface ILogo extends Image {
 export interface ICard {
   src: string
   alt: string
-  href: string
   title: string
   subtitle?: string
   description?: string
+  href?: string
   type: 'Primary' | 'Secondary'
 }
 
