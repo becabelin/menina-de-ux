@@ -1,7 +1,7 @@
-@import "../colors.module";
+@import "/src/styles/colors.module";
 
 // Estilização CSS do Component Title
-.title-base {
+.titleBase {
   // Desktop
   font-family: "NCS Radhiumz";
   font-style: normal;
@@ -10,7 +10,11 @@
   line-height: 110%;
   align-items: center;
   color: $blue-400;
-  // Tablet
+}
+
+.titleDefault {
+  @extend .titleBase; // Estende a classe .title-base
+      // Tablet
   @media (max-width: 768px) {
     font-size: 32px;
   }
@@ -19,8 +23,8 @@
     font-size: 22px;
   }
 }
-.title-xl {
-  @extend .title-base; // Estende a classe .title-base
+.titleXl {
+  @extend .titleBase; // Estende a classe .title-base
   // Desktop
   font-size: 46px;
   line-height: 125%;
@@ -33,8 +37,8 @@
     font-size: 25px;
   }
 }
-.title-lg {
-  @extend .title-base; // Estende a classe .title-base
+.titleLg {
+  @extend .titleBase; // Estende a classe .title-base
   // Desktop
   font-size: 34px;
   line-height: 150%;
@@ -48,14 +52,14 @@
     font-size: 25px;
   }
 }
-.title-sm {
-  @extend .title-base; // Estende a classe .title-base
+.titleSm {
+  @extend .titleBase; // Estende a classe .title-base
   // Desktop
   font-size: 32px;
   line-height: 120%;
 }
-.title-xs {
-  @extend .title-base; // Estende a classe .title-base
+.titleXs {
+  @extend .titleBase; // Estende a classe .title-base
   // Desktop
   font-size: 26px;
   line-height: 115%;
