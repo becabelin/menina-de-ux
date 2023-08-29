@@ -59,13 +59,13 @@
   gap: 4px;
   line-height: 16px;
   font-weight: 700;
-  padding: 0 8px ;
+  padding: 4px 8px ;
   cursor: pointer;
 }
 
 @media (max-width: 994px) {
   .CardBase{
-    width: 80%; // width: 100%;
+    width: 80%;
     height: auto;
   }
 }
