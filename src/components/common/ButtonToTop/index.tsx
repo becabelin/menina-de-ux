@@ -11,16 +11,12 @@ export default function ButtonToTop() {
   const [showButton, setShowButton] = useState(false)
 
   // Monitora o Scroll Y e seta o showButton para true quando maior que 0.
-  const handleScroll = useCallback(() => {
-    setShowButton(window.scrollY > 0)
-  }, [])
+  const handleScroll = useCallback(() => setShowButton(window.scrollY > 0), [])
 
   useEffect(() => {
     window.addEventListener('scroll', handleScroll)
 
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [handleScroll])
 
   const scrollToTop = () => {
