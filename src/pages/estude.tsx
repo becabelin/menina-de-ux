@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Title from '@/components/common/Title/Title'
 import SubTitle from '@/components/common/Subtitle/SubTitle'
-import HeroImage from '@/../public/estude/mulher-estudando-2.webp.png'
+import CardInfo from '@/components/common/CardInfo'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
@@ -10,7 +10,12 @@ import styledEstude from '@/styles/Estude.module.scss'
 
 // Utilities
 import Image from 'next/image'
-import CardInfo from '@/components/common/CardInfo'
+import HeroImage from '@/../public/estude/mulher-estudando-2.webp.png'
+import NewsImage from '@/../public/estude/mulher-recebendo-novidades.svg'
+import SocialMediaImage from '@/../public/estude/mulher-redes-sociais.svg'
+import Button from '@/components/common/Button'
+import { MdAlternateEmail } from 'react-icons/md'
+import { AiOutlineInstagram, AiFillLinkedin } from 'react-icons/ai'
 // Hooks
 // Interfaces
 
@@ -67,6 +72,63 @@ export default function Home() {
               containerDescription="O que é, como fazer e como ela pode mudar o seu negócio. Hoje, no Menina de UX repórter!"
             />
           </div>
+        </section>
+        <section
+          className={`container 
+          ${styledEstude.news}`}
+        >
+          <div className={styledEstude.content}>
+            <Title type="Sm">
+              Quer ficar por dentro de todas as novidades?
+            </Title>
+            <SubTitle type="Default">
+              Entre no canal do Telegram da Menina de UX e fique sabendo de
+              todos os cursos e processos seletivos novos!
+            </SubTitle>
+            <div className={styledEstude.buttons}>
+              <Button url={'https://t.me/meninadeux'}> Entrar no canal </Button>
+            </div>
+          </div>
+          <Image
+            src={NewsImage}
+            alt="Mulher no celular conferindo os novos cursos."
+          />
+        </section>
+        <section
+          className={`container 
+          ${styledEstude.socialMedia}`}
+        >
+          <div className={styledEstude.content}>
+            <Title type="Sm">Redes Sociais</Title>
+            <SubTitle type="Default">
+              Me acompanhe nas redes sociais! <br /> Se quiser conversar sobre
+              projetos, eventos e afins, tem meu e-mail aí!
+            </SubTitle>
+            <div className={styledEstude.buttons}>
+              <Button
+                icon={MdAlternateEmail}
+                url={'mailto:becabelin@gmail.com'}
+              >
+                E-mail
+              </Button>
+              <Button
+                icon={AiOutlineInstagram}
+                url="https://www.instagram.com/meninadeux"
+              >
+                Instagram
+              </Button>
+              <Button
+                icon={AiFillLinkedin}
+                url="https://www.linkedin.com/company/meninadeux/"
+              >
+                LinkedIn
+              </Button>
+            </div>
+          </div>
+          <Image
+            src={SocialMediaImage}
+            alt="Mulher com um megafone, simulando interface de rede social."
+          />
         </section>
       </main>
     </>
