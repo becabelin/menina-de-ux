@@ -3,7 +3,6 @@
 import styled from './index.module.scss'
 
 // Utilities
-import Image from 'next/image'
 import Link from 'next/link'
 import { HiOutlineArrowLongRight } from 'react-icons/hi2'
 import { convertStringCharacters } from '@/utilities/Converts'
@@ -19,13 +18,7 @@ export default function Card(props: ICard) {
 
   return (
     <div className={style}>
-      <Image
-        src={`${src}`}
-        width={type === 'Primary' ? 300 : 240}
-        height={type === 'Primary' ? 150 : 120}
-        alt={alt}
-        className={styled.img}
-      />
+      <img src={`${src}`} alt={alt} className={styled.img} />
       <h2 className={styled.title}>
         {title.length > 300
           ? `${convertStringCharacters(title, 300)}...`
