@@ -97,12 +97,5 @@ export interface IButton {
   children: ReactNode
   icon?: React.ElementType
   url?: string
-  type?:
-    | 'Default'
-    | 'White'
-    | 'BluePrimary'
-    | 'BlueSecondary'
-    | 'PinkPrimary'
-    | 'PinkSecondary'
-    | 'Disabled'
+  type?: 'Blue' | 'Pink' | 'Disabled'
 }

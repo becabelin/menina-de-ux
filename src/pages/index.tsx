@@ -119,12 +119,9 @@ export default function Home() {
           </li>
         </ul>
         <h2>Component Button</h2>
-        <Button>Default</Button>
-        <Button type="White">White</Button>
-        <Button type="BluePrimary">Blue Primary</Button>
-        <Button type="BlueSecondary">Blue Secondary</Button>
-        <Button type="PinkPrimary">Pink Primary</Button>
-        <Button type="PinkSecondary">Pink Secondary</Button>
+
+        <Button>Blue/Deault</Button>
+        <Button type="Pink">Pink</Button>
         <Button type="Disabled">Disabled</Button>
 
         <h2>Component CardInfo</h2>
