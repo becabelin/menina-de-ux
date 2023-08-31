@@ -1,10 +1,14 @@
 // Components
 import Head from 'next/head'
+import Title from '@/components/common/Title/Title'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
+import HeroImage from '@/assets/mulher-estudando-2.webp.png'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
 
 // Utilities
+import Image from 'next/image'
 // Hooks
 // Interfaces
 
@@ -18,7 +22,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <span>Conteúdo da página</span>
+        <section className="container">
+          <div>
+            <div>
+              <Title type="Lg">Estude com a Menina de UX</Title>
+              <SubTitle type="Lg">
+                Aprenda sobre carreira, currículo, design e tecnologia com os
+                vários conteúdos gratuitos aqui!
+              </SubTitle>
+            </div>
+            <Image src={HeroImage} alt="mulher estudando" />
+          </div>
+        </section>
       </main>
     </>
   )
