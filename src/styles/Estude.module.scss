@@ -1,0 +1,20 @@
+@import "colors.module";
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 32px;
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+}
+
+.heroTexts {
+  max-width: 476px;
+}
+
+.heroTexts h2 {
+  margin-bottom: 26px;
+  max-width: 300px;
+}

@@ -6,6 +6,7 @@ import HeroImage from '@/assets/mulher-estudando-2.webp.png'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
+import styledEstude from '@/styles/Estude.module.scss'
 
 // Utilities
 import Image from 'next/image'
@@ -22,9 +23,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <section className="container">
-          <div>
-            <div>
+        <section>
+          <div className={`container ${styledEstude.hero}`}>
+            <div className={styledEstude.heroTexts}>
               <Title type="Lg">Estude com a Menina de UX</Title>
               <SubTitle type="Lg">
                 Aprenda sobre carreira, currículo, design e tecnologia com os
