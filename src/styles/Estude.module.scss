@@ -15,27 +15,22 @@
   margin-top: 32px;
 }
 
-.heroTexts {
-  max-width: 476px;
-}
-
-.heroTexts h2 {
-  margin-bottom: 26px;
-  max-width: 300px;
-}
-
 .learn {
   background-color: $white;
   margin-top: 21px;
   display: flex;
   align-items: center;
   flex-direction: column;
+
 }
 
 .cards {
   display: flex;
   gap: 22px;
   margin-top: 40px;
+  @media (max-width: 998px) {
+    flex-direction: column;
+  }
 }
 
 .news, 

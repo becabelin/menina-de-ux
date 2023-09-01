@@ -10,12 +10,17 @@ import styledEstude from '@/styles/Estude.module.scss'
 
 // Utilities
 import Image from 'next/image'
-import HeroImage from '@/../public/estude/mulher-estudando-2.webp.png'
+import CurriculumImg from '@/../public/estude/curriculo.png'
+import ConnectionsImg from '@/../public/estude/conexoes-linkedin.png'
+import PostItImg from '@/../public/estude/preenchendo-post-its.png'
+import Puzzle from '@/../public/estude/quebra-cabecas.png'
+import HeroImage from '@/../public/estude/mulher-estudando.png'
 import NewsImage from '@/../public/estude/mulher-recebendo-novidades.svg'
 import SocialMediaImage from '@/../public/estude/mulher-redes-sociais.svg'
 import Button from '@/components/common/Button'
 import { MdAlternateEmail } from 'react-icons/md'
 import { AiOutlineInstagram, AiFillLinkedin } from 'react-icons/ai'
+
 // Hooks
 // Interfaces
 
@@ -29,8 +34,8 @@ export default function Home() {
       </Head>
       <main className={styled.containerHome}>
         <section className={`container ${styledEstude.hero}`}>
-          <div className={styledEstude.heroTexts}>
-            <Title type="Lg">Estude com a Menina de UX</Title>
+          <div className={styledEstude.content}>
+            <Title type="Default">Estude com a Menina de UX</Title>
             <SubTitle type="Lg">
               Aprenda sobre carreira, currículo, design e tecnologia com os
               vários conteúdos gratuitos aqui!
