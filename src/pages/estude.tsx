@@ -13,7 +13,7 @@ import Image from 'next/image'
 import CurriculumImg from '@/../public/estude/curriculo.png'
 import ConnectionsImg from '@/../public/estude/conexoes-linkedin.png'
 import PostItImg from '@/../public/estude/preenchendo-post-its.png'
-import Puzzle from '@/../public/estude/quebra-cabecas.png'
+import PuzzleImg from '@/../public/estude/quebra-cabecas.png'
 import HeroImage from '@/../public/estude/mulher-estudando.png'
 import NewsImage from '@/../public/estude/mulher-recebendo-novidades.svg'
 import SocialMediaImage from '@/../public/estude/mulher-redes-sociais.svg'
@@ -35,13 +35,18 @@ export default function Home() {
       <main className={styled.containerHome}>
         <section className={`container ${styledEstude.hero}`}>
           <div className={styledEstude.content}>
-            <Title type="Default">Estude com a Menina de UX</Title>
+            <Title type="Default">
+              Estude com a <br /> Menina de UX
+            </Title>
             <SubTitle type="Lg">
-              Aprenda sobre carreira, currículo, design e tecnologia com os
-              vários conteúdos gratuitos aqui!
+              Aprenda sobre carreira, currículo, design e <br /> tecnologia com
+              os vários conteúdos gratuitos aqui!
             </SubTitle>
           </div>
-          <Image src={HeroImage} alt="mulher estudando" />
+
+          <div className={styledEstude.content}>
+            <Image src={HeroImage} alt="mulher estudando" />
+          </div>
         </section>
         <section className={`container ${styledEstude.learn}`}>
           <Title type="Sm">O que você quer aprender hoje?</Title>
@@ -50,7 +55,7 @@ export default function Home() {
             <CardInfo
               type="Disabled"
               alt="/"
-              src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=50"
+              src={CurriculumImg.src}
               containerTitle="Currículo de Milhões"
               containerDescription="Aprenda a criar o currículo campeão para enviar nos processos seletivos
               e descubra coisas super importantes que você não sabia antes!"
@@ -58,21 +63,21 @@ export default function Home() {
             <CardInfo
               type="Disabled"
               alt="/"
-              src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=50"
+              src={ConnectionsImg.src}
               containerTitle="O Poder do LinkedIn"
               containerDescription="Tudo sobre a maior rede profissional de todas e as melhores dicas para deixar o seu perfil atrativo para recrutadores!"
             />
             <CardInfo
               type="Active"
               alt="/"
-              src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=50"
+              src={PostItImg.src}
               containerTitle="Card Sorting"
               containerDescription="Conheça mais sobre essa ferramenta bastante utilizada durante para trabalhar a arquitetura de informação de um site ou aplicativo!"
             />
             <CardInfo
               type="Active"
               alt="/"
-              src="https://images.unsplash.com/photo-1617042375876-a13e36732a04?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=500&q=50"
+              src={PuzzleImg.src}
               containerTitle="Proposta de Valor"
               containerDescription="O que é, como fazer e como ela pode mudar o seu negócio. Hoje, no Menina de UX repórter!"
             />
