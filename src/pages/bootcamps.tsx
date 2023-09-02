@@ -3,6 +3,10 @@ import Head from 'next/head'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
+import styledBootcamps from '@/styles/Bootcamps.module.scss'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
+import Tag from '@/components/common/Tag'
+import Title from '@/components/common/Title/Title'
 
 // Utilities
 // Hooks
@@ -18,7 +22,39 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <span>Conteúdo da página</span>
+        <section>
+          <div className={`container ${styledBootcamps.hero}`}>
+            <div className={styledBootcamps.content}>
+              <Title type="Xl">Cursos Grandes e Bootcamps</Title>
+            </div>
+            <div className={`${styledBootcamps.contentMobile}`}>
+              <SubTitle type="Default">
+                As melhores e maiores certificações para quem quer entrar na
+                área e se destacar
+              </SubTitle>
+            </div>
+          </div>
+        </section>
+        {/* Cursos Section */}
+        <section className={` container ${styledBootcamps.containerCourses}`}>
+          <div className={`${styledBootcamps.containerFilter}`}>
+            <ul className={styledBootcamps.containerList}>
+              <li className={styledBootcamps.filterCourse}> Todos </li>
+              <li className={styledBootcamps.filterCourse}> Back-End </li>
+              <li className={styledBootcamps.filterCourse}> Front-End </li>
+              <li className={styledBootcamps.filterCourse}> Design </li>
+              <li className={styledBootcamps.filterCourse}> Cloud e Dados </li>
+              <li className={styledBootcamps.filterCourse}>
+                {' '}
+                Marketing e Business{' '}
+              </li>
+              <li className={styledBootcamps.filterCourse}> Idiomas </li>
+              <li className={styledBootcamps.filterCourse}> Para mulheres </li>
+              <li className={styledBootcamps.filterCourse}> Para jovens </li>
+            </ul>
+          </div>
+        </section>
+        {/* End Cursos Section */}
       </main>
     </>
   )

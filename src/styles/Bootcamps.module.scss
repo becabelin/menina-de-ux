@@ -1,0 +1,86 @@
+@import "colors.module";
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Avenir LT STD', sans-serif;
+    margin-top: 32px;
+
+    @media (max-width: 994px) {
+      flex-direction: column;
+    }
+  }
+
+  .hero{
+    @extend .sectionContainer;
+    margin-top: 30px ;
+    margin-bottom: 40px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
+    @media (max-width: 768px) {
+        text-align: center;
+      }
+  }
+
+  .contentMobile {
+    @extend .content;
+    @media (max-width: 768px) {
+        text-align: center;
+        width: 100vw;
+        padding: 15px;
+      }
+
+  }
+
+  .containerCourses{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+
+  .containerFilter{
+    width: 950px;
+    @media (max-width: 768px) {
+       margin-top: 40px;
+       margin-right: 10px;
+      }
+  }
+
+  .containerList{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        
+      }
+  }
+
+  .filterCourse{
+    color: $gray-300;
+    font-family: 'Avenir LT STD', sans-serif;
+    font-weight: 800;
+    margin: 10px;
+    font-size: 18px;
+   
+
+    @media (max-width: 768px) {
+       margin-bottom: 20px; 
+    }
+    
+  }
