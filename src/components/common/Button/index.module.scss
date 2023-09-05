@@ -10,7 +10,7 @@
   align-items: center;
   gap: 8px;
   border-radius: 48px;
-  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+  transition: background-color 0.3s, color 0.3s;
 
   span {
     font-weight: 500;
@@ -21,7 +21,7 @@
 
 
 
-.ButtonDefault {
+.ButtonBlue {
   @extend .ButtonBase;
   background-color: $blue-500;
   border: 1px solid  $blue-500;
@@ -29,10 +29,9 @@
     color: $white;
   }
   
-
   &:hover {
     background-color: transparent;
-    border: 1px solid  $blue-100;
+    border: 1px solid  $blue-500;
     
     span {
       color: $blue-400;
@@ -41,91 +40,26 @@
   
 }
 
-.ButtonWhite {
-  @extend .ButtonBase;
-  background-color: $white;
-  span {
-    color: $blue-500
-  }
-  &:hover {
-    
-    span {
-      color: $blue-400;
-    }
-  }
-}
-
-.ButtonBluePrimary {
-    
-  @extend .ButtonBase;
-  background-color: $blue-500;
-  span {
-    color: $white;
-  }
-
-  &:hover {
-    background-color: $white;
-    
-    span {
-      color: $gray-600;
-    }
-  }
-}
-
-
-.ButtonBlueSecondary {
-  @extend .ButtonBase;
-  background-color: $white;
-  border: 1px solid  $blue-500;
-  span {
-    color: $blue-500;
-  }
-
-  &:hover {
-    background-color: $white;
-    border: 1px solid  $blue-400;
-    
-    span {
-      color: $blue-400;
-    }
-  }
-}
-.ButtonPinkPrimary {
+.ButtonPink {
   @extend .ButtonBase;
   background-color: $pink-500;
   span {
     color: $white;
   }
   &:hover {
-    background-color: $gray-200;
-    
-    span {
-      color: $gray-600;
-    }
-  }
-}
-
-.ButtonPinkSecondary {
-  @extend .ButtonBase;
-  background-color: transparent;
-  border: 1px solid  $pink-500;
-  
-  span {
-    color: $pink-500;
-  }
-  &:hover {
     background-color: transparent;
-    border: 1px solid  $blue-100;
-
+    border: 1px solid  $pink-500;
     
     span {
-      color: $gray-600;
+      color: $pink-500;
     }
   }
 }
+
+
 .ButtonDisabled {
   @extend .ButtonBase;
-  cursor: none;
+  cursor: text;
   background-color: $gray-200;
     
   span {

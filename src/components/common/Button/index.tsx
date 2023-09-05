@@ -13,7 +13,7 @@ export default function Button({
   children,
   icon: Icon,
   url = '#',
-  type = 'Default',
+  type = 'Blue',
 }: IButton) {
   return (
     <Link href={url}>
