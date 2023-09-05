@@ -1,0 +1,38 @@
+.home{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px ;
+  overflow: hidden;
+}
+
+.homePadding{
+  padding: 0.75rem;
+}
+
+.homeImg{
+  width: 70%;
+}
+
+.img{
+  max-width: 100%;
+  height: auto;
+}
+
+
+@media (max-width: 994px) {
+  .home{
+    display: block;
+    align-items: center;
+  }
+
+  .homeImg{
+    width: 100%;
+    margin-left: 30%;
+  }
+
+  .img{
+    width: 50%;
+    height: 100%;
+  } 
+}
