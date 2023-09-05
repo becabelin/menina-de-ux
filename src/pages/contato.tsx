@@ -3,6 +3,7 @@ import Head from "next/head";
 
 // Styles
 import styled from "@/styles/Home.module.scss";
+import styles from "@/styles/contact/Contact.module.scss";
 import Title from "@/components/common/Title/Title";
 import SubTitle from "@/components/common/Subtitle/SubTitle";
 import Button from "@/components/common/Button";
@@ -23,24 +24,44 @@ export default function Home() {
       </Head>
       <main className={styled.containerHome}>
         <section className="container">
-          <Title type="Xs">Quer ficar por dentro de todas as novidades?</Title>
-          <SubTitle type="Lg">
-            Entre no canal do Telegram da Menina de UX e fique sabendo de todos
-            os cursos e processos seletivos novos!
-          </SubTitle>
-          <Button>Entrar no canal</Button>
+          <div className={styles.sectionContainer}>
+            <div className={styles.textContainer}>
+              <Title type="Xs">
+                Quer ficar por dentro de todas as novidades?
+              </Title>
+              <SubTitle type="Lg">
+                Entre no canal do Telegram da Menina de UX e fique sabendo de
+                todos os cursos e processos seletivos novos!
+              </SubTitle>
+              <Button>Entrar no canal</Button>
+            </div>
+            <img
+              src="./Contact/mulher-recebendo-novidades.webp.svg"
+              alt="Imagem mulher recebendo novidades"
+              className={styles.contactImage}
+            />
+          </div>
         </section>
         <section className="container">
-          <Title type="Xs">Redes Sociais</Title>
-          <SubTitle type="Lg">
-            Me acompanhe nas redes sociais! Se quiser conversar sobre projetos,
-            eventos e afins, tem meu e-mail aí!
-          </SubTitle>
-          <Button>
-            <BiAt /> E-mail
-          </Button>
-          <Button><BiLogoInstagram/>Instagram</Button>
-          <Button><BiLogoLinkedinSquare/>LinkedIn</Button>
+          <div className={styles.sectionContainer}>
+            <div className={styles.textContainer}>
+              <Title type="Xs">Redes Sociais</Title>
+              <SubTitle type="Lg">
+                Me acompanhe nas redes sociais! Se quiser conversar sobre
+                projetos, eventos e afins, tem meu e-mail aí!
+              </SubTitle>
+              <div className={styles.buttonContainer}>
+                <Button icon={BiAt}>E-mail</Button>
+                <Button icon={BiLogoInstagram}>Instagram</Button>
+                <Button icon={BiLogoLinkedinSquare}>LinkedIn</Button>
+              </div>
+            </div>
+            <img
+              src="./Contact/mulher-redes-sociais.webp.svg"
+              alt="Imagem mulher redes sociais"
+              className={styles.contactImage}
+            />
+          </div>
         </section>
       </main>
     </>

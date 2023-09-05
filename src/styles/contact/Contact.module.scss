@@ -1,0 +1,23 @@
+.sectionContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 190px;
+}
+
+.textContainer{
+    max-width: 636px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 5px;
+}
+
+.contactImage{
+    width: 445px;
+    height: 445px;
+}
