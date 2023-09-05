@@ -1,7 +1,12 @@
 // Components
 import Head from 'next/head'
+import Title from '@/components/common/Title/Title'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
+import Button from '../components/common/Button'
+import Image from 'next/image'
 
 // Styles
+import styles from '@/styles/Index.module.scss'
 import styled from '@/styles/Home.module.scss'
 
 // Utilities
@@ -18,7 +23,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <span>Conteúdo da página</span>
+        <div className={styles.home}>
+          <div className="container">
+            <section className={styles.homePadding}>
+              <Title type="Default">Ajudando meninas como eu</Title>
+            </section>
+            <section className={styles.homePadding}>
+              <SubTitle type="Lg">
+                Encontre os melhores cursos e processos seletivos na área de
+                tecnologia e ainda aprenda sobre o mundo do UX Design!
+              </SubTitle>
+            </section>
+            <Button type="Blue">Descobrir cursos</Button>
+            <Button type="Pink">Processos Seletivos</Button>
+          </div>
+          <div className={styles.homeImg}>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-estudando.webp.svg"
+              width={408}
+              height={408}
+              alt="Imagem de uma mulher estudando"
+            />
+          </div>
+        </div>
       </main>
     </>
   )
