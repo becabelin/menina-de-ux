@@ -23,29 +23,100 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <div className={styles.home}>
-          <div className="container">
-            <section className={styles.homePadding}>
-              <Title type="Default">Ajudando meninas como eu</Title>
-            </section>
-            <section className={styles.homePadding}>
-              <SubTitle type="Lg">
-                Encontre os melhores cursos e processos seletivos na área de
-                tecnologia e ainda aprenda sobre o mundo do UX Design!
-              </SubTitle>
-            </section>
-            <Button type="Blue">Descobrir cursos</Button>
-            <Button type="Pink">Processos Seletivos</Button>
-          </div>
-          <div className={styles.homeImg}>
-            <Image
-              className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
-              width={408}
-              height={408}
-              alt="Imagem de uma mulher estudando"
-            />
-          </div>
+        <div className="container">
+          <section className={styles.sectionAjudando}>
+            <div className={styles.ajudando}>
+              <div className={styles.textAjudando}>
+                <div className={styles.titleAjudando}>
+                  <Title type="Default">Ajudando meninas como eu</Title>
+                </div>
+                <div className={styles.subtitleAjudando}>
+                  <SubTitle type="Lg">
+                    Encontre os melhores cursos e processos seletivos na área de
+                    tecnologia e ainda aprenda sobre o mundo do UX Design!
+                  </SubTitle>
+                </div>
+                <div className={styles.buttonAjudando}>
+                  <Button type="Blue">Descobrir cursos</Button>
+                  <Button type="Pink">Processos Seletivos</Button>
+                </div>
+              </div>
+
+              <div className={styles.imgAjudando}>
+                <Image
+                  className={styles.img}
+                  src="./Inicio/mulher-estudando.webp.svg"
+                  width={428.39}
+                  height={428.39}
+                  alt="Imagem de uma mulher estudando"
+                />
+              </div>
+            </div>
+          </section>
+
+          <section className={styles.sectionCarreira}>
+            <div className={styles.carreira}>
+              <div className={styles.imgCarreira}>
+                <Image
+                  className={styles.img}
+                  src="./Inicio/aprovado.webp.svg"
+                  width={447}
+                  height={461}
+                  alt="Imagem de um homem sinalizando que está aprovado"
+                />
+              </div>
+
+              <div className={styles.TextCarreira}>
+                <div className={styles.titleCarreira}>
+                  <Title type="Default">Comece a sua carreira</Title>
+                </div>
+                <div className={styles.subtitleCarreira}>
+                  <SubTitle type="Lg">
+                    Aprenda mais sobre a área de tech e design, tenha acesso a
+                    conteúdos incríveis e entre no mercado de trabalho com chave
+                    de ouro!
+                  </SubTitle>
+                </div>
+                <div className={styles.buttonCarreira}>
+                  <Button type="Blue">Estude com a Menina de UX!</Button>
+                </div>
+              </div>
+            </div>
+
+            <div className={styles.projeto}>
+              <div className={styles.textProjeto}>
+                <div className={styles.titleProjeto}>
+                  <Title type="Default">
+                    Crie seu primeiro projeto em UX Design
+                  </Title>
+                </div>
+                <div className={styles.subtitleProjeto}>
+                  <SubTitle type="Lg">
+                    Com um template no Figma e os posts de guia, você vai
+                    conseguir se guiar para construir o seu case do zero!e.
+                  </SubTitle>
+                  <SubTitle type="Lg">
+                    Clique agora no botão abaixo e faça o download do template
+                    no Figma!
+                  </SubTitle>
+                </div>
+                <div className={styles.buttonProjeto}>
+                  <Button type="Blue">Crie seu primeiro projeto!</Button>
+                  <Button type="Pink">Baixar template</Button>
+                </div>
+              </div>
+
+              <div className={styles.imgProjeto}>
+                <Image
+                  className={styles.img}
+                  src="./Inicio/primeiro_projeto.svg"
+                  width={447}
+                  height={461}
+                  alt="Imagem de uma mulher no computador"
+                />
+              </div>
+            </div>
+          </section>
         </div>
       </main>
     </>
