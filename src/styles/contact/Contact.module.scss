@@ -21,3 +21,26 @@
     width: 445px;
     height: 445px;
 }
+
+@media (max-width: 900px) {
+    .sectionContainer{
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .textContainer{
+        text-align: center;
+        align-items: center;
+    }
+
+    .contactImage{
+        width: 296px;
+        height: 272px;
+    }
+
+    .buttonContainer{
+        flex-direction: column;
+    }
+}

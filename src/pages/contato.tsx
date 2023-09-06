@@ -29,7 +29,7 @@ export default function Home() {
               <Title type="Xs">
                 Quer ficar por dentro de todas as novidades?
               </Title>
-              <SubTitle type="Lg">
+              <SubTitle type="Default">
                 Entre no canal do Telegram da Menina de UX e fique sabendo de
                 todos os cursos e processos seletivos novos!
               </SubTitle>
@@ -46,9 +46,12 @@ export default function Home() {
           <div className={styles.sectionContainer}>
             <div className={styles.textContainer}>
               <Title type="Xs">Redes Sociais</Title>
-              <SubTitle type="Lg">
-                Me acompanhe nas redes sociais! Se quiser conversar sobre
-                projetos, eventos e afins, tem meu e-mail aí!
+              <SubTitle type="Default">
+                Me acompanhe nas redes sociais!
+                <p>
+                  Se quiser conversar sobre projetos, eventos e afins, tem meu
+                  e-mail aí!
+                </p>
               </SubTitle>
               <div className={styles.buttonContainer}>
                 <Button icon={BiAt}>E-mail</Button>
