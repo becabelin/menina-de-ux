@@ -1,4 +1,5 @@
 .sectionContainer{
+    max-width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,12 +15,19 @@
 
 .buttonContainer{
     display: flex;
-    gap: 5px;
+    flex-wrap: wrap;
+    gap: 8px;
 }
 
 .contactImage{
     width: 445px;
     height: 445px;
+}
+
+@media (max-width: 1270px){
+    .buttonContainer{
+        justify-content: flex-start;
+    }
 }
 
 @media (max-width: 900px) {

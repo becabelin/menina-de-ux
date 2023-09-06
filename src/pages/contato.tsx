@@ -58,12 +58,13 @@ export default function Home() {
                 <Button icon={BiLogoInstagram}>Instagram</Button>
                 <Button icon={BiLogoLinkedinSquare}>LinkedIn</Button>
               </div>
+            
             </div>
             <img
-              src="./Contact/mulher-redes-sociais.webp.svg"
-              alt="Imagem mulher redes sociais"
-              className={styles.contactImage}
-            />
+                src="./Contact/mulher-redes-sociais.webp.svg"
+                alt="Imagem mulher redes sociais"
+                className={styles.contactImage}
+              />
           </div>
         </section>
       </main>
