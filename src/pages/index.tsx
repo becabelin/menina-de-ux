@@ -4,6 +4,7 @@ import Title from '@/components/common/Title/Title'
 import SubTitle from '@/components/common/Subtitle/SubTitle'
 import Button from '../components/common/Button'
 import Image from 'next/image'
+import Card from '@/components/common/Card'
 
 // Styles
 import styles from '@/styles/Index.module.scss'
@@ -23,100 +24,255 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <div className="container">
-          <section className={styles.sectionAjudando}>
-            <div className={styles.ajudando}>
-              <div className={styles.textAjudando}>
-                <div className={styles.titleAjudando}>
-                  <Title type="Default">Ajudando meninas como eu</Title>
-                </div>
-                <div className={styles.subtitleAjudando}>
-                  <SubTitle type="Lg">
-                    Encontre os melhores cursos e processos seletivos na área de
-                    tecnologia e ainda aprenda sobre o mundo do UX Design!
-                  </SubTitle>
-                </div>
-                <div className={styles.buttonAjudando}>
-                  <Button type="Blue">Descobrir cursos</Button>
-                  <Button type="Pink">Processos Seletivos</Button>
-                </div>
-              </div>
-
-              <div className={styles.imgAjudando}>
-                <Image
-                  className={styles.img}
-                  src="./Inicio/mulher-estudando.webp.svg"
-                  width={428.39}
-                  height={428.39}
-                  alt="Imagem de uma mulher estudando"
-                />
-              </div>
+        <section className={styles.inicioAjudando}>
+          <div className="container">
+            <div className={styles.title}>
+              <Title type="Default">Ajudando meninas como eu</Title>
             </div>
-          </section>
-
-          <section className={styles.sectionCarreira}>
-            <div className={styles.carreira}>
-              <div className={styles.imgCarreira}>
-                <Image
-                  className={styles.img}
-                  src="./Inicio/aprovado.webp.svg"
-                  width={447}
-                  height={461}
-                  alt="Imagem de um homem sinalizando que está aprovado"
-                />
-              </div>
-
-              <div className={styles.TextCarreira}>
-                <div className={styles.titleCarreira}>
-                  <Title type="Default">Comece a sua carreira</Title>
-                </div>
-                <div className={styles.subtitleCarreira}>
-                  <SubTitle type="Lg">
-                    Aprenda mais sobre a área de tech e design, tenha acesso a
-                    conteúdos incríveis e entre no mercado de trabalho com chave
-                    de ouro!
-                  </SubTitle>
-                </div>
-                <div className={styles.buttonCarreira}>
-                  <Button type="Blue">Estude com a Menina de UX!</Button>
-                </div>
-              </div>
+            <div className={styles.subtitle}>
+              <SubTitle type="Lg">
+                Encontre os melhores cursos e processos seletivos na área de
+                tecnologia e ainda aprenda sobre o mundo do UX Design!
+              </SubTitle>
             </div>
-
-            <div className={styles.projeto}>
-              <div className={styles.textProjeto}>
-                <div className={styles.titleProjeto}>
-                  <Title type="Default">
-                    Crie seu primeiro projeto em UX Design
-                  </Title>
-                </div>
-                <div className={styles.subtitleProjeto}>
-                  <SubTitle type="Lg">
-                    Com um template no Figma e os posts de guia, você vai
-                    conseguir se guiar para construir o seu case do zero!e.
-                  </SubTitle>
-                  <SubTitle type="Lg">
-                    Clique agora no botão abaixo e faça o download do template
-                    no Figma!
-                  </SubTitle>
-                </div>
-                <div className={styles.buttonProjeto}>
-                  <Button type="Blue">Crie seu primeiro projeto!</Button>
-                  <Button type="Pink">Baixar template</Button>
-                </div>
-              </div>
-
-              <div className={styles.imgProjeto}>
-                <Image
-                  className={styles.img}
-                  src="./Inicio/primeiro_projeto.svg"
-                  width={447}
-                  height={461}
-                  alt="Imagem de uma mulher no computador"
-                />
-              </div>
+            <div className={styles.inicioButton}>
+              <Button url="/cursos" type="Blue">
+                Descobrir cursos
+              </Button>
+              <Button type="Pink">Processos Seletivos</Button>
             </div>
-          </section>
+          </div>
+          <div className={styles.inicioImg}>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-estudando.webp.svg"
+              width={428.39}
+              height={428.39}
+              alt="Imagem de uma mulher estudando"
+            />
+          </div>
+        </section>
+
+        <section className={styles.inicioCarreira}>
+          <div className="container">
+            <div className={styles.inicioImg}>
+              <Image
+                className={styles.img}
+                src="./Inicio/aprovado.webp.svg"
+                width={447}
+                height={461}
+                alt="Imagem de um homem sinalizando que está aprovado"
+              />
+            </div>
+          </div>
+          <div className="container">
+            <div className={styles.title}>
+              <Title type="Lg">Comece a sua carreira</Title>
+            </div>
+            <div className={styles.subtitle}>
+              <SubTitle type="Lg">
+                Aprenda mais sobre a área de tech e design, tenha acesso a
+                conteúdos incríveis e entre no mercado de trabalho com chave de
+                ouro!
+              </SubTitle>
+            </div>
+            <div className={styles.inicioButton}>
+              <Button type="Blue">Estude com a Menina de UX!</Button>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.inicioProjeto}>
+          <div className="container">
+            <div className={styles.title}>
+              <Title type="Lg">Crie seu primeiro projeto em UX Design</Title>
+            </div>
+            <div className={styles.subtitle}>
+              <SubTitle type="Lg">
+                Com um template no Figma e os posts de guia, você vai conseguir
+                se guiar para construir o seu case do zero!e.
+              </SubTitle>
+              <SubTitle type="Lg">
+                Clique agora no botão abaixo e faça o download do template no
+                Figma!
+              </SubTitle>
+            </div>
+            <div className={styles.inicioButton}>
+              <Button type="Blue">Crie seu primeiro projeto!</Button>
+              <Button type="Pink">Baixar template</Button>
+            </div>
+          </div>
+          <div className={styles.inicioImg}>
+            <Image
+              className={styles.img}
+              src="./Inicio/primeiro_projeto.svg"
+              width={447}
+              height={461}
+              alt="Imagem de uma mulher no computador"
+            />
+          </div>
+        </section>
+
+        <section className={styles.inicioCurso}>
+          <div className="container">
+            <div className={styles.titleTop}>
+              <Title type="Sm">Cursos Tops</Title>
+            </div>
+            <div className={styles.title}>
+              <Title type="Lg">Os melhores em várias áreas</Title>
+            </div>
+            <div className={styles.card}>
+              <ul className={styles.cardList}>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                  />
+                </li>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                  />
+                </li>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                  />
+                </li>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div className={styles.inicioButton}>
+              <Button>Descobrir mais cursos</Button>
+            </div>
+          </div>
+
+          <div className="container">
+            <div className={styles.title}>
+              <Title type="Sm">Últimos Processos Seletivos</Title>
+            </div>
+            <div className={styles.title}>
+              <Title type="Lg">Para você ser o melhor no que faz</Title>
+            </div>
+            <div className={styles.card}>
+              <ul className={styles.cardList}>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                    subtitle="inscrições até 24/05/2023"
+                    href="#"
+                  />
+                </li>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                    subtitle="inscrições até 24/05/2023"
+                    href="#"
+                  />
+                </li>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                    subtitle="inscrições até 24/05/2023"
+                    href="#"
+                  />
+                </li>
+                <li>
+                  <Card
+                    type="Primary"
+                    src="./CardCourse/image1.svg"
+                    alt="alt img"
+                    title="Capacitação Gratuita em Introdução à Programação"
+                    subtitle="inscrições até 24/05/2023"
+                    href="#"
+                  />
+                </li>
+              </ul>
+            </div>
+            <div className={styles.inicioButton}>
+              <Button>Veja mais</Button>
+            </div>
+          </div>
+        </section>
+
+        <section className={styles.inicioNovidades}>
+          <div className="container">
+            <div className={styles.title}>
+              <Title type="Lg">
+                Quer ficar por dentro de todas as novidades?
+              </Title>
+            </div>
+            <div className={styles.subtitle}>
+              <SubTitle type="Lg">
+                Entre no canal do Telegram da Menina de UX e fique sabendo de
+                todos os cursos e processos seletivos novos!
+              </SubTitle>
+            </div>
+            <div className={styles.inicioButton}>
+              <Button type="Blue">Entrar no canal</Button>
+            </div>
+          </div>
+          <div className={styles.inicioImg}>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-recebendo-novidades.webp.svg"
+              width={447}
+              height={461}
+              alt="Imagem de uma mulher com o celular nas mãos"
+            />
+          </div>
+        </section>
+
+        <div className={styles.inicioSocial}>
+          <div className="container">
+            <div className={styles.title}>
+              <Title type="Lg">Redes Sociais</Title>
+            </div>
+            <div className={styles.subtitle}>
+              <SubTitle type="Lg">
+                Me acompanhe nas redes sociais! Se quiser conversar sobre
+                projetos, eventos e afins, tem meu e-mail aí!
+              </SubTitle>
+            </div>
+            <div className={styles.buttonSocial}>
+              <Button type="Blue">E-mail</Button>
+              <Button type="Blue">Instagram</Button>
+              <Button type="Blue">LinkedIn</Button>
+            </div>
+          </div>
+          <div className={styles.inicioImg}>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-redes-sociais.webp.svg"
+              width={447}
+              height={461}
+              alt="Imagem de uma mulher com auto-falante atrás de uma tela de post"
+            />
+          </div>
         </div>
       </main>
     </>
