@@ -7,6 +7,9 @@ import styledBootcamps from '@/styles/Bootcamps.module.scss'
 import SubTitle from '@/components/common/Subtitle/SubTitle'
 import Tag from '@/components/common/Tag'
 import Title from '@/components/common/Title/Title'
+import bootcampObjetc from '@/utilities/bootcampObjects'
+import { useEffect } from 'react'
+import Filter from '@/utilities/Filter'
 
 // Utilities
 // Hooks
