@@ -1,0 +1,74 @@
+.hero {
+    font-family: 'Avenir LT STD', sans-serif;
+    line-height: 27px;
+}
+
+.text_wrapper {
+    @extend .hero;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.text_subtit_01 {
+    @extend .text_wrapper;
+    padding-bottom: .2px;
+}
+
+.text_subtit_02 {
+    @extend .text_wrapper;
+    padding-bottom: .2px;
+}
+
+.cursos {
+    background-color: white;
+    font-family: 'Avenir LT STD', sans-serif;
+    height: auto;
+    align-items: center;
+}
+
+.categorias_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+  
+.categorias_list {
+    list-style: none; 
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.categorias_item {
+    margin: 0 5px;
+    cursor: pointer; 
+    padding: 5px 10px;
+}
+
+.selecionado {
+    border-color: #20376c;
+    border-radius: 50px; 
+}
+
+.cards_wrapper{
+    height: auto;
+    margin-top: 20px;
+}
+
+.lista_cards {
+    display: flex;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    list-style: none; 
+    padding: 0;
+}
+
+.lista_cards li {
+    margin-left: 10px;
+    margin-right: 10px;
+}
