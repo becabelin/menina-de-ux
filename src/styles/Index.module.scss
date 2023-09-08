@@ -2,16 +2,44 @@
 
 //Style da página Inicio
 .inicioAjudando{
-  width: 94.37rem;
+  width: 100%;
   height:36.77rem;
   display: flex; 
   align-items: center;
+}
+
+.inicioAjudando .title,
+.inicioProjeto .title {
+  height: 94px;
+  width: 400px;
 }
 
 .inicioCarreira, .inicioProjeto, .inicioNovidades, .inicioSocial{
   background-color: $white;
   display: flex; 
   align-items: center;
+}
+
+.containerFlex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.textLeft{
+  flex: 2;
+}
+
+.textRight{
+  flex: 1;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.centerButton{
+  justify-content: center;
 }
 
 .inicioButton, .buttonSocial{
@@ -25,14 +53,28 @@
   height: 1187px;
 }
 
-.cardList{
+.card {
   display: flex;
-  list-style: none;
+  overflow-x: auto;
+  margin: 0;
+  // margin-bottom: 20px; /* Adicione margem inferior opcional para espaçamento */
+}
+.cardList{
+  // display: flex;
+  // list-style: none;
+  // padding: 0;
+  display: flex;
+  flex-wrap: nowrap; /* Impede que os cards quebrem para uma nova linha */
   padding: 0;
+  margin: 0;
+  overflow-y: hidden; /* Impede a rolagem vertical */
+  // max-width: 100%; /* Impede que os cards ultrapassem o tamanho da página */
 }
 
 .cardList li{
-  margin-right: 10px;
+  // margin-right: 10px;
+  list-style: none;
+  margin-right: 10px; /* Espaçamento entre os cards */
 }
 
 @media (max-width: 994px) {
@@ -42,6 +84,21 @@
     height: auto;
     align-items: center;
   }
+
+  //mobile
+  @media (max-width: 425px) {
+    .inicioButton {
+      display: grid;
+    }
+
+    .inicioAjudando .title,
+    .inicioProjeto .title {
+      height: 100%;
+      width: 100%;
+      align-items: center;
+    }
+  }
+  
 
   .img{
     width: 100%;
@@ -55,6 +112,6 @@
   }
 
   .buttonSocial{
-    display: block;
+    display: grid;
   }
 }
