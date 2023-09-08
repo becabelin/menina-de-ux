@@ -1,45 +1,60 @@
 @import "/src/styles/colors.module";
 
-.sectionCarreira {
+//Style da página Inicio
+.inicioAjudando{
+  width: 94.37rem;
+  height:36.77rem;
+  display: flex; 
+  align-items: center;
+}
+
+.inicioCarreira, .inicioProjeto, .inicioNovidades, .inicioSocial{
   background-color: $white;
+  display: flex; 
+  align-items: center;
 }
 
-.ajudando, .carreira, .projeto {
-  display: flex; /* Define um layout flexível */
-  align-items: center; /* Alinha os itens verticalmente ao centro */
-}
-
-.textAjudando {
-  height: 245px;
-  width: 557.15px;
-  flex: 2;
-}
-
-.textCarreira {
-  width: 636px;
-  height: 171.39px;
-}
-
-
-.textCarreira {
-  flex: 2; 
-}
-
-.titleAjudando {
-  height: 94px;
-  width: 505px;
-  margin-bottom: 25px;
-}
-
-.titleCarreira, .titleProjeto {
-  margin-bottom: 25px;
-}
-
-
-
-.buttonAjudando, .buttonProjeto, .buttonCarreira {
-  margin-top: 20px;
+.inicioButton, .buttonSocial{
+  padding-top: 20px;
   display: flex;
   gap: 10px;
 }
 
+.inicioCurso{
+  width: 1212px;
+  height: 1187px;
+}
+
+.cardList{
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.cardList li{
+  margin-right: 10px;
+}
+
+@media (max-width: 994px) {
+  .inicioAjudando, .inicioCarreira, .inicioProjeto, .inicioCurso, .cardList, .inicioNovidades, .inicioSocial{
+    display: block;
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .img{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .cardList li{
+    padding-top: 2%;
+  }
+
+  .buttonSocial{
+    display: block;
+  }
+}
