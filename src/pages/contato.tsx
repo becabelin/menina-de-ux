@@ -1,12 +1,12 @@
 // Components
 import Head from "next/head";
+import Title from "@/components/common/Title/Title";
+import SubTitle from "@/components/common/Subtitle/SubTitle";
+import Button from "@/components/common/Button";
 
 // Styles
 import styled from "@/styles/Home.module.scss";
 import styles from "@/styles/contact/Contact.module.scss";
-import Title from "@/components/common/Title/Title";
-import SubTitle from "@/components/common/Subtitle/SubTitle";
-import Button from "@/components/common/Button";
 import { BiAt, BiLogoInstagram, BiLogoLinkedinSquare } from "react-icons/bi";
 
 // Utilities
@@ -46,25 +46,26 @@ export default function Home() {
           <div className={styles.sectionContainer}>
             <div className={styles.textContainer}>
               <Title type="Xs">Redes Sociais</Title>
-              <SubTitle type="Default">
-                Me acompanhe nas redes sociais!
-                <p>
+              <div>
+                <SubTitle type="Default">
+                  Me acompanhe nas redes sociais!
+                </SubTitle>
+                <SubTitle type="Default">
                   Se quiser conversar sobre projetos, eventos e afins, tem meu
                   e-mail aí!
-                </p>
-              </SubTitle>
+                </SubTitle>
+              </div>
               <div className={styles.buttonContainer}>
                 <Button icon={BiAt}>E-mail</Button>
                 <Button icon={BiLogoInstagram}>Instagram</Button>
                 <Button icon={BiLogoLinkedinSquare}>LinkedIn</Button>
               </div>
-            
             </div>
             <img
-                src="./Contact/mulher-redes-sociais.webp.svg"
-                alt="Imagem mulher redes sociais"
-                className={styles.contactImage}
-              />
+              src="./Contact/mulher-redes-sociais.webp.svg"
+              alt="Imagem mulher redes sociais"
+              className={styles.contactImage}
+            />
           </div>
         </section>
       </main>
