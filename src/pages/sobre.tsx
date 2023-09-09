@@ -45,7 +45,7 @@ export default function Sobre() {
 
           <div className={style.goals}>
             <div className={style.titleGoals}>
-              <Title type="Lg">Objetivos</Title>
+              <Title type="Lg">Objetivos da Menina de UX</Title>
             </div>
           </div>
         </section>

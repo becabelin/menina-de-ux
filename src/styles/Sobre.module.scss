@@ -1,8 +1,7 @@
 @import 'colors.module';
 
 #about {
-  position: absolute;
-  top: 80px;
+  margin-top: 80px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -15,7 +14,7 @@
 
 // Conclusão do Sobre
 #about .aboutMore {
-  width: 80%;
+  width: 90%;
   padding: 2rem;
   min-height: 360px;
   display: flex;
@@ -23,6 +22,7 @@
   justify-content: center;
   gap: 92px;
   line-height: 27px;
+  box-sizing: content-box;
 }
 
 #about .girlReading {
@@ -42,12 +42,17 @@
 #about .goals {
   width: 100%;
   background: $pink-400;
+  height: 100vh;
+  padding: 2rem;
 }
 
 #about .goals .titleGoals {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  width: 100%;
+  height: 223px;
 }
 
 // Responsiveness
@@ -56,11 +61,11 @@
     flex-direction: column;
     max-height: 100vh;
     text-align: justify;
-    gap: 2rem;
+    gap: 1rem;
   }
 
   #about .girlReading img {
-    width: 70%;
+    width: 200px;
     text-align: center;
   }
 
@@ -68,4 +73,11 @@
     text-align: center;
   }
 }
+
+@media (max-width: 400px) {
+  #about .girlReading img {
+    display: none;
+  }
+}
+
 
