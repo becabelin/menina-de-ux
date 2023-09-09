@@ -12,18 +12,25 @@
 .inicioProjeto .title {
   height: 94px;
   width: 400px;
+  
+}
+
+.inicioCurso{
+  justify-content: center;
 }
 
 .inicioCarreira, .inicioProjeto, .inicioNovidades, .inicioSocial{
   background-color: $white;
   display: flex; 
   align-items: center;
+  
 }
 
 .containerFlex{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 .textLeft{
@@ -48,6 +55,7 @@
   padding-top: 20px;
   display: flex;
   gap: 10px;
+  line-height: 0;// alinhar icone
 }
 
 .inicioImg {
@@ -59,8 +67,10 @@
   height: auto;
 }
 
+
 .cardList{
   display: flex;
+  //justify-content: center;
   flex-wrap: nowrap; /* Impede que os cards quebrem para uma nova linha */
   padding: 0;
   margin: 0;
@@ -69,6 +79,8 @@
 }
 
 .cardList li{
+  //width: 302.39px;
+  //height: 329.36px;
   list-style: none;
   margin-right: 10px; /* Espaçamento entre os cards */
 }
