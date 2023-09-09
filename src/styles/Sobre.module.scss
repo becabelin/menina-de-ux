@@ -1,0 +1,92 @@
+@import 'colors.module';
+
+.sectionSobre {
+  height: 380px;
+  width: 1512px;
+}
+
+.sectionSobre .div {
+  height: 320px;
+  left: 120px;
+  position: relative;
+  top: 30px;
+  width: 1272px;
+}
+
+.sectionSobre .mulherLendo {
+  height: 320px;
+  left: 12px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 320px;
+}
+
+.sectionSobre .div2 {
+  height: 216px;
+  left: 424px;
+  position: absolute;
+  top: 52px;
+  width: 848px;
+}
+
+.sectionSobre .textWrapper {
+  color: #20376c;
+  font-family: "Avenir LT Std-45Book", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  height: 36px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 38.4px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 448px;
+}
+
+.sectionSobre .p {
+  color: #20376c;
+  font-family: "Avenir LT Std-45Book", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  height: 47px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 50px;
+  width: 844px;
+}
+
+.sectionSobre .textWrapper2 {
+  color: #20376c;
+  font-family: "Avenir LT Std-45Book", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  height: 20px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 124px;
+  white-space: nowrap;
+  width: 764px;
+}
+
+.sectionSobre .textWrapper3 {
+  color: #20376c;
+  font-family: "Avenir LT Std-45Book", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  height: 20px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 27px;
+  position: absolute;
+  top: 171px;
+  white-space: nowrap;
+  width: 418px;
+}
+
+
