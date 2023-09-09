@@ -1,321 +1,71 @@
 @import 'colors.module';
 
-.sectionSobre {
-  height: 380px;
-  width: 1512px;
-}
-
-.sectionSobre .div {
-  height: 320px;
-  left: 120px;
-  position: relative;
-  top: 30px;
-  width: 1272px;
-}
-
-.sectionSobre .mulherLendo {
-  height: 320px;
-  left: 12px;
-  object-fit: cover;
+#about {
   position: absolute;
-  top: 0;
-  width: 320px;
-}
-
-.sectionSobre .div2 {
-  height: 216px;
-  left: 424px;
-  position: absolute;
-  top: 52px;
-  width: 848px;
-}
-
-.sectionSobre .textWrapper {
+  top: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
   color: #20376c;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 32px;
-  font-weight: 400;
-  height: 36px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 38.4px;
-  position: absolute;
-  top: 0;
-  white-space: nowrap;
-  width: 448px;
-}
-
-.sectionSobre .p {
-  color: #20376c;
-  font-family: "Avenir LT Std-45Book", Helvetica;
+  font-family: 'Avenir LT Std', sans-serif;
   font-size: 18px;
-  font-weight: 400;
-  height: 47px;
-  left: 0;
-  letter-spacing: 0;
+}
+
+// Conclusão do Sobre
+#about .aboutMore {
+  width: 80%;
+  padding: 2rem;
+  min-height: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 92px;
   line-height: 27px;
-  position: absolute;
-  top: 50px;
-  width: 844px;
 }
 
-.sectionSobre .textWrapper2 {
-  color: #20376c;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  height: 20px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 27px;
-  position: absolute;
-  top: 124px;
-  white-space: nowrap;
-  width: 764px;
-}
-
-.sectionSobre .textWrapper3 {
-  color: #20376c;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  height: 20px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 27px;
-  position: absolute;
-  top: 171px;
-  white-space: nowrap;
-  width: 418px;
-}
-
-.sectionHero {
-  background-color: #f5c5d240;
-  height: 226px;
-  position: relative;
-  width: 1512px;
-}
-
-.sectionHero .textWrapper {
-  color: #20376c;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 42px;
-  font-weight: 400;
-  height: 47px;
-  left: 500px;
-  letter-spacing: 0;
-  line-height: 46.2px;
-  position: absolute;
+#about .girlReading {
+  width: 40%;
   text-align: center;
-  top: 88px;
-  white-space: nowrap;
-  width: 519px;
 }
 
-.sectionCarousel {
-  background-color: #f5c5d240;
-  height: 728px;
-  width: 1512px;
+#about .girlReading img {
+  height: 100%;
 }
 
-.sectionCarousel .divCarousel {
-  height: 698px;
-  left: 132px;
-  position: relative;
-  width: 1248px;
+#about .aboutMore p {
+  margin: 2rem 0 1rem 0;
 }
 
-.sectionCarousel .overlapGroup {
-  height: 698px;
-  position: relative;
+// Objetivos
+#about .goals {
+  width: 100%;
+  background: $pink-400;
 }
 
-.sectionCarousel .div {
-  height: 698px;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 1248px;
+#about .goals .titleGoals {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.sectionCarousel .div2 {
-  height: 703px;
-  left: 24px;
-  position: relative;
-  top: -15px;
-  width: 1200px;
+// Responsiveness
+@media (max-width: 940px) {
+  #about .aboutMore {
+    flex-direction: column;
+    max-height: 100vh;
+    text-align: justify;
+    gap: 2rem;
+  }
+
+  #about .girlReading img {
+    width: 70%;
+    text-align: center;
+  }
+
+  #about .aboutMore h2 {
+    text-align: center;
+  }
 }
-
-.sectionCarousel .meninaAssistindo {
-  height: 680px;
-  left: 671px;
-  position: absolute;
-  top: 15px;
-  width: 454px;
-}
-
-.sectionCarousel .div3 {
-  height: 339px;
-  left: 79px;
-  position: absolute;
-  top: 182px;
-  width: 458px;
-}
-
-.sectionCarousel .textWrapper {
-  color: #20376c;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 26px;
-  font-weight: 400;
-  height: 30px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 30px;
-  position: absolute;
-  top: -1px;
-  white-space: nowrap;
-  width: 414px;
-}
-
-.sectionCarousel .p {
-  color: #272727;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  height: 74px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 27px;
-  position: absolute;
-  top: 40px;
-  width: 397px;
-}
-
-.sectionCarousel .textWrapper2 {
-  color: #20376c;
-  font-family: "Avenir LT Std-95Black", Helvetica;
-  font-size: 20px;
-  font-weight: 900;
-  height: 22px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 24px;
-  position: absolute;
-  top: 135px;
-  white-space: nowrap;
-  width: 87px;
-}
-
-.sectionCarousel .textWrapper3 {
-  color: #272727;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  height: 47px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 27px;
-  position: absolute;
-  top: 169px;
-  width: 456px;
-}
-
-.sectionCarousel .textWrapper4 {
-  color: #20376c;
-  font-family: "Avenir LT Std-95Black", Helvetica;
-  font-size: 20px;
-  font-weight: 900;
-  height: 22px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 24px;
-  position: absolute;
-  top: 237px;
-  white-space: nowrap;
-  width: 69px;
-}
-
-.sectionCarousel .textWrapper5 {
-  color: #272727;
-  font-family: "Avenir LT Std-45Book", Helvetica;
-  font-size: 18px;
-  font-weight: 400;
-  height: 47px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 27px;
-  position: absolute;
-  top: 271px;
-  width: 456px;
-}
-
-.sectionCarousel .i {
-  height: 45px;
-  left: 16px;
-  position: absolute;
-  top: 327px;
-  width: 28px;
-}
-
-.sectionCarousel .text-wrapper-6 {
-  color: #20376c80;
-  font-family: "Font Awesome 5 Free-Regular", Helvetica;
-  font-size: 44.8px;
-  font-weight: 400;
-  height: 45px;
-  left: 0;
-  letter-spacing: 0;
-  line-height: 44.8px;
-  position: absolute;
-  text-align: center;
-  top: -2px;
-  white-space: nowrap;
-  width: 28px;
-}
-
-.sectionCarousel .ol {
-  height: 23px;
-  left: 187px;
-  position: absolute;
-  top: 659px;
-  width: 874px;
-}
-
-.sectionCarousel .li {
-  background-color: #20376c;
-  height: 23px;
-  left: 368px;
-  position: absolute;
-  top: 0;
-  width: 30px;
-}
-
-.sectionCarousel .li2 {
-  background-color: #20376c80;
-  height: 23px;
-  left: 404px;
-  position: absolute;
-  top: 0;
-  width: 30px;
-}
-
-.sectionCarousel .li3 {
-  background-color: #20376c80;
-  height: 23px;
-  left: 440px;
-  position: absolute;
-  top: 0;
-  width: 30px;
-}
-
-.sectionCarousel .li4 {
-  background-color: #20376c80;
-  height: 23px;
-  left: 476px;
-  position: absolute;
-  top: 0;
-  width: 30px;
-}
-
-
 
