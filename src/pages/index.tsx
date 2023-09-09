@@ -136,36 +136,44 @@ export default function Home() {
             <div className={styles.card}>
               <ul className={styles.cardList}>
                 <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/curso-em-video.svg"
-                    alt="alt img"
-                    title="Curso em vídeo"
-                  />
+                  <a href="https://www.cursoemvideo.com/cursos/">
+                    <Card
+                      type="Primary"
+                      src="./Inicio/curso-em-video.svg"
+                      alt="alt img"
+                      title="Curso em vídeo"
+                    />
+                  </a>
                 </li>
                 <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/dio.webp.svg"
-                    alt="alt img"
-                    title="Digital Innovation One"
-                  />
+                  <a href="https://www.dio.me/sign-up?ref=U5U6LS080B">
+                    <Card
+                      type="Primary"
+                      src="./Inicio/dio.webp.svg"
+                      alt="alt img"
+                      title="Digital Innovation One"
+                    />
+                  </a>
                 </li>
                 <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/estacaohack.webp.svg"
-                    alt="alt img"
-                    title="Estação Hack"
-                  />
+                  <a href="https://br.cellep.com/estacao-hack-sp/">
+                    <Card
+                      type="Primary"
+                      src="./Inicio/estacaohack.webp.svg"
+                      alt="alt img"
+                      title="Estação Hack"
+                    />
+                  </a>
                 </li>
                 <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/mundo-senai.svg"
-                    alt="alt img"
-                    title="Mundo SENAI"
-                  />
+                  <a href="https://www.futuro.digital/">
+                    <Card
+                      type="Primary"
+                      src="./Inicio/mundo-senai.svg"
+                      alt="alt img"
+                      title="Mundo SENAI"
+                    />
+                  </a>
                 </li>
               </ul>
             </div>
@@ -210,7 +218,7 @@ export default function Home() {
                     alt="alt img"
                     title="Capacitação Gratuita em Introdução à Programação"
                     subtitle="Inscrições por tempo limitado!"
-                    href="#"
+                    href="https://pages.prozeducacao.com.br/proz-tecnologia"
                   />
                 </li>
                 <li>
