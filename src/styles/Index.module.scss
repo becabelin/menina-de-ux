@@ -86,18 +86,25 @@
 }
 
 @media (max-width: 994px) {
-  .inicioAjudando, .inicioCarreira, .inicioProjeto, .inicioCurso, .cardList, .inicioNovidades, .inicioSocial{
+  .inicioAjudando, .inicioCarreira, .containerFlex, .inicioProjeto, .inicioCurso, .cardList, .inicioNovidades, .inicioSocial{
     display: block;
-    width: 100%;
-    height: auto;
+    /*width: 100%;
+    height: auto;*/
     align-items: center;
   }
+  .cardList li{
+    padding-top: 10px;
+  }
+
+
 }
 
   //mobile
   @media (max-width: 425px) {
-    .inicioButton {
-      display: grid;
+    
+    .inicioButton, .buttonSocial {
+    //  display: grid;
+      display: block;
     }
 
     .inicioAjudando .title,
