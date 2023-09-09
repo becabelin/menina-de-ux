@@ -18,7 +18,8 @@
 // Estilização Card Primary 
 .primary {
   @extend .CardBase;
-  width: 24rem;
+  background-color: transparent;
+  width: 17rem;
   height: auto;
   gap: 16px;
 }
