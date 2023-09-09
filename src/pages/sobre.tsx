@@ -7,7 +7,6 @@ import style from '@/styles/Sobre.module.scss'
 
 // Assets
 import MulherLendo from '../assets/mulher-lendo.webp.png'
-import MulherAssistindo from '../assets/menina-assistindo-aula.webp.png'
 
 export default function Sobre() {
   return (
