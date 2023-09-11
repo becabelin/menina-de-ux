@@ -1,10 +1,15 @@
 // Components
 import Head from 'next/head'
+import Title from '@/components/common/Title/Title'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
+import styledCardSorting from '@/styles/card-sorting.module.scss'
 
 // Utilities
+import Image from 'next/image'
+import heroImage from '@/../public/estude/mulher-estudando.png'
 // Hooks
 // Interfaces
 
@@ -18,7 +23,17 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <span className="container">Card-sorting</span>
+        <section className={`container ${styledCardSorting.hero}`}>
+          <div className={styledCardSorting.texts}>
+            <Title type="Default">Card Sorting</Title>
+            <SubTitle type="Lg">
+              Conheça mais sobre essa ferramenta bastante utilizada durante
+              <br /> para trabalhar a arquitetura de informação de um site ou
+              aplicativo!
+            </SubTitle>
+          </div>
+          <Image src={heroImage} alt="mulher estudando" />
+        </section>
       </main>
     </>
   )
