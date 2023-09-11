@@ -66,3 +66,20 @@
     color: $gray-600;
   }
 }
+
+
+/* Estilos para telas menores (por exemplo, dispositivos móveis) */
+@media (max-width: 425px) {
+  .ButtonBase {
+    // min-width: auto; /* Ou defina o valor desejado para telas menores */
+    height: 2.5rem;
+    max-width: 100%;
+    padding: 0rem 1rem;
+    gap: 4px;
+    border-radius: 24px;
+
+    span {
+      font-size: 80%; /* Tamanho de fonte menor para telas menores */
+    }
+  }
+}
