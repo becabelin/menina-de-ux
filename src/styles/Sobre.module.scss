@@ -2,7 +2,6 @@
 
 #about {
   margin-top: 80px;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,32 +9,48 @@
   color: #20376c;
   font-family: 'Avenir LT Std', sans-serif;
   font-size: 18px;
+  box-sizing: border-box;
 }
 
 // Conclusão do Sobre
 #about .aboutMore {
-  width: 90%;
-  padding: 2rem;
+  padding: 2rem 18rem;
   min-height: 360px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 92px;
   line-height: 27px;
-  box-sizing: content-box;
 }
 
-#about .girlReading {
+#about .containerTitle {
+  @extend .aboutMore; // Estende a classe .aboutMore
+  flex-direction: column;
+  gap: 2rem;
+  background-color: $pink-400;
+  width: 100%;
+  padding: 2rem;
+}
+
+#about .aboutMoreWrap {
+  @extend .aboutMore; // Estende a classe .aboutMore
+  background-color: $pink-400;
+  flex-direction: row-reverse;
+}
+
+#about .image {
   width: 40%;
   text-align: center;
-}
+  }
 
-#about .girlReading img {
+#about .image img {
   height: 100%;
 }
 
-#about .aboutMore p {
-  margin: 2rem 0 1rem 0;
+#about .aboutMore .descAboutMore {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 // Objetivos
@@ -59,12 +74,12 @@
 @media (max-width: 940px) {
   #about .aboutMore {
     flex-direction: column;
-    max-height: 100vh;
     text-align: justify;
     gap: 1rem;
+    padding: 2rem;
   }
 
-  #about .girlReading img {
+  #about .image img {
     width: 200px;
     text-align: center;
   }
@@ -75,7 +90,7 @@
 }
 
 @media (max-width: 400px) {
-  #about .girlReading img {
+  #about .image img {
     display: none;
   }
 }
