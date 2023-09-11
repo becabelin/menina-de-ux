@@ -2,6 +2,7 @@
 import Logo from '../common/Logo'
 import MenuLinks from '../common/MenuLinks'
 import MenuMob from './MenuMob'
+import logoSvg from '@/../public/logo.svg'
 
 // Styles
 import styled from './index.module.scss'
@@ -27,7 +28,7 @@ export default function Header() {
         <div className={styled.content}>
           <Logo
             href="/"
-            src="./logo.svg"
+            src={logoSvg}
             alt="logo da Menina de UX"
             height={40}
             width={158}
