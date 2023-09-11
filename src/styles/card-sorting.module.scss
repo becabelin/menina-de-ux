@@ -10,6 +10,10 @@
   }
 }
 
+.sectionWhite {
+  background-color: $white
+}
+
 .hero {
   @extend .sectionContainer;
 }
@@ -18,4 +22,15 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.sectionWelcome {
+  @extend .sectionContainer
+}
+
+.containerSubtitle {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1rem;
 }
