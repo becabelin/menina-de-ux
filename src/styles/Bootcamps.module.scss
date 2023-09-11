@@ -46,10 +46,9 @@
   .containerCourses{
     background-color: white;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    
-
 }
 
   .containerFilter{
@@ -77,10 +76,31 @@
     font-weight: 800;
     margin: 10px;
     font-size: 18px;
-   
+   cursor: pointer;
 
     @media (max-width: 768px) {
        margin-bottom: 20px; 
     }
     
   }
+
+  .cards_wrapper{
+    max-width: 920px;
+    height: auto;
+    margin-top: 20px;
+}
+
+.lista_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    list-style: none; 
+    padding: 0;
+}
+
+.lista_cards li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}

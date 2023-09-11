@@ -71,7 +71,8 @@ export default function Cursos() {
                 <li
                   key={filtro.key}
                   onClick={() => handleClickFiltro(filtro.key)}
-                  className={`${styledCursos.categorias_item} ${filtroSelecionado === filtro.key ? 'selecionado' : ''
+                  className={`${styledCursos.categorias_item} ${
+                    filtroSelecionado === filtro.key ? 'selecionado' : ''
                   }`}
                 >
                   {filtro.label}

@@ -7,8 +7,9 @@ import styledBootcamps from '@/styles/Bootcamps.module.scss'
 import SubTitle from '@/components/common/Subtitle/SubTitle'
 import Tag from '@/components/common/Tag'
 import Title from '@/components/common/Title/Title'
-import bootcampObjetc from '@/utilities/bootcampObjects'
-import { useEffect } from 'react'
+import Card from '@/components/common/Card'
+import { properties } from '@/utilities/Cursos&bootcampObjects'
+import { useEffect, useState } from 'react'
 import Filter from '@/utilities/Filter'
 
 // Utilities
@@ -16,6 +17,17 @@ import Filter from '@/utilities/Filter'
 // Interfaces
 
 export default function Home() {
+  const [filtroSelecionado, setFiltroSelecionado] = useState<string>('Todos')
+  const [dataWithFilter, setDataWithFilter] = useState(
+    properties.bootcampObjetc,
+  )
+
+  const handleClickFiltro = (filtro: string) => {
+    const result = Filter(properties.bootcampObjetc, filtro)
+    setDataWithFilter(result)
+    setFiltroSelecionado(filtro)
+  }
+
   return (
     <>
       <Head>
@@ -42,18 +54,32 @@ export default function Home() {
         <section className={` container ${styledBootcamps.containerCourses}`}>
           <div className={`${styledBootcamps.containerFilter}`}>
             <ul className={styledBootcamps.containerList}>
-              <li className={styledBootcamps.filterCourse}> Todos </li>
-              <li className={styledBootcamps.filterCourse}> Back-End </li>
-              <li className={styledBootcamps.filterCourse}> Front-End </li>
-              <li className={styledBootcamps.filterCourse}> Design </li>
-              <li className={styledBootcamps.filterCourse}> Cloud e Dados </li>
-              <li className={styledBootcamps.filterCourse}>
-                {' '}
-                Marketing e Business{' '}
-              </li>
-              <li className={styledBootcamps.filterCourse}> Idiomas </li>
-              <li className={styledBootcamps.filterCourse}> Para mulheres </li>
-              <li className={styledBootcamps.filterCourse}> Para jovens </li>
+              {properties.filtros.map((filtro) => (
+                <li
+                  key={filtro.key}
+                  className={styledBootcamps.filterCourse}
+                  onClick={() => handleClickFiltro(filtro.key)}
+                >
+                  {filtro.label}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className={styledBootcamps.cards_wrapper}>
+            <ul className={styledBootcamps.lista_cards}>
+              {dataWithFilter.map((item) => (
+                <li key={item.id} className={styledBootcamps.card}>
+                  <Card
+                    key={item.id}
+                    type="Secondary"
+                    src={item.image}
+                    alt={` imagem do ${item.title} `}
+                    title={item.title}
+                    description={item.description}
+                    href={item.link}
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </section>

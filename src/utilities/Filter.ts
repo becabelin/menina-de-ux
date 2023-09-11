@@ -1,7 +1,8 @@
 type arraySchema = {
   id: number
   image: string
-  text: string
+  title: string
+  description: string
   link: string
   category: Array<string>
 }
