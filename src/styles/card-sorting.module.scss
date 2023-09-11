@@ -1,0 +1,21 @@
+@import "colors.module";
+
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+}
+
+.hero {
+  @extend .sectionContainer;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
