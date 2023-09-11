@@ -104,7 +104,17 @@
     
     .inicioButton, .buttonSocial {
     //  display: grid;
-      display: block;
+      // display: block; 
+      display: flex;
+      align-items: center;
+      flex-direction: column; /* Empilhar os botões verticalmente */
+    }
+
+    .inicioButton div, 
+    .buttonSocial div {
+      // margin-bottom: 10px;
+      justify-content: center;     
+      text-align: center; /* Centralizar o texto horizontalmente */
     }
 
     .inicioAjudando .title,
