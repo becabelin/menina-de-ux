@@ -8,6 +8,7 @@ body {
 
 a {
   text-decoration: none;
+  text-align: center;
 
   &:hover {
     text-decoration: none;
