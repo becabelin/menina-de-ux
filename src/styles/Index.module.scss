@@ -10,8 +10,8 @@
 .inicioAjudando{
   @extend .display;
   width: 100%;
-  height:36.77rem;// este é o motivo da img ficar por cima
-  //height:auto; funciona sem ficar por cima a imagem
+  //height:36.77rem;// este é o motivo da img ficar por cima
+  height:auto; //funciona sem ficar por cima a imagem
   //display: flex; 
   //align-items: center;
 }
@@ -117,12 +117,12 @@ height: auto;
       flex-direction: column; /* Empilhar os botões verticalmente */
     }
 
-    .inicioButton div, 
+    /*.inicioButton div, 
     .buttonSocial div {
       //margin-bottom: 10px;
     // justify-content: center;     
-     // text-align: center; /* Centralizar o texto horizontalmente */
-    }
+     // text-align: center; /* Centralizar o texto horizontalmente 
+    }*/
 
     .inicioAjudando .title,
     .inicioProjeto .title {
