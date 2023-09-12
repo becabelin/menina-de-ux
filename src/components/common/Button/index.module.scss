@@ -2,10 +2,12 @@
 
 .ButtonBase {
   min-width: 8.125rem;
-  height: 3rem;
-  padding: 0rem 1.7rem;
+  //height: 3rem;
+  //padding: 0rem 1.7rem;
+  padding: 1.5rem 1.7rem;
   cursor: pointer;
-  display: inline-flex;
+ // display: inline-flex;
+ display: block;
   justify-content: center;
   align-items: center;
   gap: 8px;
@@ -74,7 +76,7 @@
     // min-width: auto; /* Ou defina o valor desejado para telas menores */
     height: 2.5rem;
     max-width: 100%;
-    padding: 0rem 1rem;
+  //  padding: 0rem 1rem; para celular alinhar
     gap: 4px;
     border-radius: 24px;
 
