@@ -60,7 +60,7 @@ export default function Home() {
         <section className={`container ${styledCardSorting.definition}`}>
           <div>
             <Title type="Sm">Card Sorting</Title>
-            <div className={styledCardSorting.definitionTexts}>
+            <div className={styledCardSorting.texts}>
               <SubTitle type="Lg">
                 Card Sorting (ordenação de cartões) é uma ferramenta de design
                 utilizada para estruturar a arquitetura de informação, onde, por
@@ -122,6 +122,48 @@ export default function Home() {
             </div>
           </div>
           <Image src={welcomeImage} alt="mulher acenando" />
+        </section>
+        <section className={`${styledCardSorting.sectionWhite}`}>
+          <div className={`container ${styledCardSorting.typeCardContainer}`}>
+            <div>
+              <Title type="Sm">Tipos de Card Sorting</Title>
+              <ul className={styledCardSorting.texts}>
+                <li className={styledCardSorting.typeCard}>
+                  <Title type="Xs">Card Sorting aberto</Title>
+                  <SubTitle type="Default">
+                    Indicado para quando se deseja descobrir como as pessoas
+                    agrupam o conteúdo e quais rótulos que elas dão para cada
+                    categoria. Para aplicar esse método é preciso solicitar às
+                    pessoas participantes que organizem os cartões com os
+                    conteúdos ou funcionalidade em grupos que mais façam sentido
+                    para elas. Em seguida, peça que deem nomes para esses
+                    grupos.
+                  </SubTitle>
+                </li>
+                <li className={styledCardSorting.typeCard}>
+                  <Title type="Xs">Card Sorting fechado</Title>
+                  <SubTitle type="Default">
+                    Funciona melhor quando já se tem um conjunto de grupos ou
+                    categorias estabelecidos e você deseja entender como as
+                    pessoas agrupam os itens de cada conteúdo dentro das
+                    categorias existentes. Para realizá-lo, peça às pessoas
+                    usuárias que coloquem os cartões que lhes forem entregues
+                    dentro dos grupos primários já definidos.
+                  </SubTitle>
+                </li>
+                <li className={styledCardSorting.typeCard}>
+                  <Title type="Xs">Card Sorting híbrido</Title>
+                  <SubTitle type="Default">
+                    Por fim, essa forma permite ver se as categorias que foram
+                    propostas estão fazendo sentido para o seu público. Caso não
+                    esteja, é possível criar nomes de novos grupos, refazendo o
+                    agrupamento da maneira que achar melhor ou mais coerente.
+                  </SubTitle>
+                </li>
+              </ul>
+            </div>
+            <Image src={welcomeImage} alt="mulher acenando" />
+          </div>
         </section>
       </main>
     </>
