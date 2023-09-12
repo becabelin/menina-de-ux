@@ -1,5 +1,7 @@
 @import "colors.module";
 
+
+
 .sectionContainer {
   display: flex;
   justify-content: space-between;
@@ -33,4 +35,28 @@
   flex-direction: column;
   gap: 2rem;
   margin-top: 1rem;
+}
+
+.definition {
+  @extend .sectionContainer;
+  margin-top: 2rem
+}
+
+.definitionTexts {
+  @extend .containerSubtitle;
+  max-width: 648px;
+}
+
+.listArticles {
+  margin-top: 1rem;
+  list-style: none;
+}
+
+.article a{
+  color: $pink-500;
+}
+
+.article a::before {
+  content: '-';
+  margin-right: 4px
 }
