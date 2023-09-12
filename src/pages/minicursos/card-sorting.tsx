@@ -11,6 +11,8 @@ import styledCardSorting from '@/styles/card-sorting.module.scss'
 import Image from 'next/image'
 import heroImage from '@/../public/estude/mulher-estudando.png'
 import welcomeImage from '@/../public/miniCurso/mulher-acenando.png'
+import Tag from '@/components/common/Tag'
+import Link from 'next/link'
 // Hooks
 // Interfaces
 
@@ -54,6 +56,72 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </section>
+        <section className={`container ${styledCardSorting.definition}`}>
+          <div>
+            <Title type="Sm">Card Sorting</Title>
+            <div className={styledCardSorting.definitionTexts}>
+              <SubTitle type="Lg">
+                Card Sorting (ordenação de cartões) é uma ferramenta de design
+                utilizada para estruturar a arquitetura de informação, onde, por
+                meio de cartões ou post-its com conteúdos, os usuários fazem
+                agrupamentos, organizando os itens de acordo com seu mapa
+                mental.
+              </SubTitle>
+              <SubTitle type="Lg">
+                A intenção é que, ao fazer isso, ele colabore com o
+                desenvolvimento de soluções que sejam mais amigáveis para seu
+                entendimento. Essa estruturação é essencial ao desenvolver um
+                site, por exemplo. O conteúdo fica organizado de forma mais
+                intuitiva para o usuário, proporcionando uma experiência melhor
+                de navegação.
+              </SubTitle>
+              <SubTitle type="Lg">
+                Duas grandes vantagens desta ferramenta são o baixo custo e
+                rapidez na aplicação. Além do fato dela ajudar a validar
+                taxonomia (termos e nomenclaturas) do seu projeto, para entender
+                se estão, realmente, centradas na pessoa usuária.
+              </SubTitle>
+              <div>
+                <SubTitle type="Default">
+                  <Tag type="Strong">Artigos úteis:</Tag>
+                </SubTitle>
+                <ul className={styledCardSorting.listArticles}>
+                  <li className={styledCardSorting.article}>
+                    <SubTitle type="Default">
+                      <Link href="#">
+                        Card Sorting: como descobrir o modelo mental de
+                        organização de conteúdo (Wagner Guimarães)
+                      </Link>
+                    </SubTitle>
+                  </li>
+                  <li className={styledCardSorting.article}>
+                    <SubTitle type="Default">
+                      <Link href="#">
+                        Card Sorting: O que é e Como utilizar (Guia Completo)
+                        (FIA)
+                      </Link>
+                    </SubTitle>
+                  </li>
+                  <li className={styledCardSorting.article}>
+                    <SubTitle type="Default">
+                      <Link href="#">
+                        Card Sorting: o que é e como usar (Mergo)
+                      </Link>
+                    </SubTitle>
+                  </li>
+                  <li className={styledCardSorting.article}>
+                    <SubTitle type="Default">
+                      <Link href="#">
+                        Entendendo o que é o Card Sorting (Dani Ferreira Brasil)
+                      </Link>
+                    </SubTitle>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <Image src={welcomeImage} alt="mulher acenando" />
         </section>
       </main>
     </>
