@@ -8,8 +8,6 @@ body {
 
 a {
   text-decoration: none;
-  text-align: center;
-
   &:hover {
     text-decoration: none;
   }
@@ -28,7 +26,7 @@ a {
   width: 100%;
   height: auto;
   padding: 1rem 5.2rem;
-  // Tablet | Mobile
+  /* Tablet | Mobile */
   @media (max-width: 994px) {
     padding: 1rem 2rem;
   }
