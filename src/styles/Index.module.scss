@@ -10,10 +10,8 @@
 .inicioAjudando{
   @extend .display;
   width: 100%;
-  //height:36.77rem;// este é o motivo da img ficar por cima
   height:auto; //funciona sem ficar por cima a imagem
-  //display: flex; 
-  //align-items: center;
+
 }
 
 .inicioAjudando .title,
@@ -29,24 +27,20 @@
 .inicioCarreira, .inicioProjeto, .inicioNovidades, .inicioSocial{
   @extend .display;
   background-color: $white;
- // display: flex; 
- // align-items: center;
+
 }
 
 .containerFlex{
   @extend .display;
-  //display: flex;
-  //justify-content: center;
- // align-items: center;
 }
 
 .textLeft{
-  flex: 2;
+  order: -1;
   padding-right: 20px;
 }
 
 .textRight{
-  flex: 1;
+  order: 1;
   padding-right: 20px;
 }
 
@@ -62,21 +56,20 @@
   padding-top: 20px;
   display: flex;
   gap: 10px;
-  line-height: 0;// alinhar icone
+  line-height: 1 ;// alinhar icone
 }
 
 .inicioImg {
   padding-left: 20px;
 }
 
-.img {
-width: 80%;
-height: auto;   
-}
+// .img {
+// // width: 100%;
+// height: auto;   
+// }
 
 .cardList{
   display: flex;
-  //justify-content: center;
   flex-wrap: nowrap; /* Impede que os cards quebrem para uma nova linha */
   padding: 0;
   margin: 0;
@@ -85,8 +78,6 @@ height: auto;
 }
 
 .cardList li{
-  //width: 302.39px;
-  //height: 329.36px;
   list-style: none;
   margin-right: 10px; /* Espaçamento entre os cards */
 }
@@ -94,13 +85,18 @@ height: auto;
 @media (max-width: 994px) {
   .inicioAjudando, .inicioCarreira, .containerFlex, .inicioProjeto, .inicioCurso, .cardList, .inicioNovidades, .inicioSocial,.buttonSocial, .inicioButton {
     display: block;
-    /*width: 100%;
-    height: auto;*/
     align-items: center;
   }
  
   .cardList li{
     padding-top: 10px;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 5%;
   }
 }
 
@@ -110,19 +106,10 @@ height: auto;
   background-color: $white;
 }
   .inicioButton, .buttonSocial {
-    //  display: grid;
-      // display: block; 
       display: flex;
       align-items: center;
       flex-direction: column; /* Empilhar os botões verticalmente */
     }
-
-    /*.inicioButton div, 
-    .buttonSocial div {
-      //margin-bottom: 10px;
-    // justify-content: center;     
-     // text-align: center; /* Centralizar o texto horizontalmente 
-    }*/
 
     .inicioAjudando .title,
     .inicioProjeto .title {
@@ -130,11 +117,4 @@ height: auto;
       width: 100%;
       align-items: center;
     }  
-
-  .img {
-    width: 100%;
-    height: auto;
-    align-items: center;
-    padding: 5%;
-  }
 }
