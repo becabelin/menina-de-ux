@@ -63,7 +63,22 @@ export default function Home() {
         </section>
 
         <section className={styles.inicioCarreira}>
-          <div className="container">
+          <div className={`container ${styles.containerFlex}`}>
+            <div className={styles.textRight}>
+              <div className={styles.title}>
+                <Title type="Sm">Comece a sua carreira</Title>
+              </div>
+              <div className={styles.subtitle}>
+                <SubTitle type="Default">
+                  Aprenda mais sobre a área de tech e design, tenha acesso a
+                  conteúdos incríveis e entre no mercado de trabalho com chave
+                  de ouro!
+                </SubTitle>
+              </div>
+              <div className={styles.inicioButton}>
+                <Button type="Blue">Estude com a Menina de UX!</Button>
+              </div>
+            </div>
             <div className={styles.inicioImg}>
               <Image
                 className={styles.img}
@@ -74,26 +89,11 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="container">
-            <div className={styles.title}>
-              <Title type="Sm">Comece a sua carreira</Title>
-            </div>
-            <div className={styles.subtitle}>
-              <SubTitle type="Default">
-                Aprenda mais sobre a área de tech e design, tenha acesso a
-                conteúdos incríveis e entre no mercado de trabalho com chave de
-                ouro!
-              </SubTitle>
-            </div>
-            <div className={styles.inicioButton}>
-              <Button type="Blue">Estude com a Menina de UX!</Button>
-            </div>
-          </div>
         </section>
 
         <section className={styles.inicioProjeto}>
           <div className={`container ${styles.containerFlex}`}>
-            <div className={styles.textRight}>
+            <div className={styles.textLeft}>
               <div className={styles.title}>
                 <Title type="Sm">Crie seu primeiro projeto em UX Design</Title>
               </div>
