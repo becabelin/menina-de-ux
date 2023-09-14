@@ -7,18 +7,18 @@ import Image from 'next/image'
 import NewsImage from '@/../public/Sections/mulher-recebendo-novidades.svg'
 
 // Styles
-import styledNews from './Sections.module.scss'
+import styled from './Sections.module.scss'
 
 export default function News() {
   return (
-    <section className={`container ${styledNews.sectionContainer}`}>
-      <div className={styledNews.sectionContent}>
+    <section className={`container ${styled.sectionContainer}`}>
+      <div className={styled.sectionContent}>
         <Title type="Sm">Quer ficar por dentro de todas as novidades?</Title>
         <SubTitle type="Default">
           Entre no canal do Telegram da Menina de UX e fique sabendo de todos os
           cursos e processos seletivos novos!
         </SubTitle>
-        <div className={styledNews.buttons}>
+        <div className={styled.buttons}>
           <Button url={'https://t.me/meninadeux'}> Entrar no canal </Button>
         </div>
       </div>
