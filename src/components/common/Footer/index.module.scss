@@ -26,6 +26,7 @@
 
 .logoContainer {
   border-bottom: 1px solid #626262;
+  margin-bottom: .4rem;
 
   .slogan {
     font-size: 1.125rem;
@@ -58,7 +59,7 @@
     font-family: "NCS Radhiumz", sans-serif;
     color: $gray-400;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: bold;
   }
 
   .imagesSupporters {
@@ -68,7 +69,7 @@
   }
 
   @media (max-width: 994px) {
-    border-top: 1px solid #626262;
+    border-top: 1px solid rgb(98, 98, 98);
     padding-top: 1rem;
 
     .imagesSupporters {
@@ -123,7 +124,12 @@
     font-family: "NCS Radhiumz", sans-serif;
     color: $blue-400;
     font-size: 1rem;
-    font-weight: 400;
+    font-weight: 700;
+    transition: .4s;
+
+    &:hover {
+      color: $pink-500;
+    }
   }
 
   @media (max-width: 994px) {
@@ -146,18 +152,6 @@
         span {
           display: none;
         }
-      }
-
-      & li:nth-child(1) {
-        order: 2;
-      }
-
-      & li:nth-child(2) {
-        order: 3;
-      }
-
-      & li:nth-child(3) {
-        order: 1;
       }
     }
   }
