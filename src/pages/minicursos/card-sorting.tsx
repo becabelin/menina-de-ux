@@ -273,7 +273,7 @@ export default function Home() {
                   </SubTitle>
                 </li>
                 <li className={styledCardSorting.typeCard}>
-                  <Title type="Xs">Card Sorting fechado</Title>
+                  <Title type="Xs">Participantes</Title>
                   <SubTitle type="Lg">
                     Dê preferência ao usuário final. Se não for possível, use
                     pessoas que que reflitam seu perfil de cliente. Essa amostra
@@ -294,6 +294,56 @@ export default function Home() {
           </div>
           <div>
             <Image src={welcomeImage} alt="mulher acenando" />
+          </div>
+        </section>
+        <section className={`${styledCardSorting.sectionWhite}`}>
+          <div className="container">
+            <div>
+              <Title type="Sm">Dicas</Title>
+              <br />
+              <SubTitle type="Lg">
+                Esse é o passo a passo ideal para você realizar um Card Sorting:
+              </SubTitle>
+            </div>{' '}
+            <div className={styledCardSorting.tips}>
+              <div className={styledCardSorting.listTips}>
+                <SubTitle type="Lg">
+                  <Tag type="Strong">01.</Tag> <br /> Espalhe os cartões na mesa
+                  de maneira que seja possível visualizá-los facilmente — o
+                  recomendável é fornecer entre 40 e 60 cartões por pessoa.
+                </SubTitle>
+                <SubTitle type="Lg">
+                  <Tag type="Strong">02.</Tag> <br /> Caso aplique o modelo
+                  aberto ou híbrido, deixe uns cartões brancos por perto, para
+                  quando for preciso criar categorias.
+                </SubTitle>
+                <SubTitle type="Lg">
+                  <Tag type="Strong">04.</Tag> <br /> Explique em detalhes como
+                  funcionará a dinâmica e deixe claro que o resultado precisa
+                  refletir como a pessoa participante acredita que as
+                  informações devam estar agrupadas, de acordo com os conteúdos
+                  que ela acredita terem alguma relação.
+                </SubTitle>
+              </div>
+              <div className={styledCardSorting.listTips}>
+                <SubTitle type="Lg">
+                  <Tag type="Strong">05.</Tag> <br /> Dê um tempo para que as
+                  pessoas possam distribuir os cartões e conferir se a sequência
+                  mental feita por ela é realmente da forma que ela gostaria de
+                  encontrar.
+                </SubTitle>
+                <SubTitle type="Lg">
+                  <Tag type="Strong">06.</Tag> <br /> No final, peça que a
+                  pessoa explique o porquê de suas escolhas e a lógica por trás
+                  delas.
+                </SubTitle>
+                <SubTitle type="Lg">
+                  <Tag type="Strong">07.</Tag> <br />
+                  Registre o resultado de cada pessoa participante para poder
+                  compará-los e analisá-los depois.
+                </SubTitle>
+              </div>
+            </div>
           </div>
         </section>
       </main>
