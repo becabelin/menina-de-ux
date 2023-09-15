@@ -16,36 +16,27 @@
   background-color: $white
 }
 
-.hero {
-  @extend .sectionContainer;
-}
 
 .texts {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+
   @extend .containerSubtitle;
   max-width: 648px;
+  padding-top: 1rem;
 }
 
-.sectionWelcome {
-  @extend .sectionContainer
-}
 
 .containerSubtitle {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  margin-top: 1rem;
+
 }
 
-.definition {
-  @extend .sectionContainer;
-  margin-block: 3rem
-}
+
 
 .listArticles {
-  margin-top: 1rem;
   list-style: none;
 }
 
@@ -58,14 +49,14 @@
   margin-right: 4px
 }
 
-.typeCardContainer {
-  @extend .sectionContainer;
-  padding-block: 3rem;
-}
 
 .typeCard {
   list-style: none;
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+.listToUse {
+  @extend .containerSubtitle
 }

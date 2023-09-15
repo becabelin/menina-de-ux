@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <section className={`container ${styledCardSorting.hero}`}>
+        <section className={`container ${styledCardSorting.sectionContainer}`}>
           <div className={styledCardSorting.texts}>
             <Title type="Default">Card Sorting</Title>
             <SubTitle type="Lg">
@@ -38,7 +38,7 @@ export default function Home() {
           <Image src={heroImage} alt="mulher estudando" />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
-          <div className={`container ${styledCardSorting.sectionWelcome}`}>
+          <div className={`container ${styledCardSorting.sectionContainer}`}>
             <Image src={welcomeImage} alt="mulher acenando" />
             <div>
               <Title type="Sm">Seja bem-vindo(a)!</Title>
@@ -57,7 +57,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section className={`container ${styledCardSorting.definition}`}>
+        <section className={`container ${styledCardSorting.sectionContainer}`}>
           <div>
             <Title type="Sm">Card Sorting</Title>
             <div className={styledCardSorting.texts}>
@@ -124,13 +124,13 @@ export default function Home() {
           <Image src={welcomeImage} alt="mulher acenando" />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
-          <div className={`container ${styledCardSorting.typeCardContainer}`}>
+          <div className={`container ${styledCardSorting.sectionContainer}`}>
             <div>
               <Title type="Sm">Tipos de Card Sorting</Title>
               <ul className={styledCardSorting.texts}>
                 <li className={styledCardSorting.typeCard}>
                   <Title type="Xs">Card Sorting aberto</Title>
-                  <SubTitle type="Default">
+                  <SubTitle type="Lg">
                     Indicado para quando se deseja descobrir como as pessoas
                     agrupam o conteúdo e quais rótulos que elas dão para cada
                     categoria. Para aplicar esse método é preciso solicitar às
@@ -142,7 +142,7 @@ export default function Home() {
                 </li>
                 <li className={styledCardSorting.typeCard}>
                   <Title type="Xs">Card Sorting fechado</Title>
-                  <SubTitle type="Default">
+                  <SubTitle type="Lg">
                     Funciona melhor quando já se tem um conjunto de grupos ou
                     categorias estabelecidos e você deseja entender como as
                     pessoas agrupam os itens de cada conteúdo dentro das
@@ -153,7 +153,7 @@ export default function Home() {
                 </li>
                 <li className={styledCardSorting.typeCard}>
                   <Title type="Xs">Card Sorting híbrido</Title>
-                  <SubTitle type="Default">
+                  <SubTitle type="Lg">
                     Por fim, essa forma permite ver se as categorias que foram
                     propostas estão fazendo sentido para o seu público. Caso não
                     esteja, é possível criar nomes de novos grupos, refazendo o
@@ -162,6 +162,137 @@ export default function Home() {
                 </li>
               </ul>
             </div>
+            <Image src={welcomeImage} alt="mulher acenando" />
+          </div>
+        </section>
+        <section className={`container ${styledCardSorting.sectionContainer}`}>
+          <div className={styledCardSorting.texts}>
+            <Title type="Sm">Card Sorting e Design Thinking</Title>
+            <SubTitle type="Lg">
+              A abordagem usada no design thinking prevê um olhar centrado no
+              cliente desde o começo. Para isso, desde a fase de imersão até a
+              implementação, são usadas diversas ferramentas de design que
+              colaboram com esse objetivo.
+            </SubTitle>
+            <SubTitle type="Lg">
+              O Card Sorting pode ser uma das ferramentas se o produto a ser
+              desenvolvido envolver sistemas, plataformas ou apps.
+            </SubTitle>
+            <SubTitle type="Lg">
+              Como uma ferramenta rápida e barata de design, o Card Sorting
+              permitirá alcançar um MVP (Mínimo Produto Viável) mais próximo das
+              necessidades e anseios dos usuários. Contudo, o refinamento mesmo
+              só será feito na etapa de validação do protótipo. Isso garante com
+              que o Card Sorting possa ser utilizado em dois momentos nesse
+              processo.
+            </SubTitle>
+            <SubTitle type="Lg">
+              Ou seja, é possível começar com o Card Sorting aberto e, depois,
+              partir para a versão fechada, conforme avance no desenvolvimento
+              do produto.
+            </SubTitle>
+          </div>
+          <div>
+            <Image src={welcomeImage} alt="mulher acenando" />
+          </div>
+        </section>
+        <section className={`${styledCardSorting.sectionWhite}`}>
+          <div className={`container ${styledCardSorting.sectionContainer}`}>
+            <div className={styledCardSorting.texts}>
+              <Title type="Sm">Vantagens e Desvantagens</Title>
+              <SubTitle type="Lg">
+                Conforme já citado, duas grandes vantagens dessa ferramenta são
+                o baixo custo e rapidez na aplicação.
+              </SubTitle>
+              <SubTitle type="Lg">
+                Ao fazer um site ou sistema que considere o mapa mental do
+                usuário, é esperado também um ganho de produtividade. A
+                tendência aponta para tudo ser encontrado de forma mais rápida e
+                assertiva, permitindo que o usuário avance em sua jornada.
+              </SubTitle>
+              <SubTitle type="Lg">
+                É uma ferramenta bem simples de aplicar, que ajuda a validar
+                termos e nomenclaturas (taxonomia) e que está centrada no
+                usuário.
+              </SubTitle>
+              <SubTitle type="Lg">
+                Por outro lado, a principal desvantagem da ferramenta é que
+                depende muito da forma como é aplicada. Assim, os resultados
+                podem ter uma grande variação. Além disso, a ferramenta depende
+                também da habilidade de quem aplica para que sejam extraídos dos
+                usuários análises mais profundas. Caso contrário, o resultado
+                obtido poderá ser considerado superficial.
+              </SubTitle>
+              <SubTitle type="Lg">
+                Outro ponto é que a análise de resultados pode ser complexa e
+                tomar muito tempo, pois requer a comparação entre os mapas
+                mentais para identificar padrões. E, mais uma vez, isso
+                dependerá da experiência do analista em fazer essas
+                interpretações e tradução para padrões.
+              </SubTitle>
+            </div>
+            <Image src={welcomeImage} alt="mulher acenando" />
+          </div>
+        </section>
+        <section className={`container ${styledCardSorting.sectionContainer}`}>
+          <div className={styledCardSorting.texts}>
+            <Title type="Sm">Como utilizar o Card Sorting?</Title>
+            <SubTitle type="Lg">
+              Você já sabe o que é, como é sua estrutura, quando usá-lo e quais
+              os benefícios do Card Sorting para o seu projeto. Chegou a hora de
+              saber como colocá-lo, finalmente, em prática!
+            </SubTitle>
+            <SubTitle type="Lg">
+              O Card Sorting pode ser feito em um espaço físico ou remotamente
+              através de vídeo chamada. Se acontecer remotamente, você poderá
+              configurar um arquivo e utilizar o Optimal Workshop, o Miro ou o
+              Figma como ferramentas para a técnica. Se for presencialmente, o
+              ideal é reservar um espaço com mesa, cadeira, post-its, papel,
+              canetas, cards, notebook ou outros materiais que você ache
+              necessário constar.
+            </SubTitle>
+            <SubTitle type="Lg">
+              Além disso, pode ser aplicado individualmente ou em grupos. Caso
+              opte por seguir no individual, selecione, pelo menos, 15 pessoas.
+              Se preferir seguir com grupos, pode trabalhar em testes com 3 a 5
+              pessoas simultaneamente.
+            </SubTitle>
+            <SubTitle type="Lg">
+              Para utilizar o Card Sorting é importante definir os seguintes
+              aspectos:
+            </SubTitle>
+            <div>
+              <ul className={styledCardSorting.listToUse}>
+                <li className={styledCardSorting.typeCard}>
+                  <Title type="Xs">Conteúdo</Title>
+                  <SubTitle type="Lg">
+                    Deve refletir o que você pretende avaliar. O ideal é listar
+                    os tópicos dos conteúdos que são mais acessados ou
+                    necessários para os usuários. Exemplo: contato, segunda via
+                    de boleto, manual de instruções, etc.
+                  </SubTitle>
+                </li>
+                <li className={styledCardSorting.typeCard}>
+                  <Title type="Xs">Card Sorting fechado</Title>
+                  <SubTitle type="Lg">
+                    Dê preferência ao usuário final. Se não for possível, use
+                    pessoas que que reflitam seu perfil de cliente. Essa amostra
+                    deve girar em torno de 10 pessoas.
+                  </SubTitle>
+                </li>
+                <li className={styledCardSorting.typeCard}>
+                  <Title type="Xs">Cartões</Title>
+                  <SubTitle type="Lg">
+                    Devem refletir o conteúdo, em frases curtas e rápidas de
+                    serem lidas e compreendidas. É possível aliar imagens,
+                    usando a escrita em uma face e a figura no verso para
+                    facilitar a compreensão.
+                  </SubTitle>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
             <Image src={welcomeImage} alt="mulher acenando" />
           </div>
         </section>
