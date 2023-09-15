@@ -10,31 +10,19 @@ import styledCursos from '@/styles/Cursos.module.scss'
 
 // Utilities
 import React, { useState } from 'react'
+import { properties } from '@/utilities/Cursos&bootcampObjects'
+import Filter from '@/utilities/Filter'
 
 // Hooks
 // Interfaces
 
-type Filtro = {
-  label: string
-  key: string
-}
-
-const filtros: Filtro[] = [
-  { label: 'Todos', key: 'todos' },
-  { label: 'Cloud e Data Science', key: 'cloud' },
-  { label: 'Desenvolvimento', key: 'desenvolvimento' },
-  { label: 'Games', key: 'games' },
-  { label: 'Marketing', key: 'marketing' },
-  { label: 'Idiomas', key: 'idiomas' },
-  { label: 'Soft-Skills', key: 'softskills' },
-  { label: 'UI/UX Design', key: 'uiux' },
-  { label: 'UX Writing', key: 'uxwriting' },
-]
-
 export default function Cursos() {
   const [filtroSelecionado, setFiltroSelecionado] = useState<string>('Todos')
+  const [dataWithFilter, setDataWithFilter] = useState(properties.cursoObjetc)
 
   const handleClickFiltro = (filtro: string) => {
+    const result = Filter(properties.cursoObjetc, filtro)
+    setDataWithFilter(result)
     setFiltroSelecionado(filtro)
   }
 
@@ -67,13 +55,14 @@ export default function Cursos() {
         <section className={styledCursos.cursos}>
           <div className={styledCursos.categorias_wrapper}>
             <ul className={styledCursos.categorias_list}>
-              {filtros.map((filtro) => (
+              {properties.filtros.map((filtro) => (
                 <li
                   key={filtro.key}
                   onClick={() => handleClickFiltro(filtro.key)}
-                  className={`${styledCursos.categorias_item} ${
-                    filtroSelecionado === filtro.key ? 'selecionado' : ''
-                  }`}
+                  className={`${styledCursos.categorias_item} ${filtroSelecionado === filtro.key
+                      ? `${styledCursos.selecionado}`
+                      : ''
+                    }`}
                 >
                   {filtro.label}
                 </li>
@@ -83,56 +72,19 @@ export default function Cursos() {
           {/* Cards com os cursos */}
           <div className={styledCursos.cards_wrapper}>
             <ul className={styledCursos.lista_cards}>
-              <li className={styledCursos.card}>
-                <Card
-                  type="Secondary"
-                  src="./CardCourse/image1.svg"
-                  alt="1MiO"
-                  title="1MiO"
-                  description="A iniciativa Um Milhão de Oportunidades (1MiO) é a maior articulação do Brasil pela inclusão produtiva de adolescentes e jovens no mundo do trabalho decente. no site tem diversos cursos, eventos e oportunidades de trabalho divulgadas!"
-                  href="#"
-                />
-              </li>
-              <li>
-                <Card
-                  type="Secondary"
-                  src="./CardCourse/image1.svg"
-                  alt="1MiO"
-                  title="1MiO"
-                  description="A iniciativa Um Milhão de Oportunidades (1MiO) é a maior articulação do Brasil pela inclusão produtiva de adolescentes e jovens no mundo do trabalho decente. no site tem diversos cursos, eventos e oportunidades de trabalho divulgadas!"
-                  href="#"
-                />
-              </li>
-              <li>
-                <Card
-                  type="Secondary"
-                  src="./CardCourse/image1.svg"
-                  alt="1MiO"
-                  title="1MiO"
-                  description="A iniciativa Um Milhão de Oportunidades (1MiO) é a maior articulação do Brasil pela inclusão produtiva de adolescentes e jovens no mundo do trabalho decente. no site tem diversos cursos, eventos e oportunidades de trabalho divulgadas!"
-                  href="#"
-                />
-              </li>
-              <li>
-                <Card
-                  type="Secondary"
-                  src="./CardCourse/image1.svg"
-                  alt="1MiO"
-                  title="1MiO"
-                  description="A iniciativa Um Milhão de Oportunidades (1MiO) é a maior articulação do Brasil pela inclusão produtiva de adolescentes e jovens no mundo do trabalho decente. no site tem diversos cursos, eventos e oportunidades de trabalho divulgadas!"
-                  href="#"
-                />
-              </li>
-              <li>
-                <Card
-                  type="Secondary"
-                  src="./CardCourse/image1.svg"
-                  alt="1MiO"
-                  title="1MiO"
-                  description="A iniciativa Um Milhão de Oportunidades (1MiO) é a maior articulação do Brasil pela inclusão produtiva de adolescentes e jovens no mundo do trabalho decente. no site tem diversos cursos, eventos e oportunidades de trabalho divulgadas!"
-                  href="#"
-                />
-              </li>
+              {dataWithFilter.map((item) => (
+                <li key={item.id} className={styledCursos.card}>
+                  <Card
+                    key={item.id}
+                    type="Secondary"
+                    src={item.image}
+                    alt={` imagem do ${item.title} `}
+                    title={item.title}
+                    description={item.description}
+                    href={item.link}
+                  />
+                </li>
+              ))}
             </ul>
           </div>
         </section>
