@@ -18,7 +18,9 @@ export default function Card(props: ICard) {
 
   return (
     <div className={style}>
-      <img src={`${src}`} alt={alt} className={styled.img} />
+      <div className={styled.containerImg}>
+        <img src={`${src}`} alt={alt} className={styled.img} />
+      </div>
       <h2 className={styled.title}>
         {title.length > 300
           ? `${convertStringCharacters(title, 300)}...`
