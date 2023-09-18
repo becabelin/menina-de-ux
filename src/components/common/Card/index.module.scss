@@ -20,8 +20,9 @@
   @extend .CardBase;
   background-color: transparent;
  width: 17rem;
- // height: auto;
- height: 100%;// tirei o auto e coloquei o 100% para ficar com altura igual
+ height: auto; // voltei ao auto para ficar com altura igual depois da modificação na página inicio.
+  gap: 20px;
+//  height: 100%;// tirei o auto e coloquei o 100% para ficar com altura igual
   gap: 16px;
 }
 
