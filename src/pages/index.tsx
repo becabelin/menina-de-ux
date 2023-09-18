@@ -57,6 +57,7 @@ export default function Home() {
                 width={428.39}
                 height={428.39}
                 alt="Imagem de uma mulher estudando"
+                priority={true}
               />
             </div>
           </div>
@@ -134,48 +135,43 @@ export default function Home() {
               <Title type="Lg">Os melhores em várias áreas</Title>
             </div>
             <div className={styles.card}>
-              <ul className={styles.cardList}>
-                <li>
-                  <a href="https://www.cursoemvideo.com/cursos/">
-                    <Card
-                      type="Primary"
-                      src="./Inicio/curso-em-video.svg"
-                      alt="alt img"
-                      title="Curso em vídeo"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.dio.me/sign-up?ref=U5U6LS080B">
-                    <Card
-                      type="Primary"
-                      src="./Inicio/dio.webp.svg"
-                      alt="alt img"
-                      title="Digital Innovation One"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://br.cellep.com/estacao-hack-sp/">
-                    <Card
-                      type="Primary"
-                      src="./Inicio/estacaohack.webp.svg"
-                      alt="alt img"
-                      title="Estação Hack"
-                    />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.futuro.digital/">
-                    <Card
-                      type="Primary"
-                      src="./Inicio/mundo-senai.svg"
-                      alt="alt img"
-                      title="Mundo SENAI"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <div className={styles.cardList}>
+                <a href="https://www.cursoemvideo.com/cursos/">
+                  <Card
+                    type="Primary"
+                    src="./Inicio/curso-em-video.svg"
+                    alt="alt img"
+                    title="Curso em vídeo"
+                  />
+                </a>
+
+                <a href="https://www.dio.me/sign-up?ref=U5U6LS080B">
+                  <Card
+                    type="Primary"
+                    src="./Inicio/dio.webp.svg"
+                    alt="alt img"
+                    title="Digital Innovation One"
+                  />
+                </a>
+
+                <a href="https://br.cellep.com/estacao-hack-sp/">
+                  <Card
+                    type="Primary"
+                    src="./Inicio/estacaohack.webp.svg"
+                    alt="alt img"
+                    title="Estação Hack"
+                  />
+                </a>
+
+                <a href="https://www.futuro.digital/">
+                  <Card
+                    type="Primary"
+                    src="./Inicio/mundo-senai.svg"
+                    alt="alt img"
+                    title="Mundo SENAI"
+                  />
+                </a>
+              </div>
             </div>
             <div className={`${styles.inicioButton} ${styles.centerButton}`}>
               <Button>Descobrir mais cursos</Button>
@@ -190,48 +186,43 @@ export default function Home() {
               <Title type="Lg">Para você ser o melhor no que faz</Title>
             </div>
             <div className={styles.card}>
-              <ul className={styles.cardList}>
-                <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/soulbilingue.webp.svg"
-                    alt="alt img"
-                    title="Soul Bilíngue"
-                    subtitle="Inscrições até 10/12/22"
-                    href="#"
-                  />
-                </li>
-                <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/martechacademy.webp.svg"
-                    alt="alt img"
-                    title="Martech Academy"
-                    subtitle="Inscrições até 28/11/22"
-                    href="#"
-                  />
-                </li>
-                <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/Cursos.svg"
-                    alt="alt img"
-                    title="Capacitação Gratuita em Introdução à Programação"
-                    subtitle="Inscrições por tempo limitado!"
-                    href="https://pages.prozeducacao.com.br/proz-tecnologia"
-                  />
-                </li>
-                <li>
-                  <Card
-                    type="Primary"
-                    src="./Inicio/curso.svg"
-                    alt="alt img"
-                    title="Bolsas Santander Tecnologia | Santander Gamer Pro"
-                    subtitle="Inscrições até 24/11/22"
-                    href="#"
-                  />
-                </li>
-              </ul>
+              <div className={styles.cardList}>
+                <Card
+                  type="Primary"
+                  src="./Inicio/soulbilingue.webp.svg"
+                  alt="alt img"
+                  title="Soul Bilíngue"
+                  subtitle="Inscrições até 10/12/22"
+                  href="#"
+                />
+
+                <Card
+                  type="Primary"
+                  src="./Inicio/martechacademy.webp.svg"
+                  alt="alt img"
+                  title="Martech Academy"
+                  subtitle="Inscrições até 28/11/22"
+                  href="#"
+                />
+
+                <Card
+                  type="Primary"
+                  src="./Inicio/Cursos.svg"
+                  alt="alt img"
+                  title="Capacitação Gratuita em Introdução à Programação"
+                  subtitle="Inscrições por tempo limitado!"
+                  href="https://pages.prozeducacao.com.br/proz-tecnologia"
+                />
+
+                <Card
+                  type="Primary"
+                  src="./Inicio/curso.svg"
+                  alt="alt img"
+                  title="Bolsas Santander Tecnologia | Santander Gamer Pro"
+                  subtitle="Inscrições até 24/11/22"
+                  href="#"
+                />
+              </div>
             </div>
             <div className={`${styles.inicioButton} ${styles.centerButton}`}>
               <Button>Veja mais</Button>
