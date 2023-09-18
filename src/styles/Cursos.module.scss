@@ -12,13 +12,11 @@
 }
 
 .text_subtit_01 {
-    @extend .text_wrapper;
-    padding-bottom: .2px;
+    margin-bottom: 16px;
 }
 
 .text_subtit_02 {
-    @extend .text_wrapper;
-    padding-bottom: .2px;
+    margin-bottom: 16px;
 }
 
 .cursos {
@@ -35,13 +33,17 @@
     align-items: center;
     padding-left: 10%;
     padding-right: 10%;
-  }
+}
   
 .categorias_list {
-    list-style: none; 
+    list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 .categorias_item {
@@ -50,25 +52,58 @@
     padding: 5px 10px;
 }
 
+.categorias_item:hover,
 .selecionado {
-    border-color: #20376c;
+    @extend .categorias_item;
+    border: 1px solid #20376c;
     border-radius: 50px; 
+    border-style: solid;
 }
 
 .cards_wrapper{
-    height: auto;
-    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto; 
+    max-width: 1200px;
+    padding: 0 20px; 
+    box-sizing: border-box;
 }
 
 .lista_cards {
-    display: flex;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    list-style: none; 
+    list-style: none;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
 }
 
 .lista_cards li {
     margin-left: 10px;
     margin-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .categorias_item {
+        justify-content: center; 
+    }
+
+    .categorias_item {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .categorias_list {
+        flex-grow: 1;
+        margin: 5px;
+        padding: 5px 10px;
+        max-width: calc(50% - 10px); 
+    }
+    .cards_wrapper {
+        margin: 20px auto; 
+        padding: 0 10px; 
+      }
 }
