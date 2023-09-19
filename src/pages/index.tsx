@@ -31,7 +31,10 @@ export default function Home() {
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textLeft}>
               <div className={styles.title}>
-                <Title type="Default">Ajudando meninas como eu</Title>
+                <Title type="Default">
+                  Ajudando meninas <br />
+                  como eu
+                </Title>
               </div>
               <div className={styles.subtitle}>
                 <SubTitle type="Lg">
@@ -93,7 +96,10 @@ export default function Home() {
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textLeft}>
               <div className={styles.title}>
-                <Title type="Sm">Crie seu primeiro projeto em UX Design</Title>
+                <Title type="Sm">
+                  Crie seu primeiro projeto <br />
+                  em UX Design
+                </Title>
               </div>
               <div className={styles.subtitle}>
                 <SubTitle type="Default">
@@ -257,7 +263,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className={styles.inicioSocial}>
+        <section className={styles.inicioRedeSociais}>
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textLeft}>
               <div className={styles.title}>
@@ -293,17 +299,17 @@ export default function Home() {
                 </Button>
               </div>
             </div>
+            <div className={styles.inicioImg}>
+              <Image
+                className={styles.img}
+                src="./Inicio/mulher-redes-sociais.webp.svg"
+                width={447}
+                height={461}
+                alt="Imagem de uma mulher com auto-falante atrás de uma tela de post"
+              />
+            </div>
           </div>
-          <div className={styles.inicioImg}>
-            <Image
-              className={styles.img}
-              src="./Inicio/mulher-redes-sociais.webp.svg"
-              width={447}
-              height={461}
-              alt="Imagem de uma mulher com auto-falante atrás de uma tela de post"
-            />
-          </div>
-        </div>
+        </section>
       </main>
     </>
   )
