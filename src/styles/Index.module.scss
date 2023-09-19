@@ -3,20 +3,13 @@
 //Style da página Inicio
 .display {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 }
 
 .inicioAjudando {
   @extend .display;
-  width: 100%;
-  height: auto;
-}
 
-.inicioAjudando .title,
-.inicioProjeto .title {
-  height: 5.875rem; //este é o motivo do texto ficar por cima
-  width: 25rem;
 }
 
 .inicioCurso {
@@ -24,7 +17,8 @@
 }
 
 .inicioCarreira,
-.inicioProjeto, 
+.inicioProjeto,
+.inicioRedeSociais,
 .inicioNovidades, 
 .inicioSocial {
   @extend .display;
@@ -37,12 +31,10 @@
 
 .textLeft {
   order: -1;
-  padding-right: 1.25rem;
 }
 
 .textRight {
   order: 1;
-  padding-right: 1.25rem;
 }
 
 .title {
@@ -66,13 +58,12 @@
 }
 
 .cardList {
+  padding-bottom: 1.25rem;
   display: flex;
-  flex-wrap: nowrap; // Impede que os cards quebrem para uma nova linha 
-  max-width: 100%; // Impede que os cards ultrapassem o tamanho da página 
-  overflow-y: hidden;
-  overflow-x: auto;
-  gap: 0.625rem;
+  justify-content: space-between; /* Distribui os cartões igualmente ao longo do eixo principal (horizontal) */
+  
 }
+
 
 //Tablets
 @media (max-width: 994px) {
@@ -82,16 +73,18 @@
   .inicioProjeto, 
   .inicioCurso, 
   .inicioNovidades, 
-  .inicioSocial
+  .inicioSocial,
+  .inicioRedeSociais
    {
     display: block;
     align-items: center;
   }
- 
-  .cardList {
+
+.cardList {
     display: flex;
     flex-direction: column;
     padding-top: 0.625rem;
+    gap: 0.625rem;
   }
 
   .img {
@@ -136,10 +129,11 @@
     width: 100%;
     align-items: center;
   }
-  
+
   .cardList {
     display: flex;
     flex-direction: column;
     gap: 0.625rem;
+   
   }
 }
