@@ -1,5 +1,4 @@
 .sectionContainer{
-    max-width: 100%;
     font-family: 'Avenir LT STD', sans-serif;
     display: flex;
     justify-content: space-between;
@@ -31,8 +30,8 @@
 }
 
 .contactImage{
-    width: 445px;
-    height: 445px;
+    max-width: 100%;
+    max-height: 100%;
 }
 
 @media (max-width: 1270px){
@@ -54,12 +53,8 @@
         align-items: center;
     }
 
-    .contactImage{
-        width: 296px;
-        height: 272px;
-    }
-
     .buttonContainer{
+        width: 100%;
         flex-direction: column;
     }
 }
