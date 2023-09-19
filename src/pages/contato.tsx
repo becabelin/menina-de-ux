@@ -3,6 +3,8 @@ import Head from 'next/head'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
+import SocialMedia from '@/components/sections/SocialMedia'
+import News from '@/components/sections/News'
 
 // Utilities
 // Hooks
@@ -18,7 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styled.containerHome}>
-        <span>Conteúdo da página</span>
+        <News />
+        <SocialMedia />
       </main>
     </>
   )
