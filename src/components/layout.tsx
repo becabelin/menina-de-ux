@@ -1,5 +1,7 @@
 // Components
 import Header from './Header'
+import ButtonToTop from './common/ButtonToTop'
+import Footer from './common/Footer'
 // Styles
 // Utilities
 // Hooks
@@ -14,7 +16,8 @@ export default function Layout({ children }: LayoutProps) {
     <>
       <Header />
       {children}
-      {/* Footer */}
+      <ButtonToTop />
+      <Footer />
     </>
   )
 }

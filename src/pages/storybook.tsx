@@ -9,6 +9,8 @@ import CardInfo from '@/components/common/CardInfo'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
+import News from '@/components/sections/News'
+import SocialMedia from '@/components/sections/SocialMedia'
 
 // Utilities
 // Hooks
@@ -162,6 +164,8 @@ export default function Home() {
             </ul>
           </div>
         </section>
+        <News />
+        <SocialMedia />
       </main>
     </>
   )
