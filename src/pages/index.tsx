@@ -39,15 +39,12 @@ export default function Home() {
                   tecnologia e ainda aprenda sobre o mundo do UX Design!
                 </SubTitle>
               </div>
-              <div className={styles.inicioButton}>
-                <div>
-                  <Button url="/cursos" type="Blue">
-                    Descobrir cursos
-                  </Button>
-                </div>
-                <div>
-                  <Button type="Pink">Processos Seletivos</Button>
-                </div>
+              <div className={styles.buttons}>
+                <Button url="/cursos" type="Blue">
+                  Descobrir cursos
+                </Button>
+
+                <Button type="Pink">Processos Seletivos</Button>
               </div>
             </div>
             <div className={styles.inicioImg}>
@@ -76,7 +73,7 @@ export default function Home() {
                   de ouro!
                 </SubTitle>
               </div>
-              <div className={styles.inicioButton}>
+              <div className={styles.buttons}>
                 <Button type="Blue">Estude com a Menina de UX!</Button>
               </div>
             </div>
@@ -109,7 +106,7 @@ export default function Home() {
                   Figma!
                 </SubTitle>
               </div>
-              <div className={styles.inicioButton}>
+              <div className={styles.buttons}>
                 <Button type="Blue">Crie seu primeiro projeto!</Button>
                 <Button type="Pink">Baixar template</Button>
               </div>
@@ -173,7 +170,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className={`${styles.inicioButton} ${styles.centerButton}`}>
+            <div className={`${styles.buttons} ${styles.centerButton}`}>
               <Button>Descobrir mais cursos</Button>
             </div>
           </div>
@@ -224,7 +221,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className={`${styles.inicioButton} ${styles.centerButton}`}>
+            <div className={`${styles.buttons} ${styles.centerButton}`}>
               <Button>Veja mais</Button>
             </div>
           </div>
@@ -244,7 +241,7 @@ export default function Home() {
                   todos os cursos e processos seletivos novos!
                 </SubTitle>
               </div>
-              <div className={styles.inicioButton}>
+              <div className={styles.buttons}>
                 <Button type="Blue">Entrar no canal</Button>
               </div>
             </div>
@@ -275,27 +272,36 @@ export default function Home() {
                   e-mail também!
                 </SubTitle>
               </div>
-              <div className={styles.buttonSocial}>
-                <Button icon={MdAlternateEmail} type="Blue">
+              <div className={styles.buttons}>
+                <Button
+                  icon={MdAlternateEmail}
+                  url={'mailto:becabelin@gmail.com'}
+                >
                   E-mail
                 </Button>
-                <Button icon={FaInstagram} type="Blue">
+                <Button
+                  icon={FaInstagram}
+                  url="https://www.instagram.com/meninadeux"
+                >
                   Instagram
                 </Button>
-                <Button icon={FaLinkedin} type="Blue">
+                <Button
+                  icon={FaLinkedin}
+                  url="https://www.linkedin.com/company/meninadeux/"
+                >
                   LinkedIn
                 </Button>
               </div>
             </div>
-            <div className={styles.inicioImg}>
-              <Image
-                className={styles.img}
-                src="./Inicio/mulher-redes-sociais.webp.svg"
-                width={447}
-                height={461}
-                alt="Imagem de uma mulher com auto-falante atrás de uma tela de post"
-              />
-            </div>
+          </div>
+          <div className={styles.inicioImg}>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-redes-sociais.webp.svg"
+              width={447}
+              height={461}
+              alt="Imagem de uma mulher com auto-falante atrás de uma tela de post"
+            />
           </div>
         </div>
       </main>
