@@ -49,13 +49,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
 }
 
   .containerFilter{
     width: 950px;
     @media (max-width: 768px) {
-       margin-top: 40px;
-       margin-right: 10px;
+      width: 100%;
       }
   }
 
@@ -74,9 +74,13 @@
     color: $gray-300;
     font-family: 'Avenir LT STD', sans-serif;
     font-weight: 800;
-    margin: 10px;
-    font-size: 18px;
-   cursor: pointer;
+    margin-left: 8px;
+    font-size: 15px;
+    box-sizing: border-box; 
+    padding: 8px;
+    transition: margin 0.3s;
+
+    cursor: pointer;
 
     @media (max-width: 768px) {
        margin-bottom: 20px; 
@@ -84,10 +88,25 @@
     
   }
 
+  .filterCourse:hover,
+  .selecionado {
+    @extend .filterCourse;
+    border: 2px solid #20376c;
+    border-radius: 50px; 
+    padding: 6px;
+   /*  border-style: solid; */
+}
+
   .cards_wrapper{
     max-width: 920px;
     height: auto;
     margin-top: 20px;
+   
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        
+    }
 }
 
 .lista_cards {
@@ -97,6 +116,11 @@
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     list-style: none; 
     padding: 0;
+
+    @media (max-width: 768px) {
+     width: 100%;
+     height: auto;
+  }
 }
 
 .lista_cards li {

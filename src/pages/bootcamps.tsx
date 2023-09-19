@@ -17,7 +17,7 @@ import Filter from '@/utilities/Filter'
 // Interfaces
 
 export default function Home() {
-  const [filtroSelecionado, setFiltroSelecionado] = useState<string>('Todos')
+  const [filtroSelecionado, setFiltroSelecionado] = useState<string>('todos')
   const [dataWithFilter, setDataWithFilter] = useState(
     properties.bootcampObjetc,
   )
@@ -57,7 +57,11 @@ export default function Home() {
               {properties.filtros.map((filtro) => (
                 <li
                   key={filtro.key}
-                  className={styledBootcamps.filterCourse}
+                  className={`${styledBootcamps.filterCourse} ${
+                    filtroSelecionado === filtro.key
+                      ? `${styledBootcamps.selecionado}`
+                      : ''
+                  }`}
                   onClick={() => handleClickFiltro(filtro.key)}
                 >
                   {filtro.label}
