@@ -2,7 +2,6 @@
 import Head from 'next/head'
 
 // Styles
-import styled from '@/styles/Home.module.scss'
 import styledBootcamps from '@/styles/Bootcamps.module.scss'
 import SubTitle from '@/components/common/Subtitle/SubTitle'
 import Tag from '@/components/common/Tag'
@@ -36,7 +35,7 @@ export default function Home() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styled.containerHome}>
+      <main className={styledBootcamps.containerBootcamp}>
         <section>
           <div className={`container ${styledBootcamps.hero}`}>
             <div className={styledBootcamps.content}>

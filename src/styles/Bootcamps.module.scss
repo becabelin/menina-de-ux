@@ -1,5 +1,13 @@
 @import "colors.module";
 
+
+.containerBootcamp {
+  background-color: $pink-400;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+
 .sectionContainer {
     display: flex;
     flex-direction: column;
