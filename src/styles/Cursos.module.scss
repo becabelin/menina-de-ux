@@ -81,6 +81,7 @@
 .lista_cards li {
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width: 768px) {
@@ -100,10 +101,10 @@
         flex-grow: 1;
         margin: 5px;
         padding: 5px 10px;
-        max-width: calc(50% - 10px); 
     }
+    
     .cards_wrapper {
         margin: 20px auto; 
         padding: 0 10px; 
-      }
+    }
 }
