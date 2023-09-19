@@ -33,7 +33,9 @@ export default function Home() {
                 Entre no canal do Telegram da Menina de UX e fique sabendo de
                 todos os cursos e processos seletivos novos!
               </SubTitle>
-              <Button>Entrar no canal</Button>
+              <div className={styles.buttonContainer}>
+                <Button>Entrar no canal</Button>
+              </div>
             </div>
             <img
               src="./Contact/mulher-recebendo-novidades.webp.svg"
