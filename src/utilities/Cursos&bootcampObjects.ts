@@ -79,11 +79,8 @@ const bootcampObjetc = [
     id: 5,
     image: 'https://meninadeux.com/assets/img/bootcamps/startbycapgemini.webp',
     title: 'Programa Start by Capgemini',
-    description: `O Programa START da Capgemini foi criado para ajudar quem já é da área de TI ou  
-            quem deseja mudar de carreira, a ingressar no mercado e conquistar independência 
-            financeira para realizar seus sonhos, independentemente da sua idade.
-            Você escolhe sua trilha nas principais plataformas e ainda tem a possibilidade 
-            de contratação no final do treinamento! 
+    description: `O Programa START da Capgemini foi criado para ajudar quem já é da área de TI ou quem deseja mudar de carreira, a ingressar no mercado e conquistar independência financeira para realizar seus sonhos, independentemente da sua idade.
+    Você escolhe sua trilha nas principais plataformas e ainda tem a possibilidade de contratação no final do treinamento! 
     `,
     link: 'https://startcapgemini.com.br/',
     category: ['todos', 'backend', 'cloud'],
