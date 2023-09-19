@@ -1,5 +1,6 @@
 .sectionContainer{
     max-width: 100%;
+    font-family: 'Avenir LT STD', sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,7 +27,7 @@
 .buttonContainer{
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: .5rem;
 }
 
 .contactImage{

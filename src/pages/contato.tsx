@@ -56,9 +56,21 @@ export default function Home() {
                 </SubTitle>
               </div>
               <div className={styles.buttonContainer}>
-                <Button icon={BiAt}>E-mail</Button>
-                <Button icon={BiLogoInstagram}>Instagram</Button>
-                <Button icon={BiLogoLinkedinSquare}>LinkedIn</Button>
+                <Button icon={BiAt} url={'mailto:becabelin@gmail.com'}>
+                  E-mail
+                </Button>
+                <Button
+                  icon={BiLogoInstagram}
+                  url="https://www.instagram.com/meninadeux"
+                >
+                  Instagram
+                </Button>
+                <Button
+                  icon={BiLogoLinkedinSquare}
+                  url="https://www.linkedin.com/company/meninadeux/"
+                >
+                  LinkedIn
+                </Button>
               </div>
             </div>
             <img
