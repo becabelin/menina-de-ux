@@ -1,9 +1,19 @@
+@font-face {
+  font-family: "Avenir LT Std";
+  src: url("AvenirLTStd.ttf");
+}
+
+@font-face {
+  font-family: "NCS Radhiumz";
+  src: url("NCS Radhiumz.ttf");
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   background-color: rgba(250, 250, 250, 1);
-  font-family: "Avenir LT Std", sans;
+  font-family: "Avenir LT Std";
 }
 
 a {
