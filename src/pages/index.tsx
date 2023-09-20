@@ -20,7 +20,6 @@ import {
 
 // Hooks
 // Interfaces
-
 export default function Home() {
   return (
     <>
@@ -50,7 +49,6 @@ export default function Home() {
                 <Button url="/cursos" type="Blue">
                   Descobrir cursos
                 </Button>
-
                 <Button type="Pink">Processos Seletivos</Button>
               </div>
             </div>
@@ -66,7 +64,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className={styles.inicioCarreira}>
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textRight}>
@@ -95,7 +92,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className={styles.inicioProjeto}>
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textLeft}>
@@ -108,7 +104,7 @@ export default function Home() {
               <div className={styles.subtitle}>
                 <SubTitle type="Default">
                   Com um template no Figma e os posts de guia, você vai
-                  conseguir se guiar para construir o seu case do zero!e.
+                  conseguir se guiar para construir o seu case do zero!
                 </SubTitle>
                 <br />
                 <SubTitle type="Default">
@@ -132,7 +128,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className={`${styles.inicioCurso} ${styles.justifyCenter}`}>
           <div className="container">
             <div className={styles.title}>
@@ -141,24 +136,21 @@ export default function Home() {
             <div className={styles.title}>
               <Title type="Lg">Os melhores em várias áreas</Title>
             </div>
-            <div className={styles.card}>
-              <div className={styles.cardList}>
-                {inicialCardObject1.map((card) => (
-                  <Card
-                    key={card.id}
-                    type={card.type as 'Primary' | 'Secondary'}
-                    src={card.src}
-                    alt={card.alt}
-                    title={card.title}
-                  />
-                ))}
-              </div>
+            <div className={styles.cardList}>
+              {inicialCardObject1.map((card) => (
+                <Card
+                  key={card.id}
+                  type={card.type as 'Primary' | 'Secondary'}
+                  src={card.src}
+                  alt={card.alt}
+                  title={card.title}
+                />
+              ))}
             </div>
             <div className={`${styles.buttons} ${styles.justifyCenter}`}>
               <Button>Descobrir mais cursos</Button>
             </div>
           </div>
-
           <div className="container">
             <div className={styles.title}>
               <Title type="Xs">ÚLTIMOS PROCESSOS SELETIVOS</Title>
@@ -166,27 +158,24 @@ export default function Home() {
             <div className={styles.title}>
               <Title type="Lg">Para você ser o melhor no que faz</Title>
             </div>
-            <div className={styles.card}>
-              <div className={styles.cardList}>
-                {inicialCardObject2.map((card) => (
-                  <Card
-                    key={card.id}
-                    type={card.type as 'Primary' | 'Secondary'}
-                    src={card.src}
-                    alt={card.alt}
-                    title={card.title}
-                    subtitle={card.subtitle}
-                    href={card.href}
-                  />
-                ))}
-              </div>
+            <div className={styles.cardList}>
+              {inicialCardObject2.map((card) => (
+                <Card
+                  key={card.id}
+                  type={card.type as 'Primary' | 'Secondary'}
+                  src={card.src}
+                  alt={card.alt}
+                  title={card.title}
+                  subtitle={card.subtitle}
+                  href={card.href}
+                />
+              ))}
             </div>
             <div className={`${styles.buttons} ${styles.justifyCenter}`}>
               <Button>Veja mais</Button>
             </div>
           </div>
         </section>
-
         <section className={styles.inicioNovidades}>
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textLeft}>
@@ -216,7 +205,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className={styles.inicioRedeSociais}>
           <div className={`container ${styles.containerFlex}`}>
             <div className={styles.textLeft}>
