@@ -139,41 +139,33 @@ export default function Home() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardList}>
-                <a href="https://www.cursoemvideo.com/cursos/">
-                  <Card
-                    type="Primary"
-                    src="./Inicio/curso-em-video.svg"
-                    alt="alt img"
-                    title="Curso em vídeo"
-                  />
-                </a>
+                <Card
+                  type="Primary"
+                  src="./Inicio/curso-em-video.svg"
+                  alt="alt img"
+                  title="Curso em vídeo"
+                />
 
-                <a href="https://www.dio.me/sign-up?ref=U5U6LS080B">
-                  <Card
-                    type="Primary"
-                    src="./Inicio/dio.webp.svg"
-                    alt="alt img"
-                    title="Digital Innovation One"
-                  />
-                </a>
+                <Card
+                  type="Primary"
+                  src="./Inicio/dio.webp.svg"
+                  alt="alt img"
+                  title="Digital Innovation One"
+                />
 
-                <a href="https://br.cellep.com/estacao-hack-sp/">
-                  <Card
-                    type="Primary"
-                    src="./Inicio/estacaohack.webp.svg"
-                    alt="alt img"
-                    title="Estação Hack"
-                  />
-                </a>
+                <Card
+                  type="Primary"
+                  src="./Inicio/estacaohack.webp.svg"
+                  alt="alt img"
+                  title="Estação Hack"
+                />
 
-                <a href="https://www.futuro.digital/">
-                  <Card
-                    type="Primary"
-                    src="./Inicio/mundo-senai.svg"
-                    alt="alt img"
-                    title="Mundo SENAI"
-                  />
-                </a>
+                <Card
+                  type="Primary"
+                  src="./Inicio/mundo-senai.svg"
+                  alt="alt img"
+                  title="Mundo SENAI"
+                />
               </div>
             </div>
             <div className={`${styles.buttons} ${styles.centerButton}`}>
