@@ -13,6 +13,10 @@ import styled from '@/styles/Home.module.scss'
 // Utilities
 import { FaLinkedin, FaInstagram } from 'react-icons/fa'
 import { MdAlternateEmail } from 'react-icons/md'
+import {
+  inicialCardObject1,
+  inicialCardObject2,
+} from '@/utilities/inicalCardObject'
 
 // Hooks
 // Interfaces
@@ -129,7 +133,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className={styles.inicioCurso}>
+        <section className={`${styles.inicioCurso} ${styles.justifyCenter}`}>
           <div className="container">
             <div className={styles.title}>
               <Title type="Xs">CURSOS TOPS</Title>
@@ -139,36 +143,18 @@ export default function Home() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardList}>
-                <Card
-                  type="Primary"
-                  src="./Inicio/curso-em-video.svg"
-                  alt="alt img"
-                  title="Curso em vídeo"
-                />
-
-                <Card
-                  type="Primary"
-                  src="./Inicio/dio.webp.svg"
-                  alt="alt img"
-                  title="Digital Innovation One"
-                />
-
-                <Card
-                  type="Primary"
-                  src="./Inicio/estacaohack.webp.svg"
-                  alt="alt img"
-                  title="Estação Hack"
-                />
-
-                <Card
-                  type="Primary"
-                  src="./Inicio/mundo-senai.svg"
-                  alt="alt img"
-                  title="Mundo SENAI"
-                />
+                {inicialCardObject1.map((card) => (
+                  <Card
+                    key={card.id}
+                    type={card.type as 'Primary' | 'Secondary'}
+                    src={card.src}
+                    alt={card.alt}
+                    title={card.title}
+                  />
+                ))}
               </div>
             </div>
-            <div className={`${styles.buttons} ${styles.centerButton}`}>
+            <div className={`${styles.buttons} ${styles.justifyCenter}`}>
               <Button>Descobrir mais cursos</Button>
             </div>
           </div>
@@ -182,44 +168,20 @@ export default function Home() {
             </div>
             <div className={styles.card}>
               <div className={styles.cardList}>
-                <Card
-                  type="Primary"
-                  src="./Inicio/soulbilingue.webp.svg"
-                  alt="alt img"
-                  title="Soul Bilíngue"
-                  subtitle="Inscrições até 10/12/22"
-                  href="#"
-                />
-
-                <Card
-                  type="Primary"
-                  src="./Inicio/martechacademy.webp.svg"
-                  alt="alt img"
-                  title="Martech Academy"
-                  subtitle="Inscrições até 28/11/22"
-                  href="#"
-                />
-
-                <Card
-                  type="Primary"
-                  src="./Inicio/Cursos.svg"
-                  alt="alt img"
-                  title="Capacitação Gratuita em Introdução à Programação"
-                  subtitle="Inscrições por tempo limitado!"
-                  href="https://pages.prozeducacao.com.br/proz-tecnologia"
-                />
-
-                <Card
-                  type="Primary"
-                  src="./Inicio/curso.svg"
-                  alt="alt img"
-                  title="Bolsas Santander Tecnologia | Santander Gamer Pro"
-                  subtitle="Inscrições até 24/11/22"
-                  href="#"
-                />
+                {inicialCardObject2.map((card) => (
+                  <Card
+                    key={card.id}
+                    type={card.type as 'Primary' | 'Secondary'}
+                    src={card.src}
+                    alt={card.alt}
+                    title={card.title}
+                    subtitle={card.subtitle}
+                    href={card.href}
+                  />
+                ))}
               </div>
             </div>
-            <div className={`${styles.buttons} ${styles.centerButton}`}>
+            <div className={`${styles.buttons} ${styles.justifyCenter}`}>
               <Button>Veja mais</Button>
             </div>
           </div>
