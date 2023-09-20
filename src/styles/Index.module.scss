@@ -7,15 +7,15 @@
   align-items: center;
 }
 
-.inicioAjudando {
-  @extend .display;
-
-}
-
-.inicioCurso {
+.justifyCenter {
   justify-content: center;
 }
 
+.inicioCurso {
+  background-color: white;
+}
+
+.inicioAjudando,
 .inicioCarreira,
 .inicioProjeto,
 .inicioRedeSociais,
@@ -37,20 +37,15 @@
   order: 1;
 }
 
+.subtitle, 
 .title {
-  margin-bottom: 1.25rem;
-}
-
-.subtitle {
   padding-bottom: 1.25rem;
-}
-.centerButton {
-  justify-content: center;
 }
 
 .buttons {
   display: flex;
   gap: .5rem;
+  max-width: 100%;
 }
 
 .inicioImg {
@@ -73,7 +68,6 @@
   .inicioProjeto, 
   .inicioCurso, 
   .inicioNovidades, 
-  .inicioSocial,
   .inicioRedeSociais
    {
     display: block;
@@ -97,43 +91,9 @@
   .buttons {
     display: flex;
     flex-direction: column;
-    gap: 0.5rem;;
     div {
       width: 100%;
     }
   }
 
-  .subtitle {
-    padding-bottom: 1.25rem;
-  }
-
-}
-
-//mobile
-@media (max-width: 470px) {
-  .inicioAjudando, 
-  .inicioCurso {
-    background-color: $white;
-  }
-
-  .inicioButton, 
-  .buttonSocial {
-    display: flex;
-    align-items: center;
-    flex-direction: column; /* Empilhar os botões verticalmente */
-  }
-
-  .inicioAjudando .title, 
-  .inicioProjeto .title {
-    height: 100%;
-    width: 100%;
-    align-items: center;
-  }
-
-  .cardList {
-    display: flex;
-    flex-direction: column;
-    gap: 0.625rem;
-   
-  }
 }

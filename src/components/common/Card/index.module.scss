@@ -19,11 +19,9 @@
 .primary {
   @extend .CardBase;
   background-color: transparent;
-//  width: 17rem;
   width: 25vw;
-  height: auto; // voltei ao auto para ficar com altura igual depois da modificação na página inicio.
+  height: auto;
   gap: 20px;
-//  height: 100%;// tirei o auto e coloquei o 100% para ficar com altura igual
   gap: 16px;
 }
 
@@ -64,13 +62,13 @@
   line-height: 16px;
   font-weight: 700;
   padding: 4px 8px ;
-  margin-top: auto;// add para o saiba mais ficar sempre alinhado
+  margin-top: auto;
   cursor: pointer;
 }
 
 @media (max-width: 994px) {
   .CardBase{
-    width: 100%;//add 100%
+    width: 100%;
     height: auto;
   }
 }
