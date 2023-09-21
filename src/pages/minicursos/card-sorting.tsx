@@ -9,8 +9,13 @@ import styledCardSorting from '@/styles/card-sorting.module.scss'
 
 // Utilities
 import Image from 'next/image'
-import heroImage from '@/../public/estude/mulher-estudando.png'
-import welcomeImage from '@/../public/miniCurso/mulher-acenando.png'
+import heroImage from '@/../public/miniCurso/mulher-no-computador.svg'
+import welcomeImage from '@/../public/miniCurso/mulher-acenando.svg'
+import cardSortingImage from '@/../public/miniCurso/preenchendo-post-its.svg'
+import typesCardImage from '@/../public/miniCurso/mulher-colocando-check-no-papel.svg'
+import differenceImage from '@/../public/miniCurso/menino-criativo-pensando.svg'
+import advantagesImage from '@/../public/miniCurso/homem-segurando-sinal-positivo.svg'
+import howToUseImage from '@/../public/miniCurso/mulher-e-homem-tomando-notas.svg'
 import Tag from '@/components/common/Tag'
 import Link from 'next/link'
 // Hooks
@@ -35,7 +40,7 @@ export default function Home() {
               aplicativo!
             </SubTitle>
           </div>
-          <Image src={heroImage} alt="mulher estudando" />
+          <Image src={heroImage} alt="mulher no computador" />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
           <div className={`container ${styledCardSorting.sectionContainer}`}>
@@ -121,7 +126,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Image src={welcomeImage} alt="mulher acenando" />
+          <Image src={cardSortingImage} alt="preenchendo post-its" />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
           <div className={`container ${styledCardSorting.sectionContainer}`}>
@@ -162,7 +167,7 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <Image src={welcomeImage} alt="mulher acenando" />
+            <Image src={typesCardImage} alt="check no papel" />
           </div>
         </section>
         <section className={`container ${styledCardSorting.sectionContainer}`}>
@@ -193,7 +198,7 @@ export default function Home() {
             </SubTitle>
           </div>
           <div>
-            <Image src={welcomeImage} alt="mulher acenando" />
+            <Image src={differenceImage} alt="menino criativo" />
           </div>
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
@@ -231,7 +236,7 @@ export default function Home() {
                 interpretações e tradução para padrões.
               </SubTitle>
             </div>
-            <Image src={welcomeImage} alt="mulher acenando" />
+            <Image src={advantagesImage} alt="Homem segurando um positivo" />
           </div>
         </section>
         <section className={`container ${styledCardSorting.sectionContainer}`}>
@@ -293,7 +298,7 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Image src={welcomeImage} alt="mulher acenando" />
+            <Image src={howToUseImage} alt="duas pessoas tomando nota" />
           </div>
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
@@ -344,6 +349,18 @@ export default function Home() {
                 </SubTitle>
               </div>
             </div>
+            <SubTitle type="Lg">
+              Depois, é hora de realizar a análise de dados. Lembre-se de
+              considerar tanto os qualitativos quanto os quantitativos.{' '}
+            </SubTitle>
+            <br />
+            <SubTitle type="Lg">
+              {' '}
+              Os qualitativos vão trazer insights baseados nos comentários dos
+              participantes, já os quantitativos vão refletir quais cartões
+              aparecem juntos com mais frequência, além de determinar com que
+              frequência os cartões aparecem em cada categoria
+            </SubTitle>
           </div>
         </section>
       </main>
