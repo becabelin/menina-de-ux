@@ -68,3 +68,11 @@ padding-top: 1rem;
 padding-bottom: 2rem;
 }
 
+.sectionContainerCenter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+

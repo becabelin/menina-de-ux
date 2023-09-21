@@ -18,6 +18,7 @@ import advantagesImage from '@/../public/miniCurso/homem-segurando-sinal-positiv
 import howToUseImage from '@/../public/miniCurso/mulher-e-homem-tomando-notas.svg'
 import Tag from '@/components/common/Tag'
 import Link from 'next/link'
+import Button from '@/components/common/Button'
 // Hooks
 // Interfaces
 
@@ -361,6 +362,17 @@ export default function Home() {
               aparecem juntos com mais frequência, além de determinar com que
               frequência os cartões aparecem em cada categoria
             </SubTitle>
+          </div>
+        </section>
+        <section className={`container`}>
+          <div className={styledCardSorting.sectionContainerCenter}>
+            <Title type="Sm">Parabéns por ter chegado até aqui!</Title>
+            <SubTitle type="Default">
+              Agora você conhece Card Sorting melhor que ninguém, viu? Espero
+              que tenha curtido esse mini curso!
+            </SubTitle>
+            <SubTitle type="Default">Até mais!</SubTitle>
+            <Button>Voltar para cursos</Button>
           </div>
         </section>
       </main>
