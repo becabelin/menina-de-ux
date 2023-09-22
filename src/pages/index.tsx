@@ -144,6 +144,8 @@ export default function Home() {
                   src={card.src}
                   alt={card.alt}
                   title={card.title}
+                  href={card.href}
+                  ancora={card.ancora}
                 />
               ))}
             </div>

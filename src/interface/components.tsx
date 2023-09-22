@@ -50,6 +50,7 @@ export interface ICard {
   description?: string
   href?: string
   type: 'Primary' | 'Secondary'
+  ancora?: boolean
 }
 
 // Interface do component TitleLinks
