@@ -30,7 +30,7 @@ export default function Cursos() {
       <Head>
         <title>Cursos</title>
       </Head>
-      <main className={styledCursos.wrapper}>
+      <main className={styledCursos.containerCursos}>
         <section className={styledCursos.hero}>
           <div className={styledCursos.text_wrapper}>
             <div>
