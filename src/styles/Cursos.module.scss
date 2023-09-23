@@ -1,3 +1,11 @@
+@import "colors.module";
+
+.containerCursos {
+    background-color: $pink-400;
+    padding-top: 60px;
+    min-height: 100vh;
+}
+
 .hero {
     font-family: 'Avenir LT STD', sans-serif;
     line-height: 27px;

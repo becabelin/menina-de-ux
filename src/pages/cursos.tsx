@@ -5,7 +5,6 @@ import SubTitle from '@/components/common/Subtitle/SubTitle'
 import Card from '@/components/common/Card'
 
 // Styles
-import styled from '@/styles/Home.module.scss'
 import styledCursos from '@/styles/Cursos.module.scss'
 
 // Utilities
@@ -31,7 +30,7 @@ export default function Cursos() {
       <Head>
         <title>Cursos</title>
       </Head>
-      <main className={styled.containerHome}>
+      <main className={styledCursos.wrapper}>
         <section className={styledCursos.hero}>
           <div className={styledCursos.text_wrapper}>
             <div>
