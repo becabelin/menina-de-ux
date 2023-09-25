@@ -70,6 +70,14 @@
   height: 223px;
 }
 
+.mySwiper {
+  height: 100vh;
+}
+
+.mySwiper .swiper-button-next {
+  background: $pink-400;
+}
+
 // Responsiveness
 @media (max-width: 940px) {
   #about .aboutMore {

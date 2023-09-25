@@ -2,14 +2,21 @@
 import Head from 'next/head'
 import Title from '@/components/common/Title/Title'
 import Tag from '@/components/common/Tag'
+import { Swiper, SwiperSlide } from 'swiper/react'
 
 // Styles
 import style from '@/styles/Sobre.module.scss'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'
 
 // Assets
 import MulherLendo from '../assets/mulher-lendo.webp.png'
 import MulherEstudando from '../assets/mulher-estudando.webp.png'
 import MulherAcenando from '../assets/mulher-acenando.webp.png'
+
+// Modules
+import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules'
 
 export default function Sobre() {
   return (
@@ -24,27 +31,24 @@ export default function Sobre() {
       <main>
         <section id={style.about}>
           <div className={style.containerTitle}>
-            <Title type='Xl'>Sobre a Menina de UX</Title>
-            <p>
-              Saiba mais sobre como essa iniciativa surgiu!
-            </p>
+            <Title type="Xl">Sobre a Menina de UX</Title>
+            <p>Saiba mais sobre como essa iniciativa surgiu!</p>
           </div>
 
           <div className={style.aboutMore}>
             <div className={style.image}>
               <img src={MulherAcenando.src} alt="Menina lendo um livro." />
             </div>
-          
+
             <div className={style.descAboutMore}>
               <Title type="Sm">Primeiramente, seja bem vindo(a)!</Title>
               <p>
-                Fico muito feliz pois sei que, se você chegou até essa página, é porque quer
-                saber mais sobre o projeto <Tag type="Strong">Menina de UX</Tag>. Significa muito para mim!
+                Fico muito feliz pois sei que, se você chegou até essa página, é
+                porque quer saber mais sobre o projeto{' '}
+                <Tag type="Strong">Menina de UX</Tag>. Significa muito para mim!
               </p>
 
-              <p>
-                Vou te contar um pouquinho da minha história!
-              </p>
+              <p>Vou te contar um pouquinho da minha história!</p>
             </div>
           </div>
 
@@ -52,20 +56,25 @@ export default function Sobre() {
             <div className={style.image}>
               <img src={MulherEstudando.src} alt="Menina lendo um livro." />
             </div>
-          
+
             <div className={style.descAboutMore}>
               <Title type="Sm">Tudo começou em 2021...</Title>
               <p>
-                Quando entrei na área de UI/UX Design, fiquei apaixonada e queria muito poder <Tag type="Strong">mostrar os meus trabalhos por aí</Tag>, 
-                além de que eu seguia <Tag type="Strong">profissionais da área</Tag> no LinkedIn e adorava as dicas que eles davam
+                Quando entrei na área de UI/UX Design, fiquei apaixonada e
+                queria muito poder{' '}
+                <Tag type="Strong">mostrar os meus trabalhos por aí</Tag>, além
+                de que eu seguia <Tag type="Strong">profissionais da área</Tag>{' '}
+                no LinkedIn e adorava as dicas que eles davam
               </p>
 
               <p>
-                Então decidi criar um perfil no instagram para poder exibir meus projetos e também ensinar coisas para as pessoas
+                Então decidi criar um perfil no instagram para poder exibir meus
+                projetos e também ensinar coisas para as pessoas
               </p>
 
               <p>
-                Depois de dias pensando num nome legal, cheguei em <Tag type="Strong">Menina de UX</Tag> e adorei!
+                Depois de dias pensando num nome legal, cheguei em{' '}
+                <Tag type="Strong">Menina de UX</Tag> e adorei!
               </p>
             </div>
           </div>
@@ -96,6 +105,26 @@ export default function Sobre() {
             <div className={style.titleGoals}>
               <Title type="Xl">Objetivos da Menina de UX</Title>
             </div>
+
+            <Swiper
+              cssMode={true}
+              navigation={true}
+              pagination={true}
+              mousewheel={true}
+              keyboard={true}
+              modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+              className={style.mySwiper}
+            >
+              <SwiperSlide>Slide 1</SwiperSlide>
+              <SwiperSlide>Slide 2</SwiperSlide>
+              <SwiperSlide>Slide 3</SwiperSlide>
+              <SwiperSlide>Slide 4</SwiperSlide>
+              <SwiperSlide>Slide 5</SwiperSlide>
+              <SwiperSlide>Slide 6</SwiperSlide>
+              <SwiperSlide>Slide 7</SwiperSlide>
+              <SwiperSlide>Slide 8</SwiperSlide>
+              <SwiperSlide>Slide 9</SwiperSlide>
+            </Swiper>
           </div>
         </section>
       </main>
