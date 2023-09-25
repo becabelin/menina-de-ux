@@ -23,6 +23,20 @@
     font-size: 22px;
   }
 }
+
+.title2Xl{
+  @extend .titleBase;
+  font-size: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+}
+
 .titleXl {
   @extend .titleBase; // Estende a classe .title-base
   // Desktop
@@ -30,7 +44,7 @@
   line-height: 125%;
   // Tablet
   @media (max-width: 768px) {
-    font-size: 36px;
+    font-size: 30px;
   }
   // Mobile
   @media (max-width: 425px) {
@@ -45,11 +59,11 @@
   text-transform: uppercase;
   // Tablet
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 28px;
   }
   // Mobile
   @media (max-width: 425px) {
-    font-size: 25px;
+    font-size: 23px;
   }
 }
 
@@ -64,6 +78,7 @@
   font-size: 22px;
   line-height: 120%;
 }
+
 .titleXs {
   @extend .titleBase; // Estende a classe .title-base
   // Desktop
