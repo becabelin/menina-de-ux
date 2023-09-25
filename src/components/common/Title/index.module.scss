@@ -3,7 +3,7 @@
 // Estilização CSS do Component Title
 .titleBase {
   // Desktop
-  font-family:"NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  font-family:'Avenir LT STD', "NCS Radhiumz",  sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 42px;
@@ -14,6 +14,7 @@
 
 .titleDefault {
   @extend .titleBase; // Estende a classe .title-base
+    font-family:"NCS Radhiumz";
       // Tablet
   @media (max-width: 768px) {
     font-size: 32px;
@@ -51,6 +52,7 @@
     font-size: 25px;
   }
 }
+
 .titleLg {
   @extend .titleBase; // Estende a classe .title-base
   // Desktop
