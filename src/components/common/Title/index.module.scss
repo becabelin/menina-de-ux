@@ -27,14 +27,14 @@
 
 .title2Xl{
   @extend .titleBase;
-  font-size: 40px;
+  font-size: 42px;
 
   @media (max-width: 768px) {
-    font-size: 30px;
+    font-size: 32px;
   }
   // Mobile
   @media (max-width: 425px) {
-    font-size: 25px;
+    font-size: 22px;
   }
 }
 
@@ -65,7 +65,7 @@
   }
   // Mobile
   @media (max-width: 425px) {
-    font-size: 23px;
+    font-size: 25px;
   }
 }
 
