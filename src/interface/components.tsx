@@ -8,7 +8,7 @@ interface text {
 
 // Interface do component Title
 export interface ITitle extends text {
-  type: 'Default' | 'Xl' | 'Lg' | 'Sm' | 'Xs'
+  type: 'Default' | '2Xl' | 'Xl' | 'Lg' | 'Md' | 'Sm' | 'Xs'
 }
 
 // Interface do component SubTitle
