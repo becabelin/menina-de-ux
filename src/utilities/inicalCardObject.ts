@@ -5,8 +5,6 @@ export const inicialCardObject1 = [
     src: './Inicio/curso-em-video.svg',
     alt: 'alt img',
     title: 'Curso em vídeo',
-    href: '#',
-    ancora: true,
   },
 
   {
@@ -15,8 +13,6 @@ export const inicialCardObject1 = [
     src: './Inicio/dio.webp.svg',
     alt: 'alt img',
     title: 'Digital Innovation One',
-    href: '#',
-    ancora: true,
   },
 
   {
@@ -25,8 +21,6 @@ export const inicialCardObject1 = [
     src: './Inicio/estacaohack.webp.svg',
     alt: 'alt img',
     title: 'Estação Hack',
-    href: '#',
-    ancora: true,
   },
 
   {
@@ -35,8 +29,6 @@ export const inicialCardObject1 = [
     src: './Inicio/mundo-senai.svg',
     alt: 'alt img',
     title: 'Mundo SENAI',
-    href: '#',
-    ancora: true,
   },
 ]
 
@@ -49,7 +41,6 @@ export const inicialCardObject2 = [
     title: 'Soul Bilíngue',
     subtitle: 'Inscrições até 10/12/22',
     href: '#',
-    ancora: false,
   },
 
   {
@@ -60,7 +51,6 @@ export const inicialCardObject2 = [
     title: 'Martech Academy',
     subtitle: 'Inscrições até 28/11/22',
     href: '#',
-    ancora: false,
   },
 
   {
@@ -71,7 +61,6 @@ export const inicialCardObject2 = [
     title: 'Capacitação Gratuita em Introdução à Programação',
     subtitle: 'Inscrições por tempo limitado!',
     href: 'https://pages.prozeducacao.com.br/proz-tecnologia',
-    ancora: true,
   },
 
   {
@@ -82,6 +71,5 @@ export const inicialCardObject2 = [
     title: 'Bolsas Santander Tecnologia | Santander Gamer Pro',
     subtitle: 'Inscrições até 24/11/22',
     href: '#',
-    ancora: false,
   },
 ]
