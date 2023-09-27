@@ -45,7 +45,7 @@
 .buttons {
   display: flex;
   gap: .5rem ;
-  white-space: nowrap;
+  // white-space: nowrap;
 }
 
 .inicioImg {
@@ -55,7 +55,7 @@
 .cardList {
   display: flex;
   justify-content: center;
-  gap: 10px;
+  gap: 15px;
   padding-bottom: 1.25rem;
 }
 
