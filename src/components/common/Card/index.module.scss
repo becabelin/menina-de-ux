@@ -17,12 +17,15 @@
 
 // Estilização Card Primary 
 .primary {
-  @extend .CardBase;
+  @extend .CardBase;  
   background-color: transparent;
-  width: 25vw;
-  height: auto;
+  width: 22vw;
   gap: 20px;
-  gap: 16px;
+}
+
+.height {
+  display: flex;
+  height: 100%;
 }
 
 // Estilização Card Secondary 
