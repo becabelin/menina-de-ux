@@ -18,8 +18,8 @@
 // Estilização Card Primary 
 .primary {
   @extend .CardBase;
-  width: 24rem;
-  height: auto;
+  width: 18.4375rem;
+  height: 15.625rem;
   gap: 16px;
 }
 
@@ -27,7 +27,8 @@
 .secondary {
   @extend .CardBase;
   width: 15rem;
-  height: 36.9rem;
+  // height: 36.9rem;
+  height: 28.5rem;
   gap: 20px;
 }
 
@@ -43,8 +44,10 @@
 }
 
 .description {
-  font-weight: 400;
+  font-weight: 350;
+  font-style: normal;
   padding: 0 8px;
+  font-family: 'Avenir LT STD', sans-serif;
 }
 
 .subtitle {
@@ -56,10 +59,11 @@
 .link {
   display: flex;
   color: $blue-400;
-  gap: 4px;
-  line-height: 16px;
-  font-weight: 700;
-  padding: 4px 8px ;
+  gap: 0.25rem;
+  line-height: 1rem;
+  font-weight: 750;
+  padding: 0.25rem 0.5rem;
+  font-family: 'Avenir LT STD', sans-serif;
   cursor: pointer;
 }
 
