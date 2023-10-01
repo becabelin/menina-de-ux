@@ -1,11 +1,11 @@
 @import 'colors.module';
 
 #about {
-  margin-top: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin-top: 80px;
   color: #20376c;
   font-family: 'Avenir LT Std', sans-serif;
   font-size: 18px;
@@ -14,13 +14,14 @@
 
 // Conclusão do Sobre
 #about .aboutMore {
-  padding: 2rem 18rem;
+  padding: 2rem 10rem;
+  width: 100%;
   min-height: 360px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 92px;
-  line-height: 27px;
+  justify-content: space-around;
+  gap: 2rem;
+  line-height: 2;
 }
 
 #about .containerTitle {
@@ -38,11 +39,6 @@
   flex-direction: row-reverse;
 }
 
-#about .image {
-  width: 40%;
-  text-align: center;
-  }
-
 #about .image img {
   height: 100%;
 }
@@ -51,10 +47,12 @@
   display: flex;
   flex-direction: column;
   gap: 2rem;
+
 }
 
 // Objetivos
 #about .goals {
+  max-width: 100%;
   width: 100%;
   min-height: 100vh;
   background: $pink-400;
@@ -72,13 +70,42 @@
 
 .mySwiper {
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.mySwiper .swiper-button-next {
-  background: $pink-400;
+.contentSwiper {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 75px;
+}
+
+.contentSwiper .text {
+  text-align: left;
+  max-width: 530px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contentSwiper img {
+  width: 453.59px;
+  height: 303px;
+  border-radius: 20px;
 }
 
 // Responsiveness
+@media (max-width: 1200px) {
+  #about .image img {
+    width: 200px;
+    text-align: center;
+  }
+}
+
 @media (max-width: 940px) {
   #about .aboutMore {
     flex-direction: column;

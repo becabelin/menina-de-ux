@@ -43,11 +43,12 @@ a {
 
 .swiper .swiper-button-next,
 .swiper .swiper-button-prev {
-  color: rgba(213, 98, 109, 1);
+  color: rgba(32, 55, 108, 1);
+  font-weight: bolder;
 }
 
 .swiper .swiper-pagination-bullet {
-  background: rgba(32, 55, 108, 0.5);
+  background: rgba(32, 55, 108, 0.6);
   width: 30px;
   height: 23px;
   border-radius: unset;
@@ -58,11 +59,12 @@ a {
 
 
 .swiper-slide {
-  text-align: center;
-  font-size: 18px;
+  position: unset;
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  max-width: 100%;
   max-height: 100vh;
   height: 100%;
 }
