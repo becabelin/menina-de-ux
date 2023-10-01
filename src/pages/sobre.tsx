@@ -108,12 +108,13 @@ export default function Sobre() {
             </div>
 
             <Swiper
-              cssMode={true}
-              navigation={true}
+              cssMode={false}
+              navigation={false}
               pagination={true}
               mousewheel={true}
               keyboard={true}
               modules={[Navigation, Pagination, Mousewheel, Keyboard]}
+              autoplay={true}
               className={style.mySwiper}
             >
               <SwiperSlide>
