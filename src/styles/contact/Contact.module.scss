@@ -1,0 +1,61 @@
+.sectionContainer{
+    font-family: 'Avenir LT STD', sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 190px;
+    animation: item-slide 2s;
+}
+
+@keyframes item-slide{
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 636px;
+}
+
+.buttonContainer {
+    display: flex;
+    gap: .5rem;
+  
+    @media (max-width: 998px) {
+      div {
+        width: 100%;
+      }
+    }
+  }
+
+.contactImage{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+@media (max-width: 900px) {
+    .sectionContainer{
+        margin-top: 80px;
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+
+    .textContainer{
+        text-align: center;
+        align-items: center;
+    }
+
+    .buttonContainer{
+        width: 100%;
+        flex-direction: column;
+    }
+}
+
+
