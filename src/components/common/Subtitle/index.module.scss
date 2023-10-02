@@ -12,6 +12,7 @@
     // Desktop | Tablet | Mobile
     @extend .subTitleBase; // Estende a classe .subtitle-base
     font-size: 18px;
+    font-weight: 850;
   }
   .subTitleLg {
     // Desktop | Tablet
@@ -22,4 +23,13 @@
       font-size: 18px;
     }
   }
+  .subTitleMd {
+    @extend .subTitleBase;
+    font-size: 16px;
+  }
+  .subTitleSm {
+    @extend .subTitleBase;
+    font-size: 14px;
+  }
+
   

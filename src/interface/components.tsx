@@ -13,7 +13,7 @@ export interface ITitle extends text {
 
 // Interface do component SubTitle
 export interface ISubTitle extends text {
-  type: 'Default' | 'Lg'
+  type: 'Default' | 'Lg' | 'Md' | 'Sm'
 }
 
 // Interface do component Tags
