@@ -170,7 +170,7 @@ export default function Sobre() {
 
                   <div className={style.img}>
                     <img
-                      src={MulherComProf.src}
+                      src={MulherComDiplo.src}
                       alt="Menina com uma professora."
                     />
                   </div>
