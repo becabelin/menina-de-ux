@@ -23,6 +23,7 @@ export default function Home() {
       <main className={styled.containerHome}>
         <section className={styles.proposta}>
           <div className={styles.propostaContainer}>
+            <SubTitle type="Lg">Estudos / Proposta de Valor</SubTitle>
             <Title type="Default">Proposta de Valor</Title>
             <SubTitle type="Lg">
               O que é, como fazer e como ela pode mudar o seu negócio. Hoje, no
