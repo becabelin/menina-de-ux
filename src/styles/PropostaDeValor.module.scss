@@ -1,11 +1,48 @@
 @import "/src/styles/colors.module";
 
-.proposta {
+.propostaContainer {
   display: flex;
-  justify-content: center;
+  justify-content:space-around;
   align-items: center;
 }
 
-.propostaContainer{
-  align-items: center;
+//stylo para letra ficar rosa com hover azul
+.textA {
+  text-decoration: none;
+  color:$pink-500;
+  transition: color 0.3s ease-in-out;
+}
+
+.textStyle {
+  color:$gray-600;
+  font-size: 1rem;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif ;
+}
+
+.textA:hover {
+  color:$blue-400;
+}//end stylo para letra ficar rosa com hover azul
+
+.bemVindos {
+  background: $white;
+}
+
+.propostaTextValor, .img {
+  width: 40%;
+}
+
+@media (max-width: 994px) {
+  .propostaContainer {
+    display: block;
+    align-items: center;
+  }
+
+  .propostaTextValor{
+    width: 100%;
+  }
+  
+  .img {
+    width: 100%;
+    height: auto;
+  }
 }
