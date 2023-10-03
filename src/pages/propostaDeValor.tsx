@@ -7,6 +7,7 @@ import Image from 'next/image'
 // Styles
 import styled from '@/styles/Home.module.scss'
 import styles from '@/styles/PropostaDeValor.module.scss'
+import Button from '@/components/common/Button'
 
 // Utilities
 // Hooks
@@ -162,6 +163,223 @@ export default function Home() {
               alt="Imagem de uma mulher estudando"
             />
           </div>
+        </section>
+
+        <section className={`container ${styles.aspectos}`}>
+          <div className={styles.propostaContainer}>
+            <div className={styles.propostaText}>
+              <Title type="Default">
+                Os 4 aspectos de uma proposta de valor
+              </Title>
+              <SubTitle type="Lg">
+                Uma boa proposta de valor possui alguns aspectos que a tornam
+                mais eficiente. E observá-los facilita, inclusive, a sua
+                criação. Caso você não identifique um desses 4 elementos na sua
+                proposta, saberá que é preciso revisá-las.
+                <SubTitle type="Lg">São eles:</SubTitle>
+              </SubTitle>
+              <Title type="Xs">Clareza</Title>
+              <SubTitle type="Lg">
+                Quanto mais clara for a proposta, mais fácil fica transmitir sua
+                mensagem e mais rápido a pessoa pode se conectar com ela. A
+                clareza é um dos parâmetros principais de bons conteúdos. Uma
+                proposta clara é aquela que vai direto ao ponto, que expõe a
+                ideia central da empresa e que apresenta fácil compreensão.
+              </SubTitle>
+              <Title type="Xs">Linguagem</Title>
+              <SubTitle type="Lg">
+                É preciso saber como se comunicar com seu público-alvo de forma
+                adequada. Isso irá impactar diretamente na compreensão da sua
+                mensagem e no quando a pessoa usuária se conectará com ela.
+              </SubTitle>
+              <Title type="Xs">Concorrência</Title>
+              <SubTitle type="Lg">
+                É preciso analisar a concorrência para entender o que eles
+                entregam, quais as falhas dessa entrega, as oportunidades, as
+                estratégias, como você pode crescer no mercado… Compare com o
+                que você faz e entenda como pode melhorar o seu serviço de
+                acordo com esse comparativo.
+              </SubTitle>
+              <Title type="Xs">Transparêncial</Title>
+              <SubTitle type="Lg">
+                Outro ponto importante é a transparência nas informações
+                apresentadas na proposta de valor. Ela deve ser baseada no que a
+                empresa faz ou no que o produto entrega. Exageros podem resultar
+                em expectativas que você pode suprir e na consequente fuga
+                dessas pessoas para a concorrência.
+              </SubTitle>
+              <Title type="Xs">Direcionamento</Title>
+              <SubTitle type="Lg">
+                Sabe como direcionar a pessoa usuária para os seus benefícios e
+                para o que ela vai encontrar ao interagir com seu produto ou
+                empresa. É nesse momento em que o valor é reforçado e destacado,
+                juntamente com seus diferenciais.
+              </SubTitle>
+            </div>
+
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-estudando.webp.svg"
+              width={428.39}
+              height={428.39}
+              alt="Imagem de uma mulher estudando"
+            />
+          </div>
+        </section>
+
+        <section className={`container ${styles.valor}`}>
+          <div className={styles.propostaContainer}>
+            <div className={styles.propostaTextValor}>
+              <Title type="Default">Tipos de proposta de valor</Title>
+              <SubTitle type="Lg">
+                Uma proposta de valor pode ter diferentes focos, como:
+              </SubTitle>
+              <Title type="Xs">Desempenho</Title>
+              <SubTitle type="Lg">
+                Foca na qualidade e na performance do produto.
+              </SubTitle>
+              <Title type="Xs">Novidade</Title>
+              <SubTitle type="Lg">
+                Apresenta alguma inovação no produto, que o destaca muito da
+                concorrência.
+              </SubTitle>
+              <Title type="Xs">Preço</Title>
+              <SubTitle type="Lg">
+                Trabalha o preço do produto ou nas possibilidades de compra,
+                como desconto, parcelamento etc. A ideia é sempre trazer um
+                preço melhor do que a média.
+              </SubTitle>
+              <Title type="Xs">Personalização</Title>
+              <SubTitle type="Lg">
+                Se o seu diferencial é adaptar o produto para o que a pessoa
+                usuária precisa, a sua proposta de valor é essa! Quem foca nesse
+                ponto, consegue entregar diferenciais e exclusividade.
+              </SubTitle>
+            </div>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-estudando.webp.svg"
+              width={428.39}
+              height={428.39}
+              alt="Imagem de uma mulher estudando"
+            />
+          </div>
+        </section>
+
+        <section className={`container ${styles.comoMontar}`}>
+          <div className={styles.propostaContainer}>
+            <div className={styles.propostaTextValor}>
+              <Title type="Default">Como montar a sua proposta de valor?</Title>
+              <SubTitle type="Lg">
+                Uma proposta de valor geralmente segue uma estrutura e isso
+                facilita sua construção. Ela é bem simples, como você pode ver a
+                seguir:{' '}
+              </SubTitle>
+              <Title type="Xs">Título</Title>
+              <SubTitle type="Lg">
+                É a parte principal da proposta. Deve ser sucinto e claro, sendo
+                desenvolvido em, no máximo 2 frases. Aqui vale pensar em frases
+                mais impactantes, que prendam a atenção.
+              </SubTitle>
+              <Title type="Xs">Subtítulo</Title>
+              <SubTitle type="Lg">
+                Aqui, você vai detalhar um pouco mais a sua proposta, trazendo
+                um pouco mais de informação. Mas não é indicado que ela
+                ultrapasse mais de 4 frases.
+              </SubTitle>
+              <Title type="Xs">Bulletpoints</Title>
+              <SubTitle type="Lg">
+                Eles facilitam a leitura dinâmica ou o escaneamento das
+                informações mais importantes. Fica mais fácil captar a atenção
+                quando você especifica o que importa em formato de lista. Use-os
+                para destacar os principais benefícios e o diferencial.,
+                indicando como eles atendem às necessidades do consumidor.
+              </SubTitle>
+              <Title type="Xs">Imagens</Title>
+              <SubTitle type="Lg">
+                Imagens possuem um apelo visual e complementam a ideia da
+                mensagem do texto. Elas devem ser usadas para dar mais destaque
+                à proposta de valor.
+              </SubTitle>
+            </div>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-estudando.webp.svg"
+              width={428.39}
+              height={428.39}
+              alt="Imagem de uma mulher estudando"
+            />
+          </div>
+        </section>
+
+        <section className={`container ${styles.identificarDefinir}`}>
+          <div className={styles.propostaContainer}>
+            <div className={styles.propostaTextValor}>
+              <SubTitle type="Lg">
+                Para poder trabalhar com esta ferramenta, você deve identificar
+                e definir alguns aspectos do seu negócio:
+              </SubTitle>
+
+              <Title type="Xs">Público-alvo</Title>
+              <SubTitle type="Lg">
+                Definir o seu público-alvo é o primeiro passo. Uma boa
+                estratégia é conversar com os clientes que você já tem e
+                analisar a razão pela qual eles compram da sua marca. Se você
+                está começando do zero, vale fazer uma pesquisa mais ampla, para
+                assim, entender quem está disposto a comprar com você. Feito
+                isso, você terá mais informações e base para buscar pessoas e
+                dados para construir a sua persona, que é o passo seguinte.
+              </SubTitle>
+              <Title type="Xs">Persona</Title>
+              <SubTitle type="Lg">
+                A persona é a pessoa usuária ideal do seu produto. Ela é um
+                personagem fictício, mas que reúne características muito
+                específicas e particulares, como as dores, medos, oportunidades,
+                esperanças, necessidades etc.
+              </SubTitle>
+              <Title type="Xs">Concorrência</Title>
+              <SubTitle type="Lg">
+                É preciso analisar a concorrência para entender o que eles
+                entregam, quais as falhas dessa entrega, as oportunidades, as
+                estratégias, como você pode crescer no mercado… Compare com o
+                que você faz e entenda como pode melhorar o seu serviço de
+                acordo com esse comparativo.
+              </SubTitle>
+              <Title type="Xs">Diferencial</Title>
+              <SubTitle type="Lg">
+                Depois de olhar para a concorrência, é hora de olhar pra dentro.
+                O que você oferece às suas pessoas usuárias? Quais os benefícios
+                e o seu diferencial?
+              </SubTitle>
+              <SubTitle type="Lg">
+                A partir dessas respostas, dá para trabalhar o canvas de
+                proposta de valor e desenvolver a sua.
+              </SubTitle>
+              <SubTitle type="Lg">
+                Pronto para criar a sua proposta de valor? Com todas essas
+                informações, a gente garante que fica mais fácil construir esse
+                que é um dos pontos principais de qualquer negócio ou produto.
+              </SubTitle>
+            </div>
+            <Image
+              className={styles.img}
+              src="./Inicio/mulher-estudando.webp.svg"
+              width={428.39}
+              height={428.39}
+              alt="Imagem de uma mulher estudando"
+            />
+          </div>
+        </section>
+        <section className={`container ${styles.endParabens}`}>
+          <Title type="Default">Parabéns por ter chegado até aqui!</Title>
+          <SubTitle type="Lg">
+            Agora você já sabe bastante sobre proposta de valor! Espero que
+            tenha curtido esse mini curso!
+          </SubTitle>
+          <SubTitle type="Lg">Até mais!</SubTitle>
+          <Button type="Blue" url="/cursos">
+            Voltar para cursos
+          </Button>
         </section>
       </main>
     </>
