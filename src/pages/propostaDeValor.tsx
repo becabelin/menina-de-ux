@@ -100,7 +100,6 @@ export default function Home() {
                 </a>
                 :
               </SubTitle>
-              <br />
               <SubTitle type="Lg">
                 “A proposta de valor é uma afirmação dos benefícios funcionais,
                 emocionais e de auto-expressão oferecidos pela marca que
