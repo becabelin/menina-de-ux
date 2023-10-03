@@ -25,13 +25,13 @@
   color:$blue-400;
 }//end stylo para letra ficar rosa com hover azul
 
-.bemVindos {
+.bemVindos, .aspectos, .comoMontar, .identificarDefinir {
   background: $white;
 }
 
-.propostaTextValor, .img {
-  width: 40%;
-}
+// .propostaTextValor, .img {
+//   width: 40%;
+// }
 
 @media (max-width: 994px) {
   .propostaContainer {
