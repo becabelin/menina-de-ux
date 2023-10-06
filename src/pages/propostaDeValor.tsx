@@ -28,7 +28,7 @@ export default function Home() {
             <div className={styles.propostaText}>
               <div className={styles.textStyle}>
                 <p>
-                  <a href="/estude" target="_blank" className={styles.textA}>
+                  <a href="/estude" className={styles.textA}>
                     Estudos
                   </a>{' '}
                   / Proposta de Valor
@@ -89,14 +89,13 @@ export default function Home() {
               </SubTitle>
               <br />
               <SubTitle type="Lg">
-                De acordo com David Aaker, no livro
+                De acordo com David Aaker, no livro{' '}
                 <a
                   href="https://www.amazon.com.br/Construindo-Marcas-Fortes-David-Aaker/dp/8560031952"
                   target="_blank"
                   className={styles.textA}
                   rel="noreferrer"
                 >
-                  {' '}
                   Construindo Marcas Fortes
                 </a>
                 :
@@ -111,7 +110,7 @@ export default function Home() {
                 E uma vez definida a sua proposta de valor, você deve
                 transmiti-la para a pessoa usuária de forma clara, transparente
                 e com linguagem adequada.
-              </SubTitle>{' '}
+              </SubTitle>
               <br />
               <SubTitle type="Lg">Artigos úteis:</SubTitle>
               <SubTitle type="Lg">
@@ -133,7 +132,7 @@ export default function Home() {
                 >
                   - #PegaaDica: Canvas de proposta de valor bem explicadinho!
                   (Mergo)
-                </a>{' '}
+                </a>
                 <br />
                 <a
                   href="https://brasil.uxdesign.cc/a-import%C3%A2ncia-em-definir-a-proposi%C3%A7%C3%A3o-de-valor-de-um-produto-e8c5c70a46d6"
@@ -143,7 +142,7 @@ export default function Home() {
                 >
                   - A importância em definir a Proposição de Valor de um produto
                   (Fabricio Teixeira)
-                </a>{' '}
+                </a>
                 <br />
                 <a
                   href="https://medium.com/@deployexperience/como-inovar-usando-o-canvas-de-proposta-de-valor-95e0e34280c0"
@@ -167,7 +166,7 @@ export default function Home() {
 
         <section className={`container ${styles.aspectos}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaText}>
+            <div className={styles.propostaTextValor}>
               <Title type="Default">
                 Os 4 aspectos de uma proposta de valor
               </Title>
@@ -370,6 +369,7 @@ export default function Home() {
             />
           </div>
         </section>
+
         <section className={`container ${styles.endParabens}`}>
           <Title type="Default">Parabéns por ter chegado até aqui!</Title>
           <SubTitle type="Lg">
@@ -377,9 +377,11 @@ export default function Home() {
             tenha curtido esse mini curso!
           </SubTitle>
           <SubTitle type="Lg">Até mais!</SubTitle>
-          <Button type="Blue" url="/cursos">
-            Voltar para cursos
-          </Button>
+          <div className={styles.buttons}>
+            <Button type="Blue" url="/cursos">
+              Voltar para cursos
+            </Button>
+          </div>
         </section>
       </main>
     </>
