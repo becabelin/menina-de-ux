@@ -24,11 +24,11 @@
     }
   }
   .subTitleMd {
-    @extend .subTitleBase;
+    @extend .subTitleBase; // Estende a classe .subtitle-base
     font-size: 16px;
   }
   .subTitleSm {
-    @extend .subTitleBase;
+    @extend .subTitleBase; // Estende a classe .subtitle-base
     font-size: 14px;
   }
 
