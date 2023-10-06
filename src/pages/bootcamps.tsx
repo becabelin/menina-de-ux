@@ -1,21 +1,20 @@
 // Components
 import Head from 'next/head'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
+import Title from '@/components/common/Title/Title'
+import Card from '@/components/common/Card'
 
 // Styles
 import styledBootcamps from '@/styles/Bootcamps.module.scss'
-import SubTitle from '@/components/common/Subtitle/SubTitle'
-import Tag from '@/components/common/Tag'
-import Title from '@/components/common/Title/Title'
-import Card from '@/components/common/Card'
-import { properties } from '@/utilities/Cursos&bootcampObjects'
-import { useEffect, useState } from 'react'
-import Filter from '@/utilities/Filter'
 
 // Utilities
+import { properties } from '@/utilities/Cursos&bootcampObjects'
+import { useState } from 'react'
+import Filter from '@/utilities/Filter'
 // Hooks
 // Interfaces
 
-export default function Home() {
+export default function Bootcamps() {
   const [filtroSelecionado, setFiltroSelecionado] = useState<string>('todos')
   const [dataWithFilter, setDataWithFilter] = useState(
     properties.bootcampObjetc,
