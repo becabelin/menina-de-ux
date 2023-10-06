@@ -15,7 +15,7 @@ import Filter from '@/utilities/Filter'
 // Interfaces
 
 export default function Bootcamps() {
-  const [filtroSelecionado, setFiltroSelecionado] = useState<string>('todos')
+  const [filtroSelecionado, setFiltroSelecionado] = useState<string>('')
   const [dataWithFilter, setDataWithFilter] = useState(
     properties.bootcampObjetc,
   )

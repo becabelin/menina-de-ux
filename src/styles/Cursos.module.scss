@@ -63,9 +63,10 @@
 .categorias_item:hover,
 .selecionado {
     @extend .categorias_item;
-    border: 1px solid #20376c;
+    border: 2px solid #20376c;
     border-radius: 50px; 
     border-style: solid;
+    padding: 3px 8px;
 }
 
 .cards_wrapper{
