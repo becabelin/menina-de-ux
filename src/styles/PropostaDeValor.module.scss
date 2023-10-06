@@ -1,7 +1,5 @@
 @import "/src/styles/colors.module";
 
-@import "/src/styles/colors.module";
-
 .propostaContainer {
   display: flex;
   justify-content:space-around;
@@ -29,9 +27,13 @@
   background: $white;
 }
 
-// .propostaTextValor, .img {
-//   width: 40%;
-// }
+.propostaTextValor, .img {
+  width: 40%;
+}
+
+.endParabens {
+  text-align: center;
+}
 
 @media (max-width: 994px) {
   .propostaContainer {
@@ -46,5 +48,13 @@
   .img {
     width: 100%;
     height: auto;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
   }
 }
