@@ -21,6 +21,7 @@ export default function CardInfo({
       <img src={`${src}`} alt={alt} className={Styles.containerImg} />
       <h3 className={Styles.containerTitle}>{containerTitle}</h3>
       <p className={Styles.containerDescription}>{containerDescription}</p>
+
       {type === 'Active' ? (
         <Button type="Blue">ver mais</Button>
       ) : (
