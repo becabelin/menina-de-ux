@@ -17,10 +17,15 @@
 
 // Estilização Card Primary 
 .primary {
-  @extend .CardBase;
-  width: 24rem;
-  height: auto;
-  gap: 16px;
+  @extend .CardBase;  
+  background-color: transparent;
+  width: 22vw;
+  gap: 20px;
+}
+
+.height {
+  display: flex;
+  height: 100%;
 }
 
 // Estilização Card Secondary 
@@ -60,12 +65,13 @@
   line-height: 16px;
   font-weight: 700;
   padding: 4px 8px ;
+  margin-top: auto;
   cursor: pointer;
 }
 
 @media (max-width: 994px) {
   .CardBase{
-    width: 80%;
+    width: 100%;
     height: auto;
   }
 }

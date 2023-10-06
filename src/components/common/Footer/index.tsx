@@ -15,7 +15,7 @@ import Supporter2 from '@/../public/Footer/ods-5.svg'
 export default function Footer() {
   return (
     <footer>
-      <section className={`container ${styled.footerContainer}`}>
+      <section className={styled.footerContainer}>
         <div className={styled.logoContainer}>
           <Image src={Logo} alt="Logo Menina de UX." />
           <p className={styled.slogan}>Ajudando meninas como eu</p>
