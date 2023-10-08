@@ -8,8 +8,6 @@ import Button from '@/components/common/Button'
 import styled from '@/styles/Home.module.scss'
 import styles from '@/styles/contact/Contact.module.scss'
 import { BiAt, BiLogoInstagram, BiLogoLinkedinSquare } from 'react-icons/bi'
-import SocialMedia from '@/components/sections/SocialMedia'
-import News from '@/components/sections/News'
 
 // Utilities
 // Hooks
