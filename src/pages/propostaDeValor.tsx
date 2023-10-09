@@ -25,7 +25,7 @@ export default function Home() {
       <main className={styled.containerHome}>
         <section className={`container ${styles.proposta}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaText}>
+            <div className={`${styles.propostaText} ${styles.halfWidth}`}>
               <div className={styles.textStyle}>
                 <p>
                   <a href="/estude" className={styles.textA}>
@@ -42,20 +42,22 @@ export default function Home() {
                 Hoje, no Menina de UX repórter!
               </SubTitle>
             </div>
-            <Image
-              className={styles.img}
-              src="./imgPropostaDeValor/homem-de-negocios.webp.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de um homem de negócios"
-              priority={true}
-            />
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/homem-de-negocios.webp.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de um homem de negócios"
+                priority={true}
+              />
+            </div>
           </div>
         </section>
 
         <section className={`container ${styles.bemVindos}`}>
           <div className={styles.propostaContainer}>
-            <div>
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-cadeirante-acenando.webp.svg"
@@ -65,7 +67,7 @@ export default function Home() {
               />
             </div>
 
-            <div className={styles.bemVindosText}>
+            <div className={`${styles.bemVindosText} ${styles.halfWidth}`}>
               <Title type="Default">Seja bem-vindo(a)!</Title>
               <br />
               <SubTitle type="Lg">
@@ -84,7 +86,7 @@ export default function Home() {
 
         <section className={`container ${styles.valor}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaTextValor}>
+            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
               <Title type="Default">Proposta de Valor</Title> <br />
               <SubTitle type="Lg">
                 O objetivo da proposta de valor é dar para o usuário uma ideia
@@ -157,7 +159,7 @@ export default function Home() {
                 </a>
               </SubTitle>
             </div>
-            <div>
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
@@ -171,7 +173,7 @@ export default function Home() {
 
         <section className={`container ${styles.aspectos}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaTextValor}>
+            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
               <Title type="Default">
                 Os 4 aspectos de uma proposta de valor
               </Title>
@@ -180,9 +182,13 @@ export default function Home() {
                 mais eficiente. E observá-los facilita, inclusive, a sua
                 criação. Caso você não identifique um desses 4 elementos na sua
                 proposta, saberá que é preciso revisá-las.
-                <SubTitle type="Lg">São eles:</SubTitle>
+                <div style={{ marginTop: '20px' }}>
+                  <SubTitle type="Lg">São eles:</SubTitle>
+                </div>
               </SubTitle>
-              <Title type="Xs">Clareza</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Clareza</Title>
+              </div>
               <SubTitle type="Lg">
                 Quanto mais clara for a proposta, mais fácil fica transmitir sua
                 mensagem e mais rápido a pessoa pode se conectar com ela. A
@@ -190,13 +196,17 @@ export default function Home() {
                 proposta clara é aquela que vai direto ao ponto, que expõe a
                 ideia central da empresa e que apresenta fácil compreensão.
               </SubTitle>
-              <Title type="Xs">Linguagem</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Linguagem</Title>
+              </div>
               <SubTitle type="Lg">
                 É preciso saber como se comunicar com seu público-alvo de forma
                 adequada. Isso irá impactar diretamente na compreensão da sua
                 mensagem e no quando a pessoa usuária se conectará com ela.
               </SubTitle>
-              <Title type="Xs">Concorrência</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Concorrência</Title>
+              </div>
               <SubTitle type="Lg">
                 É preciso analisar a concorrência para entender o que eles
                 entregam, quais as falhas dessa entrega, as oportunidades, as
@@ -204,7 +214,9 @@ export default function Home() {
                 que você faz e entenda como pode melhorar o seu serviço de
                 acordo com esse comparativo.
               </SubTitle>
-              <Title type="Xs">Transparêncial</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Transparêncial</Title>
+              </div>
               <SubTitle type="Lg">
                 Outro ponto importante é a transparência nas informações
                 apresentadas na proposta de valor. Ela deve ser baseada no que a
@@ -212,7 +224,9 @@ export default function Home() {
                 em expectativas que você pode suprir e na consequente fuga
                 dessas pessoas para a concorrência.
               </SubTitle>
-              <Title type="Xs">Direcionamento</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Direcionamento</Title>
+              </div>
               <SubTitle type="Lg">
                 Sabe como direcionar a pessoa usuária para os seus benefícios e
                 para o que ela vai encontrar ao interagir com seu produto ou
@@ -220,78 +234,95 @@ export default function Home() {
                 juntamente com seus diferenciais.
               </SubTitle>
             </div>
-
-            <Image
-              className={styles.img}
-              src="./imgPropostaDeValor/homem-e-mulher-analisando-dados.webp.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de um homem e uma mulher analisando dados"
-            />
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/homem-e-mulher-analisando-dados.webp.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de um homem e uma mulher analisando dados"
+              />
+            </div>
           </div>
         </section>
 
         <section className={`container ${styles.valor}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaTextValor}>
+            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
               <Title type="Default">Tipos de proposta de valor</Title>
               <SubTitle type="Lg">
                 Uma proposta de valor pode ter diferentes focos, como:
               </SubTitle>
-              <Title type="Xs">Desempenho</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Desempenho</Title>
+              </div>
               <SubTitle type="Lg">
                 Foca na qualidade e na performance do produto.
               </SubTitle>
-              <Title type="Xs">Novidade</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Novidade</Title>
+              </div>
               <SubTitle type="Lg">
                 Apresenta alguma inovação no produto, que o destaca muito da
                 concorrência.
               </SubTitle>
-              <Title type="Xs">Preço</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Preço</Title>
+              </div>
               <SubTitle type="Lg">
                 Trabalha o preço do produto ou nas possibilidades de compra,
                 como desconto, parcelamento etc. A ideia é sempre trazer um
                 preço melhor do que a média.
               </SubTitle>
-              <Title type="Xs">Personalização</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Personalização</Title>
+              </div>
               <SubTitle type="Lg">
                 Se o seu diferencial é adaptar o produto para o que a pessoa
                 usuária precisa, a sua proposta de valor é essa! Quem foca nesse
                 ponto, consegue entregar diferenciais e exclusividade.
               </SubTitle>
             </div>
-            <Image
-              className={styles.img}
-              src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de um homem tendo ideias"
-            />
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de um homem tendo ideias"
+              />
+            </div>
           </div>
         </section>
 
         <section className={`container ${styles.comoMontar}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaTextValor}>
+            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
               <Title type="Default">Como montar a sua proposta de valor?</Title>
               <SubTitle type="Lg">
                 Uma proposta de valor geralmente segue uma estrutura e isso
                 facilita sua construção. Ela é bem simples, como você pode ver a
                 seguir:{' '}
               </SubTitle>
-              <Title type="Xs">Título</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Título</Title>
+              </div>
               <SubTitle type="Lg">
                 É a parte principal da proposta. Deve ser sucinto e claro, sendo
                 desenvolvido em, no máximo 2 frases. Aqui vale pensar em frases
                 mais impactantes, que prendam a atenção.
               </SubTitle>
-              <Title type="Xs">Subtítulo</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Subtítulo</Title>
+              </div>
               <SubTitle type="Lg">
                 Aqui, você vai detalhar um pouco mais a sua proposta, trazendo
                 um pouco mais de informação. Mas não é indicado que ela
                 ultrapasse mais de 4 frases.
               </SubTitle>
-              <Title type="Xs">Bulletpoints</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Bulletpoints</Title>
+              </div>
               <SubTitle type="Lg">
                 Eles facilitam a leitura dinâmica ou o escaneamento das
                 informações mais importantes. Fica mais fácil captar a atenção
@@ -299,32 +330,37 @@ export default function Home() {
                 para destacar os principais benefícios e o diferencial.,
                 indicando como eles atendem às necessidades do consumidor.
               </SubTitle>
-              <Title type="Xs">Imagens</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Imagens</Title>
+              </div>
               <SubTitle type="Lg">
                 Imagens possuem um apelo visual e complementam a ideia da
                 mensagem do texto. Elas devem ser usadas para dar mais destaque
                 à proposta de valor.
               </SubTitle>
             </div>
-            <Image
-              className={styles.img}
-              src="./imgPropostaDeValor/mulher-no-computador-com-gato.webp.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de uma mulher no computador com um gato"
-            />
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/mulher-no-computador-com-gato.webp.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de uma mulher no computador com um gato"
+              />
+            </div>
           </div>
         </section>
 
         <section className={`container ${styles.identificarDefinir}`}>
           <div className={styles.propostaContainer}>
-            <div className={styles.propostaTextValor}>
+            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
               <SubTitle type="Lg">
                 Para poder trabalhar com esta ferramenta, você deve identificar
                 e definir alguns aspectos do seu negócio:
               </SubTitle>
-
-              <Title type="Xs">Público-alvo</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Público-alvo</Title>
+              </div>
               <SubTitle type="Lg">
                 Definir o seu público-alvo é o primeiro passo. Uma boa
                 estratégia é conversar com os clientes que você já tem e
@@ -334,14 +370,18 @@ export default function Home() {
                 isso, você terá mais informações e base para buscar pessoas e
                 dados para construir a sua persona, que é o passo seguinte.
               </SubTitle>
-              <Title type="Xs">Persona</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Persona</Title>
+              </div>
               <SubTitle type="Lg">
                 A persona é a pessoa usuária ideal do seu produto. Ela é um
                 personagem fictício, mas que reúne características muito
                 específicas e particulares, como as dores, medos, oportunidades,
                 esperanças, necessidades etc.
               </SubTitle>
-              <Title type="Xs">Concorrência</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Concorrência</Title>
+              </div>
               <SubTitle type="Lg">
                 É preciso analisar a concorrência para entender o que eles
                 entregam, quais as falhas dessa entrega, as oportunidades, as
@@ -349,7 +389,9 @@ export default function Home() {
                 que você faz e entenda como pode melhorar o seu serviço de
                 acordo com esse comparativo.
               </SubTitle>
-              <Title type="Xs">Diferencial</Title>
+              <div style={{ marginTop: '20px' }}>
+                <Title type="Xs">Diferencial</Title>
+              </div>
               <SubTitle type="Lg">
                 Depois de olhar para a concorrência, é hora de olhar pra dentro.
                 O que você oferece às suas pessoas usuárias? Quais os benefícios
@@ -365,23 +407,29 @@ export default function Home() {
                 que é um dos pontos principais de qualquer negócio ou produto.
               </SubTitle>
             </div>
-            <Image
-              className={styles.img}
-              src="./imgPropostaDeValor/div.col.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de uma mulher e um homem com peças de quebra-cabeça que se encaixam"
-            />
+            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/div.col.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de uma mulher e um homem com peças de quebra-cabeça que se encaixam"
+              />
+            </div>
           </div>
         </section>
 
         <section className={`container ${styles.endParabens}`}>
           <Title type="Default">Parabéns por ter chegado até aqui!</Title>
-          <SubTitle type="Lg">
-            Agora você já sabe bastante sobre proposta de valor! Espero que
-            tenha curtido esse mini curso!
-          </SubTitle>
-          <SubTitle type="Lg">Até mais!</SubTitle>
+          <div style={{ marginTop: '20px' }}>
+            <SubTitle type="Lg">
+              Agora você já sabe bastante sobre proposta de valor! Espero que
+              tenha curtido esse mini curso!
+            </SubTitle>
+          </div>
+          <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+            <SubTitle type="Lg">Até mais!</SubTitle>
+          </div>
           <div className={styles.buttons}>
             <Button type="Blue" url="/cursos">
               Voltar para cursos

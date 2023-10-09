@@ -2,8 +2,8 @@
 
 .propostaContainer {
   display: flex;
-  // justify-content:space-around;
   align-items: center;
+
 }
 
 //stylo para letra ficar rosa com hover azul
@@ -27,12 +27,26 @@
   background: $white;
 }
 
-// .propostaTextValor, .img {
-//   width: 40%;
-// }
 
 .endParabens {
   text-align: center;
+}
+
+.halfWidth {
+  width: 50%;
+  box-sizing: border-box; /* Isso garante que a largura inclua margens e bordas */
+  padding: 10px; /* Ajuste o espaçamento interno conforme necessário */
+  float: left; /* Isso permite que ambas as divs fiquem lado a lado */
+}
+
+.propostaImage {
+  width: 50%;
+  box-sizing: border-box;
+  padding: 10px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @media (max-width: 994px) {
