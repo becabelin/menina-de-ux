@@ -2,7 +2,7 @@
 
 .propostaContainer {
   display: flex;
-  justify-content:space-around;
+  // justify-content:space-around;
   align-items: center;
 }
 
@@ -27,9 +27,9 @@
   background: $white;
 }
 
-.propostaTextValor, .img {
-  width: 40%;
-}
+// .propostaTextValor, .img {
+//   width: 40%;
+// }
 
 .endParabens {
   text-align: center;

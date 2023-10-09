@@ -38,16 +38,16 @@ export default function Home() {
               <Title type="Default">Proposta de Valor</Title>
               <br />
               <SubTitle type="Lg">
-                O que é, como fazer e como ela pode mudar o seu negócio. Hoje,
-                no Menina de UX repórter!
+                O que é, como fazer e como ela pode mudar o seu <br /> negócio.
+                Hoje, no Menina de UX repórter!
               </SubTitle>
             </div>
             <Image
               className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
+              src="./imgPropostaDeValor/homem-de-negocios.webp.svg"
               width={428.39}
               height={428.39}
-              alt="Imagem de uma mulher estudando"
+              alt="Imagem de um homem de negócios"
               priority={true}
             />
           </div>
@@ -55,13 +55,16 @@ export default function Home() {
 
         <section className={`container ${styles.bemVindos}`}>
           <div className={styles.propostaContainer}>
-            <Image
-              className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de uma mulher estudando"
-            />
+            <div>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/homem-cadeirante-acenando.webp.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de um homem cadeirante acenando"
+              />
+            </div>
+
             <div className={styles.bemVindosText}>
               <Title type="Default">Seja bem-vindo(a)!</Title>
               <br />
@@ -154,13 +157,15 @@ export default function Home() {
                 </a>
               </SubTitle>
             </div>
-            <Image
-              className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
-              width={428.39}
-              height={428.39}
-              alt="Imagem de uma mulher estudando"
-            />
+            <div>
+              <Image
+                className={styles.img}
+                src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
+                width={428.39}
+                height={428.39}
+                alt="Imagem de um homem escrevendo"
+              />
+            </div>
           </div>
         </section>
 
@@ -218,10 +223,10 @@ export default function Home() {
 
             <Image
               className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
+              src="./imgPropostaDeValor/homem-e-mulher-analisando-dados.webp.svg"
               width={428.39}
               height={428.39}
-              alt="Imagem de uma mulher estudando"
+              alt="Imagem de um homem e uma mulher analisando dados"
             />
           </div>
         </section>
@@ -257,10 +262,10 @@ export default function Home() {
             </div>
             <Image
               className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
+              src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
               width={428.39}
               height={428.39}
-              alt="Imagem de uma mulher estudando"
+              alt="Imagem de um homem tendo ideias"
             />
           </div>
         </section>
@@ -303,10 +308,10 @@ export default function Home() {
             </div>
             <Image
               className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
+              src="./imgPropostaDeValor/mulher-no-computador-com-gato.webp.svg"
               width={428.39}
               height={428.39}
-              alt="Imagem de uma mulher estudando"
+              alt="Imagem de uma mulher no computador com um gato"
             />
           </div>
         </section>
@@ -362,10 +367,10 @@ export default function Home() {
             </div>
             <Image
               className={styles.img}
-              src="./Inicio/mulher-estudando.webp.svg"
+              src="./imgPropostaDeValor/div.col.svg"
               width={428.39}
               height={428.39}
-              alt="Imagem de uma mulher estudando"
+              alt="Imagem de uma mulher e um homem com peças de quebra-cabeça que se encaixam"
             />
           </div>
         </section>
