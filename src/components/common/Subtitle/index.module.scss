@@ -11,25 +11,25 @@
   .subTitleDefault {
     // Desktop | Tablet | Mobile
     @extend .subTitleBase; // Estende a classe .subtitle-base
-    font-size: 18px;
-    font-weight: 850;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
   .subTitleLg {
     // Desktop | Tablet
     @extend .subTitleBase; // Estende a classe .subtitle-base
-    font-size: 20px;
+    font-size: 1.25rem;
     // Mobile
     @media (max-width: 425px) {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
   .subTitleMd {
     @extend .subTitleBase; // Estende a classe .subtitle-base
-    font-size: 16px;
+    font-size: 1rem;
   }
   .subTitleSm {
     @extend .subTitleBase; // Estende a classe .subtitle-base
-    font-size: 14px;
+    font-size: .875rem;
   }
 
   
