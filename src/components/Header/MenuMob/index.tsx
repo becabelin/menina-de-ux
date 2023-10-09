@@ -4,7 +4,6 @@ import Title from '@/components/common/Title/Title'
 
 // Styles
 import styled from './index.module.scss'
-import styledComp from '@/styles/common/common.module.scss'
 
 // Utilities
 import { SlMenu, SlClose } from 'react-icons/sl'
