@@ -25,24 +25,24 @@ export default function Home() {
       <main className={styled.containerHome}>
         <section className={`container ${styles.proposta}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaText} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <div className={styles.textStyle}>
-                <p>
+                <span>
                   <a href="/estude" className={styles.textA}>
                     Estudos
-                  </a>{' '}
+                  </a>
                   / Proposta de Valor
-                </p>
+                </span>
               </div>
               <br />
               <Title type="Default">Proposta de Valor</Title>
               <br />
               <SubTitle type="Lg">
-                O que é, como fazer e como ela pode mudar o seu <br /> negócio.
-                Hoje, no Menina de UX repórter!
+                O que é, como fazer e como ela pode mudar o seu negócio. Hoje,
+                no Menina de UX repórter!
               </SubTitle>
             </div>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-de-negocios.webp.svg"
@@ -57,7 +57,7 @@ export default function Home() {
 
         <section className={`container ${styles.bemVindos}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-cadeirante-acenando.webp.svg"
@@ -66,8 +66,7 @@ export default function Home() {
                 alt="Imagem de um homem cadeirante acenando"
               />
             </div>
-
-            <div className={`${styles.bemVindosText} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <Title type="Default">Seja bem-vindo(a)!</Title>
               <br />
               <SubTitle type="Lg">
@@ -86,7 +85,7 @@ export default function Home() {
 
         <section className={`container ${styles.valor}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <Title type="Default">Proposta de Valor</Title> <br />
               <SubTitle type="Lg">
                 O objetivo da proposta de valor é dar para o usuário uma ideia
@@ -159,7 +158,7 @@ export default function Home() {
                 </a>
               </SubTitle>
             </div>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
@@ -173,7 +172,7 @@ export default function Home() {
 
         <section className={`container ${styles.aspectos}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <Title type="Default">
                 Os 4 aspectos de uma proposta de valor
               </Title>
@@ -234,7 +233,7 @@ export default function Home() {
                 juntamente com seus diferenciais.
               </SubTitle>
             </div>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-e-mulher-analisando-dados.webp.svg"
@@ -248,7 +247,7 @@ export default function Home() {
 
         <section className={`container ${styles.valor}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <Title type="Default">Tipos de proposta de valor</Title>
               <SubTitle type="Lg">
                 Uma proposta de valor pode ter diferentes focos, como:
@@ -283,7 +282,7 @@ export default function Home() {
                 ponto, consegue entregar diferenciais e exclusividade.
               </SubTitle>
             </div>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/homem-escrevendo.webp.svg"
@@ -297,7 +296,7 @@ export default function Home() {
 
         <section className={`container ${styles.comoMontar}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <Title type="Default">Como montar a sua proposta de valor?</Title>
               <SubTitle type="Lg">
                 Uma proposta de valor geralmente segue uma estrutura e isso
@@ -339,7 +338,7 @@ export default function Home() {
                 à proposta de valor.
               </SubTitle>
             </div>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/mulher-no-computador-com-gato.webp.svg"
@@ -353,7 +352,7 @@ export default function Home() {
 
         <section className={`container ${styles.identificarDefinir}`}>
           <div className={styles.propostaContainer}>
-            <div className={`${styles.propostaTextValor} ${styles.halfWidth}`}>
+            <div className={styles.propostaText}>
               <SubTitle type="Lg">
                 Para poder trabalhar com esta ferramenta, você deve identificar
                 e definir alguns aspectos do seu negócio:
@@ -407,7 +406,7 @@ export default function Home() {
                 que é um dos pontos principais de qualquer negócio ou produto.
               </SubTitle>
             </div>
-            <div className={`${styles.propostaImage} ${styles.halfWidth}`}>
+            <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
                 src="./imgPropostaDeValor/div.col.svg"
