@@ -3,7 +3,17 @@
 .propostaContainer {
   display: flex;
   align-items: center;
+  justify-content: center;
+}
 
+.propostaText, .propostaImage {
+  width: 40%;
+  height: 100%;
+}
+
+.img{
+width: 100%;
+text-align: center;
 }
 
 //stylo para letra ficar rosa com hover azul
@@ -27,41 +37,24 @@
   background: $white;
 }
 
-
 .endParabens {
   text-align: center;
-}
-
-.halfWidth {
-  width: 50%;
-  box-sizing: border-box; /* Isso garante que a largura inclua margens e bordas */
-  padding: 10px; /* Ajuste o espaçamento interno conforme necessário */
-  float: left; /* Isso permite que ambas as divs fiquem lado a lado */
-}
-
-.propostaImage {
-  width: 50%;
-  box-sizing: border-box;
-  padding: 10px;
-  float: left;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media (max-width: 994px) {
   .propostaContainer {
     display: block;
-    align-items: center;
   }
 
-  .propostaTextValor{
+  .propostaText, .propostaImage{
     width: 100%;
   }
-  
+
   .img {
-    width: 100%;
+    width: 90%;
     height: auto;
+    text-align: center;
+   
   }
 
   .buttons {
