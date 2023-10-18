@@ -26,10 +26,10 @@ export default function Home() {
         <section className="container">
           <div className={styles.sectionContainer}>
             <div className={styles.textContainer}>
-              <Title type="Xs">
+              <Title type="Default">
                 Quer ficar por dentro de todas as novidades?
               </Title>
-              <SubTitle type="Default">
+              <SubTitle type="Md">
                 Entre no canal do Telegram da Menina de UX e fique sabendo de
                 todos os cursos e processos seletivos novos!
               </SubTitle>
@@ -47,12 +47,12 @@ export default function Home() {
         <section className="container">
           <div className={styles.sectionContainer}>
             <div className={styles.textContainer}>
-              <Title type="Xs">Redes Sociais</Title>
+              <Title type="Default">Redes Sociais</Title>
               <div>
-                <SubTitle type="Default">
+                <SubTitle type="Md">
                   Me acompanhe nas redes sociais!
                 </SubTitle>
-                <SubTitle type="Default">
+                <SubTitle type="Md">
                   Se quiser conversar sobre projetos, eventos e afins, tem meu
                   e-mail aí!
                 </SubTitle>
