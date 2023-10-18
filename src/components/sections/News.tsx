@@ -13,8 +13,8 @@ export default function News() {
   return (
     <section className={`container ${styled.sectionContainer}`}>
       <div className={styled.sectionContent}>
-        <Title type="Sm">Quer ficar por dentro de todas as novidades?</Title>
-        <SubTitle type="Default">
+        <Title type="Default">Quer ficar por dentro de todas as novidades?</Title>
+        <SubTitle type="Lg">
           Entre no canal do Telegram da Menina de UX e fique sabendo de todos os
           cursos e processos seletivos novos!
         </SubTitle>
