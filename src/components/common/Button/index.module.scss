@@ -1,0 +1,69 @@
+@import "/src/styles/colors.module";
+
+.ButtonBase {
+  font-family: 'Avenir LT STD', sans-serif;
+  font-size: 18px;
+  min-width: 8.125rem;
+  height: 3rem;
+  padding: 0rem 1.7rem;
+  cursor: pointer;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 48px;
+  transition: background-color 0.3s, color 0.3s;
+
+  span {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.06em;
+  }
+}
+
+
+
+.ButtonBlue {
+  @extend .ButtonBase;
+  background-color: $blue-500;
+  border: 1px solid  $blue-500;
+  span {
+    color: $gray-100;
+  }
+  
+  &:hover {
+    background-color: transparent;
+    border: 1px solid  $blue-500;
+    
+    span {
+      color: $blue-400;
+    }
+  }
+  
+}
+
+.ButtonPink {
+  @extend .ButtonBase;
+  background-color: $pink-500;
+  span {
+    color: $white;
+  }
+  &:hover {
+    background-color: transparent;
+    border: 1px solid  $pink-500;
+    
+    span {
+      color: $pink-500;
+    }
+  }
+}
+
+
+.ButtonDisabled {
+  @extend .ButtonBase;
+  cursor: text;
+  background-color: $gray-200;
+    
+  span {
+    color: $gray-600;
+  }
+}

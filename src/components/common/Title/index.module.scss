@@ -1,0 +1,90 @@
+@import "/src/styles/colors.module";
+@import "/src/styles/fonts.module";
+
+// Estilização CSS do Component Title
+.titleBase {
+  // Desktop
+  font-family: $font-family-primary, $font-family-secondary,  sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.625rem;
+  line-height: 110%;
+  align-items: center;
+  color: $blue-400;
+}
+
+.titleDefault {
+  @extend .titleBase; // Estende a classe .title-base
+    font-family: $font-family-secondary;
+      // Tablet
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 1.8rem;
+  }
+}
+
+.title2Xl{
+  @extend .titleBase;
+  font-size: 2.625rem;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 1.375rem;
+  }
+}
+
+.titleXl {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 2.125rem;
+  line-height: 125%;
+  // Tablet
+  @media (max-width: 768px) {
+    font-size: 1.875rem;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+}
+
+.titleLg {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 1.875rem;
+  line-height: 150%;
+  text-transform: uppercase;
+  // Tablet
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 1.5625rem;
+  }
+}
+
+.titleMd{
+  @extend .titleBase;
+  font-size: 1.625rem;
+}
+
+.titleSm {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 1.375rem;
+  line-height: 120%;
+}
+
+.titleXs {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: .8125rem;
+  line-height: 115%;
+}
