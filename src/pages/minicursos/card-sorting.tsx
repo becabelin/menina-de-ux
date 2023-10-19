@@ -9,13 +9,6 @@ import styledCardSorting from '@/styles/card-sorting.module.scss'
 
 // Utilities
 import Image from 'next/image'
-import heroImage from '@/../public/miniCurso/mulher-no-computador.svg'
-import welcomeImage from '@/../public/miniCurso/mulher-acenando.svg'
-import cardSortingImage from '@/../public/miniCurso/preenchendo-post-its.svg'
-import typesCardImage from '@/../public/miniCurso/mulher-colocando-check-no-papel.svg'
-import differenceImage from '@/../public/miniCurso/menino-criativo-pensando.svg'
-import advantagesImage from '@/../public/miniCurso/homem-segurando-sinal-positivo.svg'
-import howToUseImage from '@/../public/miniCurso/mulher-e-homem-tomando-notas.svg'
 import Tag from '@/components/common/Tag'
 import Link from 'next/link'
 import Button from '@/components/common/Button'
@@ -41,11 +34,21 @@ export default function Home() {
               aplicativo!
             </SubTitle>
           </div>
-          <Image src={heroImage} alt="mulher no computador" />
+          <Image
+            src="/miniCurso/mulher-no-computador.svg"
+            alt="mulher no computador"
+            width={446}
+            height={446}
+          />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
           <div className={`container ${styledCardSorting.sectionContainer}`}>
-            <Image src={welcomeImage} alt="mulher acenando" />
+            <Image
+              src="/miniCurso/mulher-acenando.svg"
+              alt="mulher acenando"
+              width={446}
+              height={446}
+            />
             <div>
               <Title type="Sm">Seja bem-vindo(a)!</Title>
               <div className={styledCardSorting.containerSubtitle}>
@@ -127,7 +130,12 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <Image src={cardSortingImage} alt="preenchendo post-its" />
+          <Image
+            src="/miniCurso/preenchendo-post-its.svg"
+            alt="preenchendo post-its"
+            width={446}
+            height={446}
+          />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
           <div className={`container ${styledCardSorting.sectionContainer}`}>
@@ -168,7 +176,12 @@ export default function Home() {
                 </li>
               </ul>
             </div>
-            <Image src={typesCardImage} alt="check no papel" />
+            <Image
+              src="/miniCurso/mulher-colocando-check-no-papel.svg"
+              alt="check no papel"
+              width={446}
+              height={446}
+            />
           </div>
         </section>
         <section className={`container ${styledCardSorting.sectionContainer}`}>
@@ -199,7 +212,12 @@ export default function Home() {
             </SubTitle>
           </div>
           <div>
-            <Image src={differenceImage} alt="menino criativo" />
+            <Image
+              src="/miniCurso/menino-criativo-pensando.svg"
+              alt="menino criativo"
+              width={446}
+              height={446}
+            />
           </div>
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
@@ -237,7 +255,12 @@ export default function Home() {
                 interpretações e tradução para padrões.
               </SubTitle>
             </div>
-            <Image src={advantagesImage} alt="Homem segurando um positivo" />
+            <Image
+              src="/miniCurso/homem-segurando-sinal-positivo.svg"
+              alt="Homem segurando um positivo"
+              width={446}
+              height={446}
+            />
           </div>
         </section>
         <section className={`container ${styledCardSorting.sectionContainer}`}>
@@ -299,7 +322,12 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <Image src={howToUseImage} alt="duas pessoas tomando nota" />
+            <Image
+              src="/miniCurso/mulher-e-homem-tomando-notas.svg"
+              alt="duas pessoas tomando nota"
+              width={446}
+              height={446}
+            />
           </div>
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
