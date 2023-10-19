@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
-import styles from '@/styles/PropostaDeValor.module.scss'
+import styles from '@/pages/miniCursos/PropostaDeValor.module.scss'
 import Button from '@/components/common/Button'
 
 // Utilities
