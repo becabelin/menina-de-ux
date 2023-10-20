@@ -173,7 +173,12 @@ export default function Home() {
         <section className={`container ${styles.aspectos}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <Title type="Sm">Os 4 aspectos de uma proposta de valor</Title>
+              <div style={{ marginBottom: '10px' }}>
+                <Title type="Sm">
+                  Os 4 aspectos de uma <br /> proposta de valor
+                </Title>
+              </div>
+
               <SubTitle type="Default">
                 Uma boa proposta de valor possui alguns aspectos que a tornam
                 mais eficiente. E observá-los facilita, inclusive, a sua
@@ -246,7 +251,9 @@ export default function Home() {
         <section className={`container ${styles.tipoDevalor}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <Title type="Sm">Tipos de proposta de valor</Title>
+              <div style={{ marginBottom: '10px' }}>
+                <Title type="Sm">Tipos de proposta de valor</Title>
+              </div>
               <SubTitle type="Default">
                 Uma proposta de valor pode ter diferentes focos, como:
               </SubTitle>
@@ -295,7 +302,9 @@ export default function Home() {
         <section className={`container ${styles.comoMontar}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <Title type="Sm">Como montar a sua proposta de valor?</Title>
+              <div style={{ marginBottom: '10px' }}>
+                <Title type="Sm">Como montar a sua proposta de valor?</Title>
+              </div>
               <SubTitle type="Default">
                 Uma proposta de valor geralmente segue uma estrutura e isso
                 facilita sua construção. Ela é bem simples, como você pode ver a
@@ -407,7 +416,7 @@ export default function Home() {
             <div className={styles.propostaImage}>
               <Image
                 className={styles.img}
-                src="../imgPropostaDeValor/div.col.svg"
+                src="../imgPropostaDeValor/homem-e-mulher-juntando-quebra-cabecas.webp.svg"
                 width={445.19}
                 height={433.78}
                 alt="Imagem de uma mulher e um homem com peças de quebra-cabeça que se encaixam"
