@@ -1,4 +1,5 @@
 @import "/src/styles/colors.module";
+@import "/src/styles/fonts.module";
 
 // Estilização CSS do Component Title
 .titleBase {
@@ -50,6 +51,7 @@
   // Mobile
   @media (max-width: 425px) {
     font-size: 25px;
+    //font-size:40px
   }
 }
 
