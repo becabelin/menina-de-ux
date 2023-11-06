@@ -1,18 +1,16 @@
 @import "colors.module";
 
-.sectionContainer {
+.hero {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: 32px;
   font-family: 'Avenir LT STD', sans-serif;
   
   @media (max-width: 994px) {
     flex-direction: column;
+    gap: 2.5rem;
   }
-}
-.hero {
-  @extend .sectionContainer;
-  margin-top: 32px;
 }
 
 .learn {
@@ -30,5 +28,13 @@
   margin-top: 40px;
   @media (max-width: 998px) {
     flex-direction: column;
+  }
+}
+
+.content {
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 }
