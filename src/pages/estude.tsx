@@ -1,8 +1,9 @@
 // Components
 import Head from 'next/head'
 import Title from '@/components/common/Title/Title'
-import SubTitle from '@/components/common/Subtitle/SubTitle'
 import CardInfo from '@/components/common/CardInfo'
+import News from '@/components/sections/News'
+import SocialMedia from '@/components/sections/SocialMedia'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
@@ -15,8 +16,6 @@ import ConnectionsImg from '@/../public/estude/conexoes-linkedin.png'
 import PostItImg from '@/../public/estude/preenchendo-post-its.png'
 import PuzzleImg from '@/../public/estude/quebra-cabecas.png'
 import HeroImage from '@/../public/estude/mulher-estudando.png'
-import News from '@/components/sections/News'
-import SocialMedia from '@/components/sections/SocialMedia'
 
 // Hooks
 // Interfaces
@@ -35,10 +34,10 @@ export default function Home() {
             <Title type="Default">
               Estude com a <br /> Menina de UX
             </Title>
-            <SubTitle type="Lg">
+            <Title type="Sm">
               Aprenda sobre carreira, currículo, design e <br /> tecnologia com
               os vários conteúdos gratuitos aqui!
-            </SubTitle>
+            </Title>
           </div>
 
           <div className={styledEstude.content}>
