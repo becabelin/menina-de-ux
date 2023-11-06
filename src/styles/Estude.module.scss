@@ -12,12 +12,15 @@
   align-items: center;
   padding-top: 6rem;
   padding-bottom: 5rem;
-  font-family: 'Avenir LT STD', sans-serif;
   background-color: $pink-400;
   
   @media (max-width: 994px) {
     flex-direction: column;
     gap: 2.5rem; /*40 px*/
+  }
+
+  .texts {
+    max-width: 558px;
   }
 }
 
@@ -33,6 +36,7 @@
   display: flex;
   gap: 1.375rem; /*22 px*/
   margin-top: 2.5rem; /*40 px*/
+  
   @media (max-width: 998px) {
     flex-direction: column;
   }

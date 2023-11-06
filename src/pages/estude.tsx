@@ -4,9 +4,9 @@ import Title from '@/components/common/Title/Title'
 import CardInfo from '@/components/common/CardInfo'
 import News from '@/components/sections/News'
 import SocialMedia from '@/components/sections/SocialMedia'
+import SubTitle from '@/components/common/Subtitle/SubTitle'
 
 // Styles
-import styled from '@/styles/Home.module.scss'
 import styledEstude from '@/styles/Estude.module.scss'
 
 // Utilities
@@ -30,14 +30,14 @@ export default function Home() {
       </Head>
       <main className={styledEstude.containerEstude}>
         <section className={`container ${styledEstude.hero}`}>
-          <div className={styledEstude.content}>
+          <div className={styledEstude.texts}>
             <Title type="Default">
               Estude com a <br /> Menina de UX
             </Title>
-            <Title type="Sm">
-              Aprenda sobre carreira, currículo, design e <br /> tecnologia com
+            <SubTitle type="Lg">
+              Aprenda sobre carreira, currículo, design e tecnologia com
               os vários conteúdos gratuitos aqui!
-            </Title>
+            </SubTitle>
           </div>
 
           <div className={styledEstude.content}>

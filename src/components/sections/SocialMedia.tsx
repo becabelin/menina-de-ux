@@ -1,6 +1,7 @@
 // Components
 import Button from '../common/Button'
 import Title from '../common/Title/Title'
+import SubTitle from '../common/Subtitle/SubTitle'
 
 // Styles
 import styled from './Sections.module.scss'
@@ -15,11 +16,11 @@ export default function SocialMedia() {
   return (
     <section className={`container ${styled.sectionContainer}`}>
       <div className={styled.sectionContent}>
-        <Title type="Xl">Redes Sociais</Title>
-        <Title type="Sm">
+        <Title type="Default">Redes Sociais</Title>
+        <SubTitle type="Lg">
           Me acompanhe nas redes sociais! <br /> Se quiser conversar sobre
           projetos, eventos e afins, tem meu e-mail aí!
-        </Title>
+        </SubTitle>
         <div className={styled.buttons}>
           <Button icon={MdAlternateEmail} url={'mailto:becabelin@gmail.com'}>
             E-mail
