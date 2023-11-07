@@ -8,8 +8,12 @@
 }
 
 .propostaText, .propostaImage {
-  width: 40%;
+  width: 50%;
   height: 100%;
+}
+
+.propostaText div {
+  margin-top: 10px; /* Adicione o espaço desejado */
 }
 
 .img {
@@ -17,15 +21,36 @@
   text-align: center;
 }
 
+.margin20 {
+  margin-top: 20px;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.marginTopBottom20 {
+  margin: 20px 0 20px 0;
+}
+
+.espaçoEntreTextos {
+  margin-bottom: 10px;
+}
+
+.displayBlock {
+  display: block;
+}
+
 //stylo para letra ficar rosa com hover azul
 .textA {
   text-decoration: none;
-  color:$pink-500;
+   color:$pink-500;
   transition: color 0.3s ease-in-out;
 }
 
 .textStyle {
   color:$gray-600;
+  margin-bottom: 10px;
   font-size: 1rem;
   font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif ;
 }
@@ -39,6 +64,7 @@
 }
 
 .endParabens {
+  padding: 1.875rem  0;
   text-align: center;
 }
 
