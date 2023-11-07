@@ -6,14 +6,14 @@ import Image from 'next/image'
 
 // Styles
 import styled from '@/styles/Home.module.scss'
-import styles from '@/pages/miniCursos/PropostaDeValor.module.scss'
+import styles from '@/styles/PropostaDeValor.module.scss'
 import Button from '@/components/common/Button'
 
 // Utilities
 // Hooks
 // Interfaces
 
-export default function Home() {
+export default function PropostaDeValor() {
   return (
     <>
       <Head>
@@ -29,14 +29,14 @@ export default function Home() {
               <div className={styles.textStyle}>
                 <span>
                   <a href="/estude" className={styles.textA}>
-                    Estudos
-                  </a>{' '}
+                    {`${'Estude  '}`}
+                  </a>
                   / Proposta de Valor
                 </span>
               </div>
-              <br />
-              <Title type="Default">Proposta de Valor</Title>
-              <br />
+              <div className={styles.espaçoEntreTextos}>
+                <Title type="Default">Proposta de Valor</Title>
+              </div>
               <SubTitle type="Default">
                 O que é, como fazer e como ela pode mudar o seu negócio. Hoje,
                 no Menina de UX repórter!
@@ -68,17 +68,20 @@ export default function Home() {
             </div>
             <div className={styles.propostaText}>
               <Title type="Sm">Seja bem-vindo(a)!</Title>
-              <br />
-              <SubTitle type="Default">
-                Esse é um mini curso sobre Proposta de Valor
-              </SubTitle>
-              <br />
-              <SubTitle type="Default">
-                Logo abaixo você vai aprender sobre o que ele é, como fazer e
-                qual a importância dele num projeto!
-              </SubTitle>
-              <br />
-              <SubTitle type="Default">Preparado(a)? Vamos lá!</SubTitle>
+              <div>
+                <SubTitle type="Default">
+                  Esse é um mini curso sobre Proposta de Valor
+                </SubTitle>
+              </div>
+              <div>
+                <SubTitle type="Default">
+                  Logo abaixo você vai aprender sobre o que ele é, como fazer e
+                  qual a importância dele num projeto!
+                </SubTitle>
+              </div>
+              <div>
+                <SubTitle type="Default">Preparado(a)? Vamos lá!</SubTitle>
+              </div>
             </div>
           </div>
         </section>
@@ -104,50 +107,56 @@ export default function Home() {
                 </a>
                 :
               </SubTitle>
-              <SubTitle type="Default">
-                “A proposta de valor é uma afirmação dos benefícios funcionais,
-                emocionais e de auto-expressão oferecidos pela marca que
-                proporcionam valor ao cliente”.
-              </SubTitle>
-              <br />
-              <SubTitle type="Default">
-                E uma vez definida a sua proposta de valor, você deve
-                transmiti-la para a pessoa usuária de forma clara, transparente
-                e com linguagem adequada.
-              </SubTitle>
-              <br />
+              <div className={styles.espaçoEntreTextos}>
+                <SubTitle type="Default">
+                  “A proposta de valor é uma afirmação dos benefícios
+                  funcionais, emocionais e de auto-expressão oferecidos pela
+                  marca que proporcionam valor ao cliente”.
+                </SubTitle>
+              </div>
+              <div className={styles.espaçoEntreTextos}>
+                <SubTitle type="Default">
+                  E uma vez definida a sua proposta de valor, você deve
+                  transmiti-la para a pessoa usuária de forma clara,
+                  transparente e com linguagem adequada.
+                </SubTitle>
+              </div>
               <SubTitle type="Default">Artigos úteis:</SubTitle>
               <SubTitle type="Default">
-                <a
-                  href="https://uxdesign.blog.br/como-criar-uma-boa-proposta-de-valor-para-o-seu-produto-67b2188df4af"
-                  target="_blank"
-                  className={styles.textA}
-                  rel="noreferrer"
-                >
-                  - Como criar uma boa proposta de valor para o seu produto
-                  (Mergo)
-                </a>
-                <br />
-                <a
-                  href="https://fia.com.br/blog/card-sorting-o-que-e-e-como-utilizar-guia-completo/"
-                  target="_blank"
-                  className={styles.textA}
-                  rel="noreferrer"
-                >
-                  - #PegaaDica: Canvas de proposta de valor bem explicadinho!
-                  (Mergo)
-                </a>
-                <br />
-                <a
-                  href="https://brasil.uxdesign.cc/a-import%C3%A2ncia-em-definir-a-proposi%C3%A7%C3%A3o-de-valor-de-um-produto-e8c5c70a46d6"
-                  target="_blank"
-                  className={styles.textA}
-                  rel="noreferrer"
-                >
-                  - A importância em definir a Proposição de Valor de um produto
-                  (Fabricio Teixeira)
-                </a>
-                <br />
+                <div className={styles.espaçoEntreTextos}>
+                  <a
+                    href="https://uxdesign.blog.br/como-criar-uma-boa-proposta-de-valor-para-o-seu-produto-67b2188df4af"
+                    target="_blank"
+                    className={styles.textA}
+                    rel="noreferrer"
+                  >
+                    - Como criar uma boa proposta de valor para o seu produto
+                    (Mergo)
+                  </a>
+                </div>
+                <div className={styles.espaçoEntreTextos}>
+                  <a
+                    href="https://fia.com.br/blog/card-sorting-o-que-e-e-como-utilizar-guia-completo/"
+                    target="_blank"
+                    className={styles.textA}
+                    rel="noreferrer"
+                  >
+                    - #PegaaDica: Canvas de proposta de valor bem explicadinho!
+                    (Mergo)
+                  </a>
+                </div>
+                <div className={styles.espaçoEntreTextos}>
+                  <a
+                    href="https://brasil.uxdesign.cc/a-import%C3%A2ncia-em-definir-a-proposi%C3%A7%C3%A3o-de-valor-de-um-produto-e8c5c70a46d6"
+                    target="_blank"
+                    className={styles.textA}
+                    rel="noreferrer"
+                  >
+                    - A importância em definir a Proposição de Valor de um
+                    produto (Fabricio Teixeira)
+                  </a>
+                </div>
+
                 <a
                   href="https://medium.com/@deployexperience/como-inovar-usando-o-canvas-de-proposta-de-valor-95e0e34280c0"
                   target="_blank"
@@ -173,10 +182,8 @@ export default function Home() {
         <section className={`container ${styles.aspectos}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <div style={{ marginBottom: '10px' }}>
-                <Title type="Sm">
-                  Os 4 aspectos de uma <br /> proposta de valor
-                </Title>
+              <div className={styled.marginBottom10}>
+                <Title type="Sm">Os 4 aspectos de uma proposta de valor</Title>
               </div>
 
               <SubTitle type="Default">
@@ -184,11 +191,11 @@ export default function Home() {
                 mais eficiente. E observá-los facilita, inclusive, a sua
                 criação. Caso você não identifique um desses 4 elementos na sua
                 proposta, saberá que é preciso revisá-las.
-                <div style={{ marginTop: '20px' }}>
+                <div className={styled.margin20}>
                   <SubTitle type="Default">São eles:</SubTitle>
                 </div>
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styled.margin20}>
                 <Title type="Xs">Clareza</Title>
               </div>
               <SubTitle type="Default">
@@ -198,7 +205,7 @@ export default function Home() {
                 proposta clara é aquela que vai direto ao ponto, que expõe a
                 ideia central da empresa e que apresenta fácil compreensão.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styled.margin20}>
                 <Title type="Xs">Linguagem</Title>
               </div>
               <SubTitle type="Default">
@@ -206,7 +213,7 @@ export default function Home() {
                 adequada. Isso irá impactar diretamente na compreensão da sua
                 mensagem e no quando a pessoa usuária se conectará com ela.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styled.margin20}>
                 <Title type="Xs">Concorrência</Title>
               </div>
               <SubTitle type="Default">
@@ -216,7 +223,7 @@ export default function Home() {
                 que você faz e entenda como pode melhorar o seu serviço de
                 acordo com esse comparativo.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styled.margin20}>
                 <Title type="Xs">Transparêncial</Title>
               </div>
               <SubTitle type="Default">
@@ -226,7 +233,7 @@ export default function Home() {
                 em expectativas que você pode suprir e na consequente fuga
                 dessas pessoas para a concorrência.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styled.margin20}>
                 <Title type="Xs">Direcionamento</Title>
               </div>
               <SubTitle type="Default">
@@ -251,26 +258,26 @@ export default function Home() {
         <section className={`container ${styles.tipoDevalor}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <div style={{ marginBottom: '10px' }}>
+              <div className={styles.marginBottom10}>
                 <Title type="Sm">Tipos de proposta de valor</Title>
               </div>
               <SubTitle type="Default">
                 Uma proposta de valor pode ter diferentes focos, como:
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styled.margin20}>
                 <Title type="Xs">Desempenho</Title>
               </div>
               <SubTitle type="Default">
                 Foca na qualidade e na performance do produto.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Novidade</Title>
               </div>
               <SubTitle type="Default">
                 Apresenta alguma inovação no produto, que o destaca muito da
                 concorrência.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Preço</Title>
               </div>
               <SubTitle type="Default">
@@ -278,7 +285,7 @@ export default function Home() {
                 como desconto, parcelamento etc. A ideia é sempre trazer um
                 preço melhor do que a média.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Personalização</Title>
               </div>
               <SubTitle type="Default">
@@ -302,7 +309,7 @@ export default function Home() {
         <section className={`container ${styles.comoMontar}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <div style={{ marginBottom: '10px' }}>
+              <div className={styles.margin20}>
                 <Title type="Sm">Como montar a sua proposta de valor?</Title>
               </div>
               <SubTitle type="Default">
@@ -310,7 +317,7 @@ export default function Home() {
                 facilita sua construção. Ela é bem simples, como você pode ver a
                 seguir:
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Título</Title>
               </div>
               <SubTitle type="Default">
@@ -318,7 +325,7 @@ export default function Home() {
                 desenvolvido em, no máximo 2 frases. Aqui vale pensar em frases
                 mais impactantes, que prendam a atenção.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Subtítulo</Title>
               </div>
               <SubTitle type="Default">
@@ -326,7 +333,7 @@ export default function Home() {
                 um pouco mais de informação. Mas não é indicado que ela
                 ultrapasse mais de 4 frases.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Bulletpoints</Title>
               </div>
               <SubTitle type="Default">
@@ -336,7 +343,7 @@ export default function Home() {
                 para destacar os principais benefícios e o diferencial.,
                 indicando como eles atendem às necessidades do consumidor.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Imagens</Title>
               </div>
               <SubTitle type="Default">
@@ -364,7 +371,7 @@ export default function Home() {
                 Para poder trabalhar com esta ferramenta, você deve identificar
                 e definir alguns aspectos do seu negócio:
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Público-alvo</Title>
               </div>
               <SubTitle type="Default">
@@ -376,7 +383,7 @@ export default function Home() {
                 isso, você terá mais informações e base para buscar pessoas e
                 dados para construir a sua persona, que é o passo seguinte.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Persona</Title>
               </div>
               <SubTitle type="Default">
@@ -385,7 +392,7 @@ export default function Home() {
                 específicas e particulares, como as dores, medos, oportunidades,
                 esperanças, necessidades etc.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Concorrência</Title>
               </div>
               <SubTitle type="Default">
@@ -395,7 +402,7 @@ export default function Home() {
                 que você faz e entenda como pode melhorar o seu serviço de
                 acordo com esse comparativo.
               </SubTitle>
-              <div style={{ marginTop: '20px' }}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Diferencial</Title>
               </div>
               <SubTitle type="Default">
@@ -427,13 +434,13 @@ export default function Home() {
 
         <section className={`container ${styles.endParabens}`}>
           <Title type="Sm">Parabéns por ter chegado até aqui!</Title>
-          <div style={{ marginTop: '20px' }}>
+          <div className={styles.margin20}>
             <SubTitle type="Lg">
               Agora você já sabe bastante sobre proposta de valor! Espero que
               tenha curtido esse mini curso!
             </SubTitle>
           </div>
-          <div style={{ marginTop: '20px', marginBottom: '20px' }}>
+          <div className={styles.marginTopBottom20}>
             <SubTitle type="Lg">Até mais!</SubTitle>
           </div>
           <div className={styles.buttons}>
