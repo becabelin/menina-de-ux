@@ -1,0 +1,13 @@
+@import "@/styles/colors.module";
+
+.pageNavigation p {
+  display: inline;
+}
+
+.navigateActive {
+  color: $pink-500;
+}
+
+.course {
+  color: $gray-500;
+}

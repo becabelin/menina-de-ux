@@ -12,10 +12,12 @@ import Image from 'next/image'
 import Tag from '@/components/common/Tag'
 import Link from 'next/link'
 import Button from '@/components/common/Button'
+import PageNavigation from '@/components/common/pageNavigation'
+
 // Hooks
 // Interfaces
 
-export default function Home() {
+export default function CardSorting() {
   return (
     <>
       <Head>
@@ -27,6 +29,7 @@ export default function Home() {
       <main className={styled.containerHome}>
         <section className={`container ${styledCardSorting.sectionContainer}`}>
           <div className={styledCardSorting.texts}>
+            <PageNavigation text="Card Sorting"></PageNavigation>
             <Title type="Default">Card Sorting</Title>
             <SubTitle type="Lg">
               Conheça mais sobre essa ferramenta bastante utilizada durante
