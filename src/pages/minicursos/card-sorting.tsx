@@ -29,7 +29,7 @@ export default function CardSorting() {
       <main className={styled.containerHome}>
         <section className={`container ${styledCardSorting.sectionContainer}`}>
           <div className={styledCardSorting.texts}>
-            <PageNavigation text="Card Sorting"></PageNavigation>
+            <PageNavigation text="Card Sorting" />
             <Title type="Default">Card Sorting</Title>
             <SubTitle type="Lg">
               Conheça mais sobre essa ferramenta bastante utilizada durante
@@ -40,8 +40,8 @@ export default function CardSorting() {
           <Image
             src="/miniCurso/mulher-no-computador.svg"
             alt="mulher no computador"
-            width={446}
-            height={446}
+            width={428}
+            height={394}
           />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
@@ -49,8 +49,8 @@ export default function CardSorting() {
             <Image
               src="/miniCurso/mulher-acenando.svg"
               alt="mulher acenando"
-              width={446}
-              height={446}
+              width={445}
+              height={445}
             />
             <div>
               <Title type="Sm">Seja bem-vindo(a)!</Title>
@@ -136,8 +136,8 @@ export default function CardSorting() {
           <Image
             src="/miniCurso/preenchendo-post-its.svg"
             alt="preenchendo post-its"
-            width={446}
-            height={446}
+            width={445}
+            height={412}
           />
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
@@ -182,8 +182,8 @@ export default function CardSorting() {
             <Image
               src="/miniCurso/mulher-colocando-check-no-papel.svg"
               alt="check no papel"
-              width={446}
-              height={446}
+              width={445}
+              height={416}
             />
           </div>
         </section>
@@ -218,8 +218,8 @@ export default function CardSorting() {
             <Image
               src="/miniCurso/menino-criativo-pensando.svg"
               alt="menino criativo"
-              width={446}
-              height={446}
+              width={445}
+              height={445}
             />
           </div>
         </section>
@@ -261,8 +261,8 @@ export default function CardSorting() {
             <Image
               src="/miniCurso/homem-segurando-sinal-positivo.svg"
               alt="Homem segurando um positivo"
-              width={446}
-              height={446}
+              width={445}
+              height={469}
             />
           </div>
         </section>
@@ -328,14 +328,14 @@ export default function CardSorting() {
             <Image
               src="/miniCurso/mulher-e-homem-tomando-notas.svg"
               alt="duas pessoas tomando nota"
-              width={446}
-              height={446}
+              width={445}
+              height={434}
             />
           </div>
         </section>
         <section className={`${styledCardSorting.sectionWhite}`}>
           <div className="container">
-            <div>
+            <div className={styledCardSorting.space}>
               <Title type="Sm">Dicas</Title>
               <br />
               <SubTitle type="Lg">
@@ -345,54 +345,67 @@ export default function CardSorting() {
             <div className={styledCardSorting.tips}>
               <div className={styledCardSorting.listTips}>
                 <SubTitle type="Lg">
-                  <Tag type="Strong">01.</Tag> <br /> Espalhe os cartões na mesa
-                  de maneira que seja possível visualizá-los facilmente — o
-                  recomendável é fornecer entre 40 e 60 cartões por pessoa.
+                  <span className={styledCardSorting.listTipsText}>
+                    <Tag type="Strong">01.</Tag> Espalhe os cartões na mesa de
+                    maneira que seja possível visualizá-los facilmente — o
+                    recomendável é fornecer entre 40 e 60 cartões por pessoa.
+                  </span>
                 </SubTitle>
                 <SubTitle type="Lg">
-                  <Tag type="Strong">02.</Tag> <br /> Caso aplique o modelo
-                  aberto ou híbrido, deixe uns cartões brancos por perto, para
-                  quando for preciso criar categorias.
+                  <span className={styledCardSorting.listTipsText}>
+                    <Tag type="Strong">02.</Tag> Caso aplique o modelo aberto ou
+                    híbrido, deixe uns cartões brancos por perto, para quando
+                    for preciso criar categorias.
+                  </span>
                 </SubTitle>
                 <SubTitle type="Lg">
-                  <Tag type="Strong">04.</Tag> <br /> Explique em detalhes como
-                  funcionará a dinâmica e deixe claro que o resultado precisa
-                  refletir como a pessoa participante acredita que as
-                  informações devam estar agrupadas, de acordo com os conteúdos
-                  que ela acredita terem alguma relação.
+                  <span className={styledCardSorting.listTipsText}>
+                    <Tag type="Strong">04.</Tag>Explique em detalhes como
+                    funcionará a dinâmica e deixe claro que o resultado precisa
+                    refletir como a pessoa participante acredita que as
+                    informações devam estar agrupadas, de acordo com os
+                    conteúdos que ela acredita terem alguma relação.
+                  </span>
                 </SubTitle>
               </div>
               <div className={styledCardSorting.listTips}>
                 <SubTitle type="Lg">
-                  <Tag type="Strong">05.</Tag> <br /> Dê um tempo para que as
-                  pessoas possam distribuir os cartões e conferir se a sequência
-                  mental feita por ela é realmente da forma que ela gostaria de
-                  encontrar.
+                  <span className={styledCardSorting.listTipsText}>
+                    <Tag type="Strong">05.</Tag>Dê um tempo para que as pessoas
+                    possam distribuir os cartões e conferir se a sequência
+                    mental feita por ela é realmente da forma que ela gostaria
+                    de encontrar.
+                  </span>
                 </SubTitle>
                 <SubTitle type="Lg">
-                  <Tag type="Strong">06.</Tag> <br /> No final, peça que a
-                  pessoa explique o porquê de suas escolhas e a lógica por trás
-                  delas.
+                  <span className={styledCardSorting.listTipsText}>
+                    <Tag type="Strong">06.</Tag>No final, peça que a pessoa
+                    explique o porquê de suas escolhas e a lógica por trás
+                    delas.
+                  </span>
                 </SubTitle>
                 <SubTitle type="Lg">
-                  <Tag type="Strong">07.</Tag> <br />
-                  Registre o resultado de cada pessoa participante para poder
-                  compará-los e analisá-los depois.
+                  <span className={styledCardSorting.listTipsText}>
+                    <Tag type="Strong">07.</Tag>
+                    Registre o resultado de cada pessoa participante para poder
+                    compará-los e analisá-los depois.
+                  </span>
                 </SubTitle>
               </div>
             </div>
-            <SubTitle type="Lg">
-              Depois, é hora de realizar a análise de dados. Lembre-se de
-              considerar tanto os qualitativos quanto os quantitativos.{' '}
-            </SubTitle>
-            <br />
-            <SubTitle type="Lg">
-              {' '}
-              Os qualitativos vão trazer insights baseados nos comentários dos
-              participantes, já os quantitativos vão refletir quais cartões
-              aparecem juntos com mais frequência, além de determinar com que
-              frequência os cartões aparecem em cada categoria
-            </SubTitle>
+            <div className={styledCardSorting.listTipsClosure}>
+              <SubTitle type="Lg">
+                Depois, é hora de realizar a análise de dados. Lembre-se de
+                considerar tanto os qualitativos quanto os quantitativos.{' '}
+              </SubTitle>
+              <SubTitle type="Lg">
+                {' '}
+                Os qualitativos vão trazer insights baseados nos comentários dos
+                participantes, já os quantitativos vão refletir quais cartões
+                aparecem juntos com mais frequência, além de determinar com que
+                frequência os cartões aparecem em cada categoria
+              </SubTitle>
+            </div>
           </div>
         </section>
         <section className={`container`}>
