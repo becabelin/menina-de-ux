@@ -1,13 +1,12 @@
 // Components
 import Head from 'next/head'
+import Image from 'next/image'
 import Title from '@/components/common/Title/Title'
 import SubTitle from '@/components/common/Subtitle/SubTitle'
-import Image from 'next/image'
+import Button from '@/components/common/Button'
 
 // Styles
-import styled from '@/styles/Home.module.scss'
 import styles from '@/styles/PropostaDeValor.module.scss'
-import Button from '@/components/common/Button'
 
 // Utilities
 // Hooks
@@ -22,7 +21,7 @@ export default function PropostaDeValor() {
 
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={styled.containerHome}>
+      <main className={styles.PropostaDeValor}>
         <section className={`container ${styles.proposta}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
@@ -182,7 +181,7 @@ export default function PropostaDeValor() {
         <section className={`container ${styles.aspectos}`}>
           <div className={styles.propostaContainer}>
             <div className={styles.propostaText}>
-              <div className={styled.marginBottom10}>
+              <div className={styles.marginBottom10}>
                 <Title type="Sm">Os 4 aspectos de uma proposta de valor</Title>
               </div>
 
@@ -191,11 +190,11 @@ export default function PropostaDeValor() {
                 mais eficiente. E observá-los facilita, inclusive, a sua
                 criação. Caso você não identifique um desses 4 elementos na sua
                 proposta, saberá que é preciso revisá-las.
-                <div className={styled.margin20}>
+                <div className={styles.margin20}>
                   <SubTitle type="Default">São eles:</SubTitle>
                 </div>
               </SubTitle>
-              <div className={styled.margin20}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Clareza</Title>
               </div>
               <SubTitle type="Default">
@@ -205,7 +204,7 @@ export default function PropostaDeValor() {
                 proposta clara é aquela que vai direto ao ponto, que expõe a
                 ideia central da empresa e que apresenta fácil compreensão.
               </SubTitle>
-              <div className={styled.margin20}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Linguagem</Title>
               </div>
               <SubTitle type="Default">
@@ -213,7 +212,7 @@ export default function PropostaDeValor() {
                 adequada. Isso irá impactar diretamente na compreensão da sua
                 mensagem e no quando a pessoa usuária se conectará com ela.
               </SubTitle>
-              <div className={styled.margin20}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Concorrência</Title>
               </div>
               <SubTitle type="Default">
@@ -223,7 +222,7 @@ export default function PropostaDeValor() {
                 que você faz e entenda como pode melhorar o seu serviço de
                 acordo com esse comparativo.
               </SubTitle>
-              <div className={styled.margin20}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Transparêncial</Title>
               </div>
               <SubTitle type="Default">
@@ -233,7 +232,7 @@ export default function PropostaDeValor() {
                 em expectativas que você pode suprir e na consequente fuga
                 dessas pessoas para a concorrência.
               </SubTitle>
-              <div className={styled.margin20}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Direcionamento</Title>
               </div>
               <SubTitle type="Default">
@@ -264,7 +263,7 @@ export default function PropostaDeValor() {
               <SubTitle type="Default">
                 Uma proposta de valor pode ter diferentes focos, como:
               </SubTitle>
-              <div className={styled.margin20}>
+              <div className={styles.margin20}>
                 <Title type="Xs">Desempenho</Title>
               </div>
               <SubTitle type="Default">
