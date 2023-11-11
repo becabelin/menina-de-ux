@@ -16,8 +16,8 @@ export default function SocialMedia() {
   return (
     <section className={`container ${styled.sectionContainer}`}>
       <div className={styled.sectionContent}>
-        <Title type="Sm">Redes Sociais</Title>
-        <SubTitle type="Default">
+        <Title type="Default">Redes Sociais</Title>
+        <SubTitle type="Lg">
           Me acompanhe nas redes sociais! <br /> Se quiser conversar sobre
           projetos, eventos e afins, tem meu e-mail aí!
         </SubTitle>
