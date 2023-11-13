@@ -1,0 +1,66 @@
+@import "/src/styles/colors.module";
+
+// Estilização CSS do Component Title
+.titleBase {
+  // Desktop
+  font-family:"NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 42px;
+  line-height: 110%;
+  align-items: center;
+  color: $blue-400;
+}
+
+.titleDefault {
+  @extend .titleBase; // Estende a classe .title-base
+      // Tablet
+  @media (max-width: 768px) {
+    font-size: 32px;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 22px;
+  }
+}
+.titleXl {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 46px;
+  line-height: 125%;
+  // Tablet
+  @media (max-width: 768px) {
+    font-size: 36px;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+}
+.titleLg {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 34px;
+  line-height: 150%;
+  text-transform: uppercase;
+  // Tablet
+  @media (max-width: 768px) {
+    font-size: 30px;
+  }
+  // Mobile
+  @media (max-width: 425px) {
+    font-size: 25px;
+  }
+}
+.titleSm {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 32px;
+  line-height: 120%;
+}
+.titleXs {
+  @extend .titleBase; // Estende a classe .title-base
+  // Desktop
+  font-size: 26px;
+  line-height: 115%;
+}

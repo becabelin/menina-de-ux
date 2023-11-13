@@ -1,0 +1,71 @@
+@import "/src/styles/colors.module";
+
+// Estilização Componente Card
+//Style Base
+.CardBase {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  color: $blue-400;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  border: 1px solid $blue-300;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+// Estilização Card Primary 
+.primary {
+  @extend .CardBase;
+  width: 24rem;
+  height: auto;
+  gap: 16px;
+}
+
+// Estilização Card Secondary 
+.secondary {
+  @extend .CardBase;
+  width: 15rem;
+  height: 36.9rem;
+  gap: 20px;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+}
+
+.title {
+  font-size: 22px;
+  line-height: 28px;
+  padding: 0 8px 8px;
+}
+
+.description {
+  font-weight: 400;
+  padding: 0 8px;
+}
+
+.subtitle {
+  color: $gray-400;
+  font-weight: 500;
+  padding: 0 8px;
+}
+
+.link {
+  display: flex;
+  color: $blue-400;
+  gap: 4px;
+  line-height: 16px;
+  font-weight: 700;
+  padding: 4px 8px ;
+  cursor: pointer;
+}
+
+@media (max-width: 994px) {
+  .CardBase{
+    width: 80%;
+    height: auto;
+  }
+}
