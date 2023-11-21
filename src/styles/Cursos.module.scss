@@ -1,0 +1,119 @@
+@import "colors.module";
+
+.containerCursos {
+    background-color: $pink-400;
+    padding-top: 60px;
+    min-height: 100vh;
+}
+
+.hero {
+    font-family: 'Avenir LT STD', sans-serif;
+    line-height: 27px;
+}
+
+.text_wrapper {
+    @extend .hero;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+.text_subtit_01 {
+    margin-bottom: 16px;
+}
+
+.text_subtit_02 {
+    margin-bottom: 16px;
+}
+
+.cursos {
+    background-color: white;
+    font-family: 'Avenir LT STD', sans-serif;
+    height: auto;
+    align-items: center;
+}
+
+.categorias_wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+  
+.categorias_list {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.categorias_item {
+    margin: 0 5px;
+    cursor: pointer; 
+    padding: 5px 10px;
+}
+
+.categorias_item:hover,
+.selecionado {
+    @extend .categorias_item;
+    border: 2px solid #20376c;
+    border-radius: 50px; 
+    border-style: solid;
+    padding: 3px 8px;
+}
+
+.cards_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px auto; 
+    max-width: 1200px;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+.lista_cards {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.lista_cards li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    .categorias_item {
+        justify-content: center; 
+    }
+
+    .categorias_item {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        margin-top: 20px;
+    }
+    
+    .categorias_list {
+        flex-grow: 1;
+        margin: 5px;
+        padding: 5px 10px;
+    }
+    
+    .cards_wrapper {
+        margin: 20px auto; 
+        padding: 0 10px; 
+    }
+}

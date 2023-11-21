@@ -1,6 +1,8 @@
 @import "/src/styles/colors.module";
 
 .ButtonBase {
+  font-family: 'Avenir LT STD', sans-serif;
+  font-size: 18px;
   min-width: 8.125rem;
   height: 3rem;
   padding: 0rem 1.7rem;
@@ -8,7 +10,6 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   border-radius: 48px;
   transition: background-color 0.3s, color 0.3s;
 
@@ -26,7 +27,7 @@
   background-color: $blue-500;
   border: 1px solid  $blue-500;
   span {
-    color: $white;
+    color: $gray-100;
   }
   
   &:hover {
