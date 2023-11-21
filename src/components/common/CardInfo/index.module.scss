@@ -1,0 +1,51 @@
+@import "/src/styles/colors.module";
+
+.container{
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 15.063rem;
+  height: 30.313rem;
+  gap: 24px;
+  /* font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif; */
+  font-style: normal;
+  color: $blue-400;
+  border: 1px solid #CBCBCB;
+  border-radius: 10px;
+  padding: 1rem;
+  overflow: hidden;
+  box-sizing: border-box;
+ 
+
+}
+
+.containerImg{
+  width: 150px;
+  height: 150px;
+
+  margin-bottom: 10px;
+ 
+}
+
+.containerTitle{
+  font-weight: bolder;
+  font-size: 35px;
+  line-height: 105%;
+}
+
+.containerDescription{
+ font-size: 16px;
+ font-weight: 300;
+}
+
+
+
+@media (max-width: 994px) {
+  .container{
+  width: 80vw;
+  height: 20%;
+  }
+}
+

@@ -1,0 +1,97 @@
+@import "/src/styles/colors.module";
+
+//Style da página Inicio
+.display {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.justifyCenter {
+  justify-content: center;
+}
+
+.inicioAjudando,
+.inicioCarreira,
+.inicioProjeto,
+.inicioRedeSociais,
+.inicioNovidades, 
+.inicioSocial {
+  @extend .display;
+  background-color: $white;
+}
+
+.inicioCurso {
+  background-color:$white;
+}
+
+.containerFlex {
+  @extend .display;
+}
+
+.textLeft {
+  order: -1;
+}
+
+.textRight {
+  order: 1;
+}
+
+.subtitle, 
+.title {
+  padding-bottom: 1.25rem;
+}
+
+.buttons {
+  display: flex;
+  gap: .5rem ;
+  // white-space: nowrap;
+}
+
+.inicioImg {
+  padding-left: 1.25rem;
+}
+
+.cardList {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding-bottom: 1.25rem;
+}
+
+//Tablets
+@media (max-width: 994px) {
+  .inicioAjudando, 
+  .inicioCarreira, 
+  .containerFlex, 
+  .inicioProjeto, 
+  .inicioCurso, 
+  .inicioNovidades, 
+  .inicioRedeSociais
+   {
+    display: block;
+    align-items: center;
+  }
+
+ .cardList {
+    display: flex;
+    flex-direction: column;
+    padding-top: 0.625rem;
+    gap: 0.625rem;
+  }
+
+  .img {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 5%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+  }
+}
