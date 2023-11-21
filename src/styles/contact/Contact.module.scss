@@ -1,0 +1,12 @@
+.animationContainer{
+    animation: item-slide 2s;
+}
+
+@keyframes item-slide{
+    0%{
+        transform: translateY(250px);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}

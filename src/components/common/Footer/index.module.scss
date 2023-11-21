@@ -1,12 +1,16 @@
 @import "/src/styles/colors.module";
 
+.footer {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
 .footerContainer {
   background-color: $pink-400;
   display: grid;
   grid-template-columns: 224px 150px 224px 150px;
   justify-content: space-between;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding: 2.5rem 5.2rem;
+
   
   .socialMedia {
     grid-row: span 2;
@@ -29,10 +33,14 @@
   margin-bottom: .4rem;
 
   .slogan {
-    font-size: 1.125rem;
+    font-size: 1.063rem; //17px
     font-family: "Avenir LT Std", sans-serif;
     color: $gray-400;
     margin-bottom: 0.5rem;
+    font-weight: 350;
+    line-height: 1.625rem;
+    letter-spacing: 0.02rem;
+
   }
 
   img {
@@ -58,8 +66,8 @@
   span {
     font-family: "NCS Radhiumz", sans-serif;
     color: $gray-400;
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: 0.953rem;
+    font-weight: 400;
   }
 
   .imagesSupporters {
@@ -99,11 +107,12 @@
 }
 
 .titlesFooter {
-  font-size: 1rem;
+  font-size: 0.953rem; // 15.24px
   font-weight: 750;
   color: $gray-400;
   text-transform: uppercase;
   margin-bottom: 1.25rem;
+  font-family: "Avenir LT Std", sans-serif;
 
   @media (max-width: 994px) {
     text-align: center;
@@ -123,8 +132,8 @@
 
     font-family: "NCS Radhiumz", sans-serif;
     color: $blue-400;
-    font-size: 1rem;
-    font-weight: 700;
+    font-size: 1.063rem;
+    font-weight: 400;
     transition: .4s;
 
     &:hover {

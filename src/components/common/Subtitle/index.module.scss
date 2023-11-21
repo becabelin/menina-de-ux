@@ -1,8 +1,10 @@
 @import "/src/styles/colors.module";
+@import "/src/styles/fonts.module";
 
 // Estilização CSS do Component SubTitle
 .subTitleBase {
     // Desktop | Tablet | Mobile
+    font-family: $font-family-primary, sans-serif;
     font-style: normal;
     font-weight: 350;
     color: $blue-400;
@@ -10,15 +12,25 @@
   .subTitleDefault {
     // Desktop | Tablet | Mobile
     @extend .subTitleBase; // Estende a classe .subtitle-base
-    font-size: 18px;
+    font-size: 1.25rem;
+    font-weight: 700;
   }
   .subTitleLg {
     // Desktop | Tablet
     @extend .subTitleBase; // Estende a classe .subtitle-base
-    font-size: 20px;
+    font-size: 1.25rem;
     // Mobile
     @media (max-width: 425px) {
-      font-size: 18px;
+      font-size: 1.125rem;
     }
   }
+  .subTitleMd {
+    @extend .subTitleBase; // Estende a classe .subtitle-base
+    font-size: 1rem;
+  }
+  .subTitleSm {
+    @extend .subTitleBase; // Estende a classe .subtitle-base
+    font-size: .875rem;
+  }
+
   

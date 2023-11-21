@@ -1,0 +1,134 @@
+@import "colors.module";
+
+
+.containerBootcamp {
+  background-color: $pink-400;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+
+.sectionContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Avenir LT STD', sans-serif;
+    margin-top: 32px;
+
+    @media (max-width: 994px) {
+      flex-direction: column;
+    }
+  }
+
+  .hero{
+    @extend .sectionContainer;
+    margin-top: 30px ;
+    margin-bottom: 40px;
+  }
+
+  .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+    
+    
+    @media (max-width: 768px) {
+        text-align: center;
+      }
+  }
+
+  .contentMobile {
+    @extend .content;
+    @media (max-width: 768px) {
+        text-align: center;
+        width: 100vw;
+        padding: 15px;
+      }
+
+  }
+
+  .containerCourses{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+  .containerFilter{
+    width: 950px;
+    @media (max-width: 768px) {
+      width: 100%;
+      }
+  }
+
+  .containerList{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    @media (max-width: 768px) {
+        
+      }
+  }
+
+  .filterCourse{
+    margin-left: 8px;
+    box-sizing: border-box; 
+    padding: 8px;
+    transition: margin 0.3s;
+
+    cursor: pointer;
+
+    @media (max-width: 768px) {
+       margin-bottom: 20px; 
+    }
+    
+  }
+
+  .filterCourse:hover,
+  .selecionado {
+    @extend .filterCourse;
+    border: 2px solid #20376c;
+    border-radius: 50px; 
+    padding: 6px;
+   /*  border-style: solid; */
+}
+
+  .cards_wrapper{
+    max-width: 920px;
+    height: auto;
+    margin-top: 20px;
+   
+    @media (max-width: 768px) {
+        width: 100%;
+        height: auto;
+        
+    }
+}
+
+.lista_cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    list-style: none; 
+    padding: 0;
+
+    @media (max-width: 768px) {
+     width: 100%;
+     height: auto;
+  }
+}
+
+.lista_cards li {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
