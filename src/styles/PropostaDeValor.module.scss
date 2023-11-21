@@ -1,0 +1,99 @@
+@import "/src/styles/colors.module";
+
+.PropostaDeValor {
+  background-color: $pink-400;
+  padding-top: 60px;
+  min-height: 100vh;
+}
+
+.propostaContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.875rem  0;
+}
+
+.propostaText, .propostaImage {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+}
+
+.propostaText div {
+  margin-top: 10px; /* Adicione o espaço desejado */
+}
+
+.img {
+  width: 100%;
+  text-align: center;
+}
+
+.margin20 {
+  margin-top: 20px;
+}
+
+.marginBottom10 {
+  margin-bottom: 10px;
+}
+
+.marginTopBottom20 {
+  margin: 20px 0 20px 0;
+}
+
+.espaçoEntreTextos {
+  margin-bottom: 10px;
+}
+
+.displayBlock {
+  display: block;
+}
+
+//stylo para letra ficar rosa com hover azul
+.textA {
+  text-decoration: none;
+  color:$pink-500;
+  transition: color 0.3s ease-in-out;
+}
+
+.textStyle {
+  color:$gray-600;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-family: "NCS Radhiumz", 'Avenir LT STD', sans-serif ;
+}
+
+.textA:hover {
+  color:$blue-400;
+}//end stylo para letra ficar rosa com hover azul
+
+.bemVindos, .aspectos, .comoMontar, .identificarDefinir {
+  background: $white;
+}
+
+.endParabens {
+  padding: 1.875rem  0;
+  text-align: center;
+}
+
+@media (max-width: 994px) {
+  .propostaContainer {
+    display: block;
+  }
+
+  .propostaText, .propostaImage{
+    width: 100%;
+  }
+
+  .endParabens {
+    padding: 1rem  2rem;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    div {
+      width: 100%;
+    }
+  }
+}

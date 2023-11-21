@@ -1,0 +1,34 @@
+@import "colors.module";
+
+.sectionContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Avenir LT STD', sans-serif;
+  
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+}
+.hero {
+  @extend .sectionContainer;
+  margin-top: 32px;
+}
+
+.learn {
+  background-color: $white;
+  margin-top: 21px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+.cards {
+  display: flex;
+  gap: 22px;
+  margin-top: 40px;
+  @media (max-width: 998px) {
+    flex-direction: column;
+  }
+}
