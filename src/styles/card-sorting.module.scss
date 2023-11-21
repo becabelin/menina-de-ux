@@ -1,0 +1,107 @@
+@import "colors.module";
+
+
+
+.sectionContainer {
+  display: flex;
+  padding-block: 3rem;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+}
+
+.sectionWhite {
+  background-color: $white;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  @extend .containerSubtitle;
+  max-width: 648px;
+  padding-top: 1rem;
+}
+
+.containerSubtitle {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+}
+
+.listArticles {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 1rem;
+}
+
+.article a{
+  color: $pink-500;
+}
+
+.article a::before {
+  content: '-';
+  margin-right: 4px
+}
+
+.typeCard {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.listToUse {
+  @extend .containerSubtitle
+}
+
+.tips {
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 994px) {
+    flex-direction: column;
+  }
+}
+
+.listTips {
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-block: 2rem;
+  @media (max-width: 994px) {
+    padding-bottom: 0px;
+  }
+}
+
+.listTips:first-child {
+  padding-right: 2rem;
+}
+
+.listTipsText {
+  display: flex;
+  flex-direction: column;
+}
+
+.listTipsClosure {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.sectionContainerCenter {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+  padding-block: 3rem;
+}
+

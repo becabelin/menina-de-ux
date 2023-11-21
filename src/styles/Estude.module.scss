@@ -1,0 +1,54 @@
+@import "colors.module";
+
+.containerEstude {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 6rem;
+  padding-bottom: 5rem;
+  background-color: $pink-400;
+  
+  @media (max-width: 994px) {
+    flex-direction: column;
+    gap: 2.5rem; /*40 px*/
+  }
+
+  .texts {
+    max-width: 558px;
+  }
+}
+
+.learn {
+  background-color: $white;
+  margin-top: 1.5rem; /*24 px*/
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.cards {
+  display: flex;
+  gap: 1.375rem; /*22 px*/
+  margin-top: 2.5rem; /*40 px*/
+  
+  @media (max-width: 998px) {
+    flex-direction: column;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /*24 px*/
+
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
